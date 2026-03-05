@@ -1,5 +1,5 @@
 av_klaro:
-  version: VERSION
+  version: 'VERSION'
   css:
     theme:
       css/av_klaro.css: { }
