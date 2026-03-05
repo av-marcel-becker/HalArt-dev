@@ -1,0 +1,4 @@
+Barlow
+https://fonts.google.com/specimen/Barlow?selection.family=Barlow:400,700
+https://google-webfonts-helper.herokuapp.com/fonts/barlow?subsets=latin
+https://google-webfonts-helper.herokuapp.com/fonts/barlow?subsets=latin,latin-ext

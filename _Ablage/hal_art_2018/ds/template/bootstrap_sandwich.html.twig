@@ -1,0 +1,52 @@
+{#
+/**
+ * @file
+ * Custom display suite layout
+ *
+ * Available variables:
+ * - title
+ * - middle: content region middle
+ * - top: content region top
+ * - bottom: content region bottom
+ */
+#}
+
+<div class="sandwich">
+      <div class="sandwich-top box-dark-turquoise"> 
+      
+         {% set msg = drupal_entity('block', 'nachrichten') %}
+         {% if msg|render %}
+            <div class="container">         
+               {{ msg }}
+            </div>
+         {% endif %}
+         
+         {% set tabs = drupal_entity('block', 'reiter_2') %}
+         {% if tabs|render %} 
+            {{ tabs }}
+         {% endif %}
+         
+         {% if top %}
+            <div class="container">  
+               <div class="row justify-content-md-center">
+                  <div class="col-12 col-lg-10">
+                     {{ top }}
+                  </div>
+               </div>
+            </div>
+         {% endif %} 
+         
+      </div> 
+   
+      <div class="sandwich-middle">
+         {{ middle }}
+      </div>
+      
+   {% if bottom %}
+      <div class="sandwich-bottom">
+         {{ bottom }}
+      </div>
+   {% endif %}
+   
+</div>
+   

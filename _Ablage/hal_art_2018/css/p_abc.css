@@ -1,0 +1,121 @@
+.abc-container
+   {
+      
+   }
+
+/*
+ * abc ################################################################
+*/
+.abc-container-items
+   {
+      padding-top: 20rem;
+   }
+.abc-container-item .abc-text
+   {
+      color: var(--color-2);
+   }
+.abc-container-item .abc-text a
+   {
+      color: var(--color-2);
+      text-decoration: none;
+   }
+.abc-container-item .abc-text a:hover
+   {
+      color: var(--color-2);
+      text-decoration: underline;
+   }
+.abc-container-item .abc-letter
+   {
+      font-family: 'Barlow';
+      font-style: normal;
+      font-weight: 700;
+            
+      font-size: 14rem;
+      display: inline-block;
+      
+      transform: rotate(20deg) scale(0);
+      -webkit-transform: rotate(20deg) scale(0);
+      -moz-transform: rotate(20deg) scale(0);
+      -o-transform: rotate(-20deg) scale(0);
+      -ms-transform: rotate(-20deg) scale(0);
+      
+      -webkit-transition: all 100ms linear;
+      -moz-transition: all 100ms linear;
+      -ms-transition: all 100ms linear;
+      -o-transition: all 100ms linear;
+      transition: all 100ms linear;
+    
+   }
+   
+/* letter color */
+.abc-container-item:nth-child(3n-2) .abc-letter
+   {
+      color: var(--color-1); /* yellow */
+   }
+.abc-container-item:nth-child(3n-3) .abc-letter
+   {
+      color: var(--color-10); /* turquoise */
+   }
+.abc-container-item:nth-child(3n-4) .abc-letter
+   {
+      color: var(--color-2); /* dark-turquoise */
+   }
+   
+/* 
+   --breakpoint-xs: 0;
+   --breakpoint-sm: 576px;
+   --breakpoint-md: 768px;
+   --breakpoint-lg: 992px;
+   --breakpoint-xl: 1200px;
+*/
+
+@media (min-width: 0)
+   {
+      
+   }
+@media (min-width: 576px)
+   {  
+          
+   }
+@media (min-width: 768px)
+   {
+      .abc-container-item
+         {
+            margin-top: 10rem;
+            margin-bottom: 15rem;
+         }
+      .abc-container-item:first-child
+         {
+            margin-top: 0rem;
+         }
+      .abc-container-item .abc-letter
+         {
+            
+            position: absolute;
+            top: -250px;
+         }
+      .abc-container-item[data-line="odd"] .abc-text
+         {
+            margin-right: 30%;
+         }
+      .abc-container-item[data-line="even"] .abc-text
+         {
+            margin-left: 30%;
+         }
+      .abc-container-item[data-line="odd"] .abc-letter
+         {
+            right: 30%;
+         }
+      .abc-container-item[data-line="even"] .abc-letter
+         {
+            left: 30%;
+         }
+   }
+@media (min-width: 992px)
+   {
+      
+   }
+@media (min-width: 1200px)
+   {
+      
+   }

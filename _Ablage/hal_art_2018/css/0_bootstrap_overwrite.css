@@ -1,0 +1,24 @@
+
+/*
+ * not set class in bootstrap?!?!!?
+*/
+/* org. snipped 
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}*/
+
+.card
+   {
+      border-width: 0rem;
+      border-color: transparent;
+      border-radius: 0rem;
+   }
+
+.btn
+   {
+      border-radius: 0rem;
+   }

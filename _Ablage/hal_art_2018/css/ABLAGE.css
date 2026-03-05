@@ -1,0 +1,178 @@
+
+.column-2
+   {
+      -moz-column-count: 2;
+      -webkit-column-count: 2;
+      column-count: 2;
+   }
+.column-gap-20
+   {
+      -moz-column-gap: 1.25rem;
+      -webkit-column-gap: 1.25rem;
+      column-gap: 1.25rem;
+   }
+.column-gap-40
+   {
+      -moz-column-gap: 2.5rem;
+      -webkit-column-gap: 2.5rem;
+      column-gap: 2.5rem;
+   }
+.column-break-avoid
+   {
+      -webkit-column-break-inside: avoid;
+      -moz-column-break-inside: avoid;
+      -moz-page-break-inside: avoid;
+      page-break-inside: avoid;
+      break-inside: avoid-column;
+   }
+.vertically-offset-items-20 > *,
+.vertically-offset-item-20,
+.vertically-offset-items-40 > *,
+.vertically-offset-item-40
+   {
+      display: inline-block;
+      vertical-align: top;
+   }
+/* START: chrome fix */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+  and (min-resolution:.001dpcm) 
+   {
+      .vertically-offset-items-20 > *,
+      .vertically-offset-item-20,
+      .vertically-offset-items-40 > *,
+      .vertically-offset-item-40
+         {
+            float: left;
+         }
+      .box-spacing-20
+         {
+            padding-bottom: 1.25rem !important;
+         }
+      .box-spacing-40
+         {
+            padding-bottom: 2.5rem !important;
+         }
+   }
+/* END: chrome fix */
+/* START: IE Edge fix */
+      _:-ms-lang(x),
+      .box-spacing-20
+         {
+            padding-bottom: 1.25rem !important;
+         }
+      _:-ms-lang(x),
+      .box-spacing-40
+         {
+            padding-bottom: 2.5rem !important;
+         }
+/* END: IE Edge fix */
+
+
+.vertically-offset-items-20 > *,
+.vertically-offset-item-20
+   {
+      margin-top: 5.25rem;
+      margin-bottom: -4rem
+   }
+.vertically-offset-items-40 > *,
+.vertically-offset-item-40
+   {
+      margin-top: 6.5rem;
+      margin-bottom: -4rem;
+   }
+.vertically-offset-box-fix-20,
+.vertically-offset-items-20
+   {
+      padding-bottom: 5.25rem;
+   }
+.vertically-offset-box-fix-40,
+.vertically-offset-items-40
+   {
+      padding-bottom: 6.5rem;
+   }
+.vertically-offset-items-20 > *:first-child,
+.vertically-offset-item-20:first-child,
+.vertically-offset-items-40 > *:first-child,
+.vertically-offset-item-40:first-child
+   {
+      margin-top: 0rem;
+   }
+/* ******* */
+.teaser-vertically-offset-items-20 > *,
+.teaser-vertically-offset-item-20,
+.teaser-vertically-offset-items-40 > *,
+.teaser-vertically-offset-item-40
+   {
+      display: inline-block;
+      vertical-align: top;
+   }
+.teaser-vertically-offset-items-20 > *,
+.teaser-vertically-offset-item-20
+   {
+      margin-top: 15.25rem;
+      margin-bottom: -14rem
+   }
+.teaser-vertically-offset-items-40 > *,
+.teaser-vertically-offset-item-40
+   {
+      margin-top: 16.5rem;
+      margin-bottom: -14rem;
+   }
+.teaser-vertically-offset-box-fix-20,
+.teaser-vertically-offset-items-20
+   {
+      padding-bottom: 15.25rem;
+   }
+.teaser-vertically-offset-box-fix-40,
+.teaser-vertically-offset-items-40
+   {
+      padding-bottom: 16.5rem;
+   }
+.teaser-vertically-offset-items-20 > *:first-child,
+.teaser-vertically-offset-item-20:first-child,
+.teaser-vertically-offset-items-40 > *:first-child,
+.teaser-vertically-offset-item-40:first-child
+   {
+      margin-top: 0rem;
+   }
+/* START: chrome fix */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+  and (min-resolution:.001dpcm) 
+   {
+      .teaser-vertically-offset-items-20 > *,
+      .teaser-vertically-offset-item-20,
+      .teaser-vertically-offset-items-40 > *,
+      .teaser-vertically-offset-item-40
+         {
+            float: left;
+         }
+   }
+/* END: chrome fix */
+/*
+.box-flex-column
+   {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      
+      -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+      align-content: flex-start;
+      
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+   }
+*/

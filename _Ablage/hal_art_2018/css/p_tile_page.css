@@ -1,0 +1,172 @@
+/*
+         .tile-page
+            {
+               display: block;
+               width: 600px;
+               height: 400px;
+               margin: auto;
+               background-color: transparent;
+            } */
+            
+/* *************************************************** */
+
+.tile:hover
+   {
+      cursor: pointer;
+   }
+.tile .svg-heading,
+.tile .svg-foreignobject h5
+   {
+      font-family: 'Barlow';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2.25rem;
+   }
+.tile .svg-foreignobject h5
+   {
+      margin-bottom: 0.5rem;
+      color: #ffffff;
+   }
+.tile .svg-text,
+.tile .svg-foreignobject p
+   {
+      font-family: 'Barlow';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1rem;
+   }
+.tile .svg-foreignobject p
+   {
+      margin-top: 0rem;
+      margin-bottom: 0rem;
+      color: #ffffff;
+      line-height: 1.25rem;
+   }
+.tile .svg-button-text
+   {
+      fill: #ffffff; 
+      font-family: 'Barlow';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 1.3125rem;
+      text-transform: uppercase; /* ? */
+   }
+.tile .svg-button-rect,
+.tile .svg-button-text
+   {
+      display: none;
+   }
+.tile:hover .svg-button-rect,
+.tile:hover .svg-button-text
+   {
+      display: block;
+   }
+.tile:hover .svg-heading,
+.tile:hover .svg-foreignobject
+   {
+      display: none;
+   }
+.tile:hover .svg-text
+   {
+      display: none;
+   }
+svg[data-full="1"] .tile:hover .svg-heading,
+svg[data-full="1"] .tile:hover .svg-foreignobject
+   {
+      display: block;
+   }
+svg[data-full="1"] .tile:hover .svg-text
+   {
+      display: block;
+   }
+.tile:nth-child(2) .svg-hover-tile
+   {
+      fill: var(--color-8);
+   }
+.tile:nth-child(3) .svg-hover-tile
+   {
+      fill: var(--color-10);
+   }
+.tile:nth-child(4) .svg-hover-tile
+   {
+      fill: var(--color-10);
+   }
+.tile:nth-child(5) .svg-hover-tile
+   {
+      fill: var(--color-8);
+   }
+.tile:nth-child(2) .svg-heading,
+.tile:nth-child(2) .svg-text
+   {
+      fill: #000000;
+   }
+.tile:nth-child(2) .svg-foreignobject h5,
+.tile:nth-child(2) .svg-foreignobject p
+   {
+      color: #000000;
+   }
+.tile:nth-child(5) .svg-heading,
+.tile:nth-child(5) .svg-text
+   {
+      fill: #000000;
+   }
+.tile:nth-child(5) .svg-foreignobject h5,
+.tile:nth-child(5) .svg-foreignobject p
+   {
+      color: #000000;
+   }
+.tile .svg-hover-tile
+   {
+      -webkit-transition: fill 250ms ease-out;
+      -moz-transition: fill 250ms ease-out;
+      -o-transition: fill 250ms ease-out;
+      transition: fill 250ms ease-out;
+   }
+.tile:hover .svg-hover-tile
+   {
+      fill: transparent;
+   }
+
+/* 
+   --breakpoint-xs: 0;
+   --breakpoint-sm: 576px;
+   --breakpoint-md: 768px;
+   --breakpoint-lg: 992px;
+   --breakpoint-xl: 1200px;
+*/
+
+.tile-page.mobile
+   {
+      display: block;
+   }
+.tile-page.desktop
+   {
+      display: none;
+   }
+@media (min-width: 0)
+   {
+      
+   }
+@media (min-width: 576px)
+   {  
+          
+   }
+@media (min-width: 768px)
+   {
+   }
+@media (min-width: 992px)
+   {
+      .tile-page.mobile
+         {
+            display: none;
+         }
+      .tile-page.desktop
+         {
+            display: block;
+         }
+      
+   }
+@media (min-width: 1200px)
+   {
+      
+   }

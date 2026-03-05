@@ -1,0 +1,56 @@
+bootstrap_two_columns:
+  label: 'Bootstrap - Zwei Spalten'
+  category: Display Suite
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: ds/template/bootstrap_two_columns
+  icon: ds/images/bootstrap_two_columns.png
+  regions:
+    left:
+      label: Links
+    right:
+      label: Rechts
+bootstrap_two_columns_stacked:
+  label: 'Bootstrap - Zwei Spalten - gestapelt'
+  category: Display Suite
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: ds/template/bootstrap_two_columns_stacked
+  icon: ds/images/bootstrap_two_columns_stacked.png
+  regions:
+    top:
+      label: Oben
+    left:
+      label: Links
+    right:
+      label: Rechts
+    bottom:
+      label: Unten
+bootstrap_stacked:
+  label: 'Bootstrap - gestapelt'
+  category: Display Suite
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: ds/template/bootstrap_stacked
+  icon: ds/images/bootstrap_stacked.png
+  regions:
+    top:
+      label: Oben
+    middle:
+      label: Mitte
+    bottom:
+      label: Unten
+bootstrap_sandwich:
+  label: 'Bootstrap - gestapelt (Sandwich)'
+  category: Display Suite
+  class: '\Drupal\ds\Plugin\DsLayout'
+  type: partial
+  template: ds/template/bootstrap_sandwich
+  icon: ds/images/bootstrap_sandwich.png
+  regions:
+    top:
+      label: Oben
+    middle:
+      label: Mitte
+    bottom:
+      label: Unten

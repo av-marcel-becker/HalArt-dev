@@ -1,0 +1,46 @@
+{#
+/**
+ * @file
+ * Custom display suite layout
+ *
+ * Available variables:
+ * - title
+ * - middle: content region middle
+ * - top: content region top
+ * - bottom: content region bottom
+ */
+#}
+
+<div class="stacked">
+   {% if top|render %}
+      <div class="stacked-top">
+         {{ top }}
+      </div>
+   {% endif %}
+   <div class="stacked-middle">
+   
+      {% if pfadnavigation|render %} {% endif %}
+         <div class="container">
+            {{ drupal_block('system_breadcrumb_block') }}
+         </div>
+     
+      
+      {% if messages|render %}
+         <div class="container">
+            {{ messages }}
+         </div>
+      {% endif %}
+      
+      {% if tabs|render %}
+         {{ tabs }}
+      {% endif %}
+            
+      {{ middle }}  
+   </div>
+   {% if bottom|render %}
+      <div class="stacked-bottom">
+         {{ bottom }}
+      </div>
+   {% endif %}
+</div>
+   

@@ -1,0 +1,219 @@
+<?php
+   /*
+   * Hook for template_preprocess_layout, from module layout_discovery
+   * Applied through using 2-column brick layout within Display Suite interface on content type
+   */
+   function hal_art_2018_preprocess_layout(&$variables) 
+      {
+         /*
+            $block = \Drupal\block\Entity\Block::load('pfadnavigation');
+            $block_content = \Drupal::entityTypeManager()
+                            ->getViewBuilder('block')
+                            ->view($block);
+            $variables['pfadnavigation'] = $block_content;
+            */
+            /*
+            $block = \Drupal\block\Entity\Block::load('hal_art_2018_messages');
+            $block_content = \Drupal::entityTypeManager()
+                            ->getViewBuilder('block')
+                            ->view($block);
+            $variables['messages'] = $block_content;
+            
+            $block = \Drupal\block\Entity\Block::load('hal_art_2018_local_tasks');
+            $block_content = \Drupal::entityTypeManager()
+                            ->getViewBuilder('block')
+                            ->view($block);
+            $variables['tabs'] = $block_content;
+            */
+            #print '<pre>';
+            #   var_dump($variables['breadcrumb']);
+            #print '</pre>';
+      }
+   /**
+    * Implements hook_page_attachments_alter().
+    */
+   function hal_art_2018_page_attachments_alter(array &$attachments) 
+      {
+         foreach($attachments['#attached']['html_head'] as $key => $attachment) 
+            {
+               // remove generator meta tag (<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />)
+               if ($attachment[1] == 'system_meta_generator') 
+                  {
+                     unset($attachments['#attached']['html_head'][$key]);
+                  }
+            }
+      }
+
+   /**
+    * Implements hook_preprocess_html().
+    */
+   function hal_art_2018_preprocess_html(&$variables)
+      { 
+         $meta['0'] = ['#tag' => 'meta',
+                        '#attributes' => ['name' => 'referrer',
+                                          'content' => 'origin',],];
+         $variables['page']['#attached']['html_head'][] = [$meta['0'], 'origin'];
+         $meta['1'] = ['#tag' => 'meta',
+                        '#attributes' => ['name' => 'format-detection',
+                                          'content' => 'telephone=no',],];
+         $variables['page']['#attached']['html_head'][] = [$meta['1'], 'format-detection'];            
+         /* */
+         $meta['2'] = ['#tag' => 'meta',
+                        '#attributes' => ['http-equiv' => 'X-UA-Compatible',
+                                          'content' => 'IE=edge',],];
+         $variables['page']['#attached']['html_head'][] = [$meta['2'], 'svg']; 
+                 
+      }
+      
+   /**
+    * Implements hook_theme_suggestions_HOOK_alter() for form templates.
+    * @param array $suggestions
+    * @param array $variables
+    */
+   function hal_art_2018_theme_suggestions_block_alter(array &$suggestions, array $variables) 
+      {
+         // Block suggestions for custom block bundles.
+         if(isset($variables['elements']['content']['#block_content'])) 
+            {
+               array_splice($suggestions, 1, 0, 'block__' . $variables['elements']['content']['#block_content']->bundle());
+            }
+      }
+   /**
+    * Implements hook_preprocess_HOOK().
+    *
+    * Pass block region value to content so this can be used in
+    * MYTHEME_theme_suggestions_menu_alter.
+    */
+   use Drupal\block\Entity\Block;
+   function hal_art_2018_preprocess_block(&$variables) 
+      {
+         if (isset($variables['elements']['#id'])) 
+            {
+               $region = Block::load($variables['elements']['#id'])->getRegion();
+               $variables['content']['#attributes']['region'] = $region;
+            }
+      }
+
+   /**
+    * Implements hook_theme_suggestions_HOOK_alter().
+    *
+    * Provide region based menu suggestions.
+    */
+   function hal_art_2018_theme_suggestions_menu_alter(&$suggestions, array $variables) 
+      {
+         if (isset($variables['attributes']['region'])) 
+            {
+               $suggestions[] = 'menu__' . $variables['menu_name'] . '__' . $variables['attributes']['region'];
+            }
+      }
+      
+   /**
+    * Implements hook_theme_suggestions_HOOK_alter() for form templates.
+    * @param array $suggestions
+    * @param array $variables
+    */
+   function hal_art_2018_theme_suggestions_field_alter(array &$suggestions, array $variables) 
+      {
+         #$bundle = $variables['element']['#bundle']; /* mt_image_library */
+         $view_mode = $variables['element']['#view_mode']; /* dm_panorama */
+         $entity_type = $variables['element']['#entity_type']; /* media, node, paragraph */
+         $field_name = $variables['element']['#field_name']; /* field_media_image */
+         
+         $suggestions[] = 'field__' . $entity_type . '__' . $view_mode . '__' . $field_name;
+         $suggestions[] = 'field__' . $view_mode . '__' . $field_name;
+         
+      }
+/**
+ * Implements hook_theme_suggestions_HOOK_alter() for form templates.
+ */
+ 
+function hal_art_2018_theme_suggestions_form_alter(array &$suggestions, array $variables) 
+   {
+      /*
+      if ($variables['element']['#form_id'] == 'search_block_form') 
+         {
+            $suggestions[] = 'form__search_block_form';
+         }
+         */
+      $suggestions[] = 'form__'.$variables['element']['#form_id'];
+   }
+
+/**
+ * Implements hook_preprocess_field().
+ */      
+function hal_art_2018_preprocess_field(&$variables, $hook) 
+   {
+      
+      switch($variables['element']['#field_name']) 
+         {
+            // Machine name of the field
+           
+            case 'field_pi_tvi_link':
+            case 'field_pi_tdi_link':
+               $variables['items'][0]['content']['#options']['attributes']['class'][] = 'btn';
+               $variables['items'][0]['content']['#options']['attributes']['class'][] = 'button_link';
+            break; /*
+            case 'field_pi_sii_link':
+               $variables['items'][0]['content']['#options']['attributes']['class'][] = 'btn mt-5';
+            break;
+            case 'field_p_bl_link':
+               $variables['items'][0]['content']['#options']['attributes']['class'][] = 'btn';
+               $variables['items'][0]['content']['#options']['attributes']['class'][] = 'button_link';
+            break;
+            */
+         }   
+   }
+   
+/*
+ * Implementation of hook_form_alter().
+ *
+ * The function is named modulename_form_alter.
+*/
+function hal_art_2018_form_alter(&$form, $form_state, $form_id) 
+   {
+
+      switch($form_id) 
+         {
+         case 'user_login_form':
+               $form['actions']['submit']['#attributes']['class'][] = 'btn'; 
+           break;
+         }
+   }
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ *
+ * Provide region based menu suggestions.
+ */
+function hal_art_2018_theme_suggestions_page_title_alter(array &$suggestions, array $variables) 
+   {
+      // Are we looking at a node?
+      $node = \Drupal::routeMatch()->getParameter('node');
+      // Object check required, sometimes it's a string, yes, really. Who knew?
+      if (!empty($node) && is_object($node)) 
+         {
+            array_splice($suggestions, 1, 0, 'page_title__' . $node->getType());
+         }
+   } 
+   
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function hal_art_2018_preprocess_file_link(&$variables) 
+   {
+      // Add target _blank attribute to all file links.
+      $file = $variables['file'];
+      $url = file_create_url($file->uri->value);
+      
+      // Use the description as the link text if available.
+      if (empty($variables['description'])) 
+         {
+            $link_text = $file->filename->value;
+         }
+      else 
+         {
+            $link_text = $variables['description']->__toString();
+         }
+      $link = '<a href="' . $url . '" type="' . $file->filemime->value . '" length="' . $file->filesize->value . '" title="' . \Drupal\Component\Utility\Html::escape($file->filename->value) . '" target="_blank">' . \Drupal\Component\Utility\Html::escape($link_text) . '</a>';
+      $variables['link']->setGeneratedLink($link);
+   }

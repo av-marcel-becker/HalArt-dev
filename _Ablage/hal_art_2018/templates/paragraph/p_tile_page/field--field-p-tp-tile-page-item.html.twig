@@ -1,0 +1,423 @@
+{#
+/**
+ * @file
+ * Theme override for a field.
+ *
+ * To override output, copy the "field.html.twig" from the templates directory
+ * to your theme's directory and customize it, just like customizing other
+ * Drupal templates such as page.html.twig or node.html.twig.
+ *
+ * Instead of overriding the theming for all fields, you can also just override
+ * theming for a subset of fields using
+ * @link themeable Theme hook suggestions. @endlink For example,
+ * here are some theme hook suggestions that can be used for a field_foo field
+ * on an article node type:
+ * - field--node--field-foo--article.html.twig
+ * - field--node--field-foo.html.twig
+ * - field--node--article.html.twig
+ * - field--field-foo.html.twig
+ * - field--text-with-summary.html.twig
+ * - field.html.twig
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the containing element.
+ * - label_hidden: Whether to show the field label or not.
+ * - title_attributes: HTML attributes for the title.
+ * - label: The label for the field.
+ * - multiple: TRUE if a field can contain multiple items.
+ * - items: List of all the field items. Each item contains:
+ *   - attributes: List of HTML attributes for each item.
+ *   - content: The field item's content.
+ * - entity_type: The entity type to which the field belongs.
+ * - field_name: The name of the field.
+ * - field_type: The type of the field.
+ * - label_display: The display settings for the label.
+ *
+ *
+ * @see template_preprocess_field()
+ */
+#}
+
+
+{% set classes = ['tile-page', 'desktop'] %}
+
+<div class="{{ classes|join(' ') }}">
+
+   {% for key, item in items %}
+
+      {% set full = false %}
+      {% set position_1 = false %}
+      {% set position_2 = false %}
+      {% set position_3 = false %}
+      {% set position_4 = false %}
+      {% set data_position = '' %}
+
+      {% if(item.content['#paragraph'].field_pi_tpi_option) %}
+         {% for delta, item in item.content['#paragraph'].field_pi_tpi_option %} 
+            {% if(item.value == 'full') %}
+               {% set full = true %}      
+            {% elseif(item.value == 'position_1') %}
+               {% set position_1 = true %}
+               {% set data_position = '0' %}
+            {% elseif(item.value == 'position_2') %}
+               {% set position_2 = true %}
+               {% set data_position = '1' %}
+            {% elseif(item.value == 'position_3') %}
+               {% set position_3 = true %}
+               {% set data_position = '2' %}
+            {% elseif(item.value == 'position_4') %}
+               {% set position_4 = true %}
+               {% set data_position = '3' %}
+            {% endif %}
+         {% endfor %}
+      {% endif %}
+      <svg class="svg-four-box" data-full="{{ full }}" data-position="{{ data_position }}" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+         <defs>
+            {% set img_1_target_id = item.content['#paragraph'].field_pi_tpi_image_1.0.target_id %}    
+                  {% set img_1_field = drupal_field('field_media_image','media',img_1_target_id) %}                  
+                  {% if img_1_field.0['#entity'].field_media_image.entity %}
+                     {% set img_1_file = img_1_field.0['#entity'].field_media_image.entity | merge({'#image_style': 'is_tile_page'}) %}
+                     {% set img_1_uri = file_url(img_1_file.uri.value) %}
+                     {% set img_1_thumbnail = img_1_file.uri.value | image_style('is_tile_page') %}
+                  {% else %}
+                     {% set img_1_thumbnail = '' %}     
+                  {% endif %}  
+            <pattern id="img_{{ key }}_1" patternUnits="userSpaceOnUse" width="360" height="240">
+               <image xlink:href="{{ img_1_thumbnail }}" x="0" y="0" width="60%" height="60%" preserveAspectRatio="xMinYMin slice" />
+            </pattern>
+            {% if(position_1 == true or (full == true and (position_2 == true or position_3 == true or position_4 == true))) %}
+                   
+               {% set heading_1_value = item.content['#paragraph'].field_pi_tpi_heading_1.0.value %}         
+               {% set text_1_value = item.content['#paragraph'].field_pi_tpi_text_1.0.value %}
+               
+            {% endif %}
+            {% if(position_1 == true or full == true) %}
+                   
+               {% set link_1_uri = item.content['#paragraph'].field_pi_tpi_link_1.0.uri %}
+               {% set link_1_url = link_1_uri|preg_replace('/(internal:)/', '') %}   
+               {% set link_1_title = item.content['#paragraph'].field_pi_tpi_link_1.0.title %}
+               
+            {% endif %}
+            {% if(position_2 == true) %}
+                  
+                  {% set heading_2_value = item.content['#paragraph'].field_pi_tpi_heading_2.0.value %}
+                  {% set text_2_value = item.content['#paragraph'].field_pi_tpi_text_2.0.value %}
+                  {% set link_2_uri = item.content['#paragraph'].field_pi_tpi_link_2.0.uri %}
+                  {% set link_2_url = link_2_uri|preg_replace('/(internal:)/', '') %}
+                  {% set link_2_title = item.content['#paragraph'].field_pi_tpi_link_2.0.title %}
+
+            
+            {% endif %}
+            {% if(position_3 == true) %}
+               
+                  {% set heading_3_value = item.content['#paragraph'].field_pi_tpi_heading_3.0.value %}
+                  {% set text_3_value = item.content['#paragraph'].field_pi_tpi_text_3.0.value %}
+                  {% set link_3_uri = item.content['#paragraph'].field_pi_tpi_link_3.0.uri %}
+                  {% set link_3_url = link_3_uri|preg_replace('/(internal:)/', '') %}
+                  {% set link_3_title = item.content['#paragraph'].field_pi_tpi_link_3.0.title %}
+                  
+            {% endif %}
+            {% if(position_4 == true) %}
+               
+                  {% set heading_4_value = item.content['#paragraph'].field_pi_tpi_heading_4.0.value %}
+                  {% set text_4_value = item.content['#paragraph'].field_pi_tpi_text_4.0.value %}
+                  {% set link_4_uri = item.content['#paragraph'].field_pi_tpi_link_4.0.uri %}
+                  {% set link_4_url = link_4_uri|preg_replace('/(internal:)/', '') %}
+                  {% set link_4_title = item.content['#paragraph'].field_pi_tpi_link_4.0.title %}
+               
+            {% endif %}
+            {% if(full == false) %}
+            
+               {% set img_2_target_id = item.content['#paragraph'].field_pi_tpi_image_2.0.target_id %}    
+                  {% set img_2_field = drupal_field('field_media_image','media',img_2_target_id) %}                  
+                  {% if img_2_field.0['#entity'].field_media_image.entity %}
+                     {% set img_2_file = img_2_field.0['#entity'].field_media_image.entity | merge({'#image_style': 'is_tile_page'}) %}
+                     {% set img_2_uri = file_url(img_2_file.uri.value) %}
+                     {% set img_2_thumbnail = img_2_file.uri.value | image_style('is_tile_page') %}
+                  {% else %}
+                     {% set img_2_thumbnail = '' %}     
+                  {% endif %} 
+               <pattern id="img_{{ key }}_2" patternUnits="userSpaceOnUse" x="240" width="360" height="240">
+                  <image xlink:href="{{ img_2_thumbnail }}" x="0" y="0" width="60%" height="60%" preserveAspectRatio="xMinYMin slice" />
+               </pattern>
+               
+               {% set img_3_target_id = item.content['#paragraph'].field_pi_tpi_image_3.0.target_id %}    
+                  {% set img_3_field = drupal_field('field_media_image','media',img_3_target_id) %}                  
+                  {% if img_3_field.0['#entity'].field_media_image.entity %}
+                     {% set img_3_file = img_3_field.0['#entity'].field_media_image.entity | merge({'#image_style': 'is_tile_page'}) %}
+                     {% set img_3_uri = file_url(img_3_file.uri.value) %}
+                     {% set img_3_thumbnail = img_3_file.uri.value | image_style('is_tile_page') %}
+                  {% else %}
+                     {% set img_3_thumbnail = '' %}     
+                  {% endif %} 
+               <pattern id="img_{{ key }}_3" patternUnits="userSpaceOnUse" y="160" width="360" height="240">
+                  <image xlink:href="{{ img_3_thumbnail }}" x="0" y="0" width="60%" height="60%" preserveAspectRatio="xMinYMin slice" />
+               </pattern>
+               
+               {% set img_4_target_id = item.content['#paragraph'].field_pi_tpi_image_4.0.target_id %}    
+                  {% set img_4_field = drupal_field('field_media_image','media',img_4_target_id) %}                  
+                  {% if img_4_field.0['#entity'].field_media_image.entity %}
+                     {% set img_4_file = img_4_field.0['#entity'].field_media_image.entity | merge({'#image_style': 'is_tile_page'}) %}
+                     {% set img_4_uri = file_url(img_4_file.uri.value) %}                     
+                     {% set img_4_thumbnail = img_4_file.uri.value | image_style('is_tile_page') %}
+                  {% else %}
+                     {% set img_4_thumbnail = '' %}     
+                  {% endif %} 
+               <pattern id="img_{{ key }}_4" patternUnits="userSpaceOnUse" x="240" y="160" width="360" height="240">
+                  <image xlink:href="{{ img_4_thumbnail }}" x="0" y="0" width="60%" height="60%" preserveAspectRatio="xMinYMin slice" />
+               </pattern>
+            
+            {% endif %}
+         </defs>
+         
+         <g class="tile" data-url="{{ link_1_url }}">
+            {% if(position_1 == true or (full == true and (position_2 == true or position_3 == true or position_4 == true))) %}
+               <!--<text class="svg-heading" fill="#ffffff" x="300" y="200">{{ heading_1_value }}</text>
+               <text class="svg-text" fill="#ffffff" x="321" y="216">{{ text_1_value }}</text>-->
+               <foreignobject class="svg-foreignobject one" x="321" y="216" width="180" height="180">
+                  <h5>{{ heading_1_value }}</h5>
+                  <p>{{ text_1_value }}</p>
+               </foreignobject>
+               <rect class="svg-button-rect" fill="#C6341A" width="208" height="45" x="306" y="190" ry="22.5" />
+               <text class="svg-button-text" fill="#ff0000" x="321" y="216">Mehr erfahren</text>
+            {% endif %}
+         </g>
+         
+         {% if(full == false) %}
+         
+            <g class="tile" data-url="{{ link_2_url }}">
+               {% if(position_2 == true) %}
+                  <!--<text class="svg-heading" fill="#ffffff" x="300" y="200">{{ heading_2_value }}</text>
+                  <text class="svg-text" fill="#ffffff" x="321" y="216">{{ text_2_value }}</text> -->
+                  <foreignobject class="svg-foreignobject two" x="300" y="200" width="180" height="180">
+                     <h5>{{ heading_2_value }}</h5>
+                     <p>{{ text_2_value }}</p>
+                  </foreignobject>
+                  <rect class="svg-button-rect" fill="#C6341A" width="208" height="45" x="306" y="190" ry="22.5" />
+                  <text class="svg-button-text" fill="#00ff00" x="321" y="216">Mehr erfahren</text>
+               {% endif %}
+            </g>
+            <g class="tile" data-url="{{ link_3_url }}">
+               {% if(position_3 == true) %}
+                  <!--<text class="svg-heading" fill="#ffffff" x="300" y="200">{{ heading_3_value }}</text>
+                  <text class="svg-text" fill="#ffffff" x="321" y="216">{{ text_3_value }}</text> -->
+                  <foreignobject class="svg-foreignobject three" x="300" y="200" width="180" height="180">
+                     <h5>{{ heading_3_value }}</h5>
+                     <p>{{ text_3_value }}</p>
+                  </foreignobject>
+                  <rect class="svg-button-rect" fill="#C6341A" width="208" height="45" x="306" y="190" ry="22.5" />
+                  <text class="svg-button-text" fill="#0000ff" x="321" y="216">Mehr erfahren</text>
+               {% endif %}
+            </g>
+            <g class="tile" data-url="{{ link_4_url }}">
+               {% if(position_4 == true) %}
+                  <!--<text class="svg-heading" fill="#ffffff" x="300" y="200">{{ heading_4_value }}</text>
+                  <text class="svg-text" fill="#ffffff" x="321" y="216">{{ text_4_value }}</text> -->
+                  <foreignobject class="svg-foreignobject four" x="300" y="200" width="180" height="180">
+                     <h5>{{ heading_4_value }}</h5>
+                     <p>{{ text_4_value }}</p>
+                  </foreignobject>
+                  <rect class="svg-button-rect" fill="#C6341A" width="208" height="45" x="306" y="190" ry="22.5" />
+                  <text class="svg-button-text" fill="#ffffff" x="321" y="216">Mehr erfahren</text>
+               {% endif %}
+            </g>
+            
+         {% endif %}
+      </svg>
+     
+   {% endfor %}
+   
+</div>
+{# ---------------------------------------------------------------------------------------------------------------------------- #}
+{% set classes = ['tile-page', 'mobile'] %}
+
+<div class="{{ classes|join(' ') }}">
+   <div class="sandwich">
+      {% for key, item in items %}
+
+         {% set full = false %}
+         {% set position_1 = false %}
+         {% set position_2 = false %}
+         {% set position_3 = false %}
+         {% set position_4 = false %}
+         {% set data_position = '' %}
+
+         {% if(item.content['#paragraph'].field_pi_tpi_option) %}
+            {% for delta, item in item.content['#paragraph'].field_pi_tpi_option %} 
+               {% if(item.value == 'full') %}
+                  {% set full = true %}      
+               {% elseif(item.value == 'position_1') %}
+                  {% set position_1 = true %}
+                  {% set data_position = '0' %}
+               {% elseif(item.value == 'position_2') %}
+                  {% set position_2 = true %}
+                  {% set data_position = '1' %}
+               {% elseif(item.value == 'position_3') %}
+                  {% set position_3 = true %}
+                  {% set data_position = '2' %}
+               {% elseif(item.value == 'position_4') %}
+                  {% set position_4 = true %}
+                  {% set data_position = '3' %}
+               {% endif %}
+            {% endfor %}
+         {% endif %}
+         
+         {% if(key == 0) %}
+            <div class="sandwich-top box-dark-turquoise">
+         {% else %}
+            <div class="sandwich-middle">         
+         {% endif %}
+            <div class="container">
+               <div class="row">
+                  <div class="col-12">
+                  {% set img_1_target_id = item.content['#paragraph'].field_pi_tpi_image_1.0.target_id %}    
+                        {% set img_1_field = drupal_field('field_media_image','media',img_1_target_id) %}                  
+                        {% if img_1_field.0['#entity'].field_media_image.entity %}
+                           {% set img_1_file = img_1_field.0['#entity'].field_media_image.entity | merge({'#image_style': 'is_tile_page'}) %}
+                           {% set img_1_uri = file_url(img_1_file.uri.value) %}
+                           {% set img_1_thumbnail = img_1_file.uri.value | image_style('is_tile_page') %}
+                        {% else %}
+                           {% set img_1_thumbnail = '' %}     
+                        {% endif %} 
+                  {% if(position_1 == true or (full == true and (position_2 == true or position_3 == true or position_4 == true))) %}
+                         
+                     {% set heading_1_value = item.content['#paragraph'].field_pi_tpi_heading_1.0.value %}         
+                     {% set text_1_value = item.content['#paragraph'].field_pi_tpi_text_1.0.value %}
+                     
+                  {% endif %}
+                  {% if(position_1 == true or full == true) %}
+                         
+                     {% set link_1_uri = item.content['#paragraph'].field_pi_tpi_link_1.0.uri %}
+                     {% set link_1_url = link_1_uri|preg_replace('/(internal:)/', '') %}   
+                     {% set link_1_title = item.content['#paragraph'].field_pi_tpi_link_1.0.title %}
+                     
+                  {% endif %}
+                  {% if(position_2 == true) %}
+                        
+                        {% set heading_2_value = item.content['#paragraph'].field_pi_tpi_heading_2.0.value %}
+                        {% set text_2_value = item.content['#paragraph'].field_pi_tpi_text_2.0.value %}
+                        {% set link_2_uri = item.content['#paragraph'].field_pi_tpi_link_2.0.uri %}
+                        {% set link_2_url = link_2_uri|preg_replace('/(internal:)/', '') %}
+                        {% set link_2_title = item.content['#paragraph'].field_pi_tpi_link_2.0.title %}
+
+                  
+                  {% endif %}
+                  {% if(position_3 == true) %}
+                     
+                        {% set heading_3_value = item.content['#paragraph'].field_pi_tpi_heading_3.0.value %}
+                        {% set text_3_value = item.content['#paragraph'].field_pi_tpi_text_3.0.value %}
+                        {% set link_3_uri = item.content['#paragraph'].field_pi_tpi_link_3.0.uri %}
+                        {% set link_3_url = link_3_uri|preg_replace('/(internal:)/', '') %}
+                        {% set link_3_title = item.content['#paragraph'].field_pi_tpi_link_3.0.title %}
+                        
+                  {% endif %}
+                  {% if(position_4 == true) %}
+                     
+                        {% set heading_4_value = item.content['#paragraph'].field_pi_tpi_heading_4.0.value %}
+                        {% set text_4_value = item.content['#paragraph'].field_pi_tpi_text_4.0.value %}
+                        {% set link_4_uri = item.content['#paragraph'].field_pi_tpi_link_4.0.uri %}
+                        {% set link_4_url = link_4_uri|preg_replace('/(internal:)/', '') %}
+                        {% set link_4_title = item.content['#paragraph'].field_pi_tpi_link_4.0.title %}
+                     
+                  {% endif %}
+                  {% if(full == false) %}
+                  
+                     {% set img_2_target_id = item.content['#paragraph'].field_pi_tpi_image_2.0.target_id %}    
+                        {% set img_2_field = drupal_field('field_media_image','media',img_2_target_id) %}                  
+                        {% if img_2_field.0['#entity'].field_media_image.entity %}
+                           {% set img_2_file = img_2_field.0['#entity'].field_media_image.entity | merge({'#image_style': 'is_tile_page'}) %}
+                           {% set img_2_uri = file_url(img_2_file.uri.value) %}
+                           {% set img_2_thumbnail = img_2_file.uri.value | image_style('is_tile_page') %}
+                        {% else %}
+                           {% set img_2_thumbnail = '' %}     
+                        {% endif %} 
+                     
+                     {% set img_3_target_id = item.content['#paragraph'].field_pi_tpi_image_3.0.target_id %}    
+                        {% set img_3_field = drupal_field('field_media_image','media',img_3_target_id) %}                  
+                        {% if img_3_field.0['#entity'].field_media_image.entity %}
+                           {% set img_3_file = img_3_field.0['#entity'].field_media_image.entity | merge({'#image_style': 'is_tile_page'}) %}
+                           {% set img_3_uri = file_url(img_3_file.uri.value) %}
+                           {% set img_3_thumbnail = img_3_file.uri.value | image_style('is_tile_page') %}
+                        {% else %}
+                           {% set img_3_thumbnail = '' %}     
+                        {% endif %} 
+                     
+                     {% set img_4_target_id = item.content['#paragraph'].field_pi_tpi_image_4.0.target_id %}    
+                        {% set img_4_field = drupal_field('field_media_image','media',img_4_target_id) %}                  
+                        {% if img_4_field.0['#entity'].field_media_image.entity %}
+                           {% set img_4_file = img_4_field.0['#entity'].field_media_image.entity | merge({'#image_style': 'is_tile_page'}) %}
+                           {% set img_4_uri = file_url(img_4_file.uri.value) %}                     
+                           {% set img_4_thumbnail = img_4_file.uri.value | image_style('is_tile_page') %}
+                        {% else %}
+                           {% set img_4_thumbnail = '' %}     
+                        {% endif %} 
+                  
+                  {% endif %}
+                     <div class="box-light-turquoise teaser-vertical-item column-break-avoid">
+                        <figure class="figure-fluid-image">
+                           <img src="{{ img_1_thumbnail }}">                  
+                        </figure>   
+                        <div class="box-spacing-20">         
+                           {% if(position_1 == true or (full == true and (position_2 == true or position_3 == true or position_4 == true))) %}
+                              <h5>{{ heading_1_value }}</h5>
+                              <p>{{ text_1_value }}</p>
+                           {% endif %}
+                           <div class="text-right">
+                              <a class="btn button_link" href="{{ link_1_url }}">{{ link_1_title }}</a>
+                           </div>            
+                        </div>            
+                     </div>
+               
+                     {% if(full == false) %}
+                        <div class="box-light-turquoise teaser-vertical-item column-break-avoid">
+                           <figure class="figure-fluid-image">
+                              <img src="{{ img_2_thumbnail }}">                  
+                           </figure> 
+                           <div class="box-spacing-20">
+                              {% if(position_2 == true) %}
+                                 <h5>{{ heading_2_value }}</h5>
+                                 <p>{{ text_2_value }}</p>
+                              {% endif %}
+                              <div class="text-right">
+                                 <a class="btn button_link" href="{{ link_2_url }}">{{ link_2_title }}</a>
+                              </div>               
+                           </div>               
+                        </div>            
+                        <div class="box-light-turquoise teaser-vertical-item column-break-avoid">
+                           <figure class="figure-fluid-image">
+                              <img src="{{ img_3_thumbnail }}">                  
+                           </figure>    
+                           <div class="box-spacing-20">        
+                              {% if(position_3 == true) %}
+                                 <h5>{{ heading_3_value }}</h5>
+                                 <p>{{ text_3_value }}</p>
+                              {% endif %}
+                              <div class="text-right">
+                                 <a class="btn button_link" href="{{ link_3_url }}">{{ link_3_title }}</a>
+                              </div>               
+                           </div>               
+                        </div>            
+                        <div class="box-light-turquoise teaser-vertical-item column-break-avoid">
+                           <figure class="figure-fluid-image">
+                              <img src="{{ img_4_thumbnail }}">                  
+                           </figure>    
+                           <div class="box-spacing-20">        
+                              {% if(position_4 == true) %}
+                                 <h5>{{ heading_4_value }}</h5>
+                                 <p>{{ text_4_value }}</p>
+                              {% endif %}
+                              <div class="text-right">
+                                 <a class="btn button_link" href="{{ link_4_url }}">{{ link_4_title }}</a>
+                              </div>               
+                           </div>               
+                        </div>
+                     {% endif %}
+                  </div>
+               </div>
+            </div>
+         </div>
+        
+      {% endfor %}
+   
+   </div>
+</div>

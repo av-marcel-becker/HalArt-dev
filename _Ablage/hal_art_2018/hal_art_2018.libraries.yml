@@ -1,0 +1,116 @@
+hyphenopoly:  
+  version: 3.1.2
+  css:
+    theme:
+      css/hyphenopoly.css: {}
+  js:
+    js/hyphenopoly.js: {preprocess: false}
+    /libraries/Hyphenopoly/Hyphenopoly_Loader.js: {preprocess: false}
+magnific-popup:
+  version: 0.0
+  css:
+    theme:
+      css/magnific-popup.css: {}
+parallax-scroll:
+  version: 1.3
+  js:
+    third/jquery.parallax-scroll/jquery.easing.1.3.js: {}
+    third/jquery.parallax-scroll/jquery.parallax-scroll.js: {}
+  dependencies:
+    - core/jquery
+p_abc:
+  version: 0.1
+  css:
+    theme:
+      css/p_abc.css: {}
+  js:
+    js/p_abc.js: {}
+  dependencies:
+    - core/jquery
+mmenu:
+  version: 7.1.0
+  css:
+    theme:
+      third/mmenu/jquery.mmenu.all.css: {}
+      third/mmenu/extensions/positioning/jquery.mmenu.positioning.css: {}
+      third/mmenu/extensions/borderstyle/jquery.mmenu.borderstyle.css: {}
+      third/mmenu/addons/autoheight/jquery.mmenu.autoheight.css: {}
+      third/mmenu/extensions/fullscreen/jquery.mmenu.fullscreen.css: {}
+  js:
+    third/mmenu/jquery.mmenu.all.js: {}
+    third/mmenu/translations/de/jquery.mmenu.de.js: {}
+    third/mmenu/addons/autoheight/jquery.mmenu.autoheight.js: {}
+  dependencies:
+    - core/jquery
+av-slider:
+  version: 0.1
+  css:
+    theme:
+      av-studio/slider/slider.css: {}
+  js:
+    av-studio/slider/third/jquery.ui.touch-punch.min.js: {}
+    av-studio/slider/slider.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.ui
+    - core/jquery.ui.draggable
+hyphenator:
+  version: 5.3.0
+  js:
+    third/hyphenator/Hyphenator.js: {}
+  dependencies:
+    - core/jquery  
+bootstrap:
+  version: 4.x
+  css:
+    theme:
+      third/bootstrap/css/bootstrap.min.css: {}
+  js:
+    third/bootstrap/js/bootstrap.bundle.min.js: {}
+  dependencies:
+    - core/jquery
+fontawesome:
+  version: 5.x
+  css:
+    theme:
+      third/fontawesome/css/all.min.css: {}
+av_notification:
+  version: 0.1
+  css:
+    theme:
+      third/av_notification/av_notification.css: {}
+  js:
+    third/av_notification/av_notification.js: {}
+  dependencies:
+    - core/jquery
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      css/0_bootstrap_overwrite.css: {}
+      css/1_default.css: {}
+      css/2_hybrid.css: {}
+      css/3_mobile.css: {}
+      css/p_tile_page.css: {} 
+  dependencies:
+    - hal_art_2018/bootstrap
+    - hal_art_2018/fontawesome
+    - hal_art_2018/av-slider
+    - hal_art_2018/mmenu
+    - hal_art_2018/p_abc
+    - hal_art_2018/av_notification
+global-scripts:
+  version: 1.x
+  js: 
+    js/av_share.js: {} 
+    js/misc.js: {} 
+    js/p_tile_page.js: {} 
+  dependencies:
+    - core/jquery
+    - hal_art_2018/bootstrap
+    - hal_art_2018/av-slider
+    #- hal_art_2018/hyphenator
+    - hal_art_2018/hyphenopoly
+    - hal_art_2018/mmenu
+    - hal_art_2018/p_abc
+    - hal_art_2018/av_notification

@@ -1,0 +1,77 @@
+{#
+/**
+ * @file
+ * Display Suite 2 column template.
+ *
+ * Available variables:
+ * - outer_wrapper: outer wrapper element
+ * - left_wrapper: wrapper element around left region
+ * - right_wrapper: wrapper element around right region
+ * - attributes: layout attributes
+ * - left_attributes: attributes for left region
+ * - right_attributes: attributes for right region
+ * - left: content of left region
+ * - right: content of right region
+ */
+#}
+{% set tid = paragraph.field_pi_si_background_color.0.target_id %}
+
+{% if tid %}
+  {% set class = drupal_field('field_t_t_class', 'taxonomy_term', tid) %}
+{% endif %}
+
+
+
+    {% set media = paragraph.field_pi_si_background_image.0.entity %}
+    {% if(media.field_media_image.entity) %}
+       {% set file = media.field_media_image.entity | merge({'#image_style': 'is_slider_background'}) %}
+       {% set uri = file_url(file.uri.value) %}
+       {% set thumbnail =  file.uri.value | image_style('is_slider_background') %}
+    {% endif %}
+    
+    
+    {% if(paragraph.field_pi_si_slider_left_area.0) %}
+      {% set paragraph_left_id = paragraph.field_pi_si_slider_left_area.0.target_id %}
+      {% set field_pi_sii_image = drupal_field('field_pi_sii_image', 'paragraph', paragraph_left_id) %}
+      {% set field_pi_sii_link = drupal_field('field_pi_sii_link', 'paragraph', paragraph_left_id) %}
+      
+      {% if(field_pi_sii_image['#field_name']) %}
+         {% set left_class = ' content-img' %}
+      {% elseif(field_pi_sii_link['#field_name']) %}         
+         {% set left_class = ' content-text' %}
+      {% endif %}
+      
+    {% else %}      
+       {% set left_class = ' content-none' %}
+    {% endif %}
+    
+    {% if(paragraph.field_pi_si_slider_right_area.0) %}
+      {% set paragraph_right_id = paragraph.field_pi_si_slider_right_area.0.target_id %}
+      {% set field_pi_sii_image = drupal_field('field_pi_sii_image', 'paragraph', paragraph_right_id) %}
+      {% set field_pi_sii_link = drupal_field('field_pi_sii_link', 'paragraph', paragraph_right_id) %}
+      
+      {% if(field_pi_sii_image['#field_name']) %}
+         {% set right_class = ' content-img' %}
+      {% elseif(field_pi_sii_link['#field_name']) %}         
+         {% set right_class = ' content-text' %}
+      {% endif %}
+      
+    {% else %}      
+       {% set right_class = ' content-none' %}
+    {% endif %}
+<div class="av-slider-background d-flex align-items-stretch {% spaceless %}{{ class|escape|striptags('<!-- -->') }}{% endspaceless %}" style="background-image: url('{{ thumbnail }}');">
+   <div class="container d-none d-md-block">
+      <div class="row h-100">
+
+         <div class="col-12 col-sm-6 py-4 py-sm-4{{ left_class }}">
+          {{ left }}
+         </div>
+
+         <div class="col-12 col-sm-6 py-4 py-sm-4{{ right_class }}">
+            {{ right }}
+         </div>
+
+      </div>
+   </div>
+</div>
+<div class="av-slider-background-blur" style="background-image: url('{{ thumbnail }}');"></div>

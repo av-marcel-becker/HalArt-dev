@@ -1,0 +1,49 @@
+{#
+/**
+ * @file
+ * Display Suite reset template.
+ *
+ * Available variables:
+ * - ds_content: content of the ds_content region
+ */
+#}
+{% set media = paragraph.field_p_ci_image.0.entity %}
+
+{% if(field_p_ci_options['#items']) %}
+   {% for delta, item in field_p_ci_options['#items'] %}
+      <div class="container p-content-image">
+         <div class="row justify-content-md-center">
+            {% if(item.value == "col-12") %}
+               <div class="col-12">
+                  {% if(media.field_media_image.entity) %}
+                     {% set file = media.field_media_image.entity | merge({'#image_style': 'is_content_image_l'}) %}
+                     {% set uri = file_url(file.uri.value) %}
+                     {% set thumbnail =  file.uri.value | image_style('is_content_image_l') %}
+                  {% endif %}
+            {% elseif(item.value == "col-10") %}
+               <div class="col-12 col-md-10">
+                  {% if(media.field_media_image.entity) %}
+                     {% set file = media.field_media_image.entity | merge({'#image_style': 'is_content_image_m'}) %}
+                     {% set uri = file_url(file.uri.value) %}
+                     {% set thumbnail =  file.uri.value | image_style('is_content_image_m') %}
+                  {% endif %}
+            {% elseif(item.value == "col-8") %}  
+               <div class="col-12 col-md-8"> 
+                  {% if(media.field_media_image.entity) %}
+                     {% set file = media.field_media_image.entity | merge({'#image_style': 'is_content_image_s'}) %}
+                     {% set uri = file_url(file.uri.value) %}
+                     {% set thumbnail =  file.uri.value | image_style('is_content_image_s') %}
+                  {% endif %}      
+            {% endif %}
+               <figure>
+                  <img src="{{ thumbnail }}" alt="{{ media.field_media_image.0.alt }}" title="{{ media.field_media_image.0.title }}" typeof="foaf:Image" class="image-style-{{ file['#image_style'] }}">
+                  {% if(media.field_mt_il_caption) %}
+                     <figcaption>{{ media.field_mt_il_caption.0.value }}</figure>
+                  {% endif %}
+               </figure>               
+               {#{ ds_content }#}
+            </div>
+         </div>
+      </div>      
+   {% endfor %}
+{% endif %}

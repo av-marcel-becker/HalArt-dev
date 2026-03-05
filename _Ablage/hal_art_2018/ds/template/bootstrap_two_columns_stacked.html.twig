@@ -1,0 +1,43 @@
+{#
+/**
+ * @file
+ * Custom display suite layout
+ *
+ * Available variables:
+ * - title
+ * - left: content region left
+ * - right: content region right
+ * - top: content region top
+ * - bottom: content region bottom
+ */
+#}
+
+<div class="two-columns-stacked">
+   {% if top %}
+      <div>
+         {{ top }}
+      </div>
+   {% endif %}
+   
+   <div class="container pb-5 mb-3">   
+      <div class="row">
+         <div class="col">
+            {{ left }}
+         </div>      
+         {% if right|render %}
+            <div class="col-lg-5">
+               {{ right }}
+            </div>
+         {% endif %}
+      </div> 
+   </div> 
+   
+   {% if bottom %}
+      <div class="tx-bg-gray pt-3 pb-5">
+         <div class="container">
+            {{ bottom }}
+         </div>
+      </div>
+   {% endif %}
+</div>
+   

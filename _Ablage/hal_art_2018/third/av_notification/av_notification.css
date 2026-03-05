@@ -1,0 +1,91 @@
+.av-notification
+   {
+      display: none;
+      align-content: center;
+      justify-content: center;      
+      
+      position: fixed;
+      top: 0rem;
+      bottom: 0rem;
+      left: 0rem;
+      right: 0rem;
+      text-align: center;
+      color: #d9ecf2;
+      padding: 0.625rem;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+      font-family: Arial, sans serif;
+      background-color: rgba(0,0,0,0.5);
+      
+      font-size: 1.875rem;
+      line-height: 2.25rem;    
+      font-family: 'Barlow';
+      font-style: normal;
+      font-weight: 700;
+      
+      z-index: 999;
+   }
+.av-notification p
+   {
+      color: #d9ecf2;
+      font-size: 1.875rem;
+      line-height: 2.25rem;    
+      font-family: 'Barlow';
+      font-style: normal;
+      font-weight: 700;
+   }
+.av-notification-container
+   {
+      max-width: 768px;
+      margin: auto;
+      
+      text-align: left;
+      padding: 0.625rem;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+      background-color: #e4003a;
+   }
+.av-notification-container footer
+   {
+      text-align: center;
+   }
+.av-notification button
+   {
+      background-image: none;
+      background-color: #d9ecf2;
+      color: #165b61;
+      
+      cursor: pointer;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+            
+      border-radius: 2.25rem;
+      font-size: 1.3125rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05rem;
+      font-family: 'Barlow';
+      font-style: normal;
+      font-weight: 700;
+      display: inline-block;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      border: 1px solid transparent;
+      padding: .375rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      line-height: 1.5;
+      transition: color .15s ease-in-out,
+                  background-color .15s ease-in-out,
+                  border-color .15s ease-in-out,
+                  box-shadow .15s ease-in-out;
+   }
+.av-notification button:hover
+   {
+      background-color: #165b61;
+      color: #d9ecf2;
+   }

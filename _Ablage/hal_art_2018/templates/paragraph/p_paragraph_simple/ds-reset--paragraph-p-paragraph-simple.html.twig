@@ -1,0 +1,28 @@
+{#
+/**
+ * @file
+ * Display Suite reset template.
+ *
+ * Available variables:
+ * - ds_content: content of the ds_content region
+ */
+#}
+{# ds template -> field_slider_options['#items'] -> item.value #}
+{% if(field_p_ps_options['#items']) %}
+   {% for delta, item in field_p_ps_options['#items'] %}
+      <div class="container p-paragraph-simple">
+         <div class="row justify-content-md-center">
+            {% if(item.value == "col-12") %}
+               <div class="col-12">
+            {% elseif(item.value == "col-10") %}
+               <div class="col-12 col-md-10">
+            {% elseif(item.value == "col-8") %}  
+               <div class="col-12 col-md-8">       
+            {% endif %}
+         
+               {{ ds_content }}
+            </div>
+         </div>
+      </div>      
+   {% endfor %}
+{% endif %}

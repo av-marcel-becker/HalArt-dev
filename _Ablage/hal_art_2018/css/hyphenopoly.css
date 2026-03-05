@@ -1,0 +1,16 @@
+.hyphenate, 
+.card
+   {
+      hyphens: auto;
+      -ms-hyphens: auto;
+      -moz-hyphens: auto;
+      -webkit-hyphens: auto;
+   }
+.hyphenate *, 
+.card *
+   {
+      hyphens: auto;
+      -ms-hyphens: auto;
+      -moz-hyphens: auto;
+      -webkit-hyphens: auto;
+   }

@@ -1,0 +1,97 @@
+/* https://stackoverflow.com/questions/2326943/when-do-items-in-html5-local-storage-expire */
+/* 
+   removeStorage: removes a key from localStorage and its sibling expiracy key
+   params:
+            key <string>: localStorage key to remove
+   returns:
+            <boolean>: telling if operation succeeded
+ */
+ function removeStorage(name) {
+    try {
+        localStorage.removeItem(name);
+        localStorage.removeItem(name + '_expiresIn');
+    } catch(e) {
+        console.log('removeStorage: Error removing key ['+ key + '] from localStorage: ' + JSON.stringify(e) );
+        return false;
+    }
+    return true;
+}
+/*  getStorage: retrieves a key from localStorage previously set with setStorage().
+    params:
+        key <string> : localStorage key
+    returns:
+        <string> : value of localStorage key
+        null : in case of expired key or failure
+ */
+function getStorage(key) {
+
+    var now = Date.now();  //epoch time, lets deal only with integer
+    // set expiration for storage
+    var expiresIn = localStorage.getItem(key+'_expiresIn');
+    if (expiresIn===undefined || expiresIn===null) { expiresIn = 0; }
+
+    if (expiresIn < now) {// Expired
+        removeStorage(key);
+        return null;
+    } else {
+        try {
+            var value = localStorage.getItem(key);
+            return value;
+        } catch(e) {
+            console.log('getStorage: Error reading key ['+ key + '] from localStorage: ' + JSON.stringify(e) );
+            return null;
+        }
+    }
+}
+/*  setStorage: writes a key into localStorage setting a expire time
+    params:
+        key <string>     : localStorage key
+        value <string>   : localStorage value
+        expires <number> : number of seconds from now to expire the key
+    returns:
+        <boolean> : telling if operation succeeded
+ */
+function setStorage(key, value, expires) {
+
+    if (expires===undefined || expires===null) {
+        expires = (24*60*60);  // default: seconds for 1 day
+    } else {
+        expires = Math.abs(expires); //make sure it's positive
+    }
+
+    var now = Date.now();  //millisecs since epoch time, lets deal only with integer
+    var schedule = now + expires*1000; 
+    try {
+        localStorage.setItem(key, value);
+        localStorage.setItem(key + '_expiresIn', schedule);
+    } catch(e) {
+        console.log('setStorage: Error setting key ['+ key + '] in localStorage: ' + JSON.stringify(e) );
+        return false;
+    }
+    return true;
+}
+
+/* ************************************************* */
+
+
+   
+function ok()
+   {
+      setStorage('av-notification-ok', 'true', (24*60*60));
+      (function ($) 
+         {
+            $('.av-notification').fadeOut();
+         })(jQuery);
+   }
+   
+(function ($) 
+   {
+      $(document).ready(function() 
+         {
+            if(!getStorage('av-notification-ok') || getStorage('av-notification-ok') == 'null')  
+               {
+                  /* $('.av-notification').fadeIn(); */
+                  $('.av-notification').css("display", "flex").hide().fadeIn();;
+               }
+         });
+   })(jQuery);

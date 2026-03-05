@@ -1,0 +1,23 @@
+name: 'HAL ART Theme'
+type: theme
+description: 'Standard HAL ART Theme (2018)'
+core: 8.x
+libraries:
+  - hal_art_2018/global-styling
+  - hal_art_2018/global-scripts
+ckeditor_stylesheets:
+  - css/ckeditor.css
+base theme: classy
+logo: logo.png
+screenshot: screenshot.png
+regions:
+  header_logo: 'Header Logo'
+  header_logo_text: 'Header Logo Text'
+  header_menu: 'Header Menu'
+  content: 'Content'
+  footer_one: 'Footer One'
+  footer_two: 'Footer Two'
+  footer_menu: 'Footer Menu'
+  footer_social: 'Footer Social'
+  hidden_one: '[Admin] Hidden region for referenced blocks'
+  hidden_two: 'Hidden region for referenced blocks'

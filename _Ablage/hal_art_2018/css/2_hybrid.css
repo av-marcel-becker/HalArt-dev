@@ -1,0 +1,117 @@
+/* 
+   --breakpoint-xs: 0;
+   --breakpoint-sm: 576px;
+   --breakpoint-md: 768px;
+   --breakpoint-lg: 992px;
+   --breakpoint-xl: 1200px;
+*/
+
+@media (min-width: 0)
+   {
+      
+   }
+@media (min-width: 576px)
+   {  
+      h1
+         {
+            font-size: 4.5rem;
+            line-height: 4.5rem;
+         }    
+   }
+@media (min-width: 768px)
+   {
+      .sandwich-top 
+         {
+            padding-top: calc(2.25rem + 6.25rem + 4rem); 
+            padding-bottom: 2.25rem;
+         }
+      .teaser-vertical-space
+         {
+            height: 17rem;
+         }
+      .footer-logo-vertical-space
+         {
+            height: 70px;
+         }
+      .page-footer nav#block-hal-art-2018-footer .nav li
+         {
+            display: inline-block;
+            text-align: left;
+            width: auto;
+         }
+      .page-footer nav#block-hal-art-2018-footer .nav li > *
+         {
+            padding-left: 0rem;
+            padding-right: 2rem;
+         }
+      .page-footer .background-spacing-top 
+         {
+            margin-top: 250px;
+         }
+      .teaser-diagonal-item > div
+         {
+            margin-top: -15rem;
+         }
+      .teaser-diagonal-item:nth-child(odd) > figure
+         {
+            margin-right: 15%;
+         }
+      .teaser-diagonal-item:nth-child(odd) > div
+         {
+            margin-left: 45%;      
+         }
+      .teaser-diagonal-item:nth-child(even) > figure
+         {
+            margin-left: 15%;
+         }
+      .teaser-diagonal-item:nth-child(even) > div
+         {
+            margin-right: 45%;
+         }  
+   }
+@media (min-width: 992px)
+   {
+      .teaser-diagonal-item > div
+         {
+            margin-top: -20rem;
+         }
+      .teaser-diagonal-item:nth-child(odd) > figure
+         {
+            margin-right: 15%;
+         }
+      .teaser-diagonal-item:nth-child(odd) > div
+         {
+            margin-left: 55%;      
+         }
+      .teaser-diagonal-item:nth-child(even) > figure
+         {
+            margin-left: 15%;
+         }
+      .teaser-diagonal-item:nth-child(even) > div
+         {
+            margin-right: 55%;
+         }
+   }
+@media (min-width: 1200px)
+   {
+      .teaser-diagonal-item > div
+         {
+            margin-top: -22rem;
+         }
+      .teaser-diagonal-item:nth-child(odd) > figure
+         {
+            margin-right: 15%;
+         }
+      .teaser-diagonal-item:nth-child(odd) > div
+         {
+            margin-left: 60%;      
+         }
+      .teaser-diagonal-item:nth-child(even) > figure
+         {
+            margin-left: 15%;
+         }
+      .teaser-diagonal-item:nth-child(even) > div
+         {
+            margin-right: 60%;
+         }
+   }

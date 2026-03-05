@@ -1,0 +1,5 @@
+# Schema for the configuration files of the theme.
+
+hal_art_2018.settings:
+  type: theme_settings
+  label: 'HAL ART 2018 settings'
