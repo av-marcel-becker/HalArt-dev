@@ -1,0 +1,48 @@
+uuid: 9270d109-88ec-49a2-a9db-99a9d976c5a9
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.n_notification.field_n_n_display_location
+    - field.field.node.n_notification.field_n_n_heading
+    - field.field.node.n_notification.field_n_n_icon
+    - field.field.node.n_notification.field_n_n_link
+    - field.field.node.n_notification.field_n_n_reset_time
+    - field.field.node.n_notification.field_n_n_show_heading
+    - field.field.node.n_notification.field_n_n_show_icon
+    - field.field.node.n_notification.field_n_n_show_link
+    - field.field.node.n_notification.field_n_n_show_notification_once
+    - field.field.node.n_notification.field_n_n_show_signature
+    - field.field.node.n_notification.field_n_n_signature
+    - field.field.node.n_notification.field_n_n_text
+    - node.type.n_notification
+  module:
+    - user
+  enforced:
+    module:
+      - av_n_notification
+id: node.n_notification.teaser
+targetEntityType: node
+bundle: n_notification
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_n_n_display_location: true
+  field_n_n_heading: true
+  field_n_n_icon: true
+  field_n_n_link: true
+  field_n_n_reset_time: true
+  field_n_n_show_heading: true
+  field_n_n_show_icon: true
+  field_n_n_show_link: true
+  field_n_n_show_notification_once: true
+  field_n_n_show_signature: true
+  field_n_n_signature: true
+  field_n_n_text: true
+  langcode: true

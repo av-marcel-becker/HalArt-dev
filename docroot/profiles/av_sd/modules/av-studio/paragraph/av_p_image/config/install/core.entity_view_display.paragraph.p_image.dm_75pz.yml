@@ -1,0 +1,49 @@
+uuid: b9ba9e29-fea2-474e-a2f1-904e2d99cc73
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.dm_75pz
+    - field.field.paragraph.p_image.field_p_i_align_center
+    - field.field.paragraph.p_image.field_p_i_enable_crop
+    - field.field.paragraph.p_image.field_p_i_enable_link
+    - field.field.paragraph.p_image.field_p_i_enable_zoom
+    - field.field.paragraph.p_image.field_p_i_image
+    - field.field.paragraph.p_image.field_p_i_label
+    - field.field.paragraph.p_image.field_p_i_link
+    - field.field.paragraph.p_image.field_p_i_show_label
+    - field.field.paragraph.p_image.field_p_i_size
+    - image.style.is_100p_bp1400_1400px
+    - paragraphs.paragraphs_type.p_image
+    - responsive_image.styles.ris_75p
+  module:
+    - photoswipe
+  enforced:
+    module:
+      - av_p_image
+id: paragraph.p_image.dm_75pz
+targetEntityType: paragraph
+bundle: p_image
+mode: dm_75pz
+content:
+  field_p_i_image:
+    type: photoswipe_responsive_field_formatter
+    label: hidden
+    settings:
+      photoswipe_thumbnail_style_first: ris_75p
+      photoswipe_thumbnail_style: ris_75p
+      photoswipe_image_style: is_100p_bp1400_1400px
+      photoswipe_reference_image_field: ''
+      photoswipe_view_mode: dm_75pz
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_p_i_align_center: true
+  field_p_i_enable_crop: true
+  field_p_i_enable_link: true
+  field_p_i_enable_zoom: true
+  field_p_i_label: true
+  field_p_i_link: true
+  field_p_i_show_label: true
+  field_p_i_size: true

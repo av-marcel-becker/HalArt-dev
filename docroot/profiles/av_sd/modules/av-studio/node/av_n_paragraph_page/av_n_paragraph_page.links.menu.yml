@@ -1,0 +1,6 @@
+av_n_paragraph_page.paragraph_page:
+  title: 'Absatzseiten'
+  parent: system.admin_content
+  route_name: av_n_paragraph_page.paragraph_page
+  menu_name: admin
+  url: internal:/admin/content/paragraph_page

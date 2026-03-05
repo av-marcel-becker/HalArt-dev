@@ -1,0 +1,12 @@
+uuid: e4da19ef-e9c2-4df6-bb63-4c644ab2d930
+langcode: de
+status: true
+dependencies:
+  module:
+    - system
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'

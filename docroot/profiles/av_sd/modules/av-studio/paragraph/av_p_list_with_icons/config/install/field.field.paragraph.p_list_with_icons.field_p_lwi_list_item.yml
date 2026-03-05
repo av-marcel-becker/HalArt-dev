@@ -1,0 +1,64 @@
+uuid: 6d6954a5-9738-4618-989c-c09f2c917ee3
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_lwi_list_item
+    - paragraphs.paragraphs_type.p_list_with_icons
+    - paragraphs.paragraphs_type.pi_list_with_icons_item
+  enforced:
+    module:
+      - av_p_list_with_icons
+  module:
+    - entity_reference_revisions
+id: paragraph.p_list_with_icons.field_p_lwi_list_item
+field_name: field_p_lwi_list_item
+entity_type: paragraph
+bundle: p_list_with_icons
+label: Listenelement
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      pi_list_with_icons_item: pi_list_with_icons_item
+    target_bundles_drag_drop:
+      pi_list_with_icons_item:
+        enabled: true
+        weight: -23
+      pi_accordion_item:
+        weight: -22
+        enabled: false
+      p_accordion:
+        weight: -21
+        enabled: false
+      p_block:
+        weight: -20
+        enabled: false
+      p_image_library:
+        weight: -19
+        enabled: false
+      p_image_upload:
+        weight: -18
+        enabled: false
+      p_list_with_icons:
+        weight: -17
+        enabled: false
+      p_section:
+        weight: -16
+        enabled: false
+      p_slider:
+        weight: -15
+        enabled: false
+      p_teaser:
+        weight: -14
+        enabled: false
+      p_wysiwyg:
+        weight: -13
+        enabled: false
+field_type: entity_reference_revisions

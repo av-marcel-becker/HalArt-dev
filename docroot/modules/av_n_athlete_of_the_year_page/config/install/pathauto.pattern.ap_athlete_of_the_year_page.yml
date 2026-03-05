@@ -1,0 +1,25 @@
+uuid: 1148a7ae-f8bc-44dd-862a-c4406e8daa89
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_athlete_of_the_year_page
+  module:
+    - node
+id: ap_athlete_of_the_year_page
+label: Sportler des Jahres Seite
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents:join-path]/[node:title]'
+selection_criteria:
+  da416668-065f-4618-a87e-2040bd922625:
+    id: 'entity_bundle:node'
+    bundles:
+      n_athlete_of_the_year_page: n_athlete_of_the_year_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: da416668-065f-4618-a87e-2040bd922625
+selection_logic: and
+weight: -5
+relationships: {  }

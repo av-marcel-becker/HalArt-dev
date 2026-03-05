@@ -1,0 +1,56 @@
+<?php
+/**
+ * Implements hook_preprocess_page().
+ */
+function av_klaro_preprocess_page(array &$variables) {
+  $variables['#attached']['library'][] = 'av_klaro/av_klaro';
+}
+/**
+ * @file
+ * Installations- und Deinstallationsfunktionen für das av_klaro Modul.
+ */
+
+use Drupal\Core\Config\FileStorage;
+use Drupal\Core\Config\StorageInterface;
+
+/**
+ * Implements hook_install().
+ */
+function av_klaro_install() {
+  $module_path = \Drupal::service('extension.list.module')->getPath('av_klaro');
+  $config_path = $module_path . "/config/optional";
+
+  if (!is_dir($config_path)) {
+    \Drupal::logger('av_klaro')->error('Config-Ordner nicht gefunden: @path', ['@path' => $config_path]);
+    return;
+  }
+
+  $storage = new FileStorage($config_path);
+  $configs = [
+    'klaro.settings',
+    'klaro.texts',
+    'klaro.klaro_app.cms',
+    'klaro.klaro_app.klaro',
+    'klaro.klaro_app.leaflet',
+    'klaro.klaro_app.matomo',
+    'klaro.klaro_app.matomo_cookies',
+    'klaro.klaro_app.youtube',
+    'klaro.klaro_purpose.advertising',
+    'klaro.klaro_purpose.analytics',
+    'klaro.klaro_purpose.cms',
+    'klaro.klaro_purpose.external_content',
+  ];
+
+  foreach ($configs as $config_name) {
+    $config_data = $storage->read($config_name);
+    if ($config_data) {
+      \Drupal::configFactory()->getEditable($config_name)
+        ->setData($config_data)
+        ->save();
+      \Drupal::logger('av_klaro')->notice('Konfiguration @config wurde erfolgreich überschrieben.', ['@config' => $config_name]);
+    } else {
+      \Drupal::logger('av_klaro')->warning('Konfiguration @config nicht gefunden.', ['@config' => $config_name]);
+    }
+  }
+}
+

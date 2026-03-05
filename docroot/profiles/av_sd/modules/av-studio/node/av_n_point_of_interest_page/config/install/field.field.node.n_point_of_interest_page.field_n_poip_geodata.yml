@@ -1,0 +1,25 @@
+uuid: 085fa6c0-4f0b-490d-a9be-437903de5ee9
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_poip_geodata
+    - node.type.n_point_of_interest_page
+  module:
+    - geofield
+  enforced:
+    module:
+      - av_n_point_of_interest_page
+id: node.n_point_of_interest_page.field_n_poip_geodata
+field_name: field_n_poip_geodata
+entity_type: node
+bundle: n_point_of_interest_page
+label: Karte
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  backend: geofield_backend_default
+field_type: geofield

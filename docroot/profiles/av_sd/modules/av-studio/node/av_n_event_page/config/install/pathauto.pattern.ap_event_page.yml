@@ -1,0 +1,25 @@
+uuid: 30262999-a6cc-484d-b7da-f058dd50d047
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_event_page
+  module:
+    - node
+id: ap_event_page
+label: Veranstaltung
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents:join-path]/[node:title]'
+selection_criteria:
+  aa59dc06-8296-4ab5-8620-fe18bf97508b:
+    id: 'entity_bundle:node'
+    bundles:
+      n_event_page: n_event_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: aa59dc06-8296-4ab5-8620-fe18bf97508b
+selection_logic: and
+weight: -5
+relationships: {  }

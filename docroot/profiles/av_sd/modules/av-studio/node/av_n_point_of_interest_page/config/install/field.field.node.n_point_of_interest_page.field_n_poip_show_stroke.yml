@@ -1,0 +1,26 @@
+uuid: 80a71191-1e54-4a9b-8523-7b0c3def3bcb
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_poip_show_stroke
+    - node.type.n_point_of_interest_page
+  enforced:
+    module:
+      - av_n_point_of_interest_page
+id: node.n_point_of_interest_page.field_n_poip_show_stroke
+field_name: field_n_poip_show_stroke
+entity_type: node
+bundle: n_point_of_interest_page
+label: 'Line anzeigen'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: '1'
+  off_label: '0'
+field_type: boolean

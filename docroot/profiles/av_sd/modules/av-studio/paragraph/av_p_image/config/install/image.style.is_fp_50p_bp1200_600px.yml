@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - crop
+  enforced:
+    module:
+      - av_p_image
+name: is_fp_50p_bp1200_600px
+label: 'FP 50% - bp1200 (B=600px)'
+effects:
+  99036090-c516-4426-b254-e73935b03b13:
+    uuid: 99036090-c516-4426-b254-e73935b03b13
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 800
+      crop_type: focal_point
+  527f98c4-b67f-46d7-a88d-5007093fd396:
+    uuid: 527f98c4-b67f-46d7-a88d-5007093fd396
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

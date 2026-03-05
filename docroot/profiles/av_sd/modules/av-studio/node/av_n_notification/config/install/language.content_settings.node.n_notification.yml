@@ -1,0 +1,14 @@
+uuid: daadf609-0304-4a71-9e49-c183e00fbe33
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_notification
+  enforced:
+    module:
+      - av_n_notification
+id: node.n_notification
+target_entity_type_id: node
+target_bundle: n_notification
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,25 @@
+uuid: 453e18b5-112c-4121-b21b-c1b1c7424d0f
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_overview_page
+  module:
+    - node
+id: ap_overview_page
+label: 'Übersichtsseite'
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents:join-path]/[node:title]'
+selection_criteria:
+  4a2f456c-e215-4c51-b898-71717a6236f6:
+    id: 'entity_bundle:node'
+    bundles:
+      n_overview_page: n_overview_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 4a2f456c-e215-4c51-b898-71717a6236f6
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,24 @@
+uuid: 4833d39a-f565-4ad0-84c6-66cb1f0175d8
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_list_with_icons
+  module:
+    - entity_reference_revisions
+    - paragraphs
+third_party_settings: { }
+id: paragraph.field_p_lwi_list_item
+field_name: field_p_lwi_list_item
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

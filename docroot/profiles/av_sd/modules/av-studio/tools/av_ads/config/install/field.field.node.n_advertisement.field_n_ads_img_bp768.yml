@@ -1,0 +1,56 @@
+uuid: 69bdafce-c591-4d02-bc28-b59014578e3c
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_ads_img_bp768
+    - node.type.n_advertisement
+  module:
+    - image
+    - image_replace
+  enforced:
+    module:
+      - av_ads
+third_party_settings:
+  image_replace:
+    image_style_map:
+      is_ads_bp1200:
+        source_field: '0'
+      is_ads_bp576:
+        source_field: '0'
+      is_ads_bp768:
+        source_field: '0'
+      is_ads_bp992:
+        source_field: '0'
+id: node.n_advertisement.field_n_ads_img_bp768
+field_name: field_n_ads_img_bp768
+entity_type: node
+bundle: n_advertisement
+label: 'Banner - bp768 (Standard Desktop)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'advertisement/banner/bp768/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '2 MB'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+    caption: ''
+  caption_field: 0
+  caption_field_required: 0
+field_type: image

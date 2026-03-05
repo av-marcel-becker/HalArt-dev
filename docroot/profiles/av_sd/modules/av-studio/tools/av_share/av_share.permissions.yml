@@ -1,0 +1,4 @@
+'administer AV Share configuration':
+   title: 'administer AV Share configuration'
+   description: 'all permissions'
+   restrict access: true

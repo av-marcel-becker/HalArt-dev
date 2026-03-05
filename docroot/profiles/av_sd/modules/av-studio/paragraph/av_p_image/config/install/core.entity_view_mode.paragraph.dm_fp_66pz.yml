@@ -1,0 +1,12 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - paragraphs
+  enforced:
+    module:
+      - av_p_image
+id: paragraph.dm_fp_66pz
+label: 'FP 66% Zoom'
+targetEntityType: paragraph
+cache: true

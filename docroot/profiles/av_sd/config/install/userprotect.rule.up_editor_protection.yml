@@ -1,0 +1,31 @@
+uuid: 8f65df66-1da5-412b-a5c8-d943484094d3
+langcode: de
+status: true
+dependencies:
+  module:
+    - user
+name: up_editor_protection
+label: Redaktion
+protectedEntityTypeId: user
+protectedEntityId: '2'
+protections:
+  user_roles:
+    id: user_roles
+    provider: userprotect
+    status: true
+  user_edit:
+    id: user_edit
+    provider: userprotect
+    status: true
+  user_delete:
+    id: user_delete
+    provider: userprotect
+    status: true
+  user_status:
+    id: user_status
+    provider: userprotect
+    status: true
+  user_name:
+    id: user_name
+    provider: userprotect
+    status: true

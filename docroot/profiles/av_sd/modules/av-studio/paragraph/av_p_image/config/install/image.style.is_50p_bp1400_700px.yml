@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_image
+name: is_50p_bp1400_700px
+label: '50% - bp1400 (B=700px)'
+effects:
+  35c3675b-48c3-45cf-9f45-875482ecdf27:
+    uuid: 35c3675b-48c3-45cf-9f45-875482ecdf27
+    id: image_scale
+    weight: 1
+    data:
+      width: 1400
+      height: null
+      upscale: false
+  40b9fe40-2d62-49fa-8007-7fb3ab77836d:
+    uuid: 40b9fe40-2d62-49fa-8007-7fb3ab77836d
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

@@ -1,0 +1,13 @@
+uuid: d452e950-1232-45aa-a315-51b75398a9d1
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_panorama
+id: p_panorama
+label: 'Panorama'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

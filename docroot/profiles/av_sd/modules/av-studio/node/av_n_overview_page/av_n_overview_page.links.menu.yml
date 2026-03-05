@@ -1,0 +1,6 @@
+av_n_overview_page.overview_page:
+  title: 'Übersichtsseiten'
+  parent: system.admin_content
+  route_name: av_n_overview_page.overview_page
+  menu_name: admin
+  url: internal:/admin/content/overview_page

@@ -1,0 +1,61 @@
+uuid: e36a6a0d-b5eb-4981-90a2-9352f8af4f18
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.dm_teaser_fp_25pz
+    - field.field.paragraph.p_teaser.field_p_t_ads_placeholder
+    - field.field.paragraph.p_teaser.field_p_t_design
+    - field.field.paragraph.p_teaser.field_p_t_enable_crop
+    - field.field.paragraph.p_teaser.field_p_t_enable_zoom
+    - field.field.paragraph.p_teaser.field_p_t_highlight
+    - field.field.paragraph.p_teaser.field_p_t_image
+    - field.field.paragraph.p_teaser.field_p_t_image_full_size
+    - field.field.paragraph.p_teaser.field_p_t_label
+    - field.field.paragraph.p_teaser.field_p_t_link
+    - field.field.paragraph.p_teaser.field_p_t_size
+    - field.field.paragraph.p_teaser.field_p_t_social_links
+    - field.field.paragraph.p_teaser.field_p_t_text
+    - field.field.paragraph.p_teaser.field_p_t_text_unlimited
+    - field.field.paragraph.p_teaser.field_p_t_title
+    - field.field.paragraph.p_teaser.field_p_t_title_jewelry
+    - image.style.is_teaser_100p_bp1400_1400px
+    - paragraphs.paragraphs_type.p_teaser
+    - responsive_image.styles.ris_teaser_fp_25p
+  module:
+    - photoswipe
+  enforced:
+    module:
+      - av_p_teaser
+id: paragraph.p_teaser.dm_teaser_fp_25pz
+targetEntityType: paragraph
+bundle: p_teaser
+mode: dm_teaser_fp_25pz
+content:
+  field_p_t_image:
+    type: photoswipe_responsive_field_formatter
+    label: hidden
+    settings:
+      photoswipe_thumbnail_style_first: ris_teaser_fp_25p
+      photoswipe_thumbnail_style: ris_teaser_fp_25p
+      photoswipe_image_style: is_teaser_100p_bp1400_1400px
+      photoswipe_reference_image_field: ''
+      photoswipe_view_mode: dm_teaser_fp_25pz
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_p_t_ads_placeholder: true
+  field_p_t_design: true
+  field_p_t_enable_crop: true
+  field_p_t_enable_zoom: true
+  field_p_t_highlight: true
+  field_p_t_image_full_size: true
+  field_p_t_label: true
+  field_p_t_link: true
+  field_p_t_size: true
+  field_p_t_social_links: true
+  field_p_t_text: true
+  field_p_t_text_unlimited: true
+  field_p_t_title: true
+  field_p_t_title_jewelry: true

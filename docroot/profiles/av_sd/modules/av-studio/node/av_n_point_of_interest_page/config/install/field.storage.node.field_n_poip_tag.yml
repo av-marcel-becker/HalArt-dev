@@ -1,0 +1,24 @@
+uuid: e48acf42-1344-4569-ab64-5e6725f3d500
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_point_of_interest_page
+  module:
+    - node
+    - taxonomy
+third_party_settings: { }
+id: node.field_n_poip_tag
+field_name: field_n_poip_tag
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

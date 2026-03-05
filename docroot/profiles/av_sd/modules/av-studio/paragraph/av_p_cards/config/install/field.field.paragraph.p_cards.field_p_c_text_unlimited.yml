@@ -1,0 +1,27 @@
+uuid: d16b1c52-dfb8-4141-864b-459867241323
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_c_text_unlimited
+    - paragraphs.paragraphs_type.p_cards
+  module:
+    - text
+  enforced:
+    module:
+      - av_p_cards
+third_party_settings: { }
+id: paragraph.p_cards.field_p_c_text_unlimited
+field_name: field_p_c_text_unlimited
+entity_type: paragraph
+bundle: p_cards
+label: 'Text (unbegrenzt)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    f_editor: f_editor
+field_type: text_long

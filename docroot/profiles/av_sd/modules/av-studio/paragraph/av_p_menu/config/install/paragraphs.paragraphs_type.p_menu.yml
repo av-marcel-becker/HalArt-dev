@@ -1,0 +1,13 @@
+uuid: 1512eef1-8179-4797-9384-8795bbc2f82e
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_menu
+id: p_menu
+label: Menü
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,11 @@
+av_n_athletes_page.athletes_page.add:
+  route_name: node.add
+  title: 'Athleten-Seite hinzufügen'
+  weight: 10
+  appears_on:
+    - view.v_content_athletes_page.v_content_athletes_page
+  route_parameters: 
+    node_type: 'n_athletes_page'
+#  options:
+#    query:
+#      destination: /admin/content/athletes_page

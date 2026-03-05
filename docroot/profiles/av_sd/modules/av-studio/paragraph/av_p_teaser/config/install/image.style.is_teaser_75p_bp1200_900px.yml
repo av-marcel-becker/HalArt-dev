@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_teaser
+name: is_teaser_75p_bp1200_900px
+label: 'Teaser 75% - bp1200 (B=900px)'
+effects:
+  dd018654-b640-4478-8821-ec59e53d8f47:
+    uuid: dd018654-b640-4478-8821-ec59e53d8f47
+    id: image_scale
+    weight: 1
+    data:
+      width: 1800
+      height: null
+      upscale: false
+  29859921-5c79-435e-aaa4-cbd328399f31:
+    uuid: 29859921-5c79-435e-aaa4-cbd328399f31
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

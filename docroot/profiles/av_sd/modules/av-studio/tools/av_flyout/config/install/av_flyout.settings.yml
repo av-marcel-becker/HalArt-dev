@@ -1,0 +1,17 @@
+dependencies:
+  enforced:
+    module:
+      - av_flyout
+setup_items_count: '3'
+item_1_a_href: 'tel:00000000000'
+item_1_a_title: Telefon
+item_1_label: Telefon
+item_1_icon: f095
+item_2_a_href: 'mailto:no-reply@av-studio.de'
+item_2_a_title: E-Mail
+item_2_label: E-Mail
+item_2_icon: f0e0
+item_3_a_href: /
+item_3_a_title: Kontakt
+item_3_label: Kontakt
+item_3_icon: e470

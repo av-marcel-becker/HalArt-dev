@@ -1,0 +1,11 @@
+av_n_front_page.front_page.add:
+  route_name: node.add
+  title: 'Startseite hinzufügen'
+  weight: 10
+  appears_on:
+    - view.v_content_front_page.v_content_front_page
+  route_parameters: 
+    node_type: 'n_front_page'
+#  options:
+#    query:
+#      destination: /admin/content/front_page

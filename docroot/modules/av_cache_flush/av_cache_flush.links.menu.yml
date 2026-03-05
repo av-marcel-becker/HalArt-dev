@@ -1,0 +1,6 @@
+av_cache_flush.settings:
+  title: 'AV Cache - Settings'
+  description: 'Konfigurieren Sie die Einstellungen für AV Cache Flush.'
+  parent: 'system.admin_config_system'
+  route_name: 'av_cache_flush.settings'
+  weight: 1

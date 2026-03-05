@@ -1,0 +1,21 @@
+uuid: 6c4419c5-b55a-4d59-9ea7-512cb406235c
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_overview_page
+  enforced:
+    module:
+      - av_n_overview_page
+id: node.n_overview_page.title
+field_name: title
+entity_type: node
+bundle: n_overview_page
+label: Überschrift
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

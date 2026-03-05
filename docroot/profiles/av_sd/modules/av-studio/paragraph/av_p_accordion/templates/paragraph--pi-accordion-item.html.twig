@@ -1,0 +1,95 @@
+{#
+/**
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+{% set attributes_container = attributes %}
+{% set attributes_container_accordion_title = region_attributes.container_accordion_title %}
+{% set attributes_container_accordion_content = region_attributes.container_accordion_content %}
+{% if not attributes_container %}
+    {% set attributes_container = create_attribute() %}
+{% endif %}
+{% if not attributes_container_accordion_title %}
+    {% set attributes_container_accordion_title = create_attribute() %}
+{% endif %}
+{% if not attributes_container_accordion_content %}
+    {% set attributes_container_accordion_content = create_attribute() %}
+{% endif %}
+
+{% 
+   set classes_container = [
+         'ph-accordion-item',
+         'close',
+      ] 
+%}
+{% 
+   set classes_container_accordion_title = [
+         'ph-accordion-title', 
+      ] 
+%}
+{% 
+   set classes_container_accordion_content = [
+         'ph-accordion-content',
+   ] 
+%}
+{#{ dump(content)}#}
+{#{ dump() }#}
+<div{{ attributes_container.addClass(classes_container) }}>
+   <div {{ attributes_container_accordion_title.addClass(classes_container_accordion_title) }}>
+      <h5>
+         <button type="button" aria-expanded="false">
+            {# <i class="fas fa-chevron-right"></i> #}
+            {# <i class="fas fa-minus-circle"></i> #}
+            {# <i class="fas fa-chevron-down"></i> #}
+            <div class="cssf--flex-layout--jc_between--fw_nowrap">
+                  {% if settings.icon_direction_left %}
+                     <div class="ph-accordion-title-icon cssf--as_center--flex-shrink_0">  
+                        {% if settings.icon_plus_icon %}
+                           {{ settings.icon_plus_icon|raw }}
+                        {% else %}
+                           Konfigurieren
+                        {% endif %}
+                        {% if settings.icon_minus_icon %}
+                           {{ settings.icon_minus_icon|raw }}
+                        {% else %}
+                           Konfigurieren
+                        {% endif %}
+                     </div>
+                  {% endif %}
+               <div class="ph-accordion-title-text cssf--as_center--flex_auto">
+                  {{ content.field_pi_ai_title }}
+               </div>             
+                  {# <i class="fas fa-plus-circle"></i> #}
+                  {# <i class="fas fa-minus-circle"></i> #}
+                  {# <i class="icon-plus fal fa-plus"></i> #}
+                  {# <i class="icon-minus fal fa-times"></i>
+                  <i class="icon-plus fas fa-chevron-circle-right"></i>
+                  <i class="icon-minus fas fa-chevron-circle-down"></i>}
+                  <i class="icon-plus fa-thin fa-arrow-down"></i>
+                  <i class="icon-minus fa-thin fa-arrow-up"></i> #}
+                  {% if not settings.icon_direction_left %}
+                     <div class="ph-accordion-title-icon cssf--as_center--flex-shrink_0">  
+                        {% if settings.icon_plus_icon %}
+                           {{ settings.icon_plus_icon|raw }}
+                        {% else %}
+                           Konfigurieren
+                        {% endif %}
+                        {% if settings.icon_minus_icon %}
+                           {{ settings.icon_minus_icon|raw }}
+                        {% else %}
+                           Konfigurieren
+                        {% endif %}
+                     </div>
+                  {% endif %}
+            </div>
+         </button>
+      </h5>
+   </div>
+   <div {{ attributes_container_accordion_content.addClass(classes_container_accordion_content) }}>
+      {{ content.field_pi_ai_content }}
+   </div>
+</div>

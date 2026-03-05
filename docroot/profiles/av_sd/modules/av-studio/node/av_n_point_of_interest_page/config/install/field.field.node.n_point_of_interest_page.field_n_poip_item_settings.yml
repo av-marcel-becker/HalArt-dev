@@ -1,0 +1,32 @@
+uuid: 1a7e6931-d8cf-4e6a-bc7e-ad2444f188e8
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_poip_item_settings
+    - node.type.n_point_of_interest_page
+    - taxonomy.vocabulary.t_item_settings_poi_page
+  enforced:
+    module:
+      - av_n_point_of_interest_page
+id: node.n_point_of_interest_page.field_n_poip_item_settings
+field_name: field_n_poip_item_settings
+entity_type: node
+bundle: n_point_of_interest_page
+label: 'Marker und Elemente Darstellung'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      t_item_settings_poi_page: t_item_settings_poi_page
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

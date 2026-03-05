@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - crop
+  enforced:
+    module:
+      - av_p_teaser
+name: is_teaser_fp_100p_bp992_992px
+label: 'Teaser FP 100% - bp992 (B=992px)'
+effects:
+  022c344a-fe55-4e2a-a250-e5f8c95b72d2:
+    uuid: 022c344a-fe55-4e2a-a250-e5f8c95b72d2
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1984
+      height: 850
+      crop_type: focal_point
+  7175e718-5178-4cf1-8cdd-576579060b0e:
+    uuid: 7175e718-5178-4cf1-8cdd-576579060b0e
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

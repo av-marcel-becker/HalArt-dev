@@ -1,0 +1,25 @@
+uuid: db699637-849a-4c1f-9fbe-0ca24ac5382c
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_directory_page
+  module:
+    - node
+id: ap_directory_page
+label: Verzeichnisseite
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents:join-path]/[node:title]'
+selection_criteria:
+  caba7e3f-adb0-4f02-936f-f759d806a404:
+    id: 'entity_bundle:node'
+    bundles:
+      n_directory_page: n_directory_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: caba7e3f-adb0-4f02-936f-f759d806a404
+selection_logic: and
+weight: -5
+relationships: {  }

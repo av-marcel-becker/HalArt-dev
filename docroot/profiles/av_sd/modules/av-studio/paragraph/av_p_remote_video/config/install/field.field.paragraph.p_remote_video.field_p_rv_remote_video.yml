@@ -1,0 +1,22 @@
+uuid: fd47b67a-3828-4b92-821f-b5a04761ebb3
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_rv_remote_video
+    - paragraphs.paragraphs_type.p_remote_video
+  enforced:
+    module:
+      - av_p_remote_video
+id: paragraph.p_remote_video.field_p_rv_remote_video
+field_name: field_p_rv_remote_video
+entity_type: paragraph
+bundle: p_remote_video
+label: 'Remote Video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: ed635721-c207-4c58-be67-36ba316b98c0
+langcode: de
+status: true
+dependencies:
+  module:
+    - paragraphs
+  enforced:
+    module:
+      - av_p_av_studio_media
+third_party_settings: { }
+id: paragraph.field_p_avsm_show_label
+field_name: field_p_avsm_show_label
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

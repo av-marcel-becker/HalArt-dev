@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_image
+name: is_66p_bp992_661px
+label: '66% - bp992 (B=661px)'
+effects:
+  4298230e-98f2-498b-bec7-59b834c70468:
+    uuid: 4298230e-98f2-498b-bec7-59b834c70468
+    id: image_scale
+    weight: 1
+    data:
+      width: 1322
+      height: null
+      upscale: false
+  0a6da0a0-f5e4-489e-b633-6ca594653881:
+    uuid: 0a6da0a0-f5e4-489e-b633-6ca594653881
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

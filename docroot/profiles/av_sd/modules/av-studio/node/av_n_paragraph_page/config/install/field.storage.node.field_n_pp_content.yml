@@ -1,0 +1,25 @@
+uuid: 72ec47b2-3dc1-409c-a680-5ba99fed5964
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_paragraph_page
+  module:
+    - entity_reference_revisions
+    - node
+    - paragraphs
+third_party_settings: { }
+id: node.field_n_pp_content
+field_name: field_n_pp_content
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

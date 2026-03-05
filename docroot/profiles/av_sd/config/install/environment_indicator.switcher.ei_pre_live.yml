@@ -1,0 +1,11 @@
+uuid: 1d334524-de56-4a44-8e0f-11d06f9202b5
+langcode: de
+status: true
+dependencies: {  }
+machine: ei_pre_live
+description: null
+name: PRE-LIVE
+weight: ''
+url: ''
+fg_color: '#ffffff'
+bg_color: '#c20000'

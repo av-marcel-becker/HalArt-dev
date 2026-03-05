@@ -1,0 +1,52 @@
+uuid: 0bfdd98b-48df-4397-b949-8a502f7b6a95
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_panorama
+  module:
+    - options
+    - paragraphs
+third_party_settings: { }
+id: paragraph.field_p_p_text_position
+field_name: field_p_p_text_position
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: tl
+      label: 'oben links'
+    -
+      value: tc
+      label: 'oben zentriert'
+    -
+      value: tr
+      label: 'oben rechts'
+    -
+      value: ml
+      label: 'mitte links'
+    -
+      value: mc
+      label: 'mitte zentriert'
+    -
+      value: mr
+      label: 'mitte rechts'
+    -
+      value: bl
+      label: 'unten links'
+    -
+      value: bc
+      label: 'unten zentriert'
+    -
+      value: br
+      label: 'unten rechts'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

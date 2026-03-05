@@ -1,0 +1,25 @@
+uuid: e40bd081-b987-4e0b-ac2b-6a4ae4ed6b21
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_types_of_sports_page
+  enforced:
+    module:
+      - av_n_types_of_sports_page
+id: node.n_types_of_sports_page.status
+field_name: status
+entity_type: node
+bundle: n_types_of_sports_page
+label: Veröffentlicht
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

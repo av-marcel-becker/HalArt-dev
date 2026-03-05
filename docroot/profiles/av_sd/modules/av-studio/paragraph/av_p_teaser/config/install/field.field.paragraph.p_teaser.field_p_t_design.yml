@@ -1,0 +1,24 @@
+uuid: 130a00c9-a486-4f05-b8a5-6e76af13e482
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_t_design
+    - paragraphs.paragraphs_type.p_teaser
+  module:
+    - options
+  enforced:
+    module:
+      - av_p_teaser
+id: paragraph.p_teaser.field_p_t_design
+field_name: field_p_t_design
+entity_type: paragraph
+bundle: p_teaser
+label: Design
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

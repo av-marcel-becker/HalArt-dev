@@ -1,0 +1,190 @@
+name: 'AV-Standard Distribution V5'
+type: profile
+description: 'Universal Installation mit den gängigsten Modulen und Funktionen'
+version: VERSION
+core_version_requirement: ^10 || ^11
+'interface translation project': av_sd
+'interface translation server pattern': profiles/av_sd/translations/%language.po
+distribution:
+  name: 'AV-Standard Distribution V5'
+  langcode: de
+  install:
+    theme: claro
+    finish_url: /admin/config
+dependencies:
+#  - drupal:media
+  - drupal:node
+  - drupal:views
+themes:
+  - av_admin_gin
+  - av_sub
+  - gin
+install:
+# standard
+  - drupal:node
+  - drupal:block
+  - drupal:breakpoint
+  - drupal:ckeditor5
+  - drupal:config
+  - drupal:contextual
+  - drupal:menu_link_content
+  - drupal:datetime
+  - drupal:block_content
+  - drupal:editor
+  - drupal:image
+  - drupal:menu_ui
+  - drupal:options
+  - drupal:path
+  - drupal:page_cache
+  - drupal:dynamic_page_cache
+  - drupal:big_pipe
+  - drupal:taxonomy
+  - drupal:dblog
+  - drupal:toolbar
+  - drupal:field_ui
+  - drupal:file
+  - drupal:views
+  - drupal:views_ui
+  - drupal:automated_cron
+# standard custom
+#  - drupal:media
+#  - drupal:media_library
+  - drupal:responsive_image
+  - drupal:link  
+  - drupal:content_moderation (>= 8.5)
+  - drupal:inline_form_errors
+  - drupal:datetime_range
+# module
+  - admin_toolbar:admin_toolbar
+  - admin_toolbar:admin_toolbar_tools
+  - gin_login:gin_login
+  - gin_toolbar:gin_toolbar
+  - upgrade_status:upgrade_status
+  - matomo:matomo
+  - crop:crop
+  - focal_point:focal_point
+  - moderation_sidebar:moderation_sidebar
+  - module_filter:module_filter
+  - token:token
+  - token_filter:token_filter
+  - pathauto:pathauto
+  - antibot:antibot
+  - cookies:cookies
+  - cookies:cookies_matomo
+  - environment_indicator:environment_indicator
+  - environment_indicator:environment_indicator_ui
+  - metatag:metatag
+  - metatag:metatag_favicons
+  - metatag:metatag_open_graph
+  - metatag:metatag_routes
+  - redirect_after_login:redirect_after_login
+  - redirect:redirect
+  - redirect:redirect_404
+  - userprotect:userprotect
+  - config_perms:config_perms
+  - imce:imce
+  - imce_rename_plugin:imce_rename_plugin
+  - smtp:smtp
+  - field_group:field_group
+  - markup:markup
+  - paragraphs:paragraphs
+  - paragraphs:paragraphs_type_permissions
+  - layout_paragraphs:layout_paragraphs
+  - layout_paragraphs:layout_paragraphs_permissions
+  - fontawesome:fontawesome
+  - fontawesome:fontawesome_iconpicker_widget
+  - editor_advanced_link:editor_advanced_link
+  - length_indicator:length_indicator
+  - maxlength:maxlength
+  - node_revision_delete:node_revision_delete
+  - entity_reference_revisions:entity_reference_revisions
+  - cshs:cshs
+  - allowed_formats:allowed_formats
+  - color_field:color_field
+  - iframe:iframe
+  - image_replace:image_replace
+  - conditional_fields:conditional_fields
+  - smart_date:smart_date
+  - svg_image:svg_image
+  - twig_tweak:twig_tweak
+  - photoswipe:photoswipe
+  - photoswipe:photoswipe_dynamic_caption
+  - simplify_menu:simplify_menu
+#  - webp:webp
+#  - simplify:simplify
+#  - blazy:blazy_ui
+#  - block_content_permissions:block_content_permissions
+#  - block_exclude_pages:block_exclude_pages
+#  - block_permissions:block_permissions
+#  - block_region_permissions:block_region_permissions
+#  - captcha:captcha
+  ##- ckeditor_format_buttons:ckeditor_format_buttons
+  ####- ckeditor_loremipsum:ckeditor_loremipsum
+  ####- collapsible_dnd:collapsible_dnd
+#  - color_field:color_field
+#  - ctools:ctools
+#  - ctools:ctools_block
+#  - ctools:ctools_views
+#  - ds:ds
+#  - ds:ds_extras
+#  - dynamic_entity_reference:dynamic_entity_reference
+#  - field_permissions:field_permissions
+#  - geofield:geofield
+#  - imagick:imagick
+#  - leaflet:leaflet
+#  - linkit:linkit
+#  - link_target:link_target
+#  - menu_admin_per_menu:menu_admin_per_menu
+#  - menu_link_weight:menu_link_weight
+
+#  - twig_render_this:twig_render_this
+#  - scheduled_publish:scheduled_publish
+#  - smart_trim:smart_trim
+#  - taxonomy_access_fix:taxonomy_access_fix
+#  - transliterate_filenames:transliterate_filenames
+#  - twig_remove_html_comments:twig_remove_html_comments
+#  - view_unpublished:view_unpublished
+#  - views_autocomplete_filters:views_autocomplete_filters
+#  - views_bulk_operations:views_bulk_operations
+# second 
+#  - layout_options:layout_options
+#  - matomo_reports:matomo_reports
+#  - paragraphs:paragraphs_type_permissions
+#  - native_lazy_loading:native_lazy_loading
+# AV Module
+  - av_n_default:av_n_default
+  - av_n_front_page:av_n_front_page
+  - av_n_front_page:av_n_front_page_content
+  - av_n_paragraph_page:av_n_paragraph_page
+  - av_n_paragraph_page:av_n_paragraph_page_content
+  - av_n_system_page:av_n_system_page
+  - av_n_system_page:av_n_system_page_content
+  - av_n_overview_page:av_n_overview_page
+  - av_b_system_block:av_b_system_block
+  - av_b_paragraph_block:av_b_paragraph_block
+  - av_l_default:av_l_default
+  - av_l_sections:av_l_sections
+  - av_l_sections_system:av_l_sections_system
+  - av_p_sections:av_p_sections
+  - av_p_sections_system:av_p_sections_system
+  - av_p_sections_block:av_p_sections_block
+  - av_p_sections_teaser:av_p_sections_teaser
+  - av_p_sections_gallery:av_p_sections_gallery
+  - av_p_sections_slider:av_p_sections_slider
+ # - av_b_system_block_content:av_b_system_block_content
+  - av_p_block:av_p_block
+  - av_p_predefined_sections:av_p_predefined_sections
+  - av_p_wysiwyg:av_p_wysiwyg
+  - av_p_wysiwyg_system:av_p_wysiwyg_system
+#  - av_p_image:av_p_image # problem mit photoswipe zoom einstellung
+#  - av_p_teaser:av_p_teaser # problem mit photoswipe zoom einstellung
+  - av_share:av_share
+  - av_ads:av_ads
+  - av_link_target_blank:av_link_target_blank
+  - av_accessibility:av_accessibility
+  - av_msg:av_msg
+  - av_scroll:av_scroll
+  - av_menu:av_menu
+  - av_header:av_header
+  - av_copyright:av_copyright
+#  - av_p_teaser_universal:av_p_teaser_universal

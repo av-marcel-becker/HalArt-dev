@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_cards
+name: is_cards_33p_bp576_576px
+label: 'Card 33% - bp576 (B=576px)'
+effects:
+  700ec567-9594-4e96-8e78-b0cc579d78b3:
+    uuid: 700ec567-9594-4e96-8e78-b0cc579d78b3
+    id: image_scale
+    weight: 1
+    data:
+      width: 1152
+      height: null
+      upscale: false
+  1f77b128-ccf3-48e9-82f0-fe4a97996b3c:
+    uuid: 1f77b128-ccf3-48e9-82f0-fe4a97996b3c
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

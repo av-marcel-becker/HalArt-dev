@@ -1,0 +1,15 @@
+<?php
+   /**
+    * hook_theme
+    */
+   function av_p_appointments_theme($existing, $type, $theme, $path) 
+      {
+         return [
+               'paragraph__p_appointments' => [     
+                     'base hook' => 'paragraph',
+                  ],
+               'field__field_p_a_appointments' => [
+                     'base hook' => 'field',
+                  ],
+            ];
+      } 

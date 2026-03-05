@@ -1,0 +1,25 @@
+uuid: e5be2ceb-674d-4ab2-a7fd-a44b6c6902cb
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_news_page
+  module:
+    - node
+id: ap_news_page
+label: Newsseite
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents:join-path]/[node:title]'
+selection_criteria:
+  27635992-3d94-4d39-8ca7-2525f1604486:
+    id: 'entity_bundle:node'
+    bundles:
+      n_news_page: n_news_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 27635992-3d94-4d39-8ca7-2525f1604486
+selection_logic: and
+weight: -5
+relationships: {  }

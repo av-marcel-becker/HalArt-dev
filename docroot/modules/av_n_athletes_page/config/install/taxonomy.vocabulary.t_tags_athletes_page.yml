@@ -1,0 +1,11 @@
+uuid: 867575bb-5a97-4038-893c-8236550c6d8a
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_athletes_page
+name: 'Tags für Athleten-Seite'
+vid: t_tags_athletes_page
+description: ''
+weight: 0

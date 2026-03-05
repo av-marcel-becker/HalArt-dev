@@ -1,0 +1,11 @@
+uuid: 54250b20-ccd6-4ca9-b55a-66c31e23bd74
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_paragraph_page
+name: 'Tags für Absatzseite'
+vid: t_tags_paragraph_page
+description: ''
+weight: 0

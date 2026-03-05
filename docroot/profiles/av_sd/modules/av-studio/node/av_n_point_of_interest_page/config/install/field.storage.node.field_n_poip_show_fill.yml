@@ -1,0 +1,22 @@
+uuid: 998cc2ed-3401-4dbc-b66f-a756e758bc87
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - av_n_point_of_interest_page
+third_party_settings: { }
+id: node.field_n_poip_show_fill
+field_name: field_n_poip_show_fill
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

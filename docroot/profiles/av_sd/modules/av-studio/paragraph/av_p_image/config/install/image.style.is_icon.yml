@@ -1,0 +1,18 @@
+uuid: 9921fa3b-25ee-40a7-8528-1c712bc21ba2
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_image
+name: is_icon
+label: ICON
+effects:
+  a1603f7a-0d3b-4f34-83b4-d0f6cea40696:
+    uuid: a1603f7a-0d3b-4f34-83b4-d0f6cea40696
+    id: image_scale
+    weight: 1
+    data:
+      width: 100
+      height: null
+      upscale: false

@@ -1,0 +1,22 @@
+uuid: 700f2f90-9eb4-4867-9dd2-2666dc11fef7
+langcode: de
+status: true
+dependencies:
+  module:
+    - paragraphs
+  enforced:
+    module:
+      - av_p_cards
+third_party_settings: { }
+id: paragraph.field_p_c_enable_crop
+field_name: field_p_c_enable_crop
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

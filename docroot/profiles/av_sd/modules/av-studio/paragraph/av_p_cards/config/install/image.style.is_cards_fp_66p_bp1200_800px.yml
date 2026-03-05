@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - crop
+  enforced:
+    module:
+      - av_p_cards
+name: is_cards_fp_66p_bp1200_800px
+label: 'Card FP 66% - bp1200 (B=800px)'
+effects:
+  b1b5058f-2151-4837-ab39-9b128fb8fe6d:
+    uuid: b1b5058f-2151-4837-ab39-9b128fb8fe6d
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1600
+      height: 1067
+      crop_type: focal_point
+  5fd439f2-9222-4f0b-9432-5cab4c3ae339:
+    uuid: 5fd439f2-9222-4f0b-9432-5cab4c3ae339
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

@@ -1,0 +1,5 @@
+av_l_sections_system.settings:
+  title: 'System-Sections '
+  description: 'Set system-sections settings'
+  parent: 'av_l_default.settings'
+  route_name: 'av_l_sections_system.settings'

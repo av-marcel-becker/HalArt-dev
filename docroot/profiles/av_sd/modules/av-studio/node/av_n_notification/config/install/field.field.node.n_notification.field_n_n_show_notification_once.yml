@@ -1,0 +1,26 @@
+uuid: 76734bb6-1c3c-4854-bb2a-1cae3ad568ac
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_n_show_notification_once
+    - node.type.n_notification
+  enforced:
+    module:
+      - av_n_notification
+id: node.n_notification.field_n_n_show_notification_once
+field_name: field_n_n_show_notification_once
+entity_type: node
+bundle: n_notification
+label: 'Benachrichtigung einmalig anzeigen'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_cards
+name: is_cards_100p_bp1200_1200px
+label: 'Card 100% - bp1200 (B=1200px)'
+effects:
+  57721f92-790e-46cb-8d67-233a53405023:
+    uuid: 57721f92-790e-46cb-8d67-233a53405023
+    id: image_scale
+    weight: 1
+    data:
+      width: 2400
+      height: null
+      upscale: false
+  5ac4a87d-dbe0-4f50-9d1b-5a26af0c730b:
+    uuid: 5ac4a87d-dbe0-4f50-9d1b-5a26af0c730b
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

@@ -1,0 +1,21 @@
+uuid: d7cee19e-3c87-45f9-a7e9-d7686648fc6a
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_composite_card_page
+  enforced:
+    module:
+      - av_n_composite_card_page
+id: node.n_composite_card_page.title
+field_name: title
+entity_type: node
+bundle: n_composite_card_page
+label: Überschrift
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

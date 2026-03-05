@@ -1,0 +1,29 @@
+uuid: 47c5dae3-3a62-4579-abfa-26955333cc5b
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_tosp_content
+    - node.type.n_types_of_sports_page
+  module:
+    - entity_reference_revisions
+  enforced:
+    module:
+      - av_n_types_of_sports_page
+id: node.n_types_of_sports_page.field_n_tosp_content
+field_name: field_n_tosp_content
+entity_type: node
+bundle: n_types_of_sports_page
+label: Inhaltsbereich
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop: { }
+field_type: entity_reference_revisions

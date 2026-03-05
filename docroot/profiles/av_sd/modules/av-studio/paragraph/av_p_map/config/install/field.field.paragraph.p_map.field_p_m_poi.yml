@@ -1,0 +1,30 @@
+uuid: 6aa276a2-38c6-4394-8b3c-9c2b9da02f1f
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_m_poi
+    - paragraphs.paragraphs_type.p_map
+  enforced:
+    module:
+      - av_p_map
+id: paragraph.p_map.field_p_m_poi
+field_name: field_p_m_poi
+entity_type: paragraph
+bundle: p_map
+label: 'Ort (POI)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      n_point_of_interest_page: n_point_of_interest_page
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

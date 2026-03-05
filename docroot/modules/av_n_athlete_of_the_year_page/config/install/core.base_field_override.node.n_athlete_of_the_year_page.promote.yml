@@ -1,0 +1,25 @@
+uuid: 77d0c1b1-6cd4-4e27-a2fd-f0dc322f241f
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_athlete_of_the_year_page
+  enforced:
+    module:
+      - av_n_athlete_of_the_year_page
+id: node.n_athlete_of_the_year_page.promote
+field_name: promote
+entity_type: node
+bundle: n_athlete_of_the_year_page
+label: 'Auf der Startseite anzeigen'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

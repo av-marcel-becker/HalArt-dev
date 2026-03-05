@@ -1,0 +1,25 @@
+uuid: 66423962-7186-4659-8d75-22fe752c0975
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_athletes_page
+  enforced:
+    module:
+      - av_n_athletes_page
+id: node.n_athletes_page.promote
+field_name: promote
+entity_type: node
+bundle: n_athletes_page
+label: 'Auf der Startseite anzeigen'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

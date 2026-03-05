@@ -1,0 +1,22 @@
+uuid: 1d2a5534-9feb-4d5e-913c-11d9e4f651bc
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_c_label
+    - paragraphs.paragraphs_type.p_cards
+  enforced:
+    module:
+      - av_p_cards
+id: paragraph.p_cards.field_p_c_label
+field_name: field_p_c_label
+entity_type: paragraph
+bundle: p_cards
+label: Label
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,25 @@
+uuid: 0c6925f1-4010-46bc-94a3-a570694d5c8d
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_sports_club_page
+  enforced:
+    module:
+      - av_n_sports_club_page
+id: node.n_sports_club_page.status
+field_name: status
+entity_type: node
+bundle: n_sports_club_page
+label: Veröffentlicht
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

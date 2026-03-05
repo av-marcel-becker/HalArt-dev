@@ -1,0 +1,24 @@
+uuid: 51c9bc68-4627-488c-aa12-30de6dde41c5
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_c_design
+    - paragraphs.paragraphs_type.p_cards
+  module:
+    - options
+  enforced:
+    module:
+      - av_p_cards
+id: paragraph.p_cards.field_p_c_design
+field_name: field_p_c_design
+entity_type: paragraph
+bundle: p_cards
+label: Design
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

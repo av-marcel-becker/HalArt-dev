@@ -1,0 +1,33 @@
+uuid: aaac55ab-faac-42ec-8026-405d09146b54
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.dm_teaser_75p
+    - field.field.paragraph.p_teaser.field_p_t_image
+    - field.field.paragraph.p_teaser.field_p_t_label
+    - paragraphs.paragraphs_type.p_teaser
+    - responsive_image.styles.ris_teaser_75p
+  module:
+    - responsive_image
+  enforced:
+    module:
+      - av_p_teaser
+id: paragraph.p_teaser.dm_teaser_75p
+targetEntityType: paragraph
+bundle: p_teaser
+mode: dm_teaser_75p
+content:
+  field_p_t_image:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: ris_teaser_75p
+      image_link: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_p_t_label: true

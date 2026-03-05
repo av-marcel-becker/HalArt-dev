@@ -1,0 +1,25 @@
+uuid: 593ce535-3684-4cfa-be41-1f8dae118667
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p_predefined_sections.field_p_ps_predefined_sections
+    - paragraphs.paragraphs_type.p_predefined_sections
+  enforced:
+    module:
+      - av_p_predefined_sections
+id: paragraph.p_predefined_sections.default
+targetEntityType: paragraph
+bundle: p_predefined_sections
+mode: default
+content:
+  field_p_ps_predefined_sections:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

@@ -1,0 +1,32 @@
+uuid: 6628c3f7-6474-4ac4-97a6-dd5f2e2c29dc
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_hofp_tag
+    - node.type.n_hall_of_fame_page
+    - taxonomy.vocabulary.t_tags_hall_of_fame_page
+  enforced:
+    module:
+      - av_n_hall_of_fame_page
+id: node.n_hall_of_fame_page.field_n_hofp_tag
+field_name: field_n_hofp_tag
+entity_type: node
+bundle: n_hall_of_fame_page
+label: Tagging
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      t_tags_hall_of_fame_page: t_tags_hall_of_fame_page
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

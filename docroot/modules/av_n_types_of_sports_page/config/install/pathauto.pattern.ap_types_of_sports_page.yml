@@ -1,0 +1,25 @@
+uuid: fe904078-0b6a-410a-a0cb-1771d31a5bdd
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_types_of_sports_page
+  module:
+    - node
+id: ap_types_of_sports_page
+label: Sportarten-Seite
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents:join-path]/[node:title]'
+selection_criteria:
+  d7034189-2e14-4ebe-a419-992a59dc70ed:
+    id: 'entity_bundle:node'
+    bundles:
+      n_types_of_sports_page: n_types_of_sports_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: d7034189-2e14-4ebe-a419-992a59dc70ed
+selection_logic: and
+weight: -5
+relationships: {  }

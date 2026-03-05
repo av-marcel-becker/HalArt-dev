@@ -1,0 +1,24 @@
+{{ attach_library('av_p_appointments/av_p_appointments') }}
+{%
+  set classes = [
+    'ph-appointments',  
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% set attributes_ul = create_attribute() %}
+{% set classes_ul = [
+          ]
+%}
+{% block paragraph %}
+   {% block content %}
+      <div{{ attributes.addClass(classes) }}>
+         <h5>{{ content.field_p_a_label }}</h5>
+         <ul{{ attributes_ul.addClass(classes_ul) }}>
+            {{ content.field_p_a_appointments }}
+         </ul>    
+      </div>
+   {% endblock %}
+{% endblock paragraph %}

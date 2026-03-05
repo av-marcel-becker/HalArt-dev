@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_teaser
+name: is_teaser_33p_bp768_768px
+label: 'Teaser 33% - bp768 (B=768px)'
+effects:
+  e3ac0027-420d-4be2-a6d1-d6d97b03825d:
+    uuid: e3ac0027-420d-4be2-a6d1-d6d97b03825d
+    id: image_scale
+    weight: 1
+    data:
+      width: 1536
+      height: null
+      upscale: false
+  7eadfe34-9b96-4ff5-ad6c-0a5ab79269ce:
+    uuid: 7eadfe34-9b96-4ff5-ad6c-0a5ab79269ce
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

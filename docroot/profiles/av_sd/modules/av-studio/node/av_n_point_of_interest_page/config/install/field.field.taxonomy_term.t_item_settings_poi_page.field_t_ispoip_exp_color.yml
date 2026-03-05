@@ -1,0 +1,28 @@
+uuid: 2becafea-9c93-4be0-a6a5-14f3328ed296
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_t_ispoip_exp_color
+    - taxonomy.vocabulary.t_item_settings_poi_page
+  module:
+    - color_field
+  enforced:
+    module:
+      - av_n_point_of_interest_page
+id: taxonomy_term.t_item_settings_poi_page.field_t_ispoip_exp_color
+field_name: field_t_ispoip_exp_color
+entity_type: taxonomy_term
+bundle: t_item_settings_poi_page
+label: 'Ausdrucks- / Kennzeichnungsfarbe'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    color: '#ffffff'
+    opacity: null
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

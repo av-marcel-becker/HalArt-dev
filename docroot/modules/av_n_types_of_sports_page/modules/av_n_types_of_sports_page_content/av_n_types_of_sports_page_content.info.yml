@@ -1,0 +1,7 @@
+name: 'AV Node - Types of Sports Page Content'
+type: module
+description: 'AV-Studio Node - Types of Sports Page Content'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Node'
+dependencies:
+  - av_n_types_of_sports_page

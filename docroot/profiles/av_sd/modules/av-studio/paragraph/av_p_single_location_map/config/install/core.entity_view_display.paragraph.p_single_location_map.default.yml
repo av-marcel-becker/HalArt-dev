@@ -1,0 +1,113 @@
+uuid: 2e784aee-5414-403a-8e74-cfafa520a5c2
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p_single_location_map.field_p_slm_poi
+    - paragraphs.paragraphs_type.p_single_location_map
+  module:
+    - leaflet
+  enforced:
+    module:
+      - av_p_single_location_map
+id: paragraph.p_single_location_map.default
+targetEntityType: paragraph
+bundle: p_single_location_map
+mode: default
+content:
+  field_p_slm_poi:
+    type: leaflet_formatter_default
+    label: hidden
+    settings:
+      multiple_map: false
+      leaflet_map: 'OSM Mapnik'
+      height: 400
+      height_unit: px
+      hide_empty_map: false
+      disable_wheel: false
+      gesture_handling: true
+      fitbounds_options: '{"padding":[0,0]}'
+      reset_map:
+        control: false
+        options: '{"position":"topleft","title":"Reset View"}'
+      map_scale:
+        control: false
+        options: '{"position":"bottomright","maxWidth":100,"metric":true,"imperial":false,"updateWhenIdle":false}'
+      locate:
+        control: true
+        options: '{"position":"topright","setView":"untilPanOrZoom","returnToPrevBounds":true,"keepCurrentZoomLevel":true,"strings":{"title":"Meine Position"}}'
+        automatic: false
+      leaflet_tooltip:
+        value: ''
+        options: '{"permanent":false,"direction":"center"}'
+      popup: false
+      popup_content: ''
+      leaflet_popup:
+        control: '0'
+        content: ''
+        options: '{"maxWidth":"300","minWidth":"50","autoPan":true}'
+      map_position:
+        force: false
+        center:
+          lat: 0.0
+          lon: 0.0
+        zoomControlPosition: topleft
+        zoom: 12
+        minZoom: 1
+        maxZoom: 18
+        zoomFiner: 0
+      icon:
+        iconType: html
+        iconUrl: ''
+        shadowUrl: ''
+        className: ''
+        iconSize:
+          x: '64'
+          'y': '64'
+        iconAnchor:
+          x: '32'
+          'y': '64'
+        shadowSize:
+          x: ''
+          'y': ''
+        shadowAnchor:
+          x: ''
+          'y': ''
+        popupAnchor:
+          x: '-55'
+          'y': '0'
+        html: "<div class=\"fa-4x\">\r\n    <i class=\"fa-solid fa-location-dot\" style=\"color: red\"></i>\r\n</div>"
+        html_class: leaflet-map-divicon
+        circle_marker_options: '{"radius":100,"color":"red","fillColor":"#f03","fillOpacity":0.5}'
+      leaflet_markercluster:
+        control: false
+        options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds": false}'
+        excluded: ''
+        include_path: false
+      fullscreen:
+        control: false
+        options: '{"position":"topleft","pseudoFullscreen":false}'
+      path: ''
+      feature_properties:
+        values: ''
+      geocoder:
+        control: false
+        settings:
+          autocomplete:
+            placeholder: 'Search Address'
+            title: 'Search an Address on the Map'
+          position: topright
+          input_size: 20
+          providers: {  }
+          min_terms: 4
+          delay: 800
+          zoom: 16
+          popup: false
+          options: ''
+      map_lazy_load:
+        lazy_load: true
+      weight: null
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

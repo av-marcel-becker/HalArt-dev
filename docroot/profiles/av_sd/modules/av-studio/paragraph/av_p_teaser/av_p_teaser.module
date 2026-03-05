@@ -1,0 +1,15 @@
+<?php
+   /**
+    * hook_theme
+    */
+   function av_p_teaser_theme($existing, $type, $theme, $path) 
+      {
+         return [
+               'paragraph__p_teaser' => [     
+                     'base hook' => 'paragraph',
+                  ],
+               'field__field_p_t_image' => [     
+                     'base hook' => 'field',
+                  ],
+            ];
+      } 

@@ -1,0 +1,11 @@
+#https://www.drupal.org/docs/8/api/menu-api/providing-module-defined-local-tasks
+av_share.settings:
+  title: 'AV Share Settings'
+  base_route: 'av_share.settings'
+  route_name: 'av_share.settings'
+  weight: 1
+#av_share.settings.twitter:
+#  title: 'Twitter'
+#  base_route: 'av_share.settings'
+#  route_name: 'av_share.settings.twitter'
+#  weight: 2

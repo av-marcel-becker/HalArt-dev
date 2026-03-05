@@ -1,0 +1,4 @@
+'administer AV-Layout configuration':
+   title: 'administer AV-Layout configuration'
+   description: 'all permissions'
+   restrict access: true

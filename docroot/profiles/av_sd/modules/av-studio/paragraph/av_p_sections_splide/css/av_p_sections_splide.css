@@ -1,0 +1,89 @@
+/* Arrows */
+.splide-prev,
+.splide-next
+   {
+      font-size: 1.5rem;
+      line-height: 2.8125rem;
+      text-align: center;
+
+      position: absolute;
+      top: auto;
+      bottom: calc(100% - 4 * 1.25rem);
+
+      display: block;
+
+      width:  2.8125rem;
+      height:  2.8125rem;
+      padding: 0;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
+
+      cursor: pointer;
+
+      color: black;
+      border: none;
+      outline: none;
+      background: white;
+      
+      border-radius: 100%;
+   }
+.splide-prev
+   {
+      z-index: 1;
+      left:auto;
+      right: calc(2.5rem + 1rem + 2.8125rem);
+   }
+.splide-next
+   {
+      right: 2.5rem;
+   }
+
+.splide-prev:hover:before,
+.splide-prev:focus:before,
+.splide-next:hover:before,
+.splide-next:focus:before
+   {
+       opacity: 1;
+   }
+.splide-prev:hover,
+.splide-prev:focus,
+.splide-next:hover,
+.splide-next:focus
+   {
+       background-color: #858383;
+       color: white;
+   }
+.splide-prev.splide-disabled:before,
+.splide-next.splide-disabled:before
+   {
+       opacity: .25;
+   }
+.splide-prev.splide-disabled,
+.splide-next.splide-disabled
+   {
+       opacity: .25;
+   }
+
+
+
+@media (min-width: 576px)
+   {
+      
+   }
+@media (min-width: 768px)
+   {  
+      .splide-prev, 
+      .splide-next 
+         {
+            bottom:  calc(2 * 1.25rem);
+         }
+   }
+@media (min-width: 992px)
+   {
+      
+   }
+@media (min-width: 1200px)
+   {
+      
+   }

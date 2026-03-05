@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - crop
+  enforced:
+    module:
+      - av_p_image
+name: is_fp_66p_bp1400_934px
+label: 'FP 66% - bp1400 (B=934px)'
+effects:
+  8fc2c058-8830-4d38-b03a-9dfcf0001491:
+    uuid: 8fc2c058-8830-4d38-b03a-9dfcf0001491
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1868
+      height: 1245
+      crop_type: focal_point
+  e3b5b296-36ad-42c8-a15d-231f6c3e1ac0:
+    uuid: e3b5b296-36ad-42c8-a15d-231f6c3e1ac0
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

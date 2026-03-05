@@ -1,0 +1,5 @@
+av_l_sections_teaser.settings:
+  title: 'Teaser-Sections '
+  description: 'Set teaser-sections settings'
+  parent: 'av_l_default.settings'
+  route_name: 'av_l_sections_teaser.settings'

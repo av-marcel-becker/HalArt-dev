@@ -1,0 +1,26 @@
+uuid: 5ae922b9-95a4-4cd5-a4e5-f1484e1d478b
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_t_highlight
+    - paragraphs.paragraphs_type.p_teaser
+  enforced:
+    module:
+      - av_p_teaser
+id: paragraph.p_teaser.field_p_t_highlight
+field_name: field_p_t_highlight
+entity_type: paragraph
+bundle: p_teaser
+label: Hervorheben
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_image
+name: is_66p_bp1400_934px
+label: '66% - bp1400 (B=934px)'
+effects:
+  06c803a7-399e-4b2a-83ba-b92e29cb6a09:
+    uuid: 06c803a7-399e-4b2a-83ba-b92e29cb6a09
+    id: image_scale
+    weight: 1
+    data:
+      width: 1868
+      height: null
+      upscale: false
+  7a41604c-e727-4623-9de7-5aea3ee8e160:
+    uuid: 7a41604c-e727-4623-9de7-5aea3ee8e160
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

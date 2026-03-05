@@ -1,0 +1,12 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - paragraphs
+  enforced:
+    module:
+      - av_p_image
+id: paragraph.dm_66p
+label: 66%
+targetEntityType: paragraph
+cache: true

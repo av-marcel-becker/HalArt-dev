@@ -1,0 +1,21 @@
+uuid: fd822e3f-d711-4115-85cd-e6fcf0443b42
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_map_page
+  enforced:
+    module:
+      - av_n_map_page
+id: node.n_map_page.title
+field_name: title
+entity_type: node
+bundle: n_map_page
+label: Überschrift
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

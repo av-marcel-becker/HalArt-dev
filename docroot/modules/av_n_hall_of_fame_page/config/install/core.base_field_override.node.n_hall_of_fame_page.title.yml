@@ -1,0 +1,21 @@
+uuid: 8ca48d53-fdb6-4046-aae3-fa05e87e6f8d
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_hall_of_fame_page
+  enforced:
+    module:
+      - av_n_hall_of_fame_page
+id: node.n_hall_of_fame_page.title
+field_name: title
+entity_type: node
+bundle: n_hall_of_fame_page
+label: Überschrift
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

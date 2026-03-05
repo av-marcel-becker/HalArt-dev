@@ -1,0 +1,8 @@
+name: 'AV Leaflet Map CartoDB light'
+type: module
+description: 'Add a CartoDB light Map'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Tools'
+dependencies:
+  - leaflet
+  - leaflet_views

@@ -1,0 +1,8 @@
+av_ads.for_lists:
+  path: '/ads/{location}'
+  defaults:
+    _controller: '\Drupal\av_ads\Controller\EventList::content' 
+    _title: 'Event List'
+    location: '0'
+  requirements:
+    _access: 'TRUE'

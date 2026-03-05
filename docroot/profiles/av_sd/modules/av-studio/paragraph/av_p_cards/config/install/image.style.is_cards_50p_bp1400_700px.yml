@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_cards
+name: is_cards_50p_bp1400_700px
+label: 'Card 50% - bp1400 (B=700px)'
+effects:
+  df4994d5-40b0-4eb7-a84f-52ae46a1a351:
+    uuid: df4994d5-40b0-4eb7-a84f-52ae46a1a351
+    id: image_scale
+    weight: 1
+    data:
+      width: 1400
+      height: null
+      upscale: false
+  31301a2b-dcaf-49e6-bf9a-fc868514558f:
+    uuid: 31301a2b-dcaf-49e6-bf9a-fc868514558f
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

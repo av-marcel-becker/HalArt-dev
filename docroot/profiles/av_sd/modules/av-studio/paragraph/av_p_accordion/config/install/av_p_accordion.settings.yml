@@ -1,0 +1,7 @@
+dependencies:
+  enforced:
+    module:
+      - av_p_accordion
+icon_plus_icon: '<i class="icon-plus fa-solid fa-chevron-circle-right"></i>'
+icon_minus_icon: '<i class="icon-minus fa-solid fa-chevron-circle-down"></i>'
+icon_direction_left: 0

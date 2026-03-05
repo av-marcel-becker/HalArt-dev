@@ -1,0 +1,25 @@
+uuid: d7067b44-9bdf-4c12-a1bb-7bb235b3fdca
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_composite_card_page
+  enforced:
+    module:
+      - av_n_composite_card_page
+id: node.n_composite_card_page.status
+field_name: status
+entity_type: node
+bundle: n_composite_card_page
+label: Veröffentlicht
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

@@ -1,0 +1,11 @@
+av_n_map_page.map_page.add:
+  route_name: node.add
+  title: 'Kartenseite hinzufügen'
+  weight: 10
+  appears_on:
+    - view.v_content_map_page.v_content_map_page
+  route_parameters: 
+    node_type: 'n_map_page'
+#  options:
+#    query:
+#      destination: /admin/content/map_page

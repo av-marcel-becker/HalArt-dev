@@ -1,0 +1,25 @@
+uuid: 8f7f393b-a3cc-4fa5-9a00-a45c734a80e2
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_directory_page
+  enforced:
+    module:
+      - av_n_directory_page
+id: node.n_directory_page.promote
+field_name: promote
+entity_type: node
+bundle: n_directory_page
+label: 'Auf der Startseite anzeigen'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

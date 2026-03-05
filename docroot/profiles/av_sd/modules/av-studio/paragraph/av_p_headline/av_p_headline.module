@@ -1,0 +1,12 @@
+<?php
+   /**
+    * hook_theme
+    */
+   function av_p_headline_theme($existing, $type, $theme, $path) 
+      {
+         return [
+               'paragraph__p_headline' => [     
+                     'base hook' => 'paragraph',
+                  ],
+            ];
+      } 

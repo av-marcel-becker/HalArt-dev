@@ -1,0 +1,9 @@
+uuid: ba532a09-e1fe-43ed-8502-49fb9f9a4930
+langcode: de
+status: true
+dependencies: {  }
+id: r_moderator
+label: Moderation
+weight: 4
+is_admin: null
+permissions: {  }

@@ -1,0 +1,27 @@
+uuid: 49a7b0e7-408a-4724-b8ca-ef57bf59de96
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_c_text
+    - paragraphs.paragraphs_type.p_cards
+  module:
+    - text
+  enforced:
+    module:
+      - av_p_cards
+third_party_settings: { }
+id: paragraph.p_cards.field_p_c_text
+field_name: field_p_c_text
+entity_type: paragraph
+bundle: p_cards
+label: 'Card-Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    plain_text: plain_text
+field_type: text_long

@@ -1,0 +1,20 @@
+uuid: d517ac22-ffe6-4f02-818a-3b2102ea445d
+langcode: de
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - av_sub
+id: av_sub_messages
+theme: av_sub
+region: hidden_footer
+weight: -2
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Status-Nachrichten
+  provider: system
+  label_display: '0'
+visibility: {  }

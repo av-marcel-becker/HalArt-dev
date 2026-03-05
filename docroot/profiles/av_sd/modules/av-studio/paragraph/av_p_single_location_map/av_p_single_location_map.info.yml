@@ -1,0 +1,9 @@
+name: 'AV Paragraph - Single Location Map'
+type: module
+description: 'AV-Studio Paragraph - Single Location Map'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Paragraph'
+dependencies:
+  - paragraphs
+  - geofield
+  - leaflet

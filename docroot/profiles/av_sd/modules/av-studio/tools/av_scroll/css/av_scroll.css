@@ -1,0 +1,92 @@
+av-scroll {
+   --av-scroll-font-size: 1rem;
+   --av-scroll-background: #fff;
+   --av-scroll-color: #000;
+   --av-scroll-opacity: 0.8;
+   --av-scroll-border: none;
+   --av-scroll-border-radius: 0;
+   --av-scroll-padding: var(--size-20);
+   --av-scroll-z-index: 999;
+   --av-scroll-top: auto;
+   --av-scroll-right: var(--size-16);
+   --av-scroll-bottom: var(--size-16);
+   --av-scroll-left: auto;
+   --av-scroll-transform: none;
+   --av-scroll-transition: opacity 0.3s ease-in-out;
+   --av-scroll-box-shadow: 0rem 0.125rem 0.9375rem rgba(0,0,0,0.15);
+   --av-scroll-hover-transform: none;
+   --av-scroll-hover-border-radius: var(--av-scroll-border-radius);
+   --av-scroll-hover-border: var(--av-scroll-border);
+   --av-scroll-hover-background: #f0f0f0;
+   --av-scroll-hover-color: var(--av-scroll-color);
+   --av-scroll-hover-opacity: 0.8;
+}
+av-scroll[type="top"] {
+   --av-scroll-font-size: 1rem;
+   --av-scroll-background: #fff;
+   --av-scroll-color: #000;
+   --av-scroll-opacity: 0.8;
+   --av-scroll-border: none;
+   --av-scroll-border-radius: 0;
+   --av-scroll-padding: var(--size-20);
+   --av-scroll-z-index: 999;
+   --av-scroll-top: auto;
+   --av-scroll-right: var(--size-20);
+   --av-scroll-bottom: var(--size-20);
+   --av-scroll-left: auto;
+   --av-scroll-transform: none;
+   --av-scroll-transition: opacity 0.3s ease-in-out;
+   --av-scroll-box-shadow: 0rem 0.125rem 0.9375rem rgba(0,0,0,0.15);
+   --av-scroll-hover-transform: none;
+   --av-scroll-hover-border-radius: var(--av-scroll-border-radius);
+   --av-scroll-hover-border: var(--av-scroll-border);
+   --av-scroll-hover-background: #f0f0f0;
+   --av-scroll-hover-color: var(--av-scroll-color);
+   --av-scroll-hover-opacity: 0.8;
+}
+av-scroll[type="bottom"] {
+   --av-scroll-font-size: 1rem;
+   --av-scroll-background: #fff;
+   --av-scroll-color: #000;
+   --av-scroll-opacity: 0.8;
+   --av-scroll-border: none;
+   --av-scroll-border-radius: 0;
+   --av-scroll-padding: var(--size-20);
+   --av-scroll-z-index: 999;
+   --av-scroll-top: auto;
+   --av-scroll-right: var(--size-20);
+   --av-scroll-bottom: var(--size-0);
+   --av-scroll-left: auto;
+   --av-scroll-transform: none;
+   --av-scroll-transition: opacity 0.3s ease-in-out;
+   --av-scroll-box-shadow: 0rem 0.125rem 0.9375rem rgba(0,0,0,0.15);
+   --av-scroll-hover-transform: none;
+   --av-scroll-hover-border-radius: var(--av-scroll-border-radius);
+   --av-scroll-hover-border: var(--av-scroll-border);
+   --av-scroll-hover-background: #f0f0f0;
+   --av-scroll-hover-color: var(--av-scroll-color);
+   --av-scroll-hover-opacity: 0.8;
+}
+av-scroll[type="target"] {
+   --av-scroll-font-size: 1rem;
+   --av-scroll-background: #fff;
+   --av-scroll-color: #000;
+   --av-scroll-opacity: 0.8;
+   --av-scroll-border: none;
+   --av-scroll-border-radius: 0;
+   --av-scroll-padding: 10px;
+   --av-scroll-z-index: 999;
+   --av-scroll-top: auto;
+   --av-scroll-right: var(--size-20);
+   --av-scroll-bottom: var(--size-20);
+   --av-scroll-left: auto;
+   --av-scroll-transform: none;
+   --av-scroll-transition: opacity 0.3s ease-in-out;
+   --av-scroll-box-shadow: 0rem 0.125rem 0.9375rem rgba(0,0,0,0.15);
+   --av-scroll-hover-transform: none;
+   --av-scroll-hover-border-radius: var(--av-scroll-border-radius);
+   --av-scroll-hover-border: var(--av-scroll-border);
+   --av-scroll-hover-background: #f0f0f0;
+   --av-scroll-hover-color: var(--av-scroll-color);
+   --av-scroll-hover-opacity: 0.8;
+}

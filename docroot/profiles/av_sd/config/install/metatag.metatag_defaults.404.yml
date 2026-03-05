@@ -1,0 +1,10 @@
+uuid: 38caa36b-c1e2-4191-b921-8467665b9666
+langcode: de
+status: true
+dependencies: {  }
+id: '404'
+label: '404 Seite nicht gefunden'
+tags:
+  canonical_url: '[site:url]'
+  robots: 'noindex, nofollow, noarchive, nosnippet, noimageindex'
+  shortlink: '[site:url]'

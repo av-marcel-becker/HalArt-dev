@@ -1,0 +1,149 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the standard installation profile.
+ */
+
+use Drupal\user\Entity\User;
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function av_sd_install() 
+   {
+      // Assign user 1 the "administrator" role.
+      $user = User::load(1);
+      $user->roles[] = 'administrator';
+      $user->save();
+
+      // We install some menu links, so we have to rebuild the router, to ensure the
+      // menu links are valid.
+      \Drupal::service('router.builder')->rebuildIfNeeded();
+
+      /* *************************************************************************** */
+
+     
+      /* ################################################################### */
+      // Create User: Redaktion with password test123+++
+      // source: http://allabouttodd.com/story/how-programmatically-create-user-drupal-8
+      # $guy = $x->fetch();
+       
+          $lang = \Drupal::languageManager()->getCurrentLanguage()->getId();
+          $user = \Drupal\user\Entity\User::create();
+       
+      // Optional line:  Do this if you want to pick the user's ID !!!
+          # $user->uid = $old_user_account_from_your_other_system['uid'];  // Or 42, etc - or just omit it and let it be auto-assigned if you don't care
+       
+      // The Basics
+          # $user->setUsername($old_user_account_from_your_other_system['uid'];  // You could also just set this to "Bob" or something...
+          $user->setUsername('av-redaktion');  // You could also just set this to "Bob" or something...
+          $user->setPassword('test123+++');
+          $user->setEmail('redaktion@av-sites.de');
+          $user->enforceIsNew();  // Set this to FALSE if you want to edit (resave) an existing user object
+       
+      // Optional settings  <-- Thanks to http://drupal8.ovh/ for these suggestions!
+          #$user->set("init", 'marcel.becker.1@av-sites.de');
+          #$user->set("langcode", $lang);
+          #$user->set("preferred_langcode", $lang);
+          #$user->set("preferred_admin_langcode", $lang);
+          //$user->set("setting_name", 'setting_value');
+          $user->activate();
+          $user->roles[] = 'r_editor';
+       
+      // Save user
+          $result = $user->save();
+      /* *************************************************************************** */
+      /* ################################################################### */
+      // Create User: Moderation with password test123+++
+      # $guy = $x->fetch();
+       
+          $lang = \Drupal::languageManager()->getCurrentLanguage()->getId();
+          $user = \Drupal\user\Entity\User::create();
+       
+      // Optional line:  Do this if you want to pick the user's ID !!!
+          # $user->uid = $old_user_account_from_your_other_system['uid'];  // Or 42, etc - or just omit it and let it be auto-assigned if you don't care
+       
+      // The Basics
+          # $user->setUsername($old_user_account_from_your_other_system['uid'];  // You could also just set this to "Bob" or something...
+          $user->setUsername('av-moderation');  // You could also just set this to "Bob" or something...
+          $user->setPassword('test123+++');
+          $user->setEmail('moderation@av-sites.de');
+          $user->enforceIsNew();  // Set this to FALSE if you want to edit (resave) an existing user object
+       
+      // Optional settings  <-- Thanks to http://drupal8.ovh/ for these suggestions!
+          #$user->set("init", 'marcel.becker.2@av-sites.de');
+          #$user->set("langcode", $lang);
+          #$user->set("preferred_langcode", $lang);
+          #$user->set("preferred_admin_langcode", $lang);
+          //$user->set("setting_name", 'setting_value');
+          $user->activate();
+          $user->roles[] = 'r_moderator';
+       
+      // Save user
+          $result = $user->save();
+      /* *************************************************************************** */
+      /* ################################################################### */
+      // Create User: besitzhabende Person with password test123+++
+      # $guy = $x->fetch();
+       
+          $lang = \Drupal::languageManager()->getCurrentLanguage()->getId();
+          $user = \Drupal\user\Entity\User::create();
+       
+      // Optional line:  Do this if you want to pick the user's ID !!!
+          # $user->uid = $old_user_account_from_your_other_system['uid'];  // Or 42, etc - or just omit it and let it be auto-assigned if you don't care
+       
+      // The Basics
+          # $user->setUsername($old_user_account_from_your_other_system['uid'];  // You could also just set this to "Bob" or something...
+          $user->setUsername('av-owner');  // You could also just set this to "Bob" or something...
+          $user->setPassword('test123+++');
+          $user->setEmail('owner@av-sites.de');
+          $user->enforceIsNew();  // Set this to FALSE if you want to edit (resave) an existing user object
+       
+      // Optional settings  <-- Thanks to http://drupal8.ovh/ for these suggestions!
+          #$user->set("init", 'marcel.becker.3@av-sites.de');
+          #$user->set("langcode", $lang);
+          #$user->set("preferred_langcode", $lang);
+          #$user->set("preferred_admin_langcode", $lang);
+          //$user->set("setting_name", 'setting_value');
+          $user->activate();
+          $user->roles[] = 'r_owner';
+       
+      // Save user
+          $result = $user->save();
+      /* *************************************************************************** */
+      /* ################################################################### */
+      // Create User: User with password test123+++
+      # $guy = $x->fetch();
+       
+          $lang = \Drupal::languageManager()->getCurrentLanguage()->getId();
+          $user = \Drupal\user\Entity\User::create();
+       
+      // Optional line:  Do this if you want to pick the user's ID !!!
+          # $user->uid = $old_user_account_from_your_other_system['uid'];  // Or 42, etc - or just omit it and let it be auto-assigned if you don't care
+       
+      // The Basics
+          # $user->setUsername($old_user_account_from_your_other_system['uid'];  // You could also just set this to "Bob" or something...
+          $user->setUsername('av-user');  // You could also just set this to "Bob" or something...
+          $user->setPassword('test123+++');
+          $user->setEmail('user@av-sites.de');
+          $user->enforceIsNew();  // Set this to FALSE if you want to edit (resave) an existing user object
+       
+      // Optional settings  <-- Thanks to http://drupal8.ovh/ for these suggestions!
+          #$user->set("init", 'marcel.becker.4@av-sites.de');
+          #$user->set("langcode", $lang);
+          #$user->set("preferred_langcode", $lang);
+          #$user->set("preferred_admin_langcode", $lang);
+          //$user->set("setting_name", 'setting_value');
+          $user->activate();
+          $user->roles[] = 'authenticated';
+       
+      // Save user
+          $result = $user->save();
+      /* *************************************************************************** */
+      
+   }

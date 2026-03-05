@@ -1,0 +1,7 @@
+name: 'AV Node - Paragraph Page Content'
+type: module
+description: 'AV-Studio Node - Paragraph Page Content'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Node'
+dependencies:
+  - av_n_paragraph_page

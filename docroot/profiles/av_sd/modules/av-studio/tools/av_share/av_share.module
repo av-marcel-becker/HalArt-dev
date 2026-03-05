@@ -1,0 +1,202 @@
+<?php
+   /**
+    * Implements hook_page_attachments().
+    */
+   function av_share_page_attachments(array &$attachments) 
+      {
+         
+         // load settings
+         $config = \Drupal::config('av_share.settings');
+         $data = [
+            /* -------------------------------------------------------------- */
+            /* twitter */
+            // share        
+               'twitter_share_title' => $config->get('twitter_share_title'),
+               'twitter_share_icon' => $config->get('twitter_share_icon'),
+            // profile            
+               'twitter_profile_title' => $config->get('twitter_profile_title'),
+               'twitter_profile_icon' => $config->get('twitter_profile_icon'),
+               'twitter_profile_name' => $config->get('twitter_profile_name'),
+            /* x */
+            // share        
+               'x_share_title' => $config->get('x_share_title'),
+               'x_share_icon' => $config->get('x_share_icon'),
+            // profile            
+               'x_profile_title' => $config->get('x_profile_title'),
+               'x_profile_icon' => $config->get('x_profile_icon'),
+               'x_profile_name' => $config->get('x_profile_name'),
+            /* -------------------------------------------------------------- */
+            /* facebook */
+            // share               
+               'facebook_share_title' => $config->get('facebook_share_title'),
+               'facebook_share_icon' => $config->get('facebook_share_icon'),
+               'facebook_share_app_id' => $config->get('facebook_share_app_id'),
+            // profile            
+               'facebook_profile_title' => $config->get('facebook_profile_title'),
+               'facebook_profile_icon' => $config->get('facebook_profile_icon'),
+               'facebook_profile_name' => $config->get('facebook_profile_name'),
+               'facebook_profile_app_id' => $config->get('facebook_profile_app_id'),   
+            /* -------------------------------------------------------------- */
+            /* whatsapp */
+            // share     
+               'whatsapp_share_title' => $config->get('whatsapp_share_title'),
+               'whatsapp_share_modified_title' => $config->get('whatsapp_share_modified_title'),
+               'whatsapp_share_icon' => $config->get('whatsapp_share_icon'),  
+            // profile  
+               # 'whatsapp_profile_title' => $config->get('whatsapp_profile_title'),
+               # 'whatsapp_profile_icon' => $config->get('whatsapp_profile_icon'),
+            /* -------------------------------------------------------------- */
+            /* pinterest */
+            // share    
+               'pinterest_share_title' => $config->get('pinterest_share_title'),
+               'pinterest_share_icon' => $config->get('pinterest_share_icon'),
+            // profile  
+               'pinterest_profile_title' => $config->get('pinterest_profile_title'),
+               'pinterest_profile_icon' => $config->get('pinterest_profile_icon'),  
+            /* -------------------------------------------------------------- */
+            /* linkedin */
+            // share    
+               'linkedin_share_title' => $config->get('linkedin_share_title'),
+               'linkedin_share_icon' => $config->get('linkedin_share_icon'),
+            // profile  
+               'linkedin_profile_title' => $config->get('linkedin_profile_title'),
+               'linkedin_profile_icon' => $config->get('linkedin_profile_icon'),
+               'linkedin_profile_id' => $config->get('linkedin_profile_id'),      
+            /* -------------------------------------------------------------- */
+            /* xing */
+            // share     
+               'xing_share_title' => $config->get('xing_share_title'),
+               'xing_share_icon' => $config->get('xing_share_icon'),
+            // profile 
+               'xing_profile_title' => $config->get('xing_profile_title'),
+               'xing_profile_icon' => $config->get('xing_profile_icon'),
+               'xing_profile_name' => $config->get('xing_profile_name'),
+            /* -------------------------------------------------------------- */
+            /* telegram */
+            // share     
+               'telegram_share_title' => $config->get('telegram_share_title'),
+               'telegram_share_icon' => $config->get('telegram_share_icon'),
+            // profile 
+               'telegram_profile_title' => $config->get('telegram_profile_title'),
+               'telegram_profile_icon' => $config->get('telegram_profile_icon'),
+               'telegram_profile_name' => $config->get('telegram_profile_name'),
+            /* -------------------------------------------------------------- */
+            /* instagram */
+            // profile   
+               'instagram_profile_title' => $config->get('instagram_profile_title'),
+               'instagram_profile_icon' => $config->get('instagram_profile_icon'),
+               'instagram_profile_name' => $config->get('instagram_profile_name'), 
+            /* -------------------------------------------------------------- */
+            /* youtube */
+            // channel  
+               'youtube_channel_title' => $config->get('youtube_channel_title'),
+               'youtube_channel_icon' => $config->get('youtube_channel_icon'),
+               'youtube_channel_id' => $config->get('youtube_channel_id'), 
+            // video   
+               'youtube_video_title' => $config->get('youtube_video_title'),
+               'youtube_video_icon' => $config->get('youtube_video_icon'),
+               'youtube_video_id' => $config->get('youtube_video_id'),
+            /* -------------------------------------------------------------- */
+            /* print */  
+            // misc   
+               'print_misc_title' => $config->get('print_misc_title'),
+               'print_misc_icon' => $config->get('print_misc_icon'),
+            /* -------------------------------------------------------------- */
+            /* mail */  
+            // misc    
+               'mail_misc_title' => $config->get('mail_misc_title'),
+               'mail_misc_icon' => $config->get('mail_misc_icon'),
+               'mail_misc_mail' => $config->get('mail_misc_mail'),
+               'mail_misc_subject' => $config->get('mail_misc_subject'),
+               'mail_misc_body' => $config->get('mail_misc_body'),
+               'mail_misc_msg' => $config->get('mail_misc_msg'),
+            /* -------------------------------------------------------------- */
+            /* link */   
+               'link_misc_title' => $config->get('link_misc_title'),
+               'link_misc_icon' => $config->get('link_misc_icon'),
+               'link_misc_copy' => $config->get('link_misc_copy'),
+               'link_misc_close' => $config->get('link_misc_close'),
+               'link_misc_msg' => $config->get('link_misc_msg'),
+            /* -------------------------------------------------------------- */
+            /* favorite */   
+               'favorite_misc_title' => $config->get('favorite_misc_title'),
+               'favorite_misc_icon' => $config->get('favorite_misc_icon'),
+            /* -------------------------------------------------------------- */
+            /* popup */  
+               'popup_width' => $config->get('popup_width'),
+               'popup_height' => $config->get('popup_height'),
+               'popup_active' => $config->get('popup_active'),
+            /* -------------------------------------------------------------- */
+            /* menu */ 
+               'menu_title' => $config->get('menu_title'),
+               'menu_icon' => $config->get('menu_icon'),
+               'menu_adjust_yn' => $config->get('menu_adjust_yn'),
+               'menu_adjust_yp' => $config->get('menu_adjust_yp'),
+               'menu_adjust_xn' => $config->get('menu_adjust_xn'),
+               'menu_adjust_xp' => $config->get('menu_adjust_xp'),
+               'menu_overlap' => $config->get('menu_overlap'),
+               'menu_direction_top' => $config->get('menu_direction_top'),
+               'menu_direction_left' => $config->get('menu_direction_left'),                 
+            /* -------------------------------------------------------------- */
+         ];         
+         $attachments['#attached']['drupalSettings']['av_share'] = $data;
+         
+         $attachments['#attached']['library'][] = 'av_share/share';
+      }
+  
+
+   # use Drupal\Component\Utility\Xss;
+   use Drupal\Component\Utility\Html; 
+   
+   /**
+    * Implements hook_token_info().
+    */
+   function av_share_token_info() 
+      {        
+        $info = [];
+        $info['types']['av_share'] = [
+                                             'name' => t('AV Share'), 
+                                             'description' => t('share tokens')
+                                          ];
+         $info['tokens']['av_share']['share:'] = [
+                                                         'name' => t('full url'), 
+                                                         'description' => t('url'),
+                                                         0 => '0'
+                                                      ];
+         $info['tokens']['av_share']['url:full_path'] = [
+                                                               'name' => t('full url path'), 
+                                                               'description' => t('only path with parameters'),
+                                                               0 => '0'
+                                                            ];                                
+                                                                             
+        return $info;
+      }
+      
+   /**
+    * Implements hook_tokens().
+    */
+   function  av_share_tokens($type, $tokens, array $data, array $options, \Drupal\Core\Render\BubbleableMetadata $bubbleable_metadata) 
+      {
+         $replacements = [];
+         if($type == 'av_share') 
+            {
+               foreach ($tokens as $name => $original) 
+                  {
+                     Global $base_url;
+                     // Find the desired token by name.
+                     switch ($name) 
+                        {
+                           case 'url:full': 
+                              $results['url']['full'] = $base_url;
+                              $replacements[$original] = (isset($results['url']['full']))?$results['url']['full']:'';
+                           break;
+                           case 'url:full_path': 
+                              $results['url']['full_path'] = Html::escape($_SERVER['REQUEST_URI']);
+                              $replacements[$original] = (isset($results['url']['full_path']))?$results['url']['full_path']:'';                                        
+                           break;
+                        }
+                  }
+            }
+         return $replacements;
+      }
+     

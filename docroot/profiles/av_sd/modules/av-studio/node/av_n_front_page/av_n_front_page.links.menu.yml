@@ -1,0 +1,6 @@
+av_n_front_page.front_page:
+  title: 'Startseiten'
+  parent: system.admin_content
+  route_name: av_n_front_page.front_page
+  menu_name: admin
+  url: internal:/admin/content/front_page

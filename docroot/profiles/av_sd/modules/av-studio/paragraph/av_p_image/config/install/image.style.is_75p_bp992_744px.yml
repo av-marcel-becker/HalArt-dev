@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_image
+name: is_75p_bp992_744px
+label: '75% - bp992 (B=744px)'
+effects:
+  10ccaf3b-ff35-4bd9-8e0d-38cdaef98e48:
+    uuid: 10ccaf3b-ff35-4bd9-8e0d-38cdaef98e48
+    id: image_scale
+    weight: 1
+    data:
+      width: 1488
+      height: null
+      upscale: false
+  f7a13906-3443-42f3-a638-7cb688176e69:
+    uuid: f7a13906-3443-42f3-a638-7cb688176e69
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

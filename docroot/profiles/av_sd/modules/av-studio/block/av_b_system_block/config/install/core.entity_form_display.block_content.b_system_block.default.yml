@@ -1,0 +1,42 @@
+uuid: 7a380b2f-c704-4d9c-846b-680548404340
+langcode: de
+status: true
+dependencies:
+  config:
+    - block_content.type.b_system_block
+    - field.field.block_content.b_system_block.field_b_sb_content
+  enforced:
+    module:
+      - av_b_system_block
+  module:
+    - layout_paragraphs
+id: block_content.b_system_block.default
+targetEntityType: block_content
+bundle: b_system_block
+mode: default
+content:
+  field_b_sb_content:
+    type: layout_paragraphs
+    weight: 26
+    settings:
+      preview_view_mode: default
+      nesting_depth: 0
+      require_layouts: 1
+    third_party_settings: {  }
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

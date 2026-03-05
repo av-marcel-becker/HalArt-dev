@@ -1,0 +1,109 @@
+uuid: 30254048-56b9-4ff7-bd2d-060f50e4b920
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_types_of_sports_page
+  enforced:
+    module:
+      - av_n_types_of_sports_page
+  module:
+    - content_moderation
+id: w_types_of_sports_page
+label: Sportarten-Seite
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      label: Entwurf
+      published: false
+      default_revision: false
+      weight: 0
+    published:
+      label: Veröffentlicht
+      published: true
+      default_revision: true
+      weight: 1
+    w_tosp_archives:
+      published: false
+      default_revision: true
+      label: Archiv
+      weight: 2
+    w_tosp_presentation:
+      published: false
+      default_revision: false
+      label: Moderation
+      weight: 3
+    w_tosp_release_planned:
+      published: false
+      default_revision: true
+      label: 'Veröffentlichung geplant'
+      weight: 4
+    w_tosp_unpublished:
+      published: false
+      default_revision: true
+      label: Unveröffentlicht
+      weight: 5
+  transitions:
+    create_new_draft:
+      label: 'Neuen Entwurf erstellen'
+      to: draft
+      weight: 0
+      from:
+        - draft
+        - published
+        - w_tosp_archives
+        - w_tosp_presentation
+        - w_tosp_release_planned
+        - w_tosp_unpublished
+    publish:
+      label: Veröffentlichen
+      to: published
+      weight: 1
+      from:
+        - draft
+        - published
+        - w_tosp_archives
+        - w_tosp_presentation
+        - w_tosp_release_planned
+        - w_tosp_unpublished
+    w_tosp_archive:
+      label: Archivieren
+      from:
+        - published
+        - w_tosp_unpublished
+      to: w_tosp_archives
+      weight: 2
+    w_tosp_do_not_publish:
+      label: 'nicht veröffentlichen'
+      from:
+        - draft
+        - published
+        - w_tosp_archives
+        - w_tosp_presentation
+        - w_tosp_release_planned
+        - w_tosp_unpublished
+      to: w_tosp_unpublished
+      weight: 5
+    w_tosp_moderate:
+      label: Moderieren
+      from:
+        - draft
+        - w_tosp_archives
+        - w_tosp_presentation
+        - w_tosp_unpublished
+      to: w_tosp_presentation
+      weight: 3
+    w_tosp_schedule_publication:
+      label: 'Veröffentlichung planen'
+      from:
+        - draft
+        - w_tosp_presentation
+        - w_tosp_release_planned
+        - w_tosp_unpublished
+      to: w_tosp_release_planned
+      weight: 4
+  entity_types:
+    node:
+      - n_types_of_sports_page
+  default_moderation_state: draft

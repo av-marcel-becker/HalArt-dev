@@ -1,0 +1,43 @@
+.up-down-scroll
+   {
+      position: fixed;
+      bottom: 0.25rem;
+      right: 0.25rem;
+      padding: 0rem;
+      margin: 0rem;
+      background-color: transparent;
+      width: 1.5rem;
+      height: 3rem;
+   }
+.up-down-scroll button
+   {
+      display: table;
+      width: 1.5rem;
+      height: 1.5rem;
+      padding: 0.25rem;
+      margin: 0rem;
+      background-image: none;
+      background-color: #6b6b6b;
+      cursor: pointer;
+      border-width: 0rem;
+      font-size: 1rem;
+          
+      line-height: 1rem;
+      text-align: center;
+   }
+.up-down-scroll button:hover
+   {
+      background-color: #8d8d8d;
+   }
+.up-down-scroll button i
+   {
+      display: table-cell;
+      width: 1rem;
+      height: 1rem;
+      font-style: normal;
+      font-weight: bold;
+      color: #ffffff;
+      vertical-align: middle;
+      text-align: center;
+   }
+

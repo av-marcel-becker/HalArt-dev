@@ -1,0 +1,109 @@
+uuid: d099a824-7dc9-40b3-ab4e-a5d8732de2f5
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_hall_of_fame_page
+  enforced:
+    module:
+      - av_n_hall_of_fame_page
+  module:
+    - content_moderation
+id: w_hall_of_fame_page
+label: Hall of Fame Seite
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      label: Entwurf
+      published: false
+      default_revision: false
+      weight: 0
+    published:
+      label: Veröffentlicht
+      published: true
+      default_revision: true
+      weight: 1
+    w_hofp_archives:
+      published: false
+      default_revision: true
+      label: Archiv
+      weight: 2
+    w_hofp_presentation:
+      published: false
+      default_revision: false
+      label: Moderation
+      weight: 3
+    w_hofp_release_planned:
+      published: false
+      default_revision: true
+      label: 'Veröffentlichung geplant'
+      weight: 4
+    w_hofp_unpublished:
+      published: false
+      default_revision: true
+      label: Unveröffentlicht
+      weight: 5
+  transitions:
+    create_new_draft:
+      label: 'Neuen Entwurf erstellen'
+      to: draft
+      weight: 0
+      from:
+        - draft
+        - published
+        - w_hofp_archives
+        - w_hofp_presentation
+        - w_hofp_release_planned
+        - w_hofp_unpublished
+    publish:
+      label: Veröffentlichen
+      to: published
+      weight: 1
+      from:
+        - draft
+        - published
+        - w_hofp_archives
+        - w_hofp_presentation
+        - w_hofp_release_planned
+        - w_hofp_unpublished
+    w_hofp_archive:
+      label: Archivieren
+      from:
+        - published
+        - w_hofp_unpublished
+      to: w_hofp_archives
+      weight: 2
+    w_hofp_do_not_publish:
+      label: 'nicht veröffentlichen'
+      from:
+        - draft
+        - published
+        - w_hofp_archives
+        - w_hofp_presentation
+        - w_hofp_release_planned
+        - w_hofp_unpublished
+      to: w_hofp_unpublished
+      weight: 5
+    w_hofp_moderate:
+      label: Moderieren
+      from:
+        - draft
+        - w_hofp_archives
+        - w_hofp_presentation
+        - w_hofp_unpublished
+      to: w_hofp_presentation
+      weight: 3
+    w_hofp_schedule_publication:
+      label: 'Veröffentlichung planen'
+      from:
+        - draft
+        - w_hofp_presentation
+        - w_hofp_release_planned
+        - w_hofp_unpublished
+      to: w_hofp_release_planned
+      weight: 4
+  entity_types:
+    node:
+      - n_hall_of_fame_page
+  default_moderation_state: draft

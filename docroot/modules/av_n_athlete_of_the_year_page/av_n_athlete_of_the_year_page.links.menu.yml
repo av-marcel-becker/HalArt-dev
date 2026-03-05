@@ -1,0 +1,6 @@
+av_n_athlete_of_the_year_page.athlete_of_the_year_page:
+  title: 'Sportler des Jahres Seiten'
+  parent: system.admin_content
+  route_name: av_n_athlete_of_the_year_page.athlete_of_the_year_page
+  menu_name: admin
+  url: internal:/admin/content/athlete_of_the_year_page

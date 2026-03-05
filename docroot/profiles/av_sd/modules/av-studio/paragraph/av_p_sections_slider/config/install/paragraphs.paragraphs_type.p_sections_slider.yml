@@ -1,0 +1,19 @@
+uuid: 551094e8-6c5c-450b-80b9-68221a3fe6c6
+langcode: de
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+  enforced:
+    module:
+      - av_p_sections_slider
+id: p_sections_slider
+label: 'Slider Abschnitt'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      section_slider: 'Slider Abschnitt'

@@ -1,0 +1,18 @@
+uuid: 5c8aa8d1-c952-4a7e-9bd7-cc55897de43f
+langcode: de
+status: true
+dependencies:
+  module:
+    - image_replace
+  enforced:
+    module:
+      - av_ads
+name: is_ads_bp768
+label: 'Anzeige - bp768'
+effects:
+  966e3408-610d-440b-b845-72ab93920e44:
+    uuid: 966e3408-610d-440b-b845-72ab93920e44
+    id: image_replace
+    weight: 1
+    data:
+      image_style: is_ads_bp768

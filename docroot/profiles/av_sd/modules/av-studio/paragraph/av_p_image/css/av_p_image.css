@@ -1,0 +1,92 @@
+/*
+
+--ph-image-figcaption-margin
+--ph-image-figcaption-padding
+--ph-image-figcaption-font-family
+--ph-image-figcaption-font-style
+--ph-image-figcaption-font-variant
+--ph-image-figcaption-font-weight
+--ph-image-figcaption-color
+--ph-image-figcaption-font-size
+--ph-image-figcaption-line-height
+--ph-image-figcaption-text-align
+
+--ph-image-badge-position
+--ph-image-badge-top
+--ph-image-badge-left
+--ph-image-badge-right
+--ph-image-badge-bottom
+--ph-image-badge-padding
+--ph-image-badge-color
+--ph-image-badge-background
+--ph-image-badge-line-height
+--ph-image-badge-transition
+--ph-image-badge-font-size
+--ph-image-badge-margin
+--ph-image-badge-text-align
+--ph-image-badge-font-family
+--ph-image-badge-font-style
+--ph-image-badge-font-weight
+--ph-image-badge-font-variant
+--ph-image-badge-letter-spacing
+--ph-image-badge-text-transform
+--ph-image-badge-transform
+--ph-image-badge-transform-origin
+--ph-image-badge-border-radius
+*/
+
+.ph-image
+   {
+      display: flex;
+   }
+.ph-image > a
+   {
+      display: contents;
+   }
+.ph-image .badge {
+   z-index: 1;
+   position: var(--ph-image-badge-position, absolute);
+   top: var(--ph-image-badge-top, auto);
+   left: var(--ph-image-badge-left, 0);
+   right: var(--ph-image-badge-right, auto);
+   bottom: var(--ph-image-badge-bottom, 0);
+   padding: var(--ph-image-badge-padding, 5px);
+   color: var(--ph-image-badge-color, unset);
+   background: var(--ph-image-badge-background, rgba(0,0,0,0.5));
+   line-height: var(--ph-image-badge-line-height, 1);
+   transition: var(--ph-image-badge-transition, opacity 100ms linear);
+   font-size: var(--ph-image-badge-font-size, 16px);
+   margin: var(--ph-image-badge-margin, 5px);
+   text-align: var(--ph-image-badge-text-align, center);
+   font-family: var(--ph-image-badge-font-family, sans-serif);
+   font-style: var(--ph-image-badge-font-style, normal);
+   font-weight: var(--ph-image-badge-font-weight, normal);
+   font-variant: var(--ph-image-badge-font-variant, normal);
+   letter-spacing: var(--ph-image-badge-letter-spacing, 1px);
+   text-transform: var(--ph-image-badge-text-transform, none);
+   transform: var(--ph-image-badge-transform, none);
+   transform-origin: var(--ph-image-badge-transform-origin, center);
+   border-radius: var(--ph-image-badge-border-radius, 0px);
+}
+.ph-image .badge--hidden {
+   opacity: 0;
+}
+.ph-image figure {
+   display: flex;
+   flex-direction: column;
+}
+.ph-image figure > span {
+   display: contents;
+}
+.ph-image figcaption {
+   margin: var(--ph-image-figcaption-margin, 0);
+   padding: var(--ph-image-figcaption-padding, 0);
+   font-family: var(--ph-image-figcaption-font-family, sans-serif);
+   font-style: var(--ph-image-figcaption-font-style, normal);
+   font-variant: var(--ph-image-figcaption-font-variant, normal);
+   font-weight: var(--ph-image-figcaption-font-weight, normal);
+   color: var(--ph-image-figcaption-color, black);
+   font-size: var(--ph-image-figcaption-font-size, 1rem);
+   line-height: var(--ph-image-figcaption-line-height, 1.2);
+   text-align: var(--ph-image-figcaption-text-align, left);
+}

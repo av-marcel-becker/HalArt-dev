@@ -1,0 +1,22 @@
+uuid: 83372e1e-803e-4d6b-8619-ef0d415be910
+langcode: de
+status: true
+dependencies:
+  config:
+    - filter.format.f_authenticated
+  module:
+    - filter
+    - matomo
+    - system
+    - userprotect
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'opt-in or out of matomo tracking'
+  - 'use text format f_authenticated'
+  - userprotect.account.edit
+  - userprotect.mail.edit
+  - userprotect.pass.edit

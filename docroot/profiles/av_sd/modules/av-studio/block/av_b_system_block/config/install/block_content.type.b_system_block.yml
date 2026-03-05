@@ -1,0 +1,11 @@
+uuid: c54500da-fcc0-47e8-bf08-562c94edeebd
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_b_system_block
+id: b_system_block
+label: Systemblock
+revision: 1
+description: ''

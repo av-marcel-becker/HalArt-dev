@@ -1,0 +1,7 @@
+av_l_default.settings:
+  path: '/admin/config/system/av_layout'
+  defaults:
+    _form: '\Drupal\av_l_default\Form\LayoutSettingsForm'
+    _title: 'AV-Layout Settings'
+  requirements:
+    _permission: 'administer AV-Layout configuration'

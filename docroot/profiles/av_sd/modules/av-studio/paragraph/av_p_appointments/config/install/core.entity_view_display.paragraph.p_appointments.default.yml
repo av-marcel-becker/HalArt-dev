@@ -1,0 +1,51 @@
+uuid: d2c5476e-661c-4546-afbc-5d1d826c7819
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p_appointments.field_p_a_appointments
+    - field.field.paragraph.p_appointments.field_p_a_label
+    - paragraphs.paragraphs_type.p_appointments
+  module:
+    - double_field
+  enforced:
+    module:
+      - av_p_appointments
+id: paragraph.p_appointments.default
+targetEntityType: paragraph
+bundle: p_appointments
+mode: default
+content:
+  field_p_a_appointments:
+    type: double_field_unformatted_list
+    label: hidden
+    settings:
+      first:
+        format_type: medium
+        link: false
+        hidden: false
+        key: false
+        decimal_separator: .
+        thousand_separator: ''
+        scale: 2
+      second:
+        format_type: medium
+        link: false
+        hidden: false
+        key: false
+        decimal_separator: .
+        thousand_separator: ''
+        scale: 2
+      inline: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_p_a_label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

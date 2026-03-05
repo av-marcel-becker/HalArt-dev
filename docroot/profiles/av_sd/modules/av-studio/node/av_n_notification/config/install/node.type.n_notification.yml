@@ -1,0 +1,38 @@
+uuid: 31731b2a-f09e-4256-9aa3-373157243930
+langcode: de
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - node_revision_delete
+  enforced:
+    module:
+      - av_n_notification
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  node_revision_delete:
+    amount:
+      status: true
+      settings:
+        amount: 10
+    created:
+      status: false
+      settings:
+        age: 1
+    drafts:
+      status: false
+      settings:
+        age: 1
+    only_drafts:
+      status: false
+      settings:
+        age: 0
+name: Benachrichtigung
+type: n_notification
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

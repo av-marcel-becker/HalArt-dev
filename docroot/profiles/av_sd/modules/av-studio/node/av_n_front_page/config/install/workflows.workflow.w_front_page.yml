@@ -1,0 +1,109 @@
+uuid: 8c6ce878-b3e7-4f85-84d9-632c73fd4369
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_front_page
+  enforced:
+    module:
+      - av_n_front_page
+  module:
+    - content_moderation
+id: w_front_page
+label: Startseite
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      label: Entwurf
+      published: false
+      default_revision: false
+      weight: 0
+    published:
+      label: Veröffentlicht
+      published: true
+      default_revision: true
+      weight: 1
+    w_fp_archives:
+      published: false
+      default_revision: true
+      label: Archiv
+      weight: 2
+    w_fp_presentation:
+      published: false
+      default_revision: false
+      label: Moderation
+      weight: 3
+    w_fp_release_planned:
+      published: false
+      default_revision: true
+      label: 'Veröffentlichung geplant'
+      weight: 4
+    w_fp_unpublished:
+      published: false
+      default_revision: true
+      label: Unveröffentlicht
+      weight: 5
+  transitions:
+    create_new_draft:
+      label: 'Neuen Entwurf erstellen'
+      to: draft
+      weight: 0
+      from:
+        - draft
+        - published
+        - w_fp_archives
+        - w_fp_presentation
+        - w_fp_release_planned
+        - w_fp_unpublished
+    publish:
+      label: Veröffentlichen
+      to: published
+      weight: 1
+      from:
+        - draft
+        - published
+        - w_fp_archives
+        - w_fp_presentation
+        - w_fp_release_planned
+        - w_fp_unpublished
+    w_fp_archive:
+      label: Archivieren
+      from:
+        - published
+        - w_fp_unpublished
+      to: w_fp_archives
+      weight: 2
+    w_fp_do_not_publish:
+      label: 'nicht veröffentlichen'
+      from:
+        - draft
+        - published
+        - w_fp_archives
+        - w_fp_presentation
+        - w_fp_release_planned
+        - w_fp_unpublished
+      to: w_fp_unpublished
+      weight: 5
+    w_fp_moderate:
+      label: Moderieren
+      from:
+        - draft
+        - w_fp_archives
+        - w_fp_presentation
+        - w_fp_unpublished
+      to: w_fp_presentation
+      weight: 3
+    w_fp_schedule_publication:
+      label: 'Veröffentlichung planen'
+      from:
+        - draft
+        - w_fp_presentation
+        - w_fp_release_planned
+        - w_fp_unpublished
+      to: w_fp_release_planned
+      weight: 4
+  entity_types:
+    node:
+      - n_front_page
+  default_moderation_state: draft

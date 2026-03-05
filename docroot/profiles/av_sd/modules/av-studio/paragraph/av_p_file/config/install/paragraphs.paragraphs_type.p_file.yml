@@ -1,0 +1,13 @@
+uuid: 3a7753c4-cf55-4eab-9b46-206d22a9e4c7
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_file
+id: p_file
+label: Datei
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

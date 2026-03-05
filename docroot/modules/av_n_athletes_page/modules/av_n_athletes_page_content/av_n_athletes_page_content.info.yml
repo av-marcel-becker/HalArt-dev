@@ -1,0 +1,7 @@
+name: 'AV Node - Athletes Page Content'
+type: module
+description: 'AV-Studio Node - Athletes Page Content'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Node'
+dependencies:
+  - av_n_athletes_page

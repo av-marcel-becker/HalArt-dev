@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_image
+name: is_100p_bp992_992px
+label: '100% - bp992 (B=992px)'
+effects:
+  c9f9d4b1-43ad-40f0-b343-26b82c6fbd02:
+    uuid: c9f9d4b1-43ad-40f0-b343-26b82c6fbd02
+    id: image_scale
+    weight: 1
+    data:
+      width: 1984
+      height: null
+      upscale: false
+  85167c92-fcf1-46d1-b9a8-dcb325214ff2:
+    uuid: 85167c92-fcf1-46d1-b9a8-dcb325214ff2
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

@@ -1,0 +1,89 @@
+{{ attach_library('av_p_list_with_icons/av_p_list_with_icons') }}
+
+{% set attributes_ul = create_attribute() %}
+{% set classes_ul = [
+            paragraph.field_p_lwi_button.0.value?'off-fa-ul':'fa-ul',
+          ]
+%}
+
+{% if(paragraph.field_p_lwi_horizontal_alignment.0.value) %}
+   {% set attributes_ul = attributes_ul.addClass('horizontal') %}
+{% else %}
+   {#% set attributes_ul = attributes_ul.addClass('') %#}
+{% endif %}
+
+{% if(paragraph.field_p_lwi_highlight.0.value) %}
+   {% set attributes_ul = attributes_ul.addClass('highlight') %}
+{% else %}
+   {#% set attributes_ul = attributes_ul.addClass('') %#}
+{% endif %}
+
+{% if(paragraph.field_p_lwi_button.0.value) %}
+   {% set attributes_ul = attributes_ul.addClass('list-as-button') %}
+{% else %}
+   {#% set attributes_ul = attributes_ul.addClass('') %#}
+{% endif %}
+
+{% block paragraph %}
+{%
+  set classes = [
+    'ph-list-with-icons',
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished', 
+  ]
+%}
+   <div{{ attributes.addClass(classes) }}>
+      <ul{{ attributes_ul.addClass(classes_ul) }}>
+         {#% if(paragraph.field_p_lwi_list_item) %}
+            {% for delta, item in paragraph %}
+               <pre>
+               {{ dump(item|keys) }}
+               </pre>
+            {% endfor %}
+         {% endif %#}
+         {% block content %}
+              
+            {#{ content.field_p_lwi_list_item }#}
+            {% for item in content.field_p_lwi_list_item['#items'] %}
+               {% set item_paragraph = item.entity %}
+               {% if  item_paragraph.isPublished() %}
+                   {% set item_paragraph = item.entity %}
+                                 {% set label = item_paragraph.field_pi_lwii_label.0.value %}
+                                 {% set icon = item_paragraph.field_pi_lwii_icon.0.value %}
+                                 {% set link = item_paragraph.field_pi_lwii_link.0      %}      
+                                 {% if link and link.options.attributes is iterable %}
+                                    {% set link_attributes = create_attribute(link.options.attributes) %}
+                                 {% else %}
+                                    {% set link_attributes = create_attribute() %}
+                                 {% endif %}
+                                 {% set link_attributes = link_attributes.setAttribute('title', link.title) %}
+                                 {#
+                                 {%
+                                 set classes = [
+                                 ]
+                                 %}
+                                 <div{{ attributes.addClass(classes) }}>
+                                 </div>
+                                 #}
+                                    <li{{ attributes_li.addClass(classes_ul) }}>
+
+                                       {% if link %}
+                                          <a href="{{ link.getUrl().toString() }}"{{ link_attributes.addClass(['cssf--d_inline-block--w100p']) }}>
+                                       {% endif %}
+                                       {% if icon %}         
+                                          <span class="{{ paragraph.field_p_lwi_button.0.value?'off-fa-li':'fa-li'}}"><i class="fa-solid fa-{{ icon }}"></i></span>
+                                       {% endif %}
+                                       {{ label|raw }}
+                                       {% if link %}
+                                          </a>
+                                       {% endif %}
+                                    </li>    
+               {% endif %}
+            {% endfor %}
+         {% endblock %}
+         {#{ paragraph.field_p_lwi_list_item }#}
+      </ul>    
+   </div>
+{% endblock paragraph %}

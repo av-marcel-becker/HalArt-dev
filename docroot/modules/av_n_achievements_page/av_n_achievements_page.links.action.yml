@@ -1,0 +1,11 @@
+av_n_achievements_page.achievements_page.add:
+  route_name: node.add
+  title: 'Erfolgsseite hinzufügen'
+  weight: 10
+  appears_on:
+    - view.v_content_achievements_page.v_content_achievements_page
+  route_parameters: 
+    node_type: 'n_achievements_page'
+#  options:
+#    query:
+#      destination: /admin/content/achievements_page

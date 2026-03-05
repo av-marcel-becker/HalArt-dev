@@ -1,0 +1,316 @@
+{{ attach_library('av_p_image/av_p_image') }}
+
+{% block paragraph %}
+   {% block content %}
+      {% set badge = paragraph.field_p_i_badge.0 %}
+      {% set badge_value = paragraph.field_p_i_badge.0.value %}
+      {% set show_badge = paragraph.field_p_i_show_badge.0.value %}
+      {% set image_target_id = paragraph.field_p_i_image.0.target_id %}
+      {% set image_target_alt = paragraph.field_p_i_image.0.alt %}
+      {% set image_target_title = paragraph.field_p_i_image.0.title %}
+      {% set image_target_width = paragraph.field_p_i_image.0.width %}
+      {% set image_target_height = paragraph.field_p_i_image.0.height %}
+      {% set align_center = paragraph.field_p_i_align_center.0.value %}
+      {% set show_label = paragraph.field_p_i_show_label.0.value %}
+      {% set enable_zoom = paragraph.field_p_i_enable_zoom.0.value %}
+      {% set enable_crop = paragraph.field_p_i_enable_crop.0.value %}
+      {% set enable_link = paragraph.field_p_i_enable_link.0.value %}
+      {% set size = paragraph.field_p_i_size.0.value %}
+      {% set label_value = paragraph.field_p_i_label.0.value %}
+      {% set label_format = paragraph.field_p_i_label.0.format %}
+      {% set label = paragraph.field_p_i_label %}
+      {% set link = paragraph.field_p_i_link %}
+      {% set link_uri = link.0.uri %}
+      {% set link_url = link.get(0).getUrl().toString() %}
+      {#% set link_url = link.0.uri|replace({'internal:':''}) %#}
+      {% set link_title = link.0.title %}
+      {% set link_extern_on = link.get(0).getUrl().external %}
+      {% set link_options = link.0.options %}
+      {% if link.0 and link.0.options.attributes is iterable %}
+         {% set link_attributes = create_attribute(link.0.options.attributes) %}
+      {% else %}
+         {% set link_attributes = create_attribute() %}
+      {% endif %}
+      {% if link_extern_on %}
+         {% set link_attributes = link_attributes.setAttribute('target', '_blank').setAttribute('rel', 'noindex nofollow') %}
+      {% endif %}
+
+      {% if not attributes %}
+         {% set attributes = create_attribute() %}
+      {% endif %}
+
+      {#% if(align_center) %}   
+         {% set attributes = attributes.addClass('cssf--jc_center--m_auto') %}
+      {% endif %#}
+
+      {%
+        set main_class = [
+          'ph-image',
+          'ri',
+          'cssf--position_relative',
+          'cssf--tpl-gcol100--d_flex--fwrap_wrap',
+          'cssf--p_var-region-spacing',
+          'cssf--as_unset--jc_start--ac_start',
+          'cssf--m0',
+          (size == "icon")?'cssf--tpl-gcol33--m0--px5--py10 cssf--mq576--tpl-gcol33--px20 cssf--mq768--tpl-gcol25--px40 cssf--mq992--tpl-gcolx2',
+          'paragraph',
+          'paragraph--type--' ~ paragraph.bundle|clean_class,
+          view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+          not paragraph.isPublished() ? 'paragraph--unpublished', 
+          align_center ? 'cssf--jc_center--m_auto',
+        ]
+      %}
+      {% if size == 'logo' %}
+         {% set main_class  = main_class|merge([ 
+                        'image-size-logo',
+                     ])
+                     %}
+      {% elseif size == 'icon' %}
+         {% set main_class  = main_class|merge([ 
+                        'image-size-icon',
+                     ])
+                     %}
+      {% elseif size == 'panorama' %}
+         {% set main_class  = main_class|merge([ 
+                        'image-size-panorama',
+                     ])
+                     %}
+      {% elseif size == '100' %}
+         {% set main_class  = main_class|merge([ 
+                        'image-size-100',
+                     ])
+                     %}
+      {% elseif size == '66' %}
+         {% set main_class  = main_class|merge([ 
+                        'image-size-66', 
+                        'cssf--mq576--tpl-gcol100',
+                        'cssf--mq768--tpl-gcol100',
+                        'cssf--mq992--tpl-gcol50',
+                        'cssf--mq1200--tpl-gcol66',
+                     ])
+                     %}   
+      {% elseif size == '50' %}
+         {% set main_class  = main_class|merge([ 
+                        'image-size-50', 
+                        'cssf--mq576--tpl-gcol100',
+                        'cssf--mq768--tpl-gcol100',
+                        'cssf--mq992--tpl-gcol50',
+                        'cssf--mq1200--tpl-gcol50',
+                     ])
+                     %}
+      {% elseif size == '33' %}
+         {% set main_class  = main_class|merge([ 
+                        'image-size-33', 
+                        'cssf--mq576--tpl-gcol50',
+                        'cssf--mq768--tpl-gcol50',
+                        'cssf--mq992--tpl-gcol33',
+                        'cssf--mq1200--tpl-gcol33',
+                     ])
+                     %}
+      {% elseif size == '25' %}
+         {% set main_class  = main_class|merge([ 
+                        'image-size-25', 
+                        'cssf--mq576--tpl-gcol50',
+                        'cssf--mq768--tpl-gcol50',
+                        'cssf--mq992--tpl-gcol33',
+                        'cssf--mq1200--tpl-gcol25',
+                     ])
+                     %}
+      {% else %}
+         {% set main_class  = main_class|merge([ 
+                        'image-size-33', 
+                        'cssf--mq576--tpl-gcol50',
+                        'cssf--mq768--tpl-gcol50',
+                        'cssf--mq992--tpl-gcol33',
+                        'cssf--mq1200--tpl-gcol33',
+                     ])
+                     %}
+      {% endif %}
+      <div{{ attributes.addClass(main_class) }}>
+         {% if(image_target_id) %}
+           {% if enable_link and link %}
+               <a href="{{ link_url }}" title="{{ link_title }}"{{ link_attributes.addClass(['col-b12','flex']) }}>
+           {% endif %}
+            <figure class="cssf--m0">
+               {% set responsive_image_style = '' %}
+               {% set view = 'dm_logo' %}
+               {% set responsive = false %}
+
+               {% if(size) %}
+                  {% if(size == "100") %}                     
+                     {% if(enable_crop) %}
+                        {%  set responsive_image_style = 'ris_fp_100p' %}
+                     {% else %}
+                        {%  set responsive_image_style = 'ris_100p' %}
+                     {% endif %}
+                     {% if(enable_zoom) %}
+                        {%  set view = 'dm_fp_100pz' %}
+                     {% else %}
+                        {%  set view = 'dm_fp_100p' %}
+                     {% endif %}
+                     {% if(enable_zoom) %}
+                        {% if(enable_crop) %}
+                           {%  set view = 'dm_fp_100pz' %}
+                        {% else %}
+                           {%  set view = 'dm_100pz' %}
+                        {% endif %} 
+                     {% else %}
+                        {% if(enable_crop) %}
+                           {%  set view = 'dm_fp_100p' %}
+                        {% else %}
+                           {%  set view = 'dm_100p' %}
+                        {% endif %} 
+                     {% endif %} 
+                     
+                     {% set responsive = true %}
+                  {% elseif(size == "75") %}
+                     {% if(enable_crop) %}
+                        {%  set responsive_image_style = 'ris_fp_75p' %}
+                     {% else %}
+                        {%  set responsive_image_style = 'ris_75p' %}
+                     {% endif %}
+                     {% if(enable_zoom) %}
+                        {% if(enable_crop) %}
+                           {%  set view = 'dm_fp_75pz' %}
+                        {% else %}
+                           {%  set view = 'dm_75pz' %}
+                        {% endif %} 
+                     {% else %}
+                        {% if(enable_crop) %}
+                           {%  set view = 'dm_fp_75p' %}
+                        {% else %}
+                           {%  set view = 'dm_75p' %}
+                        {% endif %} 
+                     {% endif %} 
+                     {% set responsive = true %}
+                  {% elseif(size == "66") %}
+                     {% if(enable_crop) %}
+                        {%  set responsive_image_style = 'ris_fp_66p' %}
+                     {% else %}
+                        {%  set responsive_image_style = 'ris_66p' %}
+                     {% endif %}
+                     {% if(enable_zoom) %}
+                        {% if(enable_crop) %}
+                           {%  set view = 'dm_fp_66pz' %}
+                        {% else %}
+                           {%  set view = 'dm_66pz' %}
+                        {% endif %} 
+                     {% else %}
+                        {% if(enable_crop) %}
+                           {%  set view = 'dm_fp_66p' %}
+                        {% else %}
+                           {%  set view = 'dm_66p' %}
+                        {% endif %} 
+                     {% endif %} 
+                     {% set responsive = true %}
+                  {% elseif(size == "50") %}  
+                     {% if(enable_crop) %}
+                        {%  set responsive_image_style = 'ris_fp_50p' %}
+                     {% else %}
+                        {%  set responsive_image_style = 'ris_50p' %}
+                     {% endif %}
+                     {% if(enable_zoom) %}
+                        {% if(enable_crop) %}
+                           {%  set view = 'dm_fp_50pz' %}
+                        {% else %}
+                           {%  set view = 'dm_50pz' %}
+                        {% endif %} 
+                     {% else %}
+                        {% if(enable_crop) %}
+                           {%  set view = 'dm_fp_50p' %}
+                        {% else %}
+                           {%  set view = 'dm_50p' %}
+                        {% endif %} 
+                     {% endif %} 
+                     {% set responsive = true %}
+                  {% elseif(size == "33") %}  
+                     {% if(enable_crop) %}
+                        {%  set responsive_image_style = 'ris_fp_33p' %}
+                     {% else %}
+                        {%  set responsive_image_style = 'ris_33p' %}
+                     {% endif %}
+                     {% if(enable_zoom) %}
+                        {% if(enable_crop) %}
+                           {%  set view = 'dm_fp_33pz' %}
+                        {% else %}
+                           {%  set view = 'dm_33pz' %}
+                        {% endif %} 
+                     {% else %}
+                        {% if(enable_crop) %}
+                           {%  set view = 'dm_fp_33p' %}
+                        {% else %}
+                           {%  set view = 'dm_33p' %}
+                        {% endif %} 
+                     {% endif %} 
+                     {% set responsive = true %}
+                  {% elseif(size == "25") %} 
+                     {% if(enable_crop) %}
+                        {%  set responsive_image_style = 'ris_fp_25p' %}
+                     {% else %}
+                        {%  set responsive_image_style = 'ris_25p' %}
+                     {% endif %}
+                     {% if(enable_zoom) %}
+                        {% if(enable_crop) %}
+                           {%  set view = 'dm_fp_25pz' %}
+                        {% else %}
+                           {%  set view = 'dm_25pz' %}
+                        {% endif %} 
+                     {% else %}
+                        {% if(enable_crop) %}
+                           {%  set view = 'dm_fp_25p' %}
+                        {% else %}
+                           {%  set view = 'dm_25p' %}
+                        {% endif %} 
+                     {% endif %} 
+                     {% set responsive = true %}
+                     
+                  {% elseif(size == "panorama") %}  
+                     {% if(enable_crop) %}
+                        {%  set responsive_image_style = 'ris_fp_panorama' %}
+                        {%  set view = 'dm_fp_panorama' %}
+                     {% else %}
+                        {%  set responsive_image_style = 'ris_panorama' %}
+                        {%  set view = 'dm_panorama' %}
+                     {% endif %}
+                     {% set responsive = true %}
+                  {% elseif(size == "logo") %} 
+                     {%  set responsive_image_style = '' %}
+                     {%  set view = 'dm_logo' %}
+                     {% set responsive = false %}
+                  {% elseif(size == "icon") %} 
+                     {%  set responsive_image_style = 'ris_icon' %}
+                     {%  set view = 'dm_icon' %}
+                     {% set responsive = false %}
+                  {% endif %}    
+               {% endif %}
+               {#{ drupal_image(image_target_id, responsive_image_style, {alt: image_target_alt|t, title: image_target_title|t}, responsive) }#} 
+               {#{ paragraph.field_p_i_image | view({settings: {image_style: 'thumbnail'}} }#} 
+               {#{ paragraph.field_p_i_image|renderThis }#} 
+               <div class="cssf--position_relative">
+                  {{ paragraph.field_p_i_image|view(view) }} 
+                  {% if show_badge %}
+                     <div class="badge" data-badge="{{ badge_value|replace({'(c)': '&copy;'})|raw }}">{{ badge_value|replace({'(c)': '&copy;'})|raw }}</div>
+                  {% endif %}
+               </div>
+               {% if(show_label) %} 
+                     
+                  <figcaption>
+                     {% if(label_value) %}
+                        {#{ label|renderThis }#}
+                        {#{ label }#}
+                        {{ content.field_p_i_label }}
+                     {% else %}
+                        {#{ media_label|renderThis }#}
+                     {% endif %}   
+                  </figcaption> 
+               
+               {% endif %}
+            </figure>
+           {% if enable_link and link %}
+               </a>
+           {% endif %}
+         {% endif %}
+      </div>
+      {#{ dump(content.field_p_i_label) }#}
+   {% endblock %}
+{% endblock paragraph %}

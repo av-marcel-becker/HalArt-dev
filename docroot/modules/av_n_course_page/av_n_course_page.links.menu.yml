@@ -1,0 +1,6 @@
+av_n_course_page.course_page:
+  title: 'Lehrgangs-Seiten'
+  parent: system.admin_content
+  route_name: av_n_course_page.course_page
+  menu_name: admin
+  url: internal:/admin/content/course_page

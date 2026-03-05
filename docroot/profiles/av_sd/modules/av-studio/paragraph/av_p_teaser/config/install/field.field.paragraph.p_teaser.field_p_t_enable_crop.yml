@@ -1,0 +1,26 @@
+uuid: dcf9ec23-259e-4a1e-9311-cc34b183b829
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_t_enable_crop
+    - paragraphs.paragraphs_type.p_teaser
+  enforced:
+    module:
+      - av_p_teaser
+id: paragraph.p_teaser.field_p_t_enable_crop
+field_name: field_p_t_enable_crop
+entity_type: paragraph
+bundle: p_teaser
+label: 'Bild beschneiden einschalten'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

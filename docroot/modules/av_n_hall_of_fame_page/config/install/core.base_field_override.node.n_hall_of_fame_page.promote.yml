@@ -1,0 +1,25 @@
+uuid: 8beefa2d-385b-4b98-a7e6-c9f1e21e3b43
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_hall_of_fame_page
+  enforced:
+    module:
+      - av_n_hall_of_fame_page
+id: node.n_hall_of_fame_page.promote
+field_name: promote
+entity_type: node
+bundle: n_hall_of_fame_page
+label: 'Auf der Startseite anzeigen'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

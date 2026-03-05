@@ -1,0 +1,28 @@
+uuid: 335c7a42-ad7e-430e-b31e-d289172e10d8
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_i_label
+    - paragraphs.paragraphs_type.p_image
+  module:
+    - text
+  enforced:
+    module:
+      - av_p_image
+third_party_settings: { }
+id: paragraph.p_image.field_p_i_label
+field_name: field_p_i_label
+entity_type: paragraph
+bundle: p_image
+label: Beschriftung
+description: 'Wenn das Beschriftungsfeld aktiviert wurde, kann hier ein individualer Text eingefügt werden. Alternativ kann dieses Feld leer gelassen werden, insofern vorhanden wird dann die hinterlegte Beschriftung des Bildes genommen.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    f_editor: f_editor
+    plain_text: plain_text
+field_type: text_long

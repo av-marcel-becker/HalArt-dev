@@ -1,0 +1,9 @@
+av_header.settings:
+  path: '/admin/config/system/av_header'
+  defaults:
+    _form: '\Drupal\av_header\Form\AvHeaderSettings'
+    _title: 'AV Header Settings'
+  requirements:
+    _permission: 'administer AV Header configuration'
+# options:
+#    no_cache: 'TRUE'

@@ -1,0 +1,24 @@
+uuid: b490c492-aeba-43c4-911a-572a70d56223
+langcode: de
+status: true
+dependencies:
+  module:
+    - color_field
+    - taxonomy
+  enforced:
+    module:
+      - av_n_point_of_interest_page
+third_party_settings: { }
+id: taxonomy_term.field_t_ispoip_stroke_color
+field_name: field_t_ispoip_stroke_color
+entity_type: taxonomy_term
+type: color_field_type
+settings:
+  format: hexhex
+module: color_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

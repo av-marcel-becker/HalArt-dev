@@ -1,0 +1,25 @@
+splide:
+  remote: https://splidejs.com/
+  version: 1.x
+  license:
+    name: MIT
+    url: https://github.com/Splidejs/splide/blob/master/LICENSE
+    gpl-compatible: true
+  js:
+    /libraries/splide/dist/js/splide.min.js: { weight: -3, minified: true }
+  css:
+    base:
+      /libraries/splide/dist/css/splide-core.min.css: {}
+      /libraries/splide/dist/css/splide.min.css: {}
+
+splide.theme:
+  js:
+    js/av_p_sections_splide.js: {}
+  css:
+    theme:
+      css/av_p_sections_splide.css: {}
+  dependencies:
+    - core/jquery
+    - av_p_sections_splide/splide
+    
+

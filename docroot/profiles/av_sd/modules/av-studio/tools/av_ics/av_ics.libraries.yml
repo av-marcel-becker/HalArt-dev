@@ -1,0 +1,9 @@
+av_ics:
+  version: 0.1
+  css:
+    theme:
+      css/av_ics.css: { }
+  js: 
+    js/av_ics.js: { }
+#  dependencies:
+#    - -/- 

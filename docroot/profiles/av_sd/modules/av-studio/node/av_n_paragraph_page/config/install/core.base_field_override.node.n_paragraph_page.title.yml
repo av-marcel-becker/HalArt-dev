@@ -1,0 +1,21 @@
+uuid: 8a90c5ab-8f67-42d8-b147-22608565e77e
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_paragraph_page
+  enforced:
+    module:
+      - av_n_paragraph_page
+id: node.n_paragraph_page.title
+field_name: title
+entity_type: node
+bundle: n_paragraph_page
+label: Überschrift
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,17 @@
+name: 'AV Paragraph - List with ICONs (Default Fontawesome ICONs)'
+type: module
+description: 'AV-Studio Paragraph - List With ICONs'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Paragraph'
+dependencies:
+  - field
+#  - field_permissions
+  - paragraphs
+#  - ds
+  - text
+  - allowed_formats
+  - maxlength
+  - entity_reference_revisions
+#  - av_l_list_with_icons
+#  - av_m_fa_icon
+#  - av_md_fa_icon

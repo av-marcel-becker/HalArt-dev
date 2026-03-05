@@ -1,0 +1,11 @@
+name: 'AV Paragraph - Appointments'
+type: module
+description: 'AV-Studio Paragraph - Appointments'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Paragraph'
+dependencies:
+  - paragraphs
+  - double_field
+  - av_ics
+
+    

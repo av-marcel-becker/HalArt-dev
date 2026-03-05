@@ -1,0 +1,7 @@
+name: 'av menu expand'
+type: module
+description: 'Set menu expanded by default'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Tools'
+dependencies:
+  - menu_ui

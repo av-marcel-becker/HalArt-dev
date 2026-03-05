@@ -1,0 +1,33 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p_block.field_p_b_block
+    - paragraphs.paragraphs_type.p_block
+  enforced:
+    module:
+      - av_p_block
+id: paragraph.p_block.default
+targetEntityType: paragraph
+bundle: p_block
+mode: default
+content:
+  field_p_b_block:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true

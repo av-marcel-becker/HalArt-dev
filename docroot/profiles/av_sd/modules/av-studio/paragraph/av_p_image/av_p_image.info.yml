@@ -1,0 +1,25 @@
+name: 'AV Paragraph - Image'
+type: module
+description: 'AV-Studio Paragraph - Image'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Paragraph'
+dependencies:
+  - drupal:text
+  - drupal:link
+  - drupal:options
+  - drupal:file
+  - drupal:image
+  - drupal:responsive_image
+  - focal_point:focal_point
+  - imce:imce
+  - photoswipe:photoswipe
+  - svg_image:svg_image
+  - paragraphs:paragraphs
+  - crop:crop
+  - twig_tweak:twig_tweak
+  - av_link_target_blank:av_link_target_blank
+  - av_link_target_blank:av_link_target_blank
+#  - zooming
+#  - av_l_image
+
+  

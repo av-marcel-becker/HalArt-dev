@@ -1,0 +1,60 @@
+uuid: 9d727141-fd05-4df9-aaf9-0d27198fb494
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p_list_with_icons.field_p_lwi_button
+    - field.field.paragraph.p_list_with_icons.field_p_lwi_highlight
+    - field.field.paragraph.p_list_with_icons.field_p_lwi_horizontal_alignment
+    - field.field.paragraph.p_list_with_icons.field_p_lwi_list_item
+    - paragraphs.paragraphs_type.p_list_with_icons
+  module:
+    - entity_reference_revisions
+  enforced:
+    module:
+      - av_p_list_with_icons
+id: paragraph.p_list_with_icons.default
+targetEntityType: paragraph
+bundle: p_list_with_icons
+mode: default
+content:
+  field_p_lwi_button:
+    weight: 1
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_p_lwi_highlight:
+    weight: 2
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_p_lwi_horizontal_alignment:
+    weight: 0
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_p_lwi_list_item:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

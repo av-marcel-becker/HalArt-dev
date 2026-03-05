@@ -1,0 +1,24 @@
+dependencies:
+  enforced:
+    module:
+      - av_copyright
+setup_show_copyright_icon: 1
+setup_year_right: 0
+setup_count_up_the_year: 1
+setup_current_year: '2024'
+setup_text: 'AV-Studio'
+setup_items_count: '3'
+setup_split_symbol_link: '|'
+setup_split_symbol: '-'
+item_1_a_href: /impressum
+item_1_a_title: Impressum
+item_1_a_label: Impressum
+item_1_a_target: _self
+item_2_a_href: /datenschutz
+item_2_a_title: Datenschutzerklärung
+item_2_a_label: Datenschutzerklärung
+item_2_a_target: _self
+item_3_a_href: '#cookie_einstellungen'
+item_3_a_title: Cookie-Einstellungen
+item_3_a_label: Cookie-Einstellungen
+item_3_a_target: _self

@@ -1,0 +1,14 @@
+<?php
+
+   /**
+    * hook_theme
+    */
+   function av_p_menu_theme($existing, $type, $theme, $path) 
+      {
+         return [
+                   'paragraph__p_menu' => [
+                                                   'base hook' => 'paragraph',
+                                              ],
+               ];
+      } 
+      

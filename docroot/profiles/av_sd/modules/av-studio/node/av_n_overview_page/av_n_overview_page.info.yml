@@ -1,0 +1,28 @@
+name: 'AV Node - Overview Page'
+type: module
+description: 'AV-Studio Node - Overview Page'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Node'
+dependencies:
+  - focal_point
+  - imce
+  - allowed_formats
+  - cshs
+  - pathauto
+  #- entity_reference_layout
+  - layout_paragraphs
+  - field_group
+  - length_indicator
+  - maxlength
+  - path
+  #- scheduler
+  - text
+  - user
+  - node
+  - paragraphs
+  - taxonomy
+  - menu_ui
+  - node_revision_delete
+  - content_moderation
+  - av_n_default
+  #- av_p_section

@@ -1,0 +1,29 @@
+uuid: 1abd7b08-5825-44f6-812e-6f4b1c5523ff
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_cp_content
+    - node.type.n_course_page
+  module:
+    - entity_reference_revisions
+  enforced:
+    module:
+      - av_n_course_page
+id: node.n_course_page.field_n_cp_content
+field_name: field_n_cp_content
+entity_type: node
+bundle: n_course_page
+label: Inhaltsbereich
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop: { }
+field_type: entity_reference_revisions

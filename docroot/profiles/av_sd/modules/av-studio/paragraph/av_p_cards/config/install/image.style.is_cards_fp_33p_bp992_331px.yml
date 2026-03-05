@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - crop
+  enforced:
+    module:
+      - av_p_cards
+name: is_cards_fp_33p_bp992_331px
+label: 'Card FP 33% - bp992 (B=331px)'
+effects:
+  ef4a4fea-962f-40ea-9a5f-f19792bdf18e:
+    uuid: ef4a4fea-962f-40ea-9a5f-f19792bdf18e
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 662
+      height: 372
+      crop_type: focal_point
+  678e4511-7603-4991-b218-e8c67f07531a:
+    uuid: 678e4511-7603-4991-b218-e8c67f07531a
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

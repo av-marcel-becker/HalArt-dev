@@ -1,0 +1,25 @@
+uuid: 35e1a404-6ac9-43fb-aa2e-56188e9c8d21
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_notification
+  enforced:
+    module:
+      - av_n_notification
+id: node.n_notification.promote
+field_name: promote
+entity_type: node
+bundle: n_notification
+label: 'Auf der Startseite anzeigen'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

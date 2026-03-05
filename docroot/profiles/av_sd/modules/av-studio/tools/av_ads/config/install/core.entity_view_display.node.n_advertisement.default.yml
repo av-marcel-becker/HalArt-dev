@@ -1,0 +1,190 @@
+uuid: 616cbcd6-bc9c-4c44-889c-217c9e84f29f
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.n_advertisement.field_n_ads_iframe
+    - field.field.node.n_advertisement.field_n_ads_img
+    - field.field.node.n_advertisement.field_n_ads_img_bp1200
+    - field.field.node.n_advertisement.field_n_ads_img_bp576
+    - field.field.node.n_advertisement.field_n_ads_img_bp768
+    - field.field.node.n_advertisement.field_n_ads_img_bp992
+    - field.field.node.n_advertisement.field_n_ads_label
+    - field.field.node.n_advertisement.field_n_ads_link
+    - field.field.node.n_advertisement.field_n_ads_location
+    - field.field.node.n_advertisement.field_n_ads_position
+    - field.field.node.n_advertisement.field_n_ads_time_range
+    - field.field.node.n_advertisement.field_n_ads_type
+    - node.type.n_advertisement
+  module:
+    - datetime_range
+    - iframe
+    - link
+    - user
+  enforced:
+    module:
+      - av_ads
+third_party_settings: { }
+id: node.n_advertisement.default
+targetEntityType: node
+bundle: n_advertisement
+mode: default
+content:
+  field_n_ads_iframe:
+    type: iframe_default
+    label: above
+    settings:
+      url: ''
+      title: ''
+      headerlevel: '3'
+      class: ''
+      frameborder: '0'
+      scrolling: ''
+      transparency: '0'
+      allowfullscreen: '0'
+      tokensupport: '0'
+      width: ''
+      height: ''
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_n_ads_img:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: { }
+    weight: 0
+    region: content
+  field_n_ads_img_bp1200:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_n_ads_img_bp576:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_n_ads_img_bp768:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_n_ads_img_bp992:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_n_ads_label:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_n_ads_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_n_ads_location:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_n_ads_position:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_n_ads_time_range:
+    type: daterange_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+      separator: '-'
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_n_ads_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  langcode:
+    type: language
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  links: true

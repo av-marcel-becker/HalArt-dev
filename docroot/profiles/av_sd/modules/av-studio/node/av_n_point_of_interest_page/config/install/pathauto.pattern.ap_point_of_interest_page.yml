@@ -1,0 +1,25 @@
+uuid: 35947551-661e-4e5f-be2c-56ef5c207f2e
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_point_of_interest_page
+  module:
+    - node
+id: ap_point_of_interest_page
+label: 'Ort (POI)'
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents:join-path]/[node:title]'
+selection_criteria:
+  2c6936ca-a43b-4597-be7d-fb0685a5036e:
+    id: 'entity_bundle:node'
+    bundles:
+      n_point_of_interest_page: n_point_of_interest_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 2c6936ca-a43b-4597-be7d-fb0685a5036e
+selection_logic: and
+weight: -5
+relationships: {  }

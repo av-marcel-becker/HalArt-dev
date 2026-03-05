@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_cards
+name: is_cards_50p_bp768_768px
+label: 'Card 50% - bp768 (B=768px)'
+effects:
+  eec5c275-563c-4025-b957-b713b81ae84e:
+    uuid: eec5c275-563c-4025-b957-b713b81ae84e
+    id: image_scale
+    weight: 1
+    data:
+      width: 1536
+      height: null
+      upscale: false
+  2ebb2d01-ddcd-477a-b4cb-2a2a1dea0ce4:
+    uuid: 2ebb2d01-ddcd-477a-b4cb-2a2a1dea0ce4
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

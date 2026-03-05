@@ -1,0 +1,25 @@
+uuid: 86a59271-e63d-4ce4-bd2e-7d071b5165cf
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_composite_card_page
+  module:
+    - node
+id: ap_composite_card_page
+label: Sedcards-Seite
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents:join-path]/[node:title]'
+selection_criteria:
+  82e1b7c2-5cf3-4243-ab3e-344253f47138:
+    id: 'entity_bundle:node'
+    bundles:
+      n_composite_card_page: n_composite_card_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 82e1b7c2-5cf3-4243-ab3e-344253f47138
+selection_logic: and
+weight: -5
+relationships: {  }

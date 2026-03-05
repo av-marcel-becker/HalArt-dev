@@ -1,0 +1,12 @@
+<?php
+   /**
+    * hook_theme
+    */
+   function av_p_panorama_theme($existing, $type, $theme, $path) 
+      {
+         return [
+               'paragraph__p_panorama' => [     
+                     'base hook' => 'paragraph',
+                  ],
+            ];
+      } 

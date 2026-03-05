@@ -1,0 +1,5 @@
+av_p_accordion.settings:
+  title: 'AV-Studio Paragraph - Accordion Settings'
+  description: 'Set AV-Studio Paragraph - Accordion settings'
+  parent: 'system.admin_config_system'
+  route_name: 'av_p_accordion.settings'

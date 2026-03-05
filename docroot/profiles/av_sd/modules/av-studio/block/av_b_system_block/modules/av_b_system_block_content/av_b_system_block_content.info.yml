@@ -1,0 +1,7 @@
+name: 'AV Block - System Block Content'
+type: module
+description: 'AV-Studio Block - System Block Content'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Block'
+dependencies:
+  - av_b_system_block

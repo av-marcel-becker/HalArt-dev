@@ -1,0 +1,29 @@
+uuid: 957357f8-9f2e-4b60-8186-b7691147eb5e
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_hofp_content
+    - node.type.n_hall_of_fame_page
+  module:
+    - entity_reference_revisions
+  enforced:
+    module:
+      - av_n_hall_of_fame_page
+id: node.n_hall_of_fame_page.field_n_hofp_content
+field_name: field_n_hofp_content
+entity_type: node
+bundle: n_hall_of_fame_page
+label: Inhaltsbereich
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop: { }
+field_type: entity_reference_revisions

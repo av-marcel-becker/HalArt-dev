@@ -1,0 +1,26 @@
+uuid: e2758550-eb86-48bc-8fb2-a9e1fad9e39b
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_t_social_links
+    - paragraphs.paragraphs_type.p_teaser
+  enforced:
+    module:
+      - av_p_teaser
+id: paragraph.p_teaser.field_p_t_social_links
+field_name: field_p_t_social_links
+entity_type: paragraph
+bundle: p_teaser
+label: 'Teilen anzeigen'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

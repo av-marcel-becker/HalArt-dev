@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_cards
+name: is_cards_66p_bp768_768px
+label: 'Card 66% - bp768 (B=768px)'
+effects:
+  32dc00bf-2bca-4f66-b14c-0a7e59a80cda:
+    uuid: 32dc00bf-2bca-4f66-b14c-0a7e59a80cda
+    id: image_scale
+    weight: 1
+    data:
+      width: 1536
+      height: null
+      upscale: false
+  a84576fe-1b91-4e52-96b4-f601b330c989:
+    uuid: a84576fe-1b91-4e52-96b4-f601b330c989
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

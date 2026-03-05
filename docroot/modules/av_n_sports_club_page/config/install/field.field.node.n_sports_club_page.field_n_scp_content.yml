@@ -1,0 +1,29 @@
+uuid: 6bfc1a51-a543-458b-8d86-5a398b90ed82
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_scp_content
+    - node.type.n_sports_club_page
+  module:
+    - entity_reference_revisions
+  enforced:
+    module:
+      - av_n_sports_club_page
+id: node.n_sports_club_page.field_n_scp_content
+field_name: field_n_scp_content
+entity_type: node
+bundle: n_sports_club_page
+label: Inhaltsbereich
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop: { }
+field_type: entity_reference_revisions

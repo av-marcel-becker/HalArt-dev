@@ -1,0 +1,53 @@
+uuid: 27a26328-984b-438b-89d8-6464575ea974
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_t_image
+    - paragraphs.paragraphs_type.p_teaser
+  module:
+    - image
+    - image_replace
+  enforced:
+    module:
+      - av_p_teaser
+third_party_settings:
+  image_replace:
+    image_style_map:
+      is_ads_bp1200:
+        source_field: '0'
+      is_ads_bp576:
+        source_field: '0'
+      is_ads_bp768:
+        source_field: '0'
+      is_ads_bp992:
+        source_field: '0'
+id: paragraph.p_teaser.field_p_t_image
+field_name: field_p_t_image
+entity_type: paragraph
+bundle: p_teaser
+label: Bild
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'p_teaser/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png jpg jpeg gif'
+  max_filesize: '2 MB'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

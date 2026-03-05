@@ -1,0 +1,24 @@
+uuid: 927449a9-a178-49ac-9782-da8034c7ec46
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pi_lwii_icon
+    - paragraphs.paragraphs_type.pi_list_with_icons_item
+  module:
+    - options
+  enforced:
+    module:
+      - av_p_list_with_icons
+id: paragraph.pi_list_with_icons_item.field_pi_lwii_icon
+field_name: field_pi_lwii_icon
+entity_type: paragraph
+bundle: pi_list_with_icons_item
+label: ICON
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

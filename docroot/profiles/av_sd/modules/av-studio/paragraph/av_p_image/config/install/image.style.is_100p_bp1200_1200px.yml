@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_image
+name: is_100p_bp1200_1200px
+label: '100% - bp1200 (B=1200px)'
+effects:
+  b20ac61c-75e8-4964-a7de-50f676f1134e:
+    uuid: b20ac61c-75e8-4964-a7de-50f676f1134e
+    id: image_scale
+    weight: 1
+    data:
+      width: 2400
+      height: null
+      upscale: false
+  8965bd89-de49-4498-a236-7d3f7605550d:
+    uuid: 8965bd89-de49-4498-a236-7d3f7605550d
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

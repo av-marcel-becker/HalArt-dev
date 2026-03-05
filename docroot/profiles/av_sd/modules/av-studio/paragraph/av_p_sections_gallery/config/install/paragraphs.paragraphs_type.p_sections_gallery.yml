@@ -1,0 +1,19 @@
+uuid: a418935c-dd78-4f01-ae9a-d5bfc159f0f3
+langcode: de
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+  enforced:
+    module:
+      - av_p_sections_gallery
+id: p_sections_gallery
+label: 'Galerie Abschnitt'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      section_gallery: 'Galerie Abschnitt'

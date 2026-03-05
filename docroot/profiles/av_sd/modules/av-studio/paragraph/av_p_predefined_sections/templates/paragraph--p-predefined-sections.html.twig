@@ -1,0 +1,22 @@
+{#
+if evtl. mit den eintrag ersetzen 'cssf--d_contents',
+#}
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+    {% if ('edit' in path('<current>') and 'layout-paragraphs-builder' or 'add' in path('<current>') and 'layout-paragraphs-builder' in path('<current>')) or ('insert' in path('<current>') and 'layout-paragraphs-builder' in path('<current>')) %}
+       <div{{ attributes.addClass(classes) }}>
+    {% endif %}
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+    {% if ('edit' in path('<current>') and 'layout-paragraphs-builder' or 'add' in path('<current>') and 'layout-paragraphs-builder' in path('<current>')) or ('insert' in path('<current>') and 'layout-paragraphs-builder' in path('<current>')) %}
+       </div>
+    {% endif %}
+{% endblock paragraph %}

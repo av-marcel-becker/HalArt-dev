@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_teaser
+name: is_teaser_33p_bp992_331px
+label: 'Teaser 33% - bp992 (B=331px)'
+effects:
+  5858932e-5349-4fd2-92d4-88718f036b5b:
+    uuid: 5858932e-5349-4fd2-92d4-88718f036b5b
+    id: image_scale
+    weight: 1
+    data:
+      width: 662
+      height: null
+      upscale: false
+  c04ab886-bd46-4fec-9d27-9ffddb732509:
+    uuid: c04ab886-bd46-4fec-9d27-9ffddb732509
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

@@ -1,0 +1,25 @@
+uuid: 19e1ee82-9bd4-4bf0-90d2-4c7aba3b94ba
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_advertisement
+  enforced:
+    module:
+      - av_ads
+id: node.n_advertisement.promote
+field_name: promote
+entity_type: node
+bundle: n_advertisement
+label: 'Auf der Startseite anzeigen'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

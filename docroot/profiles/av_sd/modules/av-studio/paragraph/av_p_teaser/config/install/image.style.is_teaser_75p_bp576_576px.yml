@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_teaser
+name: is_teaser_75p_bp576_576px
+label: 'Teaser 75% - bp576 (B=576px)'
+effects:
+  3b7b5b64-1b9c-402c-9cfa-99e04fcb839f:
+    uuid: 3b7b5b64-1b9c-402c-9cfa-99e04fcb839f
+    id: image_scale
+    weight: 1
+    data:
+      width: 1152
+      height: null
+      upscale: false
+  7e7536c9-b75e-411c-acf9-8b3176f4e868:
+    uuid: 7e7536c9-b75e-411c-acf9-8b3176f4e868
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

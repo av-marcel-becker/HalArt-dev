@@ -1,0 +1,11 @@
+uuid: e622ab11-11c1-4244-a5d8-7275a759b96f
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_overview_page
+name: 'Tags für Übersichtsseite'
+vid: t_tags_overview_page
+description: ''
+weight: 0

@@ -1,0 +1,13 @@
+uuid: b3f85a3f-0b79-40df-ae76-97e752cbb387
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_audio
+id: p_audio
+label: Audio
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

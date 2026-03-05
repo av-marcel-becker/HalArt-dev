@@ -1,0 +1,22 @@
+uuid: 3b90e03c-14ac-4e5a-88df-ab7c110f1a13
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_h_headline
+    - paragraphs.paragraphs_type.p_headline
+  enforced:
+    module:
+      - av_p_headline
+id: paragraph.p_headline.field_p_h_headline
+field_name: field_p_h_headline
+entity_type: paragraph
+bundle: p_headline
+label: Überschrift
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

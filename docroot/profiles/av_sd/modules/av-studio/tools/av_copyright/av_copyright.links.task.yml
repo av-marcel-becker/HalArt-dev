@@ -1,0 +1,6 @@
+#https://www.drupal.org/docs/8/api/menu-api/providing-module-defined-local-tasks
+av_copyright.settings:
+  title: 'AV Tools - Copyright Settings'
+  base_route: 'av_copyright.settings'
+  route_name: 'av_copyright.settings'
+  weight: 1

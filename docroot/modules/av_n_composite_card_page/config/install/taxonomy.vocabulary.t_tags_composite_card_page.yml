@@ -1,0 +1,11 @@
+uuid: c08504e0-6a5a-420b-b6c7-f870cdf89341
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_composite_card_page
+name: 'Tags für Sedcards-Seite'
+vid: t_tags_composite_card_page
+description: ''
+weight: 0

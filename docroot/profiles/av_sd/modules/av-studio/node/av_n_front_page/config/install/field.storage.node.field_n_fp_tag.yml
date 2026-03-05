@@ -1,0 +1,23 @@
+uuid: fd5d1b31-1223-4ac7-9700-71127c72865d
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_front_page
+  module:
+    - node
+    - taxonomy
+id: node.field_n_fp_tag
+field_name: field_n_fp_tag
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

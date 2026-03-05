@@ -1,0 +1,13 @@
+uuid: 3895e724-1be3-4d4d-9ccf-d3dddd21fd19
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_headline
+id: p_headline
+label: Überschrift
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

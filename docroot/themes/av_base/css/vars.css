@@ -1,0 +1,22 @@
+:root
+   {
+      /* ***************************************************************** */
+      /* preset fontawesome */    
+      --font-family-fa: 'Font Awesome 7 Pro';
+      --font-style-fa: normal;
+      --font-variant-fa: normal;
+      --font-weight-fa: 900;
+      --font-weight-fas: 900;
+      --font-weight-fa-solid: 900;
+      --font-weight-far: 400;
+      --font-weight-fa-regular: 400;
+      --font-weight-fal: 300;
+      --font-weight-fa-light: 300;
+      --font-weight-fat: 100;
+      --font-weight-fa-thin: 100;
+      --font-weight-fad: 300;
+      --font-weight-fa-duotone: 300;
+      --font-weight-fab: 400;
+      --font-weight-fa-brands: 400;
+      /* ***************************************************************** */
+   }

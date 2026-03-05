@@ -1,0 +1,141 @@
+{{ attach_library('av_p_remote_video/av_p_remote_video') }}
+
+{% set size = paragraph.field_p_rv_size.0.value %}
+{% set video_text = paragraph.field_p_rv_remote_video.0.value %}
+{% set badge = paragraph.field_p_rv_badge.0 %}
+{% set badge_value = paragraph.field_p_rv_badge.0.value %}
+{% set show_badge = paragraph.field_p_rv_show_badge.0.value %}
+{% set label_value = paragraph.field_p_rv_label.0.value %}
+{% set label_format = paragraph.field_p_rv_label.0.format %}
+{% set label = paragraph.field_p_rv_label %}
+{% set show_label = paragraph.field_p_rv_show_label.0.value %}
+
+{% block paragraph %}
+   {% block content %}
+
+      {% if not attributes %}
+         {% set attributes = create_attribute() %}
+      {% endif %}
+
+      {%
+        set main_class = [
+          'p-remote-video',
+          'rrv',
+          'cssf--position_relative--w100p',
+          'cssf--tpl-gcol100--d_flex--fwrap_wrap',
+          'cssf--p_var-region-spacing',
+          'cssf--as_unset--jc_start--ac_start',
+          'cssf--m0',
+          'paragraph',
+          'paragraph--type--' ~ paragraph.bundle|clean_class,
+          view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+          not paragraph.isPublished() ? 'paragraph--unpublished', 
+        ]
+      %}
+      {% if size == '100' %}
+         {% set main_class  = main_class|merge([ 
+                        'video-size-100',
+                     ])
+                     %}
+      {% elseif size == '66' %}
+         {% set main_class  = main_class|merge([ 
+                        'video-size-66', 
+                        'cssf--mq576--tpl-gcol100',
+                        'cssf--mq768--tpl-gcol100',
+                        'cssf--mq992--tpl-gcol50',
+                        'cssf--mq1200--tpl-gcol66',
+                     ])
+                     %}   
+      {% elseif size == '50' %}
+         {% set main_class  = main_class|merge([ 
+                        'video-size-50', 
+                        'cssf--mq576--tpl-gcol100',
+                        'cssf--mq768--tpl-gcol100',
+                        'cssf--mq992--tpl-gcol50',
+                        'cssf--mq1200--tpl-gcol50',
+                     ])
+                     %}
+      {% elseif size == '33' %}
+         {% set main_class  = main_class|merge([ 
+                        'video-size-33', 
+                        'cssf--mq576--tpl-gcol50',
+                        'cssf--mq768--tpl-gcol50',
+                        'cssf--mq992--tpl-gcol33',
+                        'cssf--mq1200--tpl-gcol33',
+                     ])
+                     %}
+      {% elseif size == '25' %}
+         {% set main_class  = main_class|merge([ 
+                        'video-size-25', 
+                        'cssf--mq576--tpl-gcol50',
+                        'cssf--mq768--tpl-gcol50',
+                        'cssf--mq992--tpl-gcol33',
+                        'cssf--mq1200--tpl-gcol25',
+                     ])
+                     %}
+      {% else %}
+         {% set main_class  = main_class|merge([ 
+                        'video-size-33', 
+                        'cssf--mq576--tpl-gcol50',
+                        'cssf--mq768--tpl-gcol50',
+                        'cssf--mq992--tpl-gcol33',
+                        'cssf--mq1200--tpl-gcol33',
+                     ])
+                     %}
+      {% endif %}
+      <div{{ attributes.addClass(main_class) }}>
+         <figure>
+            {% if video_text is not empty %}
+                {% if 'euvideocdn.com' in video_text %}
+                    {% set embed_html = '<iframe title="Stream" src="' ~ video_text ~ '" frameborder="0" allowfullscreen style="border: none; aspect-ratio: 16/9; width: 100%; height: auto;" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"></iframe>' %}
+                    {{ embed_html | raw }}
+                {% else %}
+                   {#% set video_regex = '/^(https?:\/\/)?(www\.)?(youtube\.com\/(watch\?v=|embed\/)|youtu\.be\/|vimeo\.com\/)([a-zA-Z0-9_-]{11}|[a-zA-Z0-9]+)$/i' %#}
+                   {#% set video_regex = '^(https?:\\/\\/)?(www\\.)?(youtube\\.com\\/(watch\\?v=|embed\\/)|youtu\\.be\\/|vimeo\\.com\\/)([a-zA-Z0-9_-]{11}|[a-zA-Z0-9]+)$' %#}
+                   {#% set video_regex = '/^(https?:\\/\\/)?(www\\.)?(youtube\\.com\\/|youtu\\.be\\/|vimeo\\.com\\/)([a-zA-Z0-9_-]{11}|[a-zA-Z0-9]+)$/i' %#}
+                   {#% set video_regex = '/^(https?:\\/\\/)?(www\\.)?(youtube\\.com\\/(watch\\?v=|embed\\/)|youtu\\.be\\/|vimeo\\.com\\/)([a-zA-Z0-9_-]{11}|[a-zA-Z0-9]+)$/i' %#}
+                   {#% set video_regex = '/^(https?:\\/\\/)?(www\\.)?(youtube\\.com\\/(watch\\?v=|embed\\/)|youtu\\.be\\/|vimeo\\.com\\/|player\\.vimeo\\.com\\/video\\/)([a-zA-Z0-9_-]{11}|[a-zA-Z0-9]+)$/i' %#}
+                   {% set video_regex = '/^(https?:\\/\\/)?(www\\.)?(youtube\\.com\\/(watch\\?v=|embed\\/)|youtu\\.be\\/|vimeo\\.com\\/|player\\.vimeo\\.com\\/video\\/)([a-zA-Z0-9_-]+(?:\\/[a-zA-Z0-9_-]+)?)$/i' %}
+                       
+                   {% if video_text matches video_regex %}
+                       {#% set video_id = video_text|replace({'https://youtu.be/': '', 'https://www.youtube.com/watch?v=': '', 'https://www.youtube.com/embed/': '', 'https://vimeo.com/': ''}) %#}
+                       {% set video_id = video_text|replace({
+                             'https://youtu.be/': '',
+                             'https://www.youtube.com/watch?v=': '',
+                             'https://www.youtube.com/embed/': '',
+                             'https://vimeo.com/': '',
+                             'https://player.vimeo.com/video/': ''
+                         }) %}
+                       {% if video_text starts with "https://www.youtube.com" or video_text starts with "https://youtu.be" %}
+                           {% set embed_html = '<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/' ~ video_id ~ '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>' %}
+                       {#% elseif video_text starts with "https://vimeo.com" %#}
+                       {#% elseif video_text starts with "https://vimeo.com" or video_text starts with "https://player.vimeo.com" %}
+                           {% set embed_html = '<iframe src="https://player.vimeo.com/video/' ~ video_id ~ '?dnt=1" width="560" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>' %}
+                       {% endif %#}
+                       {% elseif video_text starts with "https://vimeo.com" or video_text starts with "https://player.vimeo.com" %}
+                           {% set video_parts = video_id|split('/') %}
+                           {% set embed_html = '<iframe src="https://player.vimeo.com/video/' ~ video_parts[0] ~ '?h=' ~ video_parts[1] ~ '&dnt=1" width="560" height="315" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>' %}
+                       {% endif %}
+                       
+                       {{ embed_html | raw }}
+                   {% else %}
+                       <a href="{{ video_text }}" target="_blank" rel="nofollow">{{ video_text }}</a>
+                   {% endif %}
+               {% endif %}
+            {% endif %}       
+            {% if show_badge %}
+               <div class="badge" data-badge="{{ badge_value|replace({'(c)': '&copy;'})|raw }}">{{ badge_value|replace({'(c)': '&copy;'})|raw }}</div>
+            {% endif %}
+            {% if(show_label) %} 
+               <figcaption>
+                  {% if(label_value) %}
+                     {{ content.field_p_rv_label }}
+                  {% else %}
+                  
+                  {% endif %}   
+               </figcaption> 
+            {% endif %}
+         </figure>
+      </div>
+   {% endblock %}
+{% endblock paragraph %}

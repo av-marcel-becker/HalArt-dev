@@ -1,0 +1,48 @@
+uuid: d32ae797-d6f0-4671-8b6f-74cb26a5051d
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_image
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_p_i_size
+field_name: field_p_i_size
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '25'
+      label: 25%
+    -
+      value: '33'
+      label: 33%
+    -
+      value: '50'
+      label: 50%
+    -
+      value: '66'
+      label: 66%
+    -
+      value: '75'
+      label: 75%
+    -
+      value: '100'
+      label: 100%
+    -
+      value: logo
+      label: Logo
+    -
+      value: icon
+      label: ICON
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

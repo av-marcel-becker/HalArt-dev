@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - crop
+  enforced:
+    module:
+      - av_p_cards
+name: is_cards_fp_50p_bp992_496px
+label: 'Card FP 50% - bp992 (B=496px)'
+effects:
+  21dfd56a-7e14-4639-8d15-666238f8487d:
+    uuid: 21dfd56a-7e14-4639-8d15-666238f8487d
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 992
+      height: 558
+      crop_type: focal_point
+  942ec1fe-4311-404a-b7e6-9174f81fa081:
+    uuid: 942ec1fe-4311-404a-b7e6-9174f81fa081
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

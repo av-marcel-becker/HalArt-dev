@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - crop
+  enforced:
+    module:
+      - av_p_image
+name: is_fp_33p_bp1200_400px
+label: 'FP 33% - bp1200 (B=400px)'
+effects:
+  6961353f-8412-4a41-b971-5ff1f3d829e6:
+    uuid: 6961353f-8412-4a41-b971-5ff1f3d829e6
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 534
+      crop_type: focal_point
+  ef1a4706-3116-48d2-a134-abe0ee8583e2:
+    uuid: ef1a4706-3116-48d2-a134-abe0ee8583e2
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

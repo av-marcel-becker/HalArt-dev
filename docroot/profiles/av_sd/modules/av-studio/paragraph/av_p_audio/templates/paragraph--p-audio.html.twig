@@ -1,0 +1,111 @@
+{{ attach_library('av_p_audio/av_p_audio') }}
+{#{ attach_library('mediaelement/mediaelement_local') }#}
+
+{% block paragraph %}
+   {% block content %}
+   
+      {% set audio_target_id = paragraph.field_p_ao_audio.0.target_id %}
+
+      {% set audio_filename = content.field_p_ao_audio['#items'].0.entity.filename.value %}
+      {% set audio_label = paragraph.field_p_ao_audio.0.description %}
+      {% set show_label = paragraph.field_p_ao_show_label.0.value %}
+      {% set size = paragraph.field_p_ao_size.0.value %}
+      {% set label_value = paragraph.field_p_ao_label.0.value %}
+      {% set label_format = paragraph.field_p_ao_label.0.format %}
+      {% set label = paragraph.field_p_ao_label %}
+
+
+      {% if not attributes %}
+         {% set attributes = create_attribute() %}
+      {% endif %}
+
+
+      {%
+        set main_class = [
+          'ph-audio',
+          'ri',
+          'cssf--position_relative',
+          'cssf--gcol100--d_flex--fw_wrap',
+          'cssf--p_var-region-spacing',
+          'cssf--as_unset--jc_start--ac_start',
+          'cssf--m0',
+          (size == "icon")?'cssf--gcol33--m0--px5--py10 cssf--mq576--gcol33--px20 cssf--mq768--gcol25--px40 cssf--mq992--gcolx2',
+          'paragraph',
+          'paragraph--type--' ~ paragraph.bundle|clean_class,
+          view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+          not paragraph.isPublished() ? 'paragraph--unpublished', 
+        ]
+      %}
+      {% if size == '100' %}
+         {% set main_class  = main_class|merge([ 
+                        'audio-size-100',
+                     ])
+                     %}
+      {% elseif size == '66' %}
+         {% set main_class  = main_class|merge([ 
+                        'audio-size-66', 
+                        'cssf--mq576--gcol100',
+                        'cssf--mq768--gcol100',
+                        'cssf--mq992--gcol50',
+                        'cssf--mq1200--gcol66',
+                     ])
+                     %}   
+      {% elseif size == '50' %}
+         {% set main_class  = main_class|merge([ 
+                        'audio-size-50', 
+                        'cssf--mq576--gcol100',
+                        'cssf--mq768--gcol100',
+                        'cssf--mq992--gcol50',
+                        'cssf--mq1200--gcol50',
+                     ])
+                     %}
+      {% elseif size == '33' %}
+         {% set main_class  = main_class|merge([ 
+                        'audio-size-33', 
+                        'cssf--mq576--gcol50',
+                        'cssf--mq768--gcol50',
+                        'cssf--mq992--gcol33',
+                        'cssf--mq1200--gcol33',
+                     ])
+                     %}
+      {% elseif size == '25' %}
+         {% set main_class  = main_class|merge([ 
+                        'audio-size-25', 
+                        'cssf--mq576--gcol50',
+                        'cssf--mq768--gcol50',
+                        'cssf--mq992--gcol33',
+                        'cssf--mq1200--gcol25',
+                     ])
+                     %}
+      {% else %}
+         {% set main_class  = main_class|merge([ 
+                        'audio-size-33', 
+                        'cssf--mq576--gcol50',
+                        'cssf--mq768--gcol50',
+                        'cssf--mq992--gcol33',
+                        'cssf--mq1200--gcol33',
+                     ])
+                     %}
+      {% endif %}
+      <div{{ attributes.addClass(main_class) }}>
+         {% if(audio_target_id) %}
+            <figure class="cssf--w100p">
+               {% if(audio_label) %} 
+                  <h5>{{ audio_label }}</h5>
+               {% else %}
+                  <h5>{{ audio_filename }}</h5>
+               {% endif %}
+               {{ content.field_p_ao_audio }} 
+
+               {% if(show_label) %} 
+                  <figcaption>
+                     {{ content.field_p_ao_label }} 
+                  </figcaption> 
+               {% endif %}
+               
+            </figure>
+         {% endif %}
+      </div>
+      
+   {% endblock %}
+{% endblock paragraph %}

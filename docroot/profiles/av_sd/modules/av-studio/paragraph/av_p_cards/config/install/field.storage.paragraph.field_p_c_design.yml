@@ -1,0 +1,43 @@
+uuid: 7c0ce9b1-3c83-4e03-8995-280ab37dee2a
+langcode: de
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+  enforced:
+    module:
+      - av_p_cards
+third_party_settings: { }
+id: paragraph.field_p_c_design
+field_name: field_p_c_design
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: card-design-0
+      label: Standard
+    -
+      value: card-design-1
+      label: 'Design 1'
+    -
+      value: card-design-2
+      label: 'Design 2'
+    -
+      value: card-design-3
+      label: 'Design 3'
+    -
+      value: card-design-4
+      label: 'Design 4'
+    -
+      value: card-design-5
+      label: 'Design 5'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

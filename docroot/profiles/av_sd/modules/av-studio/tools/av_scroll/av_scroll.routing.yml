@@ -1,0 +1,9 @@
+av_scroll.settings:
+  path: '/admin/config/system/av_scroll'
+  defaults:
+    _form: '\Drupal\av_scroll\Form\ScrollSettings'
+    _title: 'AV-Studio Tools - Scroll Settings'
+  requirements:
+    _permission: 'administer AV Tools - Scroll configuration'
+# options:
+#    no_cache: 'TRUE'

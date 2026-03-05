@@ -1,0 +1,29 @@
+uuid: be86835f-d306-417a-a280-c3b4699fac9d
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_aotyp_content
+    - node.type.n_athlete_of_the_year_page
+  module:
+    - entity_reference_revisions
+  enforced:
+    module:
+      - av_n_athlete_of_the_year_page
+id: node.n_athlete_of_the_year_page.field_n_aotyp_content
+field_name: field_n_aotyp_content
+entity_type: node
+bundle: n_athlete_of_the_year_page
+label: Inhaltsbereich
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop: { }
+field_type: entity_reference_revisions

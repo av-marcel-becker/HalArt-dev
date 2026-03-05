@@ -1,0 +1,6 @@
+av_n_achievements_page.achievements_page:
+  title: 'Erfolgsseiten'
+  parent: system.admin_content
+  route_name: av_n_achievements_page.achievements_page
+  menu_name: admin
+  url: internal:/admin/content/achievements_page

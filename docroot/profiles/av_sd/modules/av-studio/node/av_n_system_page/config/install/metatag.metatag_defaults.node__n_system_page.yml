@@ -1,0 +1,17 @@
+uuid: ebf634ab-b409-4b80-b3f1-728d2f7246f4
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_system_page
+id: node__n_system_page
+label: 'Inhalt: Systemseite'
+tags:
+  title: '[node:title]'
+  robots: 'noindex, nofollow, noarchive, nosnippet, noodp, noydir, noimageindex, notranslate'
+  canonical_url: '[node:url]'
+  description: '[node:summary]'
+  og_title: '[node:title]'
+  og_url: '[node:url]'
+  og_description: '[node:summary]'

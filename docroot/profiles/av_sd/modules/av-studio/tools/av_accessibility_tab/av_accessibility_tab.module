@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Hauptmoduldatei für das AV Accessibility Tab Modul.
+ */
+
+use Drupal\Core\Routing\AdminContext;
+use Drupal\Core\Render\AttachmentsInterface; // Interface für das $page Objekt
+
+/**
+ * Implements hook_page_attachments().
+ *
+ * Hängt die 'av_accessibility_tab' Bibliothek an alle Frontend-Seiten an.
+ * Dieser Hook wird für jede Seite aufgerufen und ermöglicht das Hinzufügen
+ * von Assets (CSS, JS) oder anderen Metadaten zur Seite.
+ *
+ * @param array &$page
+ * Ein renderbares Array, das die gesamte Seite repräsentiert. Wir fügen
+ * unsere Bibliothek zum '#attached'-Schlüssel dieses Arrays hinzu.
+ */
+function av_accessibility_tab_page_attachments(array &$page) {
+
+  // Hole den AdminContext Service, um zu prüfen, ob wir uns im Admin-Bereich befinden.
+  /** @var \Drupal\Core\Routing\AdminContext $admin_context */
+  $admin_context = \Drupal::service('router.admin_context');
+
+  // Prüfe, ob die aktuelle Route KEINE administrative Route ist.
+  // Die Methode isAdminRoute() gibt TRUE zurück, wenn es sich um eine Admin-Seite handelt.
+  // Wir wollen die Bibliothek nur laden, wenn es KEINE Admin-Seite ist (also im Frontend).
+  if (!$admin_context->isAdminRoute()) {
+
+    $page['#attached']['library'][] = 'av_accessibility_tab/av_accessibility_tab';
+
+    // Optional: Du könntest hier auch DrupalSettings hinzufügen, wenn dein JS diese benötigt.
+    // $page['#attached']['drupalSettings']['av_accessibility_tab']['someSetting'] = 'someValue';
+  }
+}
+

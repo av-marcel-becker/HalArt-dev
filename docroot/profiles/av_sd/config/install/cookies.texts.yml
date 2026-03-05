@@ -1,0 +1,30 @@
+langcode: de
+bannerText: 'Wir verwenden auf den Seiten dieser Website eine Auswahl an eigenen und fremden Cookies: Unverzichtbare Cookies, die für die Nutzung der Website erforderlich sind; funktionale Cookies, die eine bessere Benutzerfreundlichkeit bei der Nutzung der Website ermöglichen; Leistungs-Cookies, die wir verwenden, um aggregierte Daten über die Nutzung der Website und Statistiken zu erstellen; und Marketing-Cookies, die verwendet werden, um relevante Inhalte und Werbung anzuzeigen. Wenn Sie "ALLE AKZEPTIEREN" wählen, erklären Sie sich mit der Verwendung aller Cookies einverstanden. Unter "Einstellungen" können Sie jederzeit einzelne Cookie-Typen akzeptieren oder ablehnen und Ihre Zustimmung für die Zukunft widerrufen.'
+privacyPolicy: Datenschutzrichtlinie
+privacyUri: ''
+imprint: Impressum
+imprintUri: ''
+cookieDocs: Cookie-Dokumentation
+cookieDocsUri: /cookies/documentation
+denyAll: 'Alles verweigern'
+alwaysActive: 'Ständig aktiv'
+settings: Cookie-Einstellungen
+acceptAll: 'Alle akzeptieren'
+requiredCookies: 'Erforderliche Cookies'
+cookieSettings: Cookie-Einstellungen
+close: Schließen
+readMore: Weiterlesen
+allowed: Erlaubt
+denied: Verweigert
+settingsAllServices: 'Einstellungen für alle Dienste'
+saveSettings: Speichern
+default_langcode: en
+disclaimerText: 'Alle Cookie-Informationen können sich seitens der Dienstanbieter ändern. Wir aktualisieren diese Informationen regelmäßig.'
+disclaimerTextPosition: above
+processorDetailsLabel: 'Details zum verarbeitenden Unternehmen'
+processorLabel: Firma
+processorWebsiteUrlLabel: Unternehmenswebsite
+processorPrivacyPolicyUrlLabel: 'Datenschutzerklärung des Unternehmens.'
+processorCookiePolicyUrlLabel: 'Cookie-Erklärung des Unternehmens.'
+processorContactLabel: 'Kontaktdaten zum Datenschutz'
+placeholderAcceptAllText: 'Alle akzeptieren'

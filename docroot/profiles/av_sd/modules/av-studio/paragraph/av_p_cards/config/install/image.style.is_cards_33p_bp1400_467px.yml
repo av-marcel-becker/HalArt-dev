@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_cards
+name: is_cards_33p_bp1400_467px
+label: 'Card 33% - bp1400 (B=467px)'
+effects:
+  499a3860-9987-4190-8d3d-1f590b2e49bb:
+    uuid: 499a3860-9987-4190-8d3d-1f590b2e49bb
+    id: image_scale
+    weight: 1
+    data:
+      width: 934
+      height: null
+      upscale: false
+  4a7c005e-4afd-4e87-87ce-d070c2516528:
+    uuid: 4a7c005e-4afd-4e87-87ce-d070c2516528
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

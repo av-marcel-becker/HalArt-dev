@@ -1,0 +1,26 @@
+uuid: dac30abd-5047-42ea-9801-042c234785c4
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_dp_link
+    - node.type.n_directory_page
+  module:
+    - link
+  enforced:
+    module:
+      - av_n_directory_page
+id: node.n_directory_page.field_n_dp_link
+field_name: field_n_dp_link
+entity_type: node
+bundle: n_directory_page
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

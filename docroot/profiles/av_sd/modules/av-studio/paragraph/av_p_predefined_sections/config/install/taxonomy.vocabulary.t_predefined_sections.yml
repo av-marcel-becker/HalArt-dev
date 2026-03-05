@@ -1,0 +1,11 @@
+uuid: d5eeecfa-eadf-467d-a74e-2219da7afefb
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_predefined_sections
+name: 'Vordefinierte Abschnitte'
+vid: t_predefined_sections
+description: ''
+weight: 0

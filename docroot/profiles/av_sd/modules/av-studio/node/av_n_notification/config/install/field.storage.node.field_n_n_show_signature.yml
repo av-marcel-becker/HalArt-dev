@@ -1,0 +1,22 @@
+uuid: adf8b03a-478f-4ae7-842f-8fc20b5862b8
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - av_n_notification
+third_party_settings: { }
+id: node.field_n_n_show_signature
+field_name: field_n_n_show_signature
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

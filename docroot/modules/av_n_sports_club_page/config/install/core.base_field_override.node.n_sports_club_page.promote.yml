@@ -1,0 +1,25 @@
+uuid: 73430355-543c-4be4-a2e2-849803c9b32d
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_sports_club_page
+  enforced:
+    module:
+      - av_n_sports_club_page
+id: node.n_sports_club_page.promote
+field_name: promote
+entity_type: node
+bundle: n_sports_club_page
+label: 'Auf der Startseite anzeigen'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

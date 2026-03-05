@@ -1,0 +1,86 @@
+uuid: d0492bcf-445b-4d76-a2d6-168ce54d74af
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p_av_studio_media.field_p_avsm_badge
+    - field.field.paragraph.p_av_studio_media.field_p_avsm_label
+    - field.field.paragraph.p_av_studio_media.field_p_avsm_media
+    - field.field.paragraph.p_av_studio_media.field_p_avsm_show_badge
+    - field.field.paragraph.p_av_studio_media.field_p_avsm_show_label
+    - field.field.paragraph.p_av_studio_media.field_p_avsm_size
+    - paragraphs.paragraphs_type.p_av_studio_media
+  module:
+    - iframe
+    - options
+    - text
+  enforced:
+    module:
+      - av_p_av_studio_media
+id: paragraph.p_av_studio_media.default
+targetEntityType: paragraph
+bundle: p_av_studio_media
+mode: default
+content:
+  field_p_avsm_badge:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_p_avsm_label:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_p_avsm_media:
+    type: iframe_only
+    label: hidden
+    settings:
+      url: ''
+      title: ''
+      headerlevel: '3'
+      class: ''
+      frameborder: '0'
+      scrolling: ''
+      transparency: '0'
+      allowfullscreen: '0'
+      tokensupport: '0'
+      width: ''
+      height: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_p_avsm_show_badge:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_p_avsm_show_label:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_p_avsm_size:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

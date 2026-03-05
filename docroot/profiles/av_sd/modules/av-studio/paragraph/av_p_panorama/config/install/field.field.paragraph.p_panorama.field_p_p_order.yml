@@ -1,0 +1,26 @@
+uuid: 692d4db0-ff91-4e05-a29c-208a6f91cec5
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_p_order
+    - paragraphs.paragraphs_type.p_panorama
+  enforced:
+    module:
+      - av_p_panorama
+  module:
+    - options
+id: paragraph.p_panorama.field_p_p_order
+field_name: field_p_p_order
+entity_type: paragraph
+bundle: p_panorama
+label: Reihenfolge
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: it
+default_value_callback: ''
+settings: {  }
+field_type: list_string

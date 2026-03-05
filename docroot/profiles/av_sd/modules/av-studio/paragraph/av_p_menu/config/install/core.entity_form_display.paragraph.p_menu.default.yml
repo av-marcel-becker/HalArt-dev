@@ -1,0 +1,51 @@
+uuid: ad8db7b2-719f-4abf-b204-a01d79b1fe53
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p_menu.field_p_m_label
+    - field.field.paragraph.p_menu.field_p_m_link
+    - field.field.paragraph.p_menu.field_p_m_show_as_button
+    - paragraphs.paragraphs_type.p_menu
+  module:
+    - link
+  enforced:
+    module:
+      - av_p_menu
+id: paragraph.p_menu.default
+targetEntityType: paragraph
+bundle: p_menu
+mode: default
+content:
+  field_p_m_label:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_p_m_link:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_p_m_show_as_button:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true

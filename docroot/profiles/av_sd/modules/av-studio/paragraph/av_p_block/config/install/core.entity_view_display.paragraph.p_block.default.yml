@@ -1,0 +1,26 @@
+uuid: 6017636a-3981-4ee8-ac77-6320961cd551
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p_block.field_p_b_block
+    - paragraphs.paragraphs_type.p_block
+  enforced:
+    module:
+      - av_p_block
+third_party_settings: { }
+id: paragraph.p_block.default
+targetEntityType: paragraph
+bundle: p_block
+mode: default
+content:
+  field_p_b_block:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: { }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

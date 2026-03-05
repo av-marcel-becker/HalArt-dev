@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_teaser
+name: is_teaser_75p_bp992_744px
+label: 'Teaser 75% - bp992 (B=744px)'
+effects:
+  0b563c80-db6e-4a21-8327-5be4b29600f8:
+    uuid: 0b563c80-db6e-4a21-8327-5be4b29600f8
+    id: image_scale
+    weight: 1
+    data:
+      width: 1488
+      height: null
+      upscale: false
+  1898ca70-57e4-415b-8413-d32435a8a35b:
+    uuid: 1898ca70-57e4-415b-8413-d32435a8a35b
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

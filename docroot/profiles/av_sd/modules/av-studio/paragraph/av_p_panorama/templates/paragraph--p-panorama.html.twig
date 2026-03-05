@@ -1,0 +1,207 @@
+{{ attach_library('av_p_panorama/av_p_panorama') }}
+{% block paragraph %}
+   {% block content %}
+      {% set image_target_id = content.field_p_p_image['#items'].0.target_id %}
+      {% if(image_target_id) %}
+         {#% set media = drupal_entity('media', image_target_id)['#media'] %}
+         {% set media = media|view('dm_50p') %#}
+      {% endif %}
+      {% set image_position = content.field_p_p_image_position['#items'].0.value %}
+      {% set image_position_mobile = content.field_p_p_image_position_mobile['#items'].0.value %}
+      {% set text_position = content.field_p_p_text_position['#items'].0.value %}
+      {% set text_position_mobile = content.field_p_p_text_position_mobile['#items'].0.value %}
+      {% set order = content.field_p_p_order['#items'].0.value %}
+      {% set display_full_height = content.field_p_p_vh_100['#items'].0.value %}
+      {% set full_height = content.field_p_p_vh_100['#items'].0.value %}
+      {% set text_value = content.field_p_p_text['#items'].0.value %}
+      {% set text_format = content.field_p_p_text['#items'].0.format %}
+      {% set text = content.field_p_p_text %}
+
+      {% if not attributes %}
+         {% set attributes = create_attribute() %}
+      {% endif %}
+
+      {% if not attributes_image_wrapper %}
+         {% set attributes_image_wrapper = create_attribute() %}
+      {% endif %}
+
+      {% if not attributes_image %}
+         {% set attributes_image = create_attribute() %}
+      {% endif %}
+
+      {% if not attributes_text_wrapper %}
+         {% set attributes_text_wrapper = create_attribute() %}
+      {% endif %}
+      
+      {% if not attributes_text %}
+         {% set attributes_text = create_attribute() %}
+      {% endif %}
+
+      {% if(order) %}
+         {% if(order == "it") %}
+            {% set attributes_image_wrapper = attributes_image_wrapper.addClass('cssf--order_0', 'cssf--mq768--order_0') %}
+            {% set attributes_text_wrapper = attributes_text_wrapper.addClass('cssf--order_1', 'cssf--mq768--order_1') %}
+         {% elseif(order == "ti") %}
+            {% set attributes_text_wrapper = attributes_text_wrapper.addClass('cssf--order_1', 'cssf--mq768--order_0') %}
+            {% set attributes_image_wrapper = attributes_image_wrapper.addClass('cssf--order_0', 'cssf--mq768--order_1') %}
+         {% endif %}
+      {% endif %}
+
+      {% if(image_position) %}
+         {% if(image_position == "tl") %}
+            {% set attributes_image_wrapper = attributes_image_wrapper.addClass(['cssf--mq768--target-tag-img--object-position_left_top']) %}
+         {% elseif(image_position == "tc") %}
+            {% set attributes_image_wrapper = attributes_image_wrapper.addClass(['cssf--mq768--target-tag-img--object-position_center_top']) %}
+         {% elseif(image_position == "tr") %}
+            {% set attributes_image_wrapper = attributes_image_wrapper.addClass(['cssf--mq768--target-tag-img--object-position_right_top']) %}
+         {% elseif(image_position == "ml") %}
+            {% set attributes_image_wrapper = attributes_image_wrapper.addClass(['cssf--mq768--target-tag-img--object-position_left_center']) %}
+         {% elseif(image_position == "mc") %}
+            {% set attributes_image_wrapper = attributes_image_wrapper.addClass(['cssf--mq768--target-tag-img--object-position_center']) %}
+         {% elseif(image_position == "mr") %}
+            {% set attributes_image_wrapper = attributes_image_wrapper.addClass(['cssf--mq768--target-tag-img--object-position_right_center']) %}
+         {% elseif(image_position == "bl") %}
+            {% set attributes_image_wrapper = attributes_image_wrapper.addClass(['cssf--mq768--target-tag-img--object-position_left_bottom']) %}
+         {% elseif(image_position == "bc") %}
+            {% set attributes_image_wrapper = attributes_image_wrapper.addClass(['cssf--mq768--target-tag-img--object-position_center_bottom']) %}
+         {% elseif(image_position == "br") %}
+            {% set attributes_image_wrapper = attributes_image_wrapper.addClass(['cssf--mq768--target-tag-img--object-position_right_bottom']) %}
+         {% endif %}
+      {% endif %}
+
+      {% if(image_position_mobile) %}
+         {% if(image_position_mobile == "tl") %}
+            {% set attributes_image_wrapper = attributes_image_wrapper.addClass(['cssf--target-tag-img--object-position_left_top']) %}
+         {% elseif(image_position_mobile == "tc") %}
+            {% set attributes_image_wrapper = attributes_image_wrapper.addClass(['cssf--target-tag-img--object-position_center_top']) %}
+         {% elseif(image_position_mobile == "tr") %}
+            {% set attributes_image_wrapper = attributes_image_wrapper.addClass(['cssf--target-tag-img--object-position_right_top']) %}
+         {% elseif(image_position_mobile == "ml") %}
+            {% set attributes_image_wrapper = attributes_image_wrapper.addClass(['cssf--target-tag-img--object-position_left_center']) %}
+         {% elseif(image_position_mobile == "mc") %}
+            {% set attributes_image_wrapper = attributes_image_wrapper.addClass(['cssf--target-tag-img--object-position_center']) %}
+         {% elseif(image_position_mobile == "mr") %}
+            {% set attributes_image_wrapper = attributes_image_wrapper.addClass(['cssf--target-tag-img--object-position_right_center']) %}
+         {% elseif(image_position_mobile == "bl") %}
+            {% set attributes_image_wrapper = attributes_image_wrapper.addClass(['cssf--target-tag-img--object-position_left_bottom']) %}
+         {% elseif(image_position_mobile == "bc") %}
+            {% set attributes_image_wrapper = attributes_image_wrapper.addClass(['cssf--target-tag-img--object-position_center_bottom']) %}
+         {% elseif(image_position_mobile == "br") %}
+            {% set attributes_image_wrapper = attributes_image_wrapper.addClass(['cssf--target-tag-img--object-position_right_bottom']) %}
+         {% endif %}
+      {% endif %}
+
+      {% if(text_position) %}
+         {% if(text_position == "tl") %}
+            {% set attributes_text_wrapper = attributes_text_wrapper.addClass(['cssf--mq768--ac_start','cssf--mq768--jc_start']) %}
+         {% elseif(text_position == "tc") %}
+            {% set attributes_text_wrapper = attributes_text_wrapper.addClass(['cssf--mq768--ac_start','cssf--mq768--jc_center']) %}
+         {% elseif(text_position == "tr") %}
+            {% set attributes_text_wrapper = attributes_text_wrapper.addClass(['cssf--mq768--ac_start','cssf--mq768--jc_end']) %}
+         {% elseif(text_position == "ml") %}
+            {% set attributes_text_wrapper = attributes_text_wrapper.addClass(['cssf--mq768--ac_center','cssf--mq768--jc_start']) %}
+         {% elseif(text_position == "mc") %}
+            {% set attributes_text_wrapper = attributes_text_wrapper.addClass(['cssf--mq768--ac_center','cssf--mq768--jc_center']) %}
+         {% elseif(text_position == "mr") %}
+            {% set attributes_text_wrapper = attributes_text_wrapper.addClass(['cssf--mq768--ac_center','cssf--mq768--jc_end']) %}
+         {% elseif(text_position == "bl") %}
+            {% set attributes_text_wrapper = attributes_text_wrapper.addClass(['cssf--mq768--ac_end','cssf--mq768--jc_start']) %}
+         {% elseif(text_position == "bc") %}
+            {% set attributes_text_wrapper = attributes_text_wrapper.addClass(['cssf--mq768--ac_end','cssf--mq768--jc_center']) %}
+         {% elseif(text_position == "br") %}
+            {% set attributes_text_wrapper = attributes_text_wrapper.addClass(['cssf--mq768--ac_end','cssf--mq768--jc_end']) %}
+         {% endif %}
+      {% endif %}
+
+      {% if(text_position_mobile) %}
+         {% if(text_position_mobile == "tl") %}
+            {% set attributes_text_wrapper = attributes_text_wrapper.addClass(['cssf--ac_start','cssf--jc_start']) %}
+         {% elseif(text_position_mobile == "tc") %}
+            {% set attributes_text_wrapper = attributes_text_wrapper.addClass(['cssf--ac_start','cssf--jc_center']) %}
+         {% elseif(text_position_mobile == "tr") %}
+            {% set attributes_text_wrapper = attributes_text_wrapper.addClass(['cssf--ac_start','cssf--jc_end']) %}
+         {% elseif(text_position_mobile == "ml") %}
+            {% set attributes_text_wrapper = attributes_text_wrapper.addClass(['cssf--ac_center','cssf--jc_start']) %}
+         {% elseif(text_position_mobile == "mc") %}
+            {% set attributes_text_wrapper = attributes_text_wrapper.addClass(['cssf--ac_center','cssf--jc_center']) %}
+         {% elseif(text_position_mobile == "mr") %}
+            {% set attributes_text_wrapper = attributes_text_wrapper.addClass(['cssf--ac_center','cssf--jc_end']) %}
+         {% elseif(text_position_mobile == "bl") %}
+            {% set attributes_text_wrapper = attributes_text_wrapper.addClass(['cssf--ac_end','cssf--jc_start']) %}
+         {% elseif(text_position_mobile == "bc") %}
+            {% set attributes_text_wrapper = attributes_text_wrapper.addClass(['cssf--ac_end','cssf--jc_center']) %}
+         {% elseif(text_position_mobile == "br") %}
+            {% set attributes_text_wrapper = attributes_text_wrapper.addClass(['cssf--ac_end','cssf--jc_end']) %}
+         {% endif %}
+      {% endif %}
+
+      {% if(full_height) %}   
+         {% set attributes = attributes.addClass('full-height') %}
+      {% endif %}
+
+      {%
+        set classes = [
+          'p-panorama',
+          'cssf--position_relative',   
+          'gl',   
+          'cssf--grid-layout--p0',   
+          'paragraph',
+          'paragraph--type--' ~ paragraph.bundle|clean_class,
+          view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+          not paragraph.isPublished() ? 'paragraph--unpublished'
+        
+        ]
+      %}
+
+      {%
+        set classes_text_wrapper = [
+          'panorama-text',
+          'gc',
+          'gbl',
+          'cssf--gc_content--grid-brick-layout--position_absolute--t0--b0--l0--r0', 
+        ]
+      %}
+      {%
+        set classes_text = [
+          'cssf--gcol100--p20',
+          'cssf--mq768--gcol33--p40',
+        ]
+      %}
+
+      {%
+        set classes_image_wrapper = [
+          'panorama-image',
+          'gc',
+          'cssf--gc_full', 
+        ]
+      %}
+      {%
+        set classes_image = [
+        ]
+      %}
+      <div{{ attributes.addClass(classes) }}>
+         <div{{ attributes_image_wrapper.addClass(classes_image_wrapper) }}>
+            <div{{ attributes_image.addClass(classes_image) }}>
+               {% if(content.field_p_p_image) %}
+                  <figure class="cssf--d_inline">
+                     {{ content.field_p_p_image }}       
+                  </figure>
+               {% endif %}                   
+            </div>
+         </div>
+         <div{{ attributes_text_wrapper.addClass(classes_text_wrapper) }}>
+            <div{{ attributes_text.addClass(classes_text) }}>
+               {% if text is defined and text is not null and text is not empty %}
+                  {#{ text|renderThis }#}
+                  {{ text }}
+               {% endif %}
+            </div>
+         </div>
+      </div>
+    {% endblock %}
+{% endblock paragraph %}
+
+{% if full_height %}
+   <av-scroll type="target" threshold="500" target="pano-bottom"><i class="fa-regular fa-arrow-down"></i></av-scroll> 
+   <div id="pano-bottom"></div>
+{% endif %}  

@@ -1,0 +1,19 @@
+uuid: b1f41b2c-8b67-4613-ae37-468162d91797
+langcode: de
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+  enforced:
+    module:
+      - av_p_sections_splide
+id: p_sections_splide
+label: 'Splide Slider Abschnitt'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      section_splide: 'Splide Slider Abschnitt'

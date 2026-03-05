@@ -1,0 +1,32 @@
+uuid: c006e611-f897-487c-a585-d5f21f255c29
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_fp_tag
+    - node.type.n_front_page
+    - taxonomy.vocabulary.t_tags_front_page
+  enforced:
+    module:
+      - av_n_front_page
+id: node.n_front_page.field_n_fp_tag
+field_name: field_n_fp_tag
+entity_type: node
+bundle: n_front_page
+label: Tagging
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      t_tags_front_page: t_tags_front_page
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

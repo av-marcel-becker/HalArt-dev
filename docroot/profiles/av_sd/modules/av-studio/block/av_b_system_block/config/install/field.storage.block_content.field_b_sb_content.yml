@@ -1,0 +1,25 @@
+uuid: 0f43a5e5-cba9-4810-a926-a1840d503255
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_b_system_block
+  module:
+    - block_content
+    - entity_reference_revisions
+    - paragraphs
+third_party_settings: { }
+id: block_content.field_b_sb_content
+field_name: field_b_sb_content
+entity_type: block_content
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

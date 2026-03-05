@@ -1,0 +1,58 @@
+uuid: 4754fffe-d296-4b4d-8e3a-26fe0927ac52
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p_appointments.field_p_a_appointments
+    - field.field.paragraph.p_appointments.field_p_a_label
+    - paragraphs.paragraphs_type.p_appointments
+  module:
+    - double_field
+  enforced:
+    module:
+      - av_p_appointments
+id: paragraph.p_appointments.default
+targetEntityType: paragraph
+bundle: p_appointments
+mode: default
+content:
+  field_p_a_appointments:
+    type: double_field
+    weight: 2
+    region: content
+    settings:
+      first:
+        type: datetime
+        label_display: block
+        size: 30
+        placeholder: ''
+        label: Ok
+        cols: 10
+        rows: 5
+      second:
+        type: textarea
+        label_display: block
+        size: 30
+        placeholder: ''
+        label: Ok
+        cols: 10
+        rows: 3
+      inline: false
+    third_party_settings: {  }
+  field_p_a_label:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true

@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_rv_size
+    - paragraphs.paragraphs_type.p_remote_video
+  module:
+    - options
+  enforced:
+    module:
+      - av_p_remote_video
+id: paragraph.p_remote_video.field_p_rv_size
+field_name: field_p_rv_size
+entity_type: paragraph
+bundle: p_remote_video
+label: 'Größe'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: '33'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

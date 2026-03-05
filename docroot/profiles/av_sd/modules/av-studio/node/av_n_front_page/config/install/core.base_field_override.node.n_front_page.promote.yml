@@ -1,0 +1,25 @@
+uuid: 2bf4f073-d1e8-4436-87c9-26e1a119273d
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_front_page
+  enforced:
+    module:
+      - av_n_front_page
+id: node.n_front_page.promote
+field_name: promote
+entity_type: node
+bundle: n_front_page
+label: 'Auf der Startseite anzeigen'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

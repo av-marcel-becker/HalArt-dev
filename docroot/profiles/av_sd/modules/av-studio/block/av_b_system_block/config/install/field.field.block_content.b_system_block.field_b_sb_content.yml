@@ -1,0 +1,29 @@
+uuid: 8a354aac-a788-4538-be65-a9eb3807e080
+langcode: de
+status: true
+dependencies:
+  config:
+    - block_content.type.b_system_block
+    - field.storage.block_content.field_b_sb_content
+  enforced:
+    module:
+      - av_b_system_block
+  module:
+    - entity_reference_revisions
+id: block_content.b_system_block.field_b_sb_content
+field_name: field_b_sb_content
+entity_type: block_content
+bundle: b_system_block
+label: Inhalt
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: {}
+    target_bundles_drag_drop: {}
+field_type: entity_reference_revisions

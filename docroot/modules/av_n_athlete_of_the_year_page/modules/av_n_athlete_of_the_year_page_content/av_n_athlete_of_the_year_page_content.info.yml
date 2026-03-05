@@ -1,0 +1,7 @@
+name: 'AV Node - Athlete of the Year Page Content'
+type: module
+description: 'AV-Studio Node - Athlete of the ear Page Content'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Node'
+dependencies:
+  - av_n_athlete_of_the_year_page

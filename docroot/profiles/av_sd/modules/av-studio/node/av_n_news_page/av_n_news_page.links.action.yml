@@ -1,0 +1,11 @@
+av_n_news_page.news_page.add:
+  route_name: node.add
+  title: 'Newsseite hinzufügen'
+  weight: 10
+  appears_on:
+    - view.v_content_news_page.v_content_news_page
+  route_parameters: 
+    node_type: 'n_news_page'
+#  options:
+#    query:
+#      destination: /admin/content/news_page

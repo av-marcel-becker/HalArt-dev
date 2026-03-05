@@ -1,0 +1,22 @@
+uuid: 381fa9e1-2797-49c7-83c3-83099658e5f9
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_t_label
+    - paragraphs.paragraphs_type.p_teaser
+  enforced:
+    module:
+      - av_p_teaser
+id: paragraph.p_teaser.field_p_t_label
+field_name: field_p_t_label
+entity_type: paragraph
+bundle: p_teaser
+label: Label
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

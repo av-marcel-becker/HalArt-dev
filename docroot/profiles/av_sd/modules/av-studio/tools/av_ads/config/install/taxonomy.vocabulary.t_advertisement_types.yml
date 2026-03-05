@@ -1,0 +1,11 @@
+uuid: d798810a-ec3e-44e5-ab2b-e5806ec6b601
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_ads
+name: 'Anzeige (Ads) Typ'
+vid: t_advertisement_types
+description: ''
+weight: 0

@@ -1,0 +1,11 @@
+av_ads.advertisement.add:
+  route_name: node.add
+  title: 'Anzeige (Ads) hinzufügen'
+  weight: 15
+  appears_on:
+    - view.v_content_advertisement.v_content_advertisement
+  route_parameters: 
+    node_type: 'n_advertisement'
+#  options:
+#    query:
+#      destination: /admin/content/advertisement

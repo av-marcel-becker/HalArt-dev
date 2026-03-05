@@ -1,0 +1,11 @@
+av_l_sections:
+  version: VERSION
+  css:
+    theme:
+      css/av_l_sections.css: {}
+  js:
+    js/av_l_sections.js: {}
+#  dependencies:
+#    - core/jquery
+#    - av_l_region/jquery-initialize
+      

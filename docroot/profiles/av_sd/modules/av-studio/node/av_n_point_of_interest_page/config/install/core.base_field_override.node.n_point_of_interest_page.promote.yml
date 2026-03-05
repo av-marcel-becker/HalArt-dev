@@ -1,0 +1,25 @@
+uuid: fe58ac09-ea35-4ddf-be8a-e027e4d68bf8
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_point_of_interest_page
+  enforced:
+    module:
+      - av_n_point_of_interest_page
+id: node.n_point_of_interest_page.promote
+field_name: promote
+entity_type: node
+bundle: n_point_of_interest_page
+label: 'In Listen anzeigen'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_image
+name: is_66p_bp1200_800px
+label: '66% - bp1200 (B=800px)'
+effects:
+  2ea7dfd2-a914-4223-bf23-1b40b065646c:
+    uuid: 2ea7dfd2-a914-4223-bf23-1b40b065646c
+    id: image_scale
+    weight: 1
+    data:
+      width: 1600
+      height: null
+      upscale: false
+  dd529b1d-dc47-47fe-9116-c0b6304a7226:
+    uuid: dd529b1d-dc47-47fe-9116-c0b6304a7226
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

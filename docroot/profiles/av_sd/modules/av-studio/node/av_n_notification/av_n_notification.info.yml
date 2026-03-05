@@ -1,0 +1,17 @@
+name: 'AV - Notification'
+type: module
+description: 'AV-Studio - Notification'
+core_version_requirement: ^9.1 || ^10
+package: 'AV-Studio - Tools'
+
+dependencies:
+  - drupal:link
+  - drupal:text
+  - drupal:options
+  - drupal:user
+  - drupal:node
+  - drupal:menu_ui
+  - node_revision_delete:node_revision_delete
+
+#libraries:
+#  - av_n_notification/av_n_notification

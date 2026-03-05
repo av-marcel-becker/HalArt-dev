@@ -1,0 +1,10 @@
+uuid: b972b25c-a9c5-4efd-9672-ac2a08e68dcc
+langcode: de
+status: true
+dependencies: {  }
+id: '403'
+label: '403 Zugriff verweigert'
+tags:
+  canonical_url: '[site:url]'
+  robots: 'noindex, nofollow, noarchive, nosnippet, noimageindex'
+  shortlink: '[site:url]'

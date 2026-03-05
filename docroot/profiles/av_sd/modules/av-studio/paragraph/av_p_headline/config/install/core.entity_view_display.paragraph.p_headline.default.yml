@@ -1,0 +1,49 @@
+uuid: 4e6b2842-a877-46e8-a0e0-8adae3a32d85
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p_headline.field_p_h_headline
+    - field.field.paragraph.p_headline.field_p_h_headline_number
+    - field.field.paragraph.p_headline.field_p_h_link
+    - paragraphs.paragraphs_type.p_headline
+  module:
+    - link
+    - options
+  enforced:
+    module:
+      - av_p_headline
+third_party_settings: { }
+id: paragraph.p_headline.default
+targetEntityType: paragraph
+bundle: p_headline
+mode: default
+content:
+  field_p_h_headline:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_p_h_headline_number:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_p_h_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

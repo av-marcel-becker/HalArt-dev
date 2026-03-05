@@ -1,0 +1,11 @@
+uuid: b67e98c6-c9c3-4916-8c11-3b83c96ab721
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_sports_club_page
+name: 'Tags für Sportvereine'
+vid: t_tags_sports_club_page
+description: ''
+weight: 0

@@ -1,0 +1,11 @@
+uuid: b0698c51-2687-41f7-8b4b-c23795cfc458
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_ads
+name: 'Anzeige (Ads) Position'
+vid: t_advertisement_position
+description: ''
+weight: 0

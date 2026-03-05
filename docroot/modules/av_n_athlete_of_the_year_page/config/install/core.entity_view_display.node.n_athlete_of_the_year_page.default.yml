@@ -1,0 +1,38 @@
+uuid: c8b962c6-3d62-4509-b12d-10afbcd79910
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.n_athlete_of_the_year_page.body
+    - field.field.node.n_athlete_of_the_year_page.field_image
+    - field.field.node.n_athlete_of_the_year_page.field_n_aotyp_content
+    - field.field.node.n_athlete_of_the_year_page.field_n_aotyp_tag
+    - node.type.n_athlete_of_the_year_page
+  enforced:
+    module:
+      - av_n_athlete_of_the_year_page
+  module:
+    - layout_paragraphs
+    - user
+third_party_settings: { }
+id: node.n_athlete_of_the_year_page.default
+targetEntityType: node
+bundle: n_athlete_of_the_year_page
+mode: default
+content:
+  field_n_pp_content:
+    type: layout_paragraphs
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: { }
+    region: content
+hidden:
+  body: true
+  content_moderation_control: true
+  field_image: true
+  field_n_pp_tag: true
+  langcode: true
+  links: true

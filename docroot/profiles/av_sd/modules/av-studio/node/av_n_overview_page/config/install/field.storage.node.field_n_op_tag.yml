@@ -1,0 +1,24 @@
+uuid: c0af0177-d6ee-4809-a3ca-f40a56f7f01b
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_overview_page
+  module:
+    - node
+    - taxonomy
+third_party_settings: { }
+id: node.field_n_op_tag
+field_name: field_n_op_tag
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

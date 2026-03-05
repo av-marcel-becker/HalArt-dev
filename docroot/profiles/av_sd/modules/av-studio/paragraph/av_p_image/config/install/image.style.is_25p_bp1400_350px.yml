@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_image
+name: is_25p_bp1400_350px
+label: '25% - bp1400 (B=350px)'
+effects:
+  581848de-95ec-4278-b0fd-f6435a81d11b:
+    uuid: 581848de-95ec-4278-b0fd-f6435a81d11b
+    id: image_scale
+    weight: 1
+    data:
+      width: 700
+      height: null
+      upscale: false
+  4b260e36-4ee4-4060-99e0-d68c850aae9f:
+    uuid: 4b260e36-4ee4-4060-99e0-d68c850aae9f
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

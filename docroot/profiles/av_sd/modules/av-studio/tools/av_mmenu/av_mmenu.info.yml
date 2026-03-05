@@ -1,0 +1,9 @@
+name: 'AV - mmenu'
+type: module
+description: 'AV-Studio - mmenu'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Tools'
+#dependencies:
+#  - votingapi
+#  - field
+#  - votingapi_reaction

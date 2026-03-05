@@ -1,0 +1,11 @@
+uuid: acd09756-dfc6-458b-b015-d9281c2b7bbb
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_b_paragraph_block
+id: b_paragraph_block
+label: Absatzblock
+revision: 1
+description: ''

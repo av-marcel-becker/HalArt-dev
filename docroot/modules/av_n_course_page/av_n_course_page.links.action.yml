@@ -1,0 +1,11 @@
+av_n_course_page.course_page.add:
+  route_name: node.add
+  title: 'Lehrgangs-Seite hinzufügen'
+  weight: 10
+  appears_on:
+    - view.v_content_course_page.v_content_course_page
+  route_parameters: 
+    node_type: 'n_course_page'
+#  options:
+#    query:
+#      destination: /admin/content/course_page

@@ -1,0 +1,26 @@
+uuid: 6f55211d-b036-406f-9678-f9d3f6d34b5c
+langcode: de
+status: true
+dependencies:
+  module:
+    - file
+    - paragraphs
+  enforced:
+    module:
+      - av_p_file
+id: paragraph.field_p_f_file
+field_name: field_p_f_file
+entity_type: paragraph
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

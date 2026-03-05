@@ -1,0 +1,21 @@
+uuid: 80444fc1-cb11-4666-8c9a-21af135cc59e
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_directory_page
+  enforced:
+    module:
+      - av_n_directory_page
+id: node.n_directory_page.title
+field_name: title
+entity_type: node
+bundle: n_directory_page
+label: Überschrift
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

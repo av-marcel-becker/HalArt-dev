@@ -1,0 +1,11 @@
+uuid: 24e1733b-1617-430e-9c97-19bffa6875a4
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_blog_page
+name: 'Tags für Blog Seite'
+vid: t_tags_blog_page
+description: ''
+weight: 0

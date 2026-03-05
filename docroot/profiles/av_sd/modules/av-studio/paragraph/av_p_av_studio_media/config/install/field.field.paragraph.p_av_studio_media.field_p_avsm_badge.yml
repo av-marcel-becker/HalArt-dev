@@ -1,0 +1,23 @@
+uuid: 02c871df-0e4e-41d3-a479-223e67d9ffb1
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_avsm_badge
+    - paragraphs.paragraphs_type.p_av_studio_media
+  enforced:
+    module:
+      - av_p_av_studio_media
+third_party_settings: { }
+id: paragraph.p_av_studio_media.field_p_avsm_badge
+field_name: field_p_avsm_badge
+entity_type: paragraph
+bundle: p_av_studio_media
+label: Plakette
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

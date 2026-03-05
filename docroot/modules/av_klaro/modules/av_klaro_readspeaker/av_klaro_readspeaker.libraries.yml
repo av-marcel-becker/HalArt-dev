@@ -1,0 +1,29 @@
+av_klaro_readspeaker:
+  version: VERSION
+  css:
+    theme:
+      css/av_klaro_readspeaker.css: { }
+  js: 
+    js/av_klaro_readspeaker.js: { }
+    //cdn1.readspeaker.com/script/14578/webReader/webReader.js?pids=wr: { external: true }
+    
+#    //cdn1.readspeaker.com/script/14578/webReader/webReader.js?pids=wr
+    
+    
+#    https://app-eu.readspeaker.com/cgi-bin/rsent?customerid=14578&lang=de_de&readid=main-content&url=https://eva-gandersheim.de/gottesdienst
+    
+    
+#    av_3event_event_widget_block:
+#  version: 0.1
+#  css:
+#    theme:
+#      css/av_3event_event_widget_block.css: {}
+#      https://cdn.3mag.eu/widgets/zittau.eu/events/v1/assets/index.css: { external: true }
+#  js: 
+#    //cdn.3mag.eu/widgets/zittau.eu/events/v1/assets/index.js:
+#      external: true
+#      attributes:
+#        defer: true
+#        type: module
+#        crossorigin: true
+#    js/av_3event_event_widget_block.js: {}

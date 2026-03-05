@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_teaser
+name: is_teaser_50p_bp992_496px
+label: 'Teaser 50% - bp992 (B=496px)'
+effects:
+  d9c49d20-90ce-4cc3-99a3-dea8f610641a:
+    uuid: d9c49d20-90ce-4cc3-99a3-dea8f610641a
+    id: image_scale
+    weight: 1
+    data:
+      width: 992
+      height: null
+      upscale: false
+  c22b16a7-a4ee-45ae-9214-08ed3f8950c9:
+    uuid: c22b16a7-a4ee-45ae-9214-08ed3f8950c9
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

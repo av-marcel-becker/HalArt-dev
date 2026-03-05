@@ -1,0 +1,25 @@
+uuid: 2805b810-5272-4efa-ad50-37495850fe98
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_front_page
+  module:
+    - node
+id: ap_front_page
+label: Startseite
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  1eff5604-26df-487e-a0db-333399571d07:
+    id: 'entity_bundle:node'
+    bundles:
+      n_front_page: n_front_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 1eff5604-26df-487e-a0db-333399571d07
+selection_logic: and
+weight: -5
+relationships: {  }

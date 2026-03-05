@@ -1,0 +1,26 @@
+uuid: 96d57581-186c-4abc-8131-9a8a5cb546ca
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_h_headline_number
+    - paragraphs.paragraphs_type.p_headline
+  module:
+    - options
+  enforced:
+    module:
+      - av_p_headline
+id: paragraph.p_headline.field_p_h_headline_number
+field_name: field_p_h_headline_number
+entity_type: paragraph
+bundle: p_headline
+label: Nummer
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: h2
+default_value_callback: ''
+settings: {  }
+field_type: list_string

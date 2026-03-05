@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - crop
+  enforced:
+    module:
+      - av_p_teaser
+name: is_teaser_fp_25p_bp992_496px
+label: 'Teaser FP 25% - bp992 (B=496px)'
+effects:
+  eca90b86-42ea-40dd-b5b4-2c04385e423d:
+    uuid: eca90b86-42ea-40dd-b5b4-2c04385e423d
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 992
+      height: 558
+      crop_type: focal_point
+  3bf28967-1ffe-4622-a461-4de1fbbe7fd9:
+    uuid: 3bf28967-1ffe-4622-a461-4de1fbbe7fd9
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

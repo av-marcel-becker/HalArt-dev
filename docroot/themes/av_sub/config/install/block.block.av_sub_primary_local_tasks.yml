@@ -1,0 +1,20 @@
+uuid: 0d154d4c-c5ef-437d-b6fe-85d88fc4f24a
+langcode: de
+status: false
+dependencies:
+  theme:
+    - av_sub
+id: av_sub_primary_local_tasks
+theme: av_sub
+region: content
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primäre Reiter'
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: false
+visibility: {  }

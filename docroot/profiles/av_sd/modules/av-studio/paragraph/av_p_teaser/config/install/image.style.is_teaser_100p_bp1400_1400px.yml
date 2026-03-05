@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_teaser
+name: is_teaser_100p_bp1400_1400px
+label: 'Teaser 100% - bp1400 (B=1400px)'
+effects:
+  0f924e28-9993-49fb-8374-d52424acf377:
+    uuid: 0f924e28-9993-49fb-8374-d52424acf377
+    id: image_scale
+    weight: 1
+    data:
+      width: 2800
+      height: null
+      upscale: false
+  227c9f38-f8a5-4b09-a9a5-fb99965dd27a:
+    uuid: 227c9f38-f8a5-4b09-a9a5-fb99965dd27a
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

@@ -1,0 +1,23 @@
+uuid: 1722e157-e622-40c5-81db-9a94b84f740b
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_list_with_icons
+  module:
+    - paragraphs
+    - text
+third_party_settings: { }
+id: paragraph.field_pi_lwii_label
+field_name: field_pi_lwii_label
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

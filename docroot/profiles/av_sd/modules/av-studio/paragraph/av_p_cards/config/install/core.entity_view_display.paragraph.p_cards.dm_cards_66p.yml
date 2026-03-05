@@ -1,0 +1,32 @@
+uuid: 8505d950-61b1-4834-afd9-c0eddc66ce09
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.dm_cards_66p
+    - field.field.paragraph.p_cards.field_p_c_image
+    - paragraphs.paragraphs_type.p_cards
+    - responsive_image.styles.ris_cards_66p
+  module:
+    - responsive_image
+  enforced:
+    module:
+      - av_p_cards
+id: paragraph.p_cards.dm_cards_66p
+targetEntityType: paragraph
+bundle: p_cards
+mode: dm_cards_66p
+content:
+  field_p_c_image:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: ris_cards_66p
+      image_link: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_p_c_label: true

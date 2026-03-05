@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_image
+name: is_50p_bp992_496px
+label: '50% - bp992 (B=496px)'
+effects:
+  383e680b-0f61-4750-9029-4e1e9b160712:
+    uuid: 383e680b-0f61-4750-9029-4e1e9b160712
+    id: image_scale
+    weight: 1
+    data:
+      width: 992
+      height: null
+      upscale: false
+  32315378-8709-409b-96bd-12430e88393a:
+    uuid: 32315378-8709-409b-96bd-12430e88393a
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

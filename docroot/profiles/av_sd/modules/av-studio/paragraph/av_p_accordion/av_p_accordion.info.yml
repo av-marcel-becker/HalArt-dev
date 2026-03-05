@@ -1,0 +1,10 @@
+name: 'AV Paragraph - Accordion'
+type: module
+description: 'AV-Studio Paragraph - Accordion'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Paragraph'
+dependencies:
+  - field
+  - paragraphs
+  - entity_reference_revisions
+  - av_p_wysiwyg

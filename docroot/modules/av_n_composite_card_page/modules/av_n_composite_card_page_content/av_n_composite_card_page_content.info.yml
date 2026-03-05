@@ -1,0 +1,7 @@
+name: 'AV Node - Composite Card Page Content'
+type: module
+description: 'AV-Studio Node - Composite Card Page Content'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Node'
+dependencies:
+  - av_n_composite_card_page

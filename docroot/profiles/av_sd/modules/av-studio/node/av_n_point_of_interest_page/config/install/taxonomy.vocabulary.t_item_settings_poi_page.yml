@@ -1,0 +1,11 @@
+uuid: 6891d1f1-9d6a-453f-941f-d4034f319187
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_point_of_interest_page
+name: 'Marker und Elementedarstellung für Ort (POI)'
+vid: t_item_settings_poi_page
+description: ''
+weight: 0

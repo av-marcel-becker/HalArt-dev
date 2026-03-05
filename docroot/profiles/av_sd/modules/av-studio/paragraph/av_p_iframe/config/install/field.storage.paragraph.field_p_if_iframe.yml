@@ -1,0 +1,23 @@
+uuid: 21f2eedb-e8c0-4067-b0e6-cf4e864a1633
+langcode: de
+status: true
+dependencies:
+  module:
+    - iframe
+    - paragraphs
+  enforced:
+    module:
+      - av_p_iframe
+third_party_settings: { }
+id: paragraph.field_p_if_iframe
+field_name: field_p_if_iframe
+entity_type: paragraph
+type: iframe
+settings: {  }
+module: iframe
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

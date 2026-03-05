@@ -1,0 +1,24 @@
+uuid: d6d5a3c9-101a-4894-ae91-67a30c48040d
+langcode: de
+status: true
+dependencies:
+  module:
+    - paragraphs
+  enforced:
+    module:
+      - av_p_menu
+id: paragraph.field_p_m_label
+field_name: field_p_m_label
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

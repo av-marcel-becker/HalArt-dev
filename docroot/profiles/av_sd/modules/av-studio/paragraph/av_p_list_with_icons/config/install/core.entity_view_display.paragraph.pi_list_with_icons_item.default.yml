@@ -1,0 +1,48 @@
+uuid: 83682126-54fb-4560-a5fa-8c2a7fb2a2b7
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pi_list_with_icons_item.field_pi_lwii_icon
+    - field.field.paragraph.pi_list_with_icons_item.field_pi_lwii_label
+    - field.field.paragraph.pi_list_with_icons_item.field_pi_lwii_link
+    - paragraphs.paragraphs_type.pi_list_with_icons_item
+  module:
+    - link
+    - options
+    - text
+  enforced:
+    module:
+      - av_p_list_with_icons
+id: paragraph.pi_list_with_icons_item.default
+targetEntityType: paragraph
+bundle: pi_list_with_icons_item
+mode: default
+content:
+  field_pi_lwii_icon:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_pi_lwii_label:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_pi_lwii_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

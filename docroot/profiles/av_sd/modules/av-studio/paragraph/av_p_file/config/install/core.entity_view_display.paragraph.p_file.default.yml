@@ -1,0 +1,26 @@
+uuid: 7809a87d-85a3-44f6-bf7b-4c04c2d8b9e6
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p_file.field_p_f_file
+    - paragraphs.paragraphs_type.p_file
+  module:
+    - file
+  enforced:
+    module:
+      - av_p_file
+id: paragraph.p_file.default
+targetEntityType: paragraph
+bundle: p_file
+mode: default
+content:
+  field_p_f_file:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

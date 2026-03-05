@@ -1,0 +1,38 @@
+uuid: 2a37f15a-c516-4b91-a3dd-b4a448d7c031
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.n_event_page.body
+    - field.field.node.n_event_page.field_image
+    - field.field.node.n_event_page.field_n_ep_content
+    - field.field.node.n_event_page.field_n_ep_tag
+    - node.type.n_event_page
+  enforced:
+    module:
+      - av_n_event_page
+  module:
+    - layout_paragraphs
+    - user
+third_party_settings: { }
+id: node.n_event_page.default
+targetEntityType: node
+bundle: n_event_page
+mode: default
+content:
+  field_n_ep_content:
+    type: layout_paragraphs
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: { }
+    region: content
+hidden:
+  body: true
+  content_moderation_control: true
+  field_image: true
+  field_n_ep_tag: true
+  langcode: true
+  links: true

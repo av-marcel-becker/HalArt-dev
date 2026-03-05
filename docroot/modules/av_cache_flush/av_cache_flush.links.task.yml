@@ -1,0 +1,6 @@
+#https://www.drupal.org/docs/8/api/menu-api/providing-module-defined-local-tasks
+av_cache_flush.settings:
+  title: 'AV Cache - Settings'
+  base_route: 'av_cache_flush.settings'
+  route_name: 'av_cache_flush.settings'
+  weight: 1

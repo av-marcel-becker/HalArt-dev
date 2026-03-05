@@ -1,0 +1,11 @@
+av_n_types_of_sports_page.types_of_sports_page.add:
+  route_name: node.add
+  title: 'Sportart hinzufügen'
+  weight: 10
+  appears_on:
+    - view.v_content_types_of_sports_page.v_content_types_of_sports_page
+  route_parameters: 
+    node_type: 'n_types_of_sports_page'
+#  options:
+#    query:
+#      destination: /admin/content/types_of_sports_page

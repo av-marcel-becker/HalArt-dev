@@ -1,0 +1,18 @@
+uuid: 34b6078e-9d3b-4058-b15d-1c4fc0ac10d2
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_image
+name: is_logo
+label: Logo
+effects:
+  0d783e91-0af9-405b-9540-65b95a3b8d81:
+    uuid: 0d783e91-0af9-405b-9540-65b95a3b8d81
+    id: image_scale
+    weight: 1
+    data:
+      width: 100
+      height: null
+      upscale: false

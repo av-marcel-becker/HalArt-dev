@@ -1,0 +1,26 @@
+uuid: 9c5b5164-3a49-4c93-9b53-86e6784e3a62
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_lwi_button
+    - paragraphs.paragraphs_type.p_list_with_icons
+  enforced:
+    module:
+      - av_p_list_with_icons
+id: paragraph.p_list_with_icons.field_p_lwi_button
+field_name: field_p_lwi_button
+entity_type: paragraph
+bundle: p_list_with_icons
+label: Button
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'als Buttonliste ausgeben'
+  off_label: 'nicht als Buttonliste ausgeben'
+field_type: boolean

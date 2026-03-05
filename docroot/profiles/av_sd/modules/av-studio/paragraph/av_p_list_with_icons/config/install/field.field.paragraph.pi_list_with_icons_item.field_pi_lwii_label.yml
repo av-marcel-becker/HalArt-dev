@@ -1,0 +1,27 @@
+uuid: e46be6ee-1b8c-4229-82e7-266b4fa617f6
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pi_lwii_label
+    - paragraphs.paragraphs_type.pi_list_with_icons_item
+  enforced:
+    module:
+      - av_p_list_with_icons
+  module:
+    - text
+third_party_settings: { }
+id: paragraph.pi_list_with_icons_item.field_pi_lwii_label
+field_name: field_pi_lwii_label
+entity_type: paragraph
+bundle: pi_list_with_icons_item
+label: Beschriftung
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    f_editorial_staff: f_editor
+field_type: text_long

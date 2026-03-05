@@ -1,0 +1,26 @@
+uuid: e5e9efd2-44e1-4a08-b9fa-6f1eda2d4244
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_front_page
+  module:
+    - menu_ui
+    - node_revision_delete
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  node_revision_delete:
+    minimum_revisions_to_keep: 10
+    minimum_age_to_delete: 3
+    when_to_delete: 12
+name: Startseite
+type: n_front_page
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

@@ -1,0 +1,16 @@
+langcode: de
+cookie_name: cookiesjsr
+cookie_expires: 365
+cookie_domain: ''
+cookie_secure: false
+cookie_same_site: Lax
+open_settings_hash: cookie_einstellungen
+show_deny_all: true
+deny_all_on_layer_close: true
+settings_as_link: false
+group_consent: false
+cookie_docs: false
+lib_load_from_cdn: false
+lib_scroll_limit: 0
+use_default_styles: true
+store_auth_user_consent: true

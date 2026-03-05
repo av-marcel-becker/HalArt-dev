@@ -1,0 +1,41 @@
+uuid: 2bea2351-c5d2-4baf-bb44-fe7729bf55a3
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.n_directory_page
+  module:
+    - image
+  enforced:
+    module:
+      - av_n_directory_page
+id: node.n_directory_page.field_image
+field_name: field_image
+entity_type: node
+bundle: n_directory_page
+label: Bild
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'n_directory_page_[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

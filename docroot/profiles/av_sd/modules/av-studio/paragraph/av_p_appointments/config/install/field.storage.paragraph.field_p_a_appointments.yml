@@ -1,0 +1,35 @@
+uuid: 1be94f85-5e88-4088-94eb-3f8fee904571
+langcode: de
+status: true
+dependencies:
+  module:
+    - double_field
+    - paragraphs
+  enforced:
+    module:
+      - av_p_appointments
+id: paragraph.field_p_a_appointments
+field_name: field_p_a_appointments
+entity_type: paragraph
+type: double_field
+settings:
+  storage:
+    first:
+      type: datetime_iso8601
+      maxlength: 255
+      precision: 10
+      scale: 2
+      datetime_type: date
+    second:
+      type: text
+      maxlength: 255
+      precision: 10
+      scale: 2
+      datetime_type: datetime
+module: double_field
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

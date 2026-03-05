@@ -1,0 +1,67 @@
+av-msg {
+  --av-msg-overlay-background: rgba(0, 0, 0, 0.8);
+  
+  --av-msg-popup-background: #ffffff;
+  --av-msg-popup-box-shadow: 0 0 var(--size-10) rgba(0, 0, 0, 0.3);
+  --av-msg-popup-padding: var(--size-20);
+  --av-msg-popup-border-radius: var(--size-5);
+  
+  --av-msg-close-color: #000000;
+  --av-msg-close-font-family: sans-serif;
+  --av-msg-close-font-style: normal;
+  --av-msg-close-font-weight: var(--font-weight-fa-light);
+  --av-msg-close-font-size: var(--size-0);
+  --av-msg-close-after-content: '\58'; /* X */
+  --av-msg-close-after-font-family: var(--font-family-fa);
+  --av-msg-close-after-font-style: normal;
+  --av-msg-close-after-font-weight: var(--font-weight-fa-light);
+  --av-msg-close-after-font-variant: normal;
+  --av-msg-close-after-font-size: var(--size-20);
+  --av-msg-close-after-line-height: var(--size-20);
+  --av-msg-close-after-border: none;
+  --av-msg-close-after-border-radius: 0;
+  --av-msg-close-after-background: none;
+  
+  --av-msg-title-color: #666;
+  --av-msg-title-font-size: var(--size-20);
+  --av-msg-title-font-family: sans-serif;
+  --av-msg-title-font-weight: normal;
+  
+  --av-msg-content-margin: var(--size-10) 0 0 0;
+  --av-msg-content-color: #333;
+  --av-msg-content-font-size: var(--size-18);
+  --av-msg-content-font-family: sans-serif;
+  --av-msg-content-font-weight: normal;
+
+  --av-msg-a-font-family: inherit;
+  --av-msg-a-font-style: inherit;
+  --av-msg-a-font-weight: inherit;
+  --av-msg-a-font-size: inherit;
+  --av-msg-a-line-height: inherit;
+  --av-msg-a-color: var(--color-5, #0066cc);
+  --av-msg-a-text-decoration: underline;
+  --av-msg-a-background: transparent;
+  --av-msg-a-border: none;
+  --av-msg-a-border-radius: 0;
+  --av-msg-a-border-bottom: none;
+  --av-msg-a-text-underline-position: auto;
+  --av-msg-a-text-decoration-thickness: auto;
+  --av-msg-a-padding: 0;
+  --av-msg-a-margin: 0;
+  --av-msg-a-transition: all 0.2s ease;
+  --av-msg-a-transform: none;
+  --av-msg-a-text-transform: none;
+  --av-msg-a-letter-spacing: normal;
+  --av-msg-a-vertical-align: baseline;
+
+  --av-msg-a-hover-color: var(--color-6, #004499);
+  --av-msg-a-hover-text-decoration: underline;
+  --av-msg-a-hover-background: transparent;
+  --av-msg-a-hover-border: none;
+  --av-msg-a-hover-transform: none;
+
+  --av-msg-a-focus-color: var(--color-6, #004499);
+  --av-msg-a-focus-text-decoration: underline;
+  --av-msg-a-focus-background: transparent;
+  --av-msg-a-focus-outline: 2px solid currentColor;
+}

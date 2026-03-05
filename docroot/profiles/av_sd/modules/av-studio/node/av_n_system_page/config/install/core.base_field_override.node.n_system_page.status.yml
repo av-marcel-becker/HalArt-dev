@@ -1,0 +1,25 @@
+uuid: ad3912d3-232f-4d51-82a0-59c8aeec363b
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_system_page
+  enforced:
+    module:
+      - av_n_system_page
+id: node.n_system_page.status
+field_name: status
+entity_type: node
+bundle: n_system_page
+label: Veröffentlicht
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

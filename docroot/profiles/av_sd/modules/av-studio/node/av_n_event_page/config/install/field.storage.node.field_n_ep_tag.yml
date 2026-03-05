@@ -1,0 +1,24 @@
+uuid: 77643342-a863-4c93-8207-37e9481d9ffd
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_event_page
+  module:
+    - node
+    - taxonomy
+third_party_settings: { }
+id: node.field_n_ep_tag
+field_name: field_n_ep_tag
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

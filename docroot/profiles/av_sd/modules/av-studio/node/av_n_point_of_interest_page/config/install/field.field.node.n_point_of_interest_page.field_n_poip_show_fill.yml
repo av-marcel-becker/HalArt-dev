@@ -1,0 +1,26 @@
+uuid: d40e1d22-d1f4-4a7f-8cdd-27ca0ef0ec26
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_poip_show_fill
+    - node.type.n_point_of_interest_page
+  enforced:
+    module:
+      - av_n_point_of_interest_page
+id: node.n_point_of_interest_page.field_n_poip_show_fill
+field_name: field_n_poip_show_fill
+entity_type: node
+bundle: n_point_of_interest_page
+label: 'Füllung anzeigen'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: '0.2'
+  off_label: '0'
+field_type: boolean

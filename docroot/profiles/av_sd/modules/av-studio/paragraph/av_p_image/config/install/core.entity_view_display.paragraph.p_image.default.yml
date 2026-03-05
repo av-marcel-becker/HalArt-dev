@@ -1,0 +1,141 @@
+uuid: 56c4f1e1-8393-4054-8088-133d8183ffd0
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p_image.field_p_i_align_center
+    - field.field.paragraph.p_image.field_p_i_enable_link
+    - field.field.paragraph.p_image.field_p_i_enable_zoom
+    - field.field.paragraph.p_image.field_p_i_enable_crop
+    - field.field.paragraph.p_image.field_p_i_image
+    - field.field.paragraph.p_image.field_p_i_label
+    - field.field.paragraph.p_image.field_p_i_link
+    - field.field.paragraph.p_image.field_p_i_show_label
+    - field.field.paragraph.p_image.field_p_i_size
+    - field.field.paragraph.p_image.field_p_i_badge
+    - field.field.paragraph.p_image.field_p_i_show_badge
+    - image.style.is_100p_bp1200_1200px
+    - paragraphs.paragraphs_type.p_image
+    - responsive_image.styles.ris_100p
+  module:
+    - link
+    - options
+    - photoswipe
+    - text
+  enforced:
+    module:
+      - av_p_image
+id: paragraph.p_image.default
+targetEntityType: paragraph
+bundle: p_image
+mode: default
+content:
+  field_p_i_align_center:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_p_i_enable_link:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_p_i_enable_zoom:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_p_i_enable_crop:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_p_i_image:
+    type: photoswipe_responsive_field_formatter
+    label: hidden
+    settings:
+      photoswipe_node_style_first: ris_100p
+      photoswipe_node_style: ris_100p
+      photoswipe_image_style: is_100p_bp1200_1200px
+      photoswipe_reference_image_field: ''
+      photoswipe_caption: field_p_i_label
+      photoswipe_caption_custom: ''
+      photoswipe_view_mode: default
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_p_i_label:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_p_i_link:
+    type: link_separate
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_p_i_show_label:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_p_i_show_badge:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_p_i_size:
+    type: list_key
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_p_i_badge:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 11
+    region: content
+hidden: {  }

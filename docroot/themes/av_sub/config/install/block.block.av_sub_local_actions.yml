@@ -1,0 +1,18 @@
+uuid: 707ae885-8c90-4d17-94da-cbcc763e406e
+langcode: de
+status: true
+dependencies:
+  theme:
+    - av_sub
+id: av_sub_local_actions
+theme: av_sub
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primäre Admin-Aktionen'
+  provider: core
+  label_display: '0'
+visibility: {  }

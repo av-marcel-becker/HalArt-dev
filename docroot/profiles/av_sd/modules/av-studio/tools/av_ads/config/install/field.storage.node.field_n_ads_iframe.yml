@@ -1,0 +1,23 @@
+uuid: e0b22d24-f378-4491-86b1-3e11251ef68b
+langcode: de
+status: true
+dependencies:
+  module:
+    - iframe
+    - node
+  enforced:
+    module:
+      - av_ads
+third_party_settings: { }
+id: node.field_n_ads_iframe
+field_name: field_n_ads_iframe
+entity_type: node
+type: iframe
+settings: {  }
+module: iframe
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

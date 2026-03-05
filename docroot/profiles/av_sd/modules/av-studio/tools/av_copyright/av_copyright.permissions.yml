@@ -1,0 +1,4 @@
+'administer AV Tools - Copyright configuration':
+   title: 'administer AV Tools - Copyright configuration'
+   description: 'all permissions'
+   restrict access: true

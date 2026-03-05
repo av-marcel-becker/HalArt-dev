@@ -1,0 +1,12 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - paragraphs
+  enforced:
+    module:
+      - av_p_cards
+id: paragraph.dm_cards_100p
+label: 'Card 100%'
+targetEntityType: paragraph
+cache: true

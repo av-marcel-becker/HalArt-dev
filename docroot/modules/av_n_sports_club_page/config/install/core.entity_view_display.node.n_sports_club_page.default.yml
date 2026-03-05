@@ -1,0 +1,38 @@
+uuid: 3ee96132-be03-41b1-8538-a4ac174d40f5
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.n_sports_club_page.body
+    - field.field.node.n_sports_club_page.field_image
+    - field.field.node.n_sports_club_page.field_n_scp_content
+    - field.field.node.n_sports_club_page.field_n_scp_tag
+    - node.type.n_sports_club_page
+  enforced:
+    module:
+      - av_n_sports_club_page
+  module:
+    - layout_paragraphs
+    - user
+third_party_settings: { }
+id: node.n_sports_club_page.default
+targetEntityType: node
+bundle: n_sports_club_page
+mode: default
+content:
+  field_n_pp_content:
+    type: layout_paragraphs
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: { }
+    region: content
+hidden:
+  body: true
+  content_moderation_control: true
+  field_image: true
+  field_n_pp_tag: true
+  langcode: true
+  links: true

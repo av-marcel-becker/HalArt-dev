@@ -1,0 +1,39 @@
+uuid: fb20c014-d318-4d02-81a4-31353825465f
+langcode: de
+status: true
+dependencies:
+  config:
+    - image.style.is_ads_bp1200
+    - image.style.is_ads_bp576
+    - image.style.is_ads_bp768
+    - image.style.is_ads_bp992
+  module:
+    - av_l_default
+  enforced:
+    module:
+      - av_ads
+id: ris_advertisement
+label: Anzeige
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: is_ads_bp1200
+    breakpoint_id: av_l_default.css_framework.992
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: is_ads_bp992
+    breakpoint_id: av_l_default.css_framework.768
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: is_ads_bp768
+    breakpoint_id: av_l_default.css_framework.576
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: is_ads_bp576
+    breakpoint_id: av_l_default.css_framework.0
+    multiplier: 1x
+breakpoint_group: av_l_default
+fallback_image_style: is_ads_bp1200

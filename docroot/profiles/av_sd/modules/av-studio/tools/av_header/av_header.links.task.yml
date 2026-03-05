@@ -1,0 +1,6 @@
+#https://www.drupal.org/docs/8/api/menu-api/providing-module-defined-local-tasks
+av_header.settings:
+  title: 'AV Header Settings'
+  base_route: 'av_header.settings'
+  route_name: 'av_header.settings'
+  weight: 1

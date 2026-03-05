@@ -1,0 +1,12 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - paragraphs
+  enforced:
+    module:
+      - av_p_teaser
+id: paragraph.dm_teaser_fp_50pz
+label: 'Teaser FP 50% Zoom'
+targetEntityType: paragraph
+cache: true

@@ -1,0 +1,27 @@
+uuid: 16c56531-7148-4311-80be-310bdc58894f
+langcode: de
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+  enforced:
+    module:
+      - av_p_sections
+id: p_sections
+label: 'Standard Abschnitt'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      section_1x100: '1x100 Abschnitt'
+      section_2x50: '2x50 Abschnitt'
+      section_66_33: '66/33 Abschnitt'
+      section_33_66: '33/66 Abschnitt'
+      section_3x33: '3x33 Abschnitt'
+      section_25_50_25: '25/50/25 Abschnitt'
+      section_4x25: '4x25 Abschnitt'
+      section_25_75: '25/75 Abschnitt'
+      section_75_25: '75/25 Abschnitt'

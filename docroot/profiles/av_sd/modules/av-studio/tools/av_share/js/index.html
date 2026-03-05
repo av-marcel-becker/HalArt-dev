@@ -1,0 +1,98 @@
+<html lang="de">
+   <head>
+      <title>test</title>      
+      <meta charset="utf-8">
+        <style>
+      </style>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <script src="share.js"></script>
+      <script>
+         document.addEventListener("DOMContentLoaded", () => 
+            {
+               const s = new share({
+                     setup: {
+                           class: 'av-share'
+                        },
+                     data: {
+                           title: 'Test Titel', // Share Titel
+                           description: 'Test Beschreibung', // Share Text / Beschreibung / Kurztext
+                           url: 'https://www.test.de', // Eigene Website URL
+                           picture: '', // thumb url
+                        },
+                     popup: {
+                           width: '650',
+                           height: '600',
+                        },
+                     menu: {
+                           title: 'Menü',
+                           icon: '<i class="fa-solid fa-share"></i>', 
+                           adjust: { // Angaben in px ohne Einheit
+                                 yn: '5',
+                                 yp: '0',
+                                 xn: '0',
+                                 xp: '0',
+                              },
+                           overlap: true, // Menue Tooltip ueber oder im Button 
+                       }, 
+                     share: {
+                           twitter: {
+                                 title: 'auf Twitter Teilen',
+                                 icon: '<i class="fa-brands fa-twitter"></i>',
+                              },
+                        },
+                     misc: {
+                           print: {
+                                 title: 'Drucken',
+                                 icon: '<i class="fa-solid fa-print"></i>',
+                              },
+                           mail: {
+                                 0: {
+                                       title: 'E-Mail versenden',
+                                       icon: '<i class="fa-solid fa-envelope"></i>',
+                                       mail: '', // Mail leer lassen (Adresse none@none.de)
+                                       subject: 'Titel', // Betreff
+                                       body: 'Kurztext', // Kurztext
+                                       msg: 'Es öffnet sich in wenigen Augenblicken Ihr E-Mail Programm.', // alert Message                                 
+                                    },
+                              },  
+                           link: {
+                                 title: 'URL kopieren',
+                                 icon: '<i class="fa-solid fa-link"></i>',
+                                 copy: 'Link kopieren',
+                                 close: 'Schließen',
+                                 msg: 'URL in der Zwischenablage gespeichert.',
+                              }, 
+                        },
+                  });
+               
+               const p = new share({
+                     setup: {
+                           class: 'av-profile'
+                        },
+                     profile: {
+                           twitter: {
+                                 title: 'Twitter Profil',
+                                 icon: '<i class="fa-brands fa-twitter"></i>',
+                                 name: '',
+                              },
+                        },
+                  });
+            });
+      </script>      
+   </head>
+   <body>
+      <div class="av-share">
+         <a class="av-share-button" data-type="share" data-button="twitter"></a>
+         <a class="av-share-button" data-type="misc" data-button="print"></a>
+         <a class="av-share-button" data-type="misc" data-button="mail" data-num="0"></a>
+         <div class="av-share-menu" style="display: none;">
+            <i class="fa-solid fa-share"></i>
+            <a class="av-share-button" data-type="misc" data-button="link"></a>
+         </div>
+      </div>
+      <div class="av-profile">
+         <a class="av-profile-button" data-type="profile" data-button="twitter"></a>
+      </div>
+      
+   </body>
+</html>

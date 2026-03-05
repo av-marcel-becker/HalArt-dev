@@ -1,0 +1,25 @@
+uuid: 7d58252e-6fba-435c-bb97-c4827105f488
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - av_ads
+third_party_settings: { }
+id: node.field_n_ads_label
+field_name: field_n_ads_label
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

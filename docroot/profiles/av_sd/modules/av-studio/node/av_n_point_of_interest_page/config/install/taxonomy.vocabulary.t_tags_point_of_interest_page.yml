@@ -1,0 +1,11 @@
+uuid: e754cf01-803c-423f-9f20-d20f5ab838ca
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_point_of_interest_page
+name: 'Tags für Ort (POI)'
+vid: t_tags_point_of_interest_page
+description: ''
+weight: 0

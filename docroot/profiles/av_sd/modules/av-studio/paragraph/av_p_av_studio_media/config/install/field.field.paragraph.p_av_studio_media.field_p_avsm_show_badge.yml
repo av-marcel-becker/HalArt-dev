@@ -1,0 +1,26 @@
+uuid: c8a43200-9bd1-48e2-84ef-7e72c1c79422
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_avsm_show_badge
+    - paragraphs.paragraphs_type.p_av_studio_media
+  enforced:
+    module:
+      - av_p_av_studio_media
+id: paragraph.p_av_studio_media.field_p_avsm_show_badge
+field_name: field_p_avsm_show_badge
+entity_type: paragraph
+bundle: p_av_studio_media
+label: 'Plakette Anzeigen'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

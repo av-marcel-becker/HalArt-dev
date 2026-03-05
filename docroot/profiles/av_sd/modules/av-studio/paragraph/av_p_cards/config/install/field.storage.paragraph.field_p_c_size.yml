@@ -1,0 +1,37 @@
+uuid: 6c25c793-a893-40ee-96b8-2d3fef4c0366
+langcode: de
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+  enforced:
+    module:
+      - av_p_cards
+third_party_settings: { }
+id: paragraph.field_p_c_size
+field_name: field_p_c_size
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: card-size-33
+      label: 'Card 33%'
+    -
+      value: card-size-50
+      label: 'Card 50%'
+    -
+      value: card-size-66
+      label: 'Card 66%'
+    -
+      value: card-size-100
+      label: 'Card 100%'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

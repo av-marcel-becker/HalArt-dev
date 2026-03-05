@@ -1,0 +1,26 @@
+uuid: 6627fd90-3ab6-4528-8b92-07c74f510837
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_t_image_full_size
+    - paragraphs.paragraphs_type.p_teaser
+  enforced:
+    module:
+      - av_p_teaser
+id: paragraph.p_teaser.field_p_t_image_full_size
+field_name: field_p_t_image_full_size
+entity_type: paragraph
+bundle: p_teaser
+label: Vollbild
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

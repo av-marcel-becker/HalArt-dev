@@ -1,0 +1,27 @@
+uuid: e07963a6-0c11-4ab9-98fb-003527b8766f
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_p_text
+    - paragraphs.paragraphs_type.p_panorama
+  enforced:
+    module:
+      - av_p_panorama
+  module:
+    - text
+third_party_settings: { }
+id: paragraph.p_panorama.field_p_p_text
+field_name: field_p_p_text
+entity_type: paragraph
+bundle: p_panorama
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    f_editor: f_editor
+field_type: text_long

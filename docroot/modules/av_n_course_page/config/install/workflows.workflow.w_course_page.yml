@@ -1,0 +1,109 @@
+uuid: 9945f031-c840-4e2b-bf03-6e2f3c454719
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_course_page
+  enforced:
+    module:
+      - av_n_course_page
+  module:
+    - content_moderation
+id: w_course_page
+label: Lehrgangs-Seite
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      label: Entwurf
+      published: false
+      default_revision: false
+      weight: 0
+    published:
+      label: Veröffentlicht
+      published: true
+      default_revision: true
+      weight: 1
+    w_cp_archives:
+      published: false
+      default_revision: true
+      label: Archiv
+      weight: 2
+    w_cp_presentation:
+      published: false
+      default_revision: false
+      label: Moderation
+      weight: 3
+    w_cp_release_planned:
+      published: false
+      default_revision: true
+      label: 'Veröffentlichung geplant'
+      weight: 4
+    w_cp_unpublished:
+      published: false
+      default_revision: true
+      label: Unveröffentlicht
+      weight: 5
+  transitions:
+    create_new_draft:
+      label: 'Neuen Entwurf erstellen'
+      to: draft
+      weight: 0
+      from:
+        - draft
+        - published
+        - w_cp_archives
+        - w_cp_presentation
+        - w_cp_release_planned
+        - w_cp_unpublished
+    publish:
+      label: Veröffentlichen
+      to: published
+      weight: 1
+      from:
+        - draft
+        - published
+        - w_cp_archives
+        - w_cp_presentation
+        - w_cp_release_planned
+        - w_cp_unpublished
+    w_cp_archive:
+      label: Archivieren
+      from:
+        - published
+        - w_cp_unpublished
+      to: w_cp_archives
+      weight: 2
+    w_cp_do_not_publish:
+      label: 'nicht veröffentlichen'
+      from:
+        - draft
+        - published
+        - w_cp_archives
+        - w_cp_presentation
+        - w_cp_release_planned
+        - w_cp_unpublished
+      to: w_cp_unpublished
+      weight: 5
+    w_cp_moderate:
+      label: Moderieren
+      from:
+        - draft
+        - w_cp_archives
+        - w_cp_presentation
+        - w_cp_unpublished
+      to: w_cp_presentation
+      weight: 3
+    w_cp_schedule_publication:
+      label: 'Veröffentlichung planen'
+      from:
+        - draft
+        - w_cp_presentation
+        - w_cp_release_planned
+        - w_cp_unpublished
+      to: w_cp_release_planned
+      weight: 4
+  entity_types:
+    node:
+      - n_course_page
+  default_moderation_state: draft

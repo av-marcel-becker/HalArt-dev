@@ -1,0 +1,12 @@
+<?php
+   /**
+    * hook_theme
+    */
+   function av_p_sections_gallery_theme($existing, $type, $theme, $path) 
+      {
+         return [
+               'paragraph__p_sections_gallery' => [
+                     'base hook' => 'paragraph',
+                  ],
+            ];
+      } 

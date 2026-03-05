@@ -1,0 +1,22 @@
+uuid: 8305f659-2ab2-4a68-acc6-c32b9a2d091f
+langcode: de
+status: true
+dependencies:
+  module:
+    - paragraphs
+  enforced:
+    module:
+      - av_p_map
+id: paragraph.field_p_m_poi
+field_name: field_p_m_poi
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

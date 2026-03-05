@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>AV Notification</title>
+       <link rel="stylesheet" href="css/av_n_notification.css">
+       <script src="js/av_n_notification.js" defer></script>
+   </head>
+   <body>
+      <!--
+         id = string
+         time = int info: seconds
+         header-text = string
+         footer-text = string
+         link = '{"key": "value"}' info: without class
+         header-align = left|center|right
+         footer-align = left|center|right
+         show-icon = true|false
+         icon = string
+      -->
+      <av-notification id="notification1" time="-1" header-text="Notification 1" footer-align="left" link='{"href": "/test", "content": "Speichern"}'>immer da</av-notification>
+      <av-notification id="notification2" time="0" header-text="Notification 1" footer-align="left" link='{"href": "/test", "content": "Speichern"}'>einmalig</av-notification>
+      <av-notification id="notification3" time="10" header-text="Notification 1" footer-align="left" link='{"href": "/test", "content": "Speichern"}'>10 sek</av-notification>
+      <av-notification id="notification4" header-text="Notification 2 - test mit etwas mehr text als man denkt" footer-text="Dies ist ein Text im Footer">Inhalt der Notification 2</av-notification>
+   </body>
+</html>

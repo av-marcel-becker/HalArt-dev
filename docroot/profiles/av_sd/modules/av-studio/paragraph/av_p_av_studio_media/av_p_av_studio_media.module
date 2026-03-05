@@ -1,0 +1,15 @@
+<?php
+   /**
+    * hook_theme
+    */
+   function av_p_av_studio_media_theme($existing, $type, $theme, $path) 
+      {
+         return [
+               'paragraph__p_av_studio_media' => [     
+                     'base hook' => 'paragraph',
+                  ],
+               'field__field_p_avsm_media' => [     
+                     'base hook' => 'field',
+                  ],
+            ];
+      } 

@@ -1,0 +1,9 @@
+av_share.settings:
+  path: '/admin/config/system/av_share'
+  defaults:
+    _form: '\Drupal\av_share\Form\AvShareSettings'
+    _title: 'AV Share Settings'
+  requirements:
+    _permission: 'administer AV Share configuration'
+# options:
+#    no_cache: 'TRUE'

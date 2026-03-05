@@ -1,0 +1,53 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pi_accordion_item.field_pi_ai_content
+    - field.field.paragraph.pi_accordion_item.field_pi_ai_title
+    - paragraphs.paragraphs_type.pi_accordion_item
+  module:
+    - paragraphs
+  enforced:
+    module:
+      - av_p_accordion
+id: paragraph.pi_accordion_item.default
+targetEntityType: paragraph
+bundle: pi_accordion_item
+mode: default
+content:
+  field_pi_ai_content:
+    type: paragraphs
+    weight: 2
+    settings:
+      title: Inhalt
+      title_plural: Inhalte
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: p_wysiwyg
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: add_above
+    third_party_settings: {  }
+    region: content
+  field_pi_ai_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  status:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true

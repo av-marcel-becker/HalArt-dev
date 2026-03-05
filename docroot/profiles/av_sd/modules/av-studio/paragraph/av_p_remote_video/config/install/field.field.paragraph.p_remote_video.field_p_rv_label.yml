@@ -1,0 +1,28 @@
+uuid: 4bd0b19d-a6b7-4a9f-aec6-bcf80fcc4e81
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_rv_label
+    - paragraphs.paragraphs_type.p_remote_video
+  module:
+    - text
+  enforced:
+    module:
+      - av_p_remote_video
+third_party_settings: { }
+id: paragraph.p_remote_video.field_p_rv_label
+field_name: field_p_rv_label
+entity_type: paragraph
+bundle: p_remote_video
+label: Beschriftung
+description: 'Wenn das Beschriftungsfeld aktiviert wurde, kann hier ein individualer Text eingefügt werden.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    f_editor: f_editor
+    plain_text: plain_text
+field_type: text_long

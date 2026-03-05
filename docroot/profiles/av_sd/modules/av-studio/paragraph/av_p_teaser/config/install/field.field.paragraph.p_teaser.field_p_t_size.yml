@@ -1,0 +1,24 @@
+uuid: 648013a6-5406-4a13-bce1-7ad0a22de0ab
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_t_size
+    - paragraphs.paragraphs_type.p_teaser
+  module:
+    - options
+  enforced:
+    module:
+      - av_p_teaser
+id: paragraph.p_teaser.field_p_t_size
+field_name: field_p_t_size
+entity_type: paragraph
+bundle: p_teaser
+label: 'Teaser größe'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

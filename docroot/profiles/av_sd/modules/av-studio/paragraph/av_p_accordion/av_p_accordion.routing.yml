@@ -1,0 +1,9 @@
+av_p_accordion.settings:
+  path: '/admin/config/system/av_p_accordion'
+  defaults:
+    _form: '\Drupal\av_p_accordion\Form\AccordionSettings'
+    _title: 'AV-Studio Paragraph - Accordion Settings'
+  requirements:
+    _permission: 'administer AV Paragraph - Accordion configuration'
+# options:
+#    no_cache: 'TRUE'

@@ -1,0 +1,12 @@
+langcode: de
+uuid: db0cfd21-b79a-4220-aac6-881cf885ddea
+name: av-sd-v5
+mail: no-reply@no-reply.av-studio.de
+page:
+  403: /node/3
+  404: /node/4
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: de
+mail_notification: no-reply@no-reply.av-studio.de

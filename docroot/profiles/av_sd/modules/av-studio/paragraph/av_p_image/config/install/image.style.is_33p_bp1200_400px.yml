@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_image
+name: is_33p_bp1200_400px
+label: '33% - bp1200 (B=400px)'
+effects:
+  9b76ce38-1f57-4776-9e4b-2ddd538334e6:
+    uuid: 9b76ce38-1f57-4776-9e4b-2ddd538334e6
+    id: image_scale
+    weight: 1
+    data:
+      width: 800
+      height: null
+      upscale: false
+  95d86714-24b4-421e-8461-ff5db2e2cde2:
+    uuid: 95d86714-24b4-421e-8461-ff5db2e2cde2
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

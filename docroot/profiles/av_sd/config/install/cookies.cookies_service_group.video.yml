@@ -1,0 +1,9 @@
+uuid: 5bc1e75e-a9b3-4457-afa8-5c83448b36ac
+langcode: de
+status: true
+dependencies: {  }
+id: video
+label: Videos
+weight: 40
+title: Video
+details: 'Videoplattformen erlauben, Videoinhalte einzublenden und die Sichtbarkeit der Seite zu erhöhen.'

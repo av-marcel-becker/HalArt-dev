@@ -1,0 +1,28 @@
+uuid: 6029b0d8-3b9b-4a1d-8f2b-6685e66537c2
+langcode: de
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.p_sections_slider
+  enforced:
+    module:
+      - av_p_sections_slider
+id: paragraph.p_sections_slider.default
+targetEntityType: paragraph
+bundle: p_sections_slider
+mode: default
+content:
+  layout_paragraphs_fields:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true

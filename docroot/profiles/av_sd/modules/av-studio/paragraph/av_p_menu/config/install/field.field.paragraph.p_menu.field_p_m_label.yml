@@ -1,0 +1,22 @@
+uuid: 872d0561-5c80-4546-a3ab-4b6a4537cca7
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_m_label
+    - paragraphs.paragraphs_type.p_menu
+  enforced:
+    module:
+      - av_p_menu
+id: paragraph.p_menu.field_p_m_label
+field_name: field_p_m_label
+entity_type: paragraph
+bundle: p_menu
+label: 'Beschriftung (Barrierefreiheit)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

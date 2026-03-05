@@ -1,0 +1,23 @@
+uuid: c34d440d-8e61-44e4-adca-5859190aa249
+langcode: de
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+  enforced:
+    module:
+      - av_p_av_studio_media
+third_party_settings: { }
+id: paragraph.field_p_avsm_label
+field_name: field_p_avsm_label
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

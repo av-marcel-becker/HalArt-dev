@@ -1,0 +1,42 @@
+name: 'AV-Studio Base Theme'
+type: theme
+description: 'Base Theme'
+core_version_requirement: ^10 || ^11
+base theme: false
+hidden: true
+libraries:
+  - av_base/global
+  - av_accessibility/av_accessibility
+  - av_msg/av_msg
+  - av_scroll/av_scroll
+  - av_menu/av_menu
+  - av_header/av_header
+#stylesheets-remove:
+#  - '@av_flyout/css/av_flyout.css'
+dependencies:
+  - av_accessibility:av_accessibility 
+  - av_msg:av_msg 
+  - av_scroll:av_scroll 
+  - av_menu:av_menu 
+  - av_header:av_header 
+  - twig_tweak:twig_tweak
+#logo: logo.png
+#screenshot: screenshot.png
+#ckeditor_stylesheets:
+#  - css/preset.css
+#  - css/ckeditor.css
+ckeditor5-stylesheets:
+  - css/vars.css
+#ckeditor5_stylesheets:
+#  - css/preset.css
+#  - css/ckeditor.css
+#regions:
+#  header: 'Header'
+#  content: 'Content'
+#  footer: 'Footer'
+#  hidden_footer: '[hidden] Page Footer'
+#  hidden_admin: '[Administrator] Versteckte Region für referenzierte Blöcke'
+#  hidden_staff: '[Staff] Versteckte Region für referenzierte Blöcke'
+#regions_hidden:
+#  - hidden_admin
+#  - hidden_editorial_staff

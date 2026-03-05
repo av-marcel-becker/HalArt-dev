@@ -1,0 +1,7 @@
+name: 'AV Node - Sports Club Page Content'
+type: module
+description: 'AV-Studio Node - Sports Club Page Content'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Node'
+dependencies:
+  - av_n_sports_club_page

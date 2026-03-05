@@ -1,0 +1,28 @@
+uuid: 5c2b1915-4897-4a64-b652-2287c043c3f1
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_avsm_label
+    - paragraphs.paragraphs_type.p_av_studio_media
+  module:
+    - text
+  enforced:
+    module:
+      - av_p_av_studio_media
+third_party_settings: { }
+id: paragraph.p_av_studio_media.field_p_avsm_label
+field_name: field_p_avsm_label
+entity_type: paragraph
+bundle: p_av_studio_media
+label: Beschriftung
+description: 'Wenn das Beschriftungsfeld aktiviert wurde, kann hier ein individualer Text eingefügt werden.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    f_editor: f_editor
+    plain_text: plain_text
+field_type: text_long

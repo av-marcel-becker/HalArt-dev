@@ -1,0 +1,24 @@
+uuid: ed5e9f19-1af5-4669-8a0a-9bd53f5ab432
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_hall_of_fame_page
+  module:
+    - node
+    - taxonomy
+third_party_settings: { }
+id: node.field_n_hofp_tag
+field_name: field_n_hofp_tag
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

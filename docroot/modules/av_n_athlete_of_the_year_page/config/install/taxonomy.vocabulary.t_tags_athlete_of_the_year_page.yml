@@ -1,0 +1,11 @@
+uuid: b3b6c87e-64d4-4ba9-b779-2a9725636ea5
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_athlete_of_the_year_page
+name: 'Tags für Sportler des Jahres Seite'
+vid: t_tags_athlete_of_the_year_page
+description: ''
+weight: 0

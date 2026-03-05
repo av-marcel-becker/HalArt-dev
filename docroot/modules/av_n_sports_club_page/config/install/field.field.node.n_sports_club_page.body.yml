@@ -1,0 +1,29 @@
+uuid: 8f3f6c1d-91ef-42df-96fa-e164d51eca6b
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.n_sports_club_page
+  enforced:
+    module:
+      - av_n_sports_club_page
+  module:
+    - text
+third_party_settings: { }
+id: node.n_sports_club_page.body
+field_name: body
+entity_type: node
+bundle: n_sports_club_page
+label: 'Kurze Zusammenfassung / -Beschreibung'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    plain_text: plain_text
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

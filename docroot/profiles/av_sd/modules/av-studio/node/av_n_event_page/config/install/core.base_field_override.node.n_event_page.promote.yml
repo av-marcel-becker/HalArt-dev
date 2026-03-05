@@ -1,0 +1,25 @@
+uuid: a7505e5b-54b9-4a67-b782-0ca445717723
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_event_page
+  enforced:
+    module:
+      - av_n_event_page
+id: node.n_event_page.promote
+field_name: promote
+entity_type: node
+bundle: n_event_page
+label: 'Auf der Startseite anzeigen'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

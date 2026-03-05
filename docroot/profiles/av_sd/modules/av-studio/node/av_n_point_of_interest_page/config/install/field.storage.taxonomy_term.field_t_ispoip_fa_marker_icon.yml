@@ -1,0 +1,25 @@
+uuid: ae88727e-b74b-4606-9585-5886c70e50d3
+langcode: de
+status: true
+dependencies:
+  module:
+    - taxonomy
+  enforced:
+    module:
+      - av_n_point_of_interest_page
+third_party_settings: { }
+id: taxonomy_term.field_t_ispoip_fa_marker_icon
+field_name: field_t_ispoip_fa_marker_icon
+entity_type: taxonomy_term
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

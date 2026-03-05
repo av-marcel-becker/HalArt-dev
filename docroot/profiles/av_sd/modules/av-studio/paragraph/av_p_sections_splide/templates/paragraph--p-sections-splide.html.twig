@@ -1,0 +1,24 @@
+{% if 'edit' not in path('<current>') and 'add' not in path('<current>') and 'layout-paragraphs-builder' not in path('<current>') %}
+  {{ attach_library('av_p_sections_splide/splide.theme') }}
+{% endif %}
+
+
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+    'ph-splide-slider'
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      {{ content }}
+    {% endblock %}
+  </div>
+{% endblock paragraph %}
+
+
+

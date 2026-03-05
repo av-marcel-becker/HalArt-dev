@@ -1,0 +1,31 @@
+uuid: b4308606-da1a-40c3-bf2c-73f324d5cedb
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_panorama
+  module:
+    - options
+    - paragraphs
+third_party_settings: { }
+id: paragraph.field_p_p_order
+field_name: field_p_p_order
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: it
+      label: 'Bild Text'
+    -
+      value: ti
+      label: 'Text Bild'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

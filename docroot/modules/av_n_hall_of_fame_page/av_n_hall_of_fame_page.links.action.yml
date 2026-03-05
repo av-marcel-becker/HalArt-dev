@@ -1,0 +1,11 @@
+av_n_hall_of_fame_page.hall_of_fame_page.add:
+  route_name: node.add
+  title: 'Hall of Fame Seite hinzufügen'
+  weight: 10
+  appears_on:
+    - view.v_content_hall_of_fame_page.v_content_hall_of_fame_page
+  route_parameters: 
+    node_type: 'n_hall_of_fame_page'
+#  options:
+#    query:
+#      destination: /admin/content/hall_of_fame_page

@@ -1,0 +1,27 @@
+.av-studio-media
+   {
+      width: 100%;
+   }
+.p-av-studio-media figure,
+.p-av-studio-media iframe
+   {
+      width: 100%;
+   }
+.p-av-studio-media .badge 
+   {
+      position: absolute;
+      top: var(--size-0);
+      left: var(--size-0);
+      padding: var(--size-5);
+      color: #FFF;
+      background: rgba(0,0,0,0.5);
+      line-height: 1;
+      transition: opacity 100ms linear;
+      font-size: var(--size-16);
+      font-weight: normal;
+      margin: var(--size-5);
+   }
+.p-av-studio-media .badge--hidden 
+   {
+      opacity: 0;
+   }

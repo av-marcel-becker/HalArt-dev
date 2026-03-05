@@ -1,0 +1,71 @@
+/*
+--ph-audio-h5-margin
+--ph-audio-h5-padding
+--ph-audio-h5-font-family
+--ph-audio-h5-font-style
+--ph-audio-h5-font-variant
+--ph-audio-h5-font-weight
+--ph-audio-h5-color
+--ph-audio-h5-font-size
+--ph-audio-h5-line-height
+--ph-audio-h5-text-align
+
+--ph-audio-figcaption-margin
+--ph-audio-figcaption-padding
+--ph-audio-figcaption-font-family
+--ph-audio-figcaption-font-style
+--ph-audio-figcaption-font-variant
+--ph-audio-figcaption-font-weight
+--ph-audio-figcaption-color
+--ph-audio-figcaption-font-size
+--ph-audio-figcaption-line-height
+--ph-audio-figcaption-text-align
+
+*/
+
+.ph-audio {
+   display: flex;
+   width: 100%;
+}
+.ph-audio audio {
+   width: 100%;
+}
+
+.ph-audio .mediaelementjs {
+   width: 100% !important;
+}
+
+.ph-audio figure {
+   display: flex;
+   flex-direction: column;
+}
+.ph-audio h5 {
+   margin: var(--ph-audio-h5-margin, 0) !important;
+   padding: var(--ph-audio-h5-padding, 0) !important;
+   font-family: var(--ph-audio-h5-font-family, sans-serif) !important;
+   font-style: var(--ph-audio-h5-font-style, normal) !important;
+   font-variant: var(--ph-audio-h5-font-variant, normal) !important;
+   font-weight: var(--ph-audio-h5-font-weight, normal) !important;
+   color: var(--ph-audio-h5-color, black) !important;
+   font-size: var(--ph-audio-h5-font-size, 1rem) !important;
+   line-height: var(--ph-audio-h5-line-height, 1.2) !important;
+   text-align: var(--ph-audio-h5-text-align, left) !important;
+}
+.ph-audio figcaption {
+   margin: var(--ph-audio-figcaption-margin, 0);
+   padding: var(--ph-audio-figcaption-padding, 0);
+   font-family: var(--ph-audio-figcaption-font-family, sans-serif);
+   font-style: var(--ph-audio-figcaption-font-style, normal);
+   font-variant: var(--ph-audio-figcaption-font-variant, normal);
+   font-weight: var(--ph-audio-figcaption-font-weight, normal);
+   color: var(--ph-audio-figcaption-color, black);
+   font-size: var(--ph-audio-figcaption-font-size, 1rem);
+   line-height: var(--ph-audio-figcaption-line-height, 1.2);
+   text-align: var(--ph-audio-figcaption-text-align, left);
+}
+
+/* fix */
+.ph-audio .mediaelementjs a {
+   width: 3.5rem;
+}
+

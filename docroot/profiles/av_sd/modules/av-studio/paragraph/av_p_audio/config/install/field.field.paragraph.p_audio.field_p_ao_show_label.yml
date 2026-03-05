@@ -1,0 +1,26 @@
+uuid: 81be1a3a-1365-45e8-bd6e-2209e52b632f
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_ao_show_label
+    - paragraphs.paragraphs_type.p_audio
+  enforced:
+    module:
+      - av_p_audio
+id: paragraph.p_audio.field_p_ao_show_label
+field_name: field_p_ao_show_label
+entity_type: paragraph
+bundle: p_audio
+label: 'Beschriftung Anzeigen'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Beschriftung wird angezeigt'
+  off_label: 'Beschriftung wird nicht angezeigt'
+field_type: boolean

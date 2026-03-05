@@ -1,0 +1,11 @@
+uuid: 82c69ff5-52a5-424a-bbc4-100fac647cf5
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_directory_page
+name: 'Tags für Verzeichnisseite'
+vid: t_tags_directory_page
+description: ''
+weight: 0

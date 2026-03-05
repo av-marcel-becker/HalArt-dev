@@ -1,0 +1,42 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - image.style.is_teaser_75p_bp1400_1050px
+    - image.style.is_teaser_75p_bp1200_900px
+    - image.style.is_teaser_75p_bp992_744px
+    - image.style.is_teaser_75p_bp768_768px
+    - image.style.is_teaser_75p_bp576_576px
+  enforced:
+    module:
+      - av_p_teaser
+id: ris_teaser_75p
+label: 'Teaser 75%'
+image_style_mappings:
+  -
+    breakpoint_id: av_p_teaser.css_framework.1200
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_teaser_75p_bp1400_1050px
+  -
+    breakpoint_id: av_p_teaser.css_framework.992
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_teaser_75p_bp1200_900px
+  -
+    breakpoint_id: av_p_teaser.css_framework.768
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_teaser_75p_bp992_744px
+  -
+    breakpoint_id: av_p_teaser.css_framework.576
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_teaser_75p_bp768_768px
+  -
+    breakpoint_id: av_p_teaser.css_framework.0
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_teaser_75p_bp576_576px
+breakpoint_group: av_p_teaser
+fallback_image_style: is_teaser_75p_bp1400_1050px

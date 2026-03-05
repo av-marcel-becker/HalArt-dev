@@ -1,0 +1,25 @@
+uuid: cf49b1e3-7272-4c0a-a25c-e314822d8efa
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_paragraph_page
+  enforced:
+    module:
+      - av_n_paragraph_page
+id: node.n_paragraph_page.status
+field_name: status
+entity_type: node
+bundle: n_paragraph_page
+label: Veröffentlicht
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

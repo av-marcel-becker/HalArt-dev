@@ -1,0 +1,47 @@
+{{ attach_library('av_p_menu/av_p_menu') }}
+
+{% set attributes_layout = attributes %}
+{% if not attributes_layout %}
+    {% set attributes_layout = create_attribute() %}
+{% endif %}
+
+
+{% block paragraph %}
+   {% block content %}
+      
+      {% set show_as_button = paragraph.field_p_m_show_as_button.0.value %}
+      {% set label = paragraph.field_p_m_label.0.value %}
+      {% set links = paragraph.field_p_m_link %}
+
+      {% 
+         set classes_layout = [
+               'ph-menu',
+               'cssf--w100p',
+               show_as_button ? 'show-as-button' : 'show-as-list',
+               'paragraph',
+               'paragraph--type--' ~ paragraph.bundle|clean_class,
+               view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+               not paragraph.isPublished() ? 'paragraph--unpublished', 
+            ] 
+      %}
+      
+      <div{{ attributes_layout.addClass(classes_layout) }}>
+         <nav aria-label="{{ label }}">
+            {#<h6>{{ label }}</h6>#}
+            <ul class="cssf--grid-brick-layout">
+             {% for link in links %}
+               {% if link and link.options.attributes is iterable %}
+                  {% set link_attributes = create_attribute(link.options.attributes) %}
+               {% else %}
+                  {% set link_attributes = create_attribute() %}
+               {% endif %}
+               {#  title="{{ link.title }}" #}
+               <li><a href="{{ link.getUrl().toString() }}"{{ link_attributes.addClass(['cssf--d_inline-block--w100p']) }}>{{ link.title }}</a></li>
+             {% endfor %}
+            
+            </ul>
+         </nav>
+
+</div>
+   {% endblock %}
+{% endblock paragraph %}

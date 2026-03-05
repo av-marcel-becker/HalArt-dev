@@ -1,0 +1,9 @@
+av_p_remote_video:
+  version: 0.1
+  css:
+    theme:
+      css/av_p_remote_video.css: { }
+#  js: 
+#    js/av_p_remote_video.js: { }
+#  dependencies:
+#    - core/jquery 

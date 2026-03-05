@@ -1,0 +1,102 @@
+uuid: c6d168fe-88d5-45ca-a46f-26c42fc15ad3
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p_panorama.field_p_p_bg_color
+    - field.field.paragraph.p_panorama.field_p_p_image_position
+    - field.field.paragraph.p_panorama.field_p_p_image_position_mobile
+    - field.field.paragraph.p_panorama.field_p_p_image
+    - field.field.paragraph.p_panorama.field_p_p_order
+    - field.field.paragraph.p_panorama.field_p_p_text
+    - field.field.paragraph.p_panorama.field_p_p_text_position
+    - field.field.paragraph.p_panorama.field_p_p_text_position_mobile
+    - field.field.paragraph.p_panorama.field_p_p_vh_100
+    - paragraphs.paragraphs_type.p_panorama
+    - responsive_image.styles.ris_fp_panorama
+  module:
+    - color_field
+    - options
+    - responsive_image
+    - text
+  enforced:
+    module:
+      - av_p_panorama
+id: paragraph.p_panorama.default
+targetEntityType: paragraph
+bundle: p_panorama
+mode: default
+content:
+  field_p_p_bg_color:
+    type: color_field_formatter_text
+    label: above
+    settings:
+      format: hex
+      opacity: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_p_p_image_position:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_p_p_image_position_mobile:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_p_p_image:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: ris_fp_panorama
+      image_link: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: { }
+    weight: 10
+    region: content
+  field_p_p_order:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_p_p_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: { }
+    weight: 2
+    region: content
+  field_p_p_text_position:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_p_p_text_position_mobile:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_p_p_vh_100:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden: {  }

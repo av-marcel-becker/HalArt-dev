@@ -1,0 +1,26 @@
+uuid: c6281ec0-23fd-494a-b2c7-1872d7f6380e
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p_wysiwyg.field_p_wysiwyg_content
+    - paragraphs.paragraphs_type.p_wysiwyg
+  module:
+    - text
+  enforced:
+    module:
+      - av_p_wysiwyg
+third_party_settings: { }
+id: paragraph.p_wysiwyg.default
+targetEntityType: paragraph
+bundle: p_wysiwyg
+mode: default
+content:
+  field_p_wysiwyg_content:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: { }
+    weight: 0
+    region: content
+hidden: {  }

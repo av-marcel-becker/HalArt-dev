@@ -1,0 +1,25 @@
+uuid: dbe264e1-96d4-4760-ab16-06ff33be2657
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_event_page
+  enforced:
+    module:
+      - av_n_event_page
+id: node.n_event_page.status
+field_name: status
+entity_type: node
+bundle: n_event_page
+label: Veröffentlicht
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

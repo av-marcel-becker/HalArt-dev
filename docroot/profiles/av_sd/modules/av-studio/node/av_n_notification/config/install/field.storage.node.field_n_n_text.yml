@@ -1,0 +1,23 @@
+uuid: 438f718b-62ed-49b6-868f-1ffb91813b0e
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+    - text
+  enforced:
+    module:
+      - av_n_notification
+third_party_settings: { }
+id: node.field_n_n_text
+field_name: field_n_n_text
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

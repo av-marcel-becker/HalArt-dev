@@ -1,0 +1,6 @@
+av_n_athletes_page.athletes_page:
+  title: 'Athleten-Seiten'
+  parent: system.admin_content
+  route_name: av_n_athletes_page.athletes_page
+  menu_name: admin
+  url: internal:/admin/content/athletes_page

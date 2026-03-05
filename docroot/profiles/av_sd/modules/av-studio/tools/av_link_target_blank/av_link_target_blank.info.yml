@@ -1,0 +1,7 @@
+name: 'AV - Link Target Blank'
+type: module
+description: 'add checkbox to link field'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Tools'
+dependencies:
+  - drupal:link

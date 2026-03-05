@@ -1,0 +1,6 @@
+av_n_directory_page.directory_page:
+  title: 'Verzeichnisseite'
+  parent: system.admin_content
+  route_name: av_n_directory_page.directory_page
+  menu_name: admin
+  url: internal:/admin/content/directory_page

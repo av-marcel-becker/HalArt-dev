@@ -1,0 +1,23 @@
+uuid: 828f782a-859e-4a7c-bde7-1e7aa2c3f6a0
+langcode: de
+status: true
+dependencies:
+  module:
+    - link
+    - node
+  enforced:
+    module:
+      - av_ads
+third_party_settings: { }
+id: node.field_n_ads_link
+field_name: field_n_ads_link
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

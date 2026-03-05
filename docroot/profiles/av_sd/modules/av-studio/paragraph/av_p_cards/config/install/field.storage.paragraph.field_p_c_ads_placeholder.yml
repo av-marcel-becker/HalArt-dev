@@ -1,0 +1,22 @@
+uuid: f2703ef8-d392-4dce-994d-83a8e6ce64bf
+langcode: de
+status: true
+dependencies:
+  module:
+    - paragraphs
+  enforced:
+    module:
+      - av_p_cards
+third_party_settings: { }
+id: paragraph.field_p_c_ads_placeholder
+field_name: field_p_c_ads_placeholder
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

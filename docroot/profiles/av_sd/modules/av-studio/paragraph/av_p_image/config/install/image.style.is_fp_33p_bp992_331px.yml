@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - crop
+  enforced:
+    module:
+      - av_p_image
+name: is_fp_33p_bp992_331px
+label: 'FP 33% - bp992 (B=331px)'
+effects:
+  1ca114c1-b74d-42ed-b064-6aaacfed6d2f:
+    uuid: 1ca114c1-b74d-42ed-b064-6aaacfed6d2f
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 662
+      height: 442
+      crop_type: focal_point
+  263ba0ad-7ec4-4938-ba3e-2b43d944ebee:
+    uuid: 263ba0ad-7ec4-4938-ba3e-2b43d944ebee
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

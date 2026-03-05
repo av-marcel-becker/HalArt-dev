@@ -1,0 +1,23 @@
+uuid: 7036f124-3da8-447d-a64f-e713f46a795e
+langcode: de
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+  enforced:
+    module:
+      - av_p_cards
+third_party_settings: { }
+id: paragraph.field_p_c_text_unlimited
+field_name: field_p_c_text_unlimited
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

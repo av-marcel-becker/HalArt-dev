@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p_wysiwyg_system.field_p_wysiwygs_content
+    - paragraphs.paragraphs_type.p_wysiwyg_system
+  enforced:
+    module:
+      - av_p_wysiwyg_system
+  module:
+    - text
+third_party_settings: { }
+id: paragraph.p_wysiwyg_system.default
+targetEntityType: paragraph
+bundle: p_wysiwyg_system
+mode: default
+content:
+  field_p_wysiwygs_content:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: { }
+    type: text_default
+    region: content
+hidden: {  }

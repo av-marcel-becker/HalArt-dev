@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - crop
+  enforced:
+    module:
+      - av_p_cards
+name: is_cards_fp_50p_bp768_768px
+label: 'Card FP 50% - bp768 (B=768px)'
+effects:
+  9333ef12-7e17-41b0-832b-e1ef9abf2744:
+    uuid: 9333ef12-7e17-41b0-832b-e1ef9abf2744
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1536
+      height: 864
+      crop_type: focal_point
+  ecff0d29-116c-4e5f-9a36-b1a425cc47e8:
+    uuid: ecff0d29-116c-4e5f-9a36-b1a425cc47e8
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

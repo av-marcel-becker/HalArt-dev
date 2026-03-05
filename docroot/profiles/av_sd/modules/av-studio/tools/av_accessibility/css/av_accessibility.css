@@ -1,0 +1,19 @@
+:root {
+   --av-accessibility-focus-arrow-color: red;
+   --av-accessibility-focus-arrow-size: 20px;
+   --av-accessibility-focus-arrow-transition-time: 1s;
+   --av-accessibility-focus-arrow-transition-timing: ease;
+}
+
+.accessibility-nav, 
+.accessibility-nav a {
+  font-family: var(--a-font-family);
+  font-style: var(--a-font-style);
+  font-weight: var(--a-font-weight);
+  color: var(--a-color);
+  text-decoration: var(--a-text-decoration);
+  background-color: var(--a-background);
+  border-bottom: var(--a-border-bottom);
+  text-underline-position: var(--a-text-underline-position);
+  text-decoration-thickness: var(--a-text-decoration-thickness);
+}

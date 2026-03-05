@@ -1,0 +1,5 @@
+av_l_default.settings:
+  title: 'AV-Layout'
+  description: 'Set Layout settings'
+  parent: 'system.admin_config_system'
+  route_name: 'av_l_default.settings'

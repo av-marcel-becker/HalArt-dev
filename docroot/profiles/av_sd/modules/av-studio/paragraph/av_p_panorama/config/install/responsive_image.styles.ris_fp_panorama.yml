@@ -1,0 +1,42 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - image.style.is_fp_panorama_bp1400
+    - image.style.is_fp_panorama_bp1200
+    - image.style.is_fp_panorama_bp992
+    - image.style.is_fp_panorama_bp768
+    - image.style.is_fp_panorama_bp576
+  enforced:
+    module:
+      - av_p_panorama
+id: ris_fp_panorama
+label: 'FP Panorama'
+image_style_mappings:
+  -
+    breakpoint_id: av_p_panorama.css_framework.1200
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_fp_panorama_bp1400
+  -
+    breakpoint_id: av_p_panorama.css_framework.992
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_fp_panorama_bp1200
+  -
+    breakpoint_id: av_p_panorama.css_framework.768
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_fp_panorama_bp992
+  -
+    breakpoint_id: av_p_panorama.css_framework.576
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_fp_panorama_bp768
+  -
+    breakpoint_id: av_p_panorama.css_framework.0
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_fp_panorama_bp576
+breakpoint_group: av_p_panorama
+fallback_image_style: is_fp_panorama_bp1400

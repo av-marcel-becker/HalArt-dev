@@ -1,0 +1,26 @@
+uuid: b3e1ecc3-c073-4656-af7c-7197f8eb238b
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_p_image_position
+    - paragraphs.paragraphs_type.p_panorama
+  enforced:
+    module:
+      - av_p_panorama
+  module:
+    - options
+id: paragraph.p_panorama.field_p_p_image_position
+field_name: field_p_p_image_position
+entity_type: paragraph
+bundle: p_panorama
+label: 'Ausrichtung Bild'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: mr
+default_value_callback: ''
+settings: {  }
+field_type: list_string

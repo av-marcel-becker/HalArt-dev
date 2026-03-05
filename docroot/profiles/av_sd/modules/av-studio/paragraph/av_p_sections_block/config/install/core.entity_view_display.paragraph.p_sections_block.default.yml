@@ -1,0 +1,15 @@
+uuid: 680046e1-4382-4843-a728-811989075b0e
+langcode: de
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.p_sections_block
+  enforced:
+    module:
+      - av_p_sections_block
+id: paragraph.p_sections_block.default
+targetEntityType: paragraph
+bundle: p_sections_block
+mode: default
+content: {  }
+hidden: {  }

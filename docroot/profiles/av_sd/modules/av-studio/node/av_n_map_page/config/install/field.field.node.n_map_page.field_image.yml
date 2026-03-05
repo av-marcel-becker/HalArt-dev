@@ -1,0 +1,41 @@
+uuid: db70db90-d5b7-43d2-a4fe-3dd9ff5f33a1
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.n_map_page
+  module:
+    - image
+  enforced:
+    module:
+      - av_n_map_page
+id: node.n_map_page.field_image
+field_name: field_image
+entity_type: node
+bundle: n_map_page
+label: Bild
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'n_map_page_[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

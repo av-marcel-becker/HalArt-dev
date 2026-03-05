@@ -1,0 +1,25 @@
+uuid: 6c607624-50dc-4630-83e1-8fe1de96fafa
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_news_page
+  enforced:
+    module:
+      - av_n_news_page
+id: node.n_news_page.status
+field_name: status
+entity_type: node
+bundle: n_news_page
+label: Veröffentlicht
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

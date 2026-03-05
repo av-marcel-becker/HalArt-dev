@@ -1,0 +1,25 @@
+uuid: 408488d7-8271-4f4d-b640-6b99408d2c4e
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_map_page
+  enforced:
+    module:
+      - av_n_map_page
+id: node.n_map_page.status
+field_name: status
+entity_type: node
+bundle: n_map_page
+label: Veröffentlicht
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

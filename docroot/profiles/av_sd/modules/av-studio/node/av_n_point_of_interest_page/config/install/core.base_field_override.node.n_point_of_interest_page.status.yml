@@ -1,0 +1,25 @@
+uuid: 06e82bb4-e5a1-4a3b-b0c2-34a3d99af9ba
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_point_of_interest_page
+  enforced:
+    module:
+      - av_n_point_of_interest_page
+id: node.n_point_of_interest_page.status
+field_name: status
+entity_type: node
+bundle: n_point_of_interest_page
+label: Veröffentlicht
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

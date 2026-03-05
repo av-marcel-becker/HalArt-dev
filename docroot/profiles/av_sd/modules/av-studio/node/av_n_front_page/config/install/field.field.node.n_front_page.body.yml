@@ -1,0 +1,29 @@
+uuid: d47bc845-fbea-4974-b689-e85aa1c17971
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.plain_text
+    - node.type.n_front_page
+  enforced:
+    module:
+      - av_n_front_page
+  module:
+    - text
+id: node.n_front_page.body
+field_name: body
+entity_type: node
+bundle: n_front_page
+label: 'Kurze Zusammenfassung / -Beschreibung'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats:
+    - plain_text
+field_type: text_with_summary

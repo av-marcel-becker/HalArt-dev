@@ -1,0 +1,21 @@
+av_cache_flush.settings:
+  path: '/admin/config/system/av-cache-flush'
+  defaults:
+    _form: '\Drupal\av_cache_flush\Form\SettingsForm'
+    _title: 'AV Cache Flush Settings'
+  requirements:
+    _permission: 'administer site configuration'
+
+av_cache_flush.flush:
+  path: '/av-cache-flush/{token}'
+  defaults:
+    _controller: '\Drupal\av_cache_flush\Controller\CacheFlushController::flushCache'
+  requirements:
+    _access: 'TRUE'
+    
+av_cache_flush.flush_backend:
+  path: '/av-cache-flush-backend/{token}'
+  defaults:
+    _controller: '\Drupal\av_cache_flush\Controller\CacheFlushController::flushCacheBackend'
+  requirements:
+    _access: 'TRUE'

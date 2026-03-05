@@ -1,0 +1,12 @@
+uuid: f365d8b1-c8cc-4b25-b354-3beecd773db5
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_list_with_icons
+id: pi_list_with_icons_item
+label: 'Liste mit ICONs Element'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

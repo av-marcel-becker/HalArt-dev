@@ -1,0 +1,6 @@
+name: 'AV - Dev API'
+type: module
+description: 'Dev API'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Tools'
+dependencies: []

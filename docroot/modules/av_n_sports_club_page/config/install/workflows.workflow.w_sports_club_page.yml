@@ -1,0 +1,109 @@
+uuid: 4ba9a9fe-6088-46fd-8c96-66a46671bb3a
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_sports_club_page
+  enforced:
+    module:
+      - av_n_sports_club_page
+  module:
+    - content_moderation
+id: w_sports_club_page
+label: Sportvereine
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      label: Entwurf
+      published: false
+      default_revision: false
+      weight: 0
+    published:
+      label: Veröffentlicht
+      published: true
+      default_revision: true
+      weight: 1
+    w_scp_archives:
+      published: false
+      default_revision: true
+      label: Archiv
+      weight: 2
+    w_scp_presentation:
+      published: false
+      default_revision: false
+      label: Moderation
+      weight: 3
+    w_scp_release_planned:
+      published: false
+      default_revision: true
+      label: 'Veröffentlichung geplant'
+      weight: 4
+    w_scp_unpublished:
+      published: false
+      default_revision: true
+      label: Unveröffentlicht
+      weight: 5
+  transitions:
+    create_new_draft:
+      label: 'Neuen Entwurf erstellen'
+      to: draft
+      weight: 0
+      from:
+        - draft
+        - published
+        - w_scp_archives
+        - w_scp_presentation
+        - w_scp_release_planned
+        - w_scp_unpublished
+    publish:
+      label: Veröffentlichen
+      to: published
+      weight: 1
+      from:
+        - draft
+        - published
+        - w_scp_archives
+        - w_scp_presentation
+        - w_scp_release_planned
+        - w_scp_unpublished
+    w_scp_archive:
+      label: Archivieren
+      from:
+        - published
+        - w_scp_unpublished
+      to: w_scp_archives
+      weight: 2
+    w_scp_do_not_publish:
+      label: 'nicht veröffentlichen'
+      from:
+        - draft
+        - published
+        - w_scp_archives
+        - w_scp_presentation
+        - w_scp_release_planned
+        - w_scp_unpublished
+      to: w_scp_unpublished
+      weight: 5
+    w_scp_moderate:
+      label: Moderieren
+      from:
+        - draft
+        - w_scp_archives
+        - w_scp_presentation
+        - w_scp_unpublished
+      to: w_scp_presentation
+      weight: 3
+    w_scp_schedule_publication:
+      label: 'Veröffentlichung planen'
+      from:
+        - draft
+        - w_scp_presentation
+        - w_scp_release_planned
+        - w_scp_unpublished
+      to: w_scp_release_planned
+      weight: 4
+  entity_types:
+    node:
+      - n_sports_club_page
+  default_moderation_state: draft

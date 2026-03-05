@@ -1,0 +1,27 @@
+/* Beispiel: Definition der CSS-Variablen in deinem Stylesheet */
+:root {
+  /* Passe diese Variablen an, um das Aussehen zu ändern */
+  --focus-outline-width: 2px;
+  --focus-outline-style: dashed; /* z.B. dashed, dotted */
+  --focus-outline-offset: 3px;
+  --focus-border-radius: 4px; /* Rundere Ecken */
+  --focus-transition: outline 0.1s linear, box-shadow 0.1s linear;
+
+  /* Farben für helle und dunkle Hintergründe */
+  --focus-color-light: #e6007e; /* Magenta für helle Hintergründe */
+  --focus-color-dark: #ff8c00;  /* Dunkelorange für dunkle Hintergründe */
+
+  /* --current-focus-color wird vom JavaScript gesetzt */
+}
+
+/*
+.js-focus-visible .focus-visible {
+  box-shadow: 0 0 0 var(--focus-outline-offset) var(--current-focus-color);
+  outline-offset: 0; // Offset über Box-Shadow steuern
+}
+*/
+
+/* Stelle sicher, dass Labels fokussierbar aussehen */
+label:focus {
+   /* outline: none; */ /* Standard-Outline entfernen, da wir .focus-visible nutzen */
+}

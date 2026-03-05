@@ -1,0 +1,46 @@
+uuid: a1d4cb19-2781-4fcb-ba90-98f2eb215610
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.t_predefined_sections.field_t_ps_content
+    - taxonomy.vocabulary.t_predefined_sections
+  module:
+    - layout_paragraphs
+  enforced:
+    module:
+      - av_p_predefined_sections
+id: taxonomy_term.t_predefined_sections.default
+targetEntityType: taxonomy_term
+bundle: t_predefined_sections
+mode: default
+content:
+  field_t_ps_content:
+    type: layout_paragraphs
+    weight: 2
+    region: content
+    settings:
+      preview_view_mode: default
+      nesting_depth: 0
+      require_layouts: 1
+      empty_message: ''
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  description: true
+  langcode: true
+  path: true

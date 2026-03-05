@@ -1,0 +1,24 @@
+uuid: 884b99f1-f758-47e5-9ab5-d5e45126ffe0
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+  enforced:
+    module:
+      - av_n_directory_page
+third_party_settings: { }
+id: node.field_n_dp_directory_category
+field_name: field_n_dp_directory_category
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,25 @@
+uuid: 4a98e0e1-180b-4fa3-9200-68afe985889e
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_types_of_sports_page
+  enforced:
+    module:
+      - av_n_types_of_sports_page
+id: node.n_types_of_sports_page.promote
+field_name: promote
+entity_type: node
+bundle: n_types_of_sports_page
+label: 'Auf der Startseite anzeigen'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

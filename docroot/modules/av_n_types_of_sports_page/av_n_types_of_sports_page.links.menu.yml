@@ -1,0 +1,6 @@
+av_n_types_of_sports_page.types_of_sports_page:
+  title: 'Sportarten'
+  parent: system.admin_content
+  route_name: av_n_types_of_sports_page.types_of_sports_page
+  menu_name: admin
+  url: internal:/admin/content/types_of_sports_page

@@ -1,0 +1,4 @@
+'administer AV Tools - Scroll configuration':
+   title: 'administer AV Tools - Scroll configuration'
+   description: 'all permissions'
+   restrict access: true

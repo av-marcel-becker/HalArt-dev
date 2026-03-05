@@ -1,0 +1,13 @@
+uuid: 40626fde-fa8b-454d-a8a6-761936b7d5af
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_iframe
+id: p_iframe
+label: iFrame
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

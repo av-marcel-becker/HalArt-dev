@@ -1,0 +1,13 @@
+uuid: cadc419e-bd50-40d6-877d-feaab1889040
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_appointments
+id: p_appointments
+label: Termine
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

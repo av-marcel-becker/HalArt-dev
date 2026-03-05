@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - crop
+  enforced:
+    module:
+      - av_p_image
+name: is_fp_50p_bp768_768px
+label: 'FP 50% - bp768 (B=768px)'
+effects:
+  0a346e6e-02db-4c44-9e0d-de9ac9d76666:
+    uuid: 0a346e6e-02db-4c44-9e0d-de9ac9d76666
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1536
+      height: 1024
+      crop_type: focal_point
+  e7c493a5-8ce9-4f0d-8010-7a814ab82be4:
+    uuid: e7c493a5-8ce9-4f0d-8010-7a814ab82be4
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

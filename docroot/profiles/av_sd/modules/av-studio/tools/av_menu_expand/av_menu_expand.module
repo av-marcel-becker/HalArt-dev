@@ -1,0 +1,19 @@
+<?php
+/*
+ * code: https://stefvanlooveren.me/blog/make-menu-items-expanded-default-drupal-8
+*/
+use Drupal\Core\Entity\EntityInterface;
+
+ /**
+  * Implements hook_ENTITY_TYPE_presave().
+  */
+function av_menu_expand_menu_link_content_presave(EntityInterface $entity) 
+   {
+      switch($entity->menu_name->value)
+         {
+            case 'main':
+            case 'm-authorities-directory':
+               $entity->expanded = 1;
+            break;
+         }
+   }

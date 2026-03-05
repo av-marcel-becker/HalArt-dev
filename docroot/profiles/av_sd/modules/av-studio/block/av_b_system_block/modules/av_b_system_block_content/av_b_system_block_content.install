@@ -1,0 +1,192 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the standard installation profile.
+ */
+
+#use Drupal\user\Entity\User;
+#use Drupal\shortcut\Entity\Shortcut;
+#use Drupal\taxonomy\Entity\Term;
+#use Drupal\node\Entity\Node;
+use Drupal\block\Entity\Block;
+use Drupal\block_content\Entity\BlockContent;
+#use Drupal\paragraphs\Entity\Paragraph;
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function av_b_system_block_content_install() 
+   {
+      /* *************************************************************************** */
+      $theme_manager = \Drupal::service('theme.manager');
+      $active_theme = $theme_manager->getActiveTheme()->getName();
+
+      /* *************************************************************************** */
+
+         # https://www.drupal.org/project/media_entity/issues/2813025
+          /* *************************************************************************** */
+         # https://speedandfunction.com/deploy-basic-blocks-content-programmatically/
+         #$blockEntityManager = \Drupal::service('entity.manager')
+         #   ->getStorage('block_content');
+         #$block = $blockEntityManager->create([
+         #      'type' => 'b_system_block'            
+         #   ]);
+         #$block->info = 'Communications'; // description
+         #$block->uuid = '4eac474a-b60f-4abf-aa2d-5bc8f71b4ad9'; 
+         #$block->body->value = '...text of the block with allowed HTML tags...';
+         #$block->body->format = 'full_html';
+         #$block->save(); 
+         // Add Demo block.
+         
+         # https://www.osseed.com/blog/drupal-8-how-add-custom-block-module-install
+         $block_content = BlockContent::create([
+               'type' => 'b_system_block',
+               'info' => 'Seiten-Header',
+            ]);
+         ##$paragraph = Paragraph::create(['type' => 'p_section',]);
+         #$paragraph->set('TEXT_FIELD_NAME', $content); 
+         ##$paragraph->isNew();
+         ##$paragraph->save();
+         // Grab any existing paragraphs from the node, and add this one 
+         #$current = $block_content->get('field_b_sb_content')->getValue();
+         /*
+         $field_b_sb_content[] = [
+               'target_id' => $paragraph->id(),
+               'target_revision_id' => $paragraph->getRevisionId(),
+             ];
+         */
+         /**
+         $field_b_sb_content[] = [
+               'section_id' => $paragraph->id(),
+               'layout' => 'flex_menu_one',
+               #???'region' => 'container_menu_left',
+             ];
+         **/
+         ##$block_content->set('field_b_sb_content', $field_b_sb_content);
+         #$block_content->set('body', 'This is demo block for drupal 8');
+         $block_content->save();
+       
+         $block = Block::create([
+               'id' => \Drupal::config('system.theme')->get('default').'_page_header',
+               #'id' => $active_theme.'_page_header',
+               #'id' => $active_theme ? $active_theme . '_page_header' : 'av_sub_page_header',
+               #'id' => 'av_sub_page_header',
+               'plugin' => 'block_content:' . $block_content->uuid(),
+               'region' => 'header',
+               'provider' => 'block_content',
+               'weight' => 0,
+               'theme' => \Drupal::config('system.theme')->get('default'),
+               #'theme' => $active_theme ?? 'av_sub',
+               #'theme' => 'av_sub',
+               #'visibility' => array('request_path' => array('id' => 'request_path' , 'pages' => '/demopage')),
+               'settings' => [
+                     'label' => 'Seiten-Header',
+                     'label_display' => false,
+                  ],
+        ]);
+        $block->save();
+
+      /* ************** */
+      # https://www.thirdandgrove.com/insights/installing-content-automatically-drupal-8/
+      # https://www.drupal.org/project/paragraphs/issues/2707017
+      /* ************** */
+      /* *************************************************************************** */
+         $block_content = BlockContent::create([
+               'type' => 'b_system_block',
+               'info' => 'Seiten-Footer',
+            ]);
+         $block_content->save();
+       
+         $block = Block::create([
+                'id' => \Drupal::config('system.theme')->get('default').'_page_footer',
+               #'id' => $active_theme.'_page_footer',
+               #'id' => $active_theme ? $active_theme . '_page_footer' : 'av_sub_page_footer',
+               #'id' => 'av_sub_page_footer',
+               'plugin' => 'block_content:' . $block_content->uuid(),
+               'region' => 'footer',
+               'provider' => 'block_content',
+               'weight' => 0,
+               'theme' => \Drupal::config('system.theme')->get('default'),
+               #'theme' => $active_theme ?? 'av_sub',
+               #'theme' => 'av_sub',
+               #'visibility' => array('request_path' => array('id' => 'request_path' , 'pages' => '/demopage')),
+               'settings' => [
+                     'label' => 'Seiten-Footer',
+                     'label_display' => false,
+                  ],
+        ]);
+        # $block->set('uuid','ef3032a3-ce9d-46b5-ad47-a1805a05b321'); # av_sub_page_footer - block_content:b_system_block:ef3032a3-ce9d-46b5-ad47-a1805a05b321
+        $block->save();
+      /* *************************************************************************** */
+         $block_content = BlockContent::create([
+               'type' => 'b_system_block',
+               'info' => 'Seiten-Footer Copyright',
+            ]);
+         $block_content->save();
+       
+         $block = Block::create([
+                'id' => \Drupal::config('system.theme')->get('default').'_page_footer_copyright',
+               #'id' => $active_theme.'_page_footer_copyright',
+               #'id' => $active_theme ? $active_theme . '_page_footer_copyright' : 'av_sub_page_footer_copyright',
+               #'id' => 'av_sub_page_footer_copyright',
+               'plugin' => 'block_content:' . $block_content->uuid(),
+               'region' => 'footer',
+               'provider' => 'block_content',
+               'weight' => 1,
+                'theme' => \Drupal::config('system.theme')->get('default'),
+               #'theme' => $active_theme ?? 'av_sub',
+               #'theme' => 'av_sub',
+               #'visibility' => array('request_path' => array('id' => 'request_path' , 'pages' => '/demopage')),
+               'settings' => [
+                     'label' => 'Seiten-Footer Copyright',
+                     'label_display' => false,
+                  ],
+        ]);
+        $block->save();
+      /* *************************************************************************** */
+         $block = Block::create([
+               'id' => \Drupal::config('system.theme')->get('default').'_footer_menu',
+               #'id' => $active_theme.'_page_footer_menu',
+               #'id' => $active_theme ? $active_theme . '_page_footer_menu' : 'av_sub_page_footer_menu',
+               #'id' => 'av_sub_page_footer_menu',
+               'plugin' => 'system_menu_block:footer',
+               'region' => 'hidden_admin',
+               'provider' => 'system',
+               'weight' => 0,
+               'theme' => \Drupal::config('system.theme')->get('default'),
+               #'theme' => $active_theme ?? 'av_sub',
+               #'theme' => 'av_sub',
+               #'visibility' => array('request_path' => array('id' => 'request_path' , 'pages' => '/demopage')),
+               'settings' => [
+                     'label' => 'Footer Menü',
+                     'label_display' => false,
+                  ],
+        ]);
+        $block->save();
+      /* *************************************************************************** */
+         $block = Block::create([
+               'id' => \Drupal::config('system.theme')->get('default').'_mobile_main_menu',
+               #'id' => $active_theme.'_page_footer_menu',
+               #'id' => $active_theme ? $active_theme . '_page_footer_menu' : 'av_sub_page_footer_menu',
+               #'id' => 'av_sub_page_footer_menu',
+               'plugin' => 'system_menu_block:main',
+               'region' => 'hidden_footer',
+               'provider' => 'system',
+               'weight' => 0,
+               'theme' => \Drupal::config('system.theme')->get('default'),
+               #'theme' => $active_theme ?? 'av_sub',
+               #'theme' => 'av_sub',
+               #'visibility' => array('request_path' => array('id' => 'request_path' , 'pages' => '/demopage')),
+               'settings' => [
+                     'label' => 'Mobile Haupt-Menü',
+                     'label_display' => false,
+                  ],
+        ]);
+        $block->save();
+         
+   }

@@ -1,0 +1,32 @@
+uuid: e3f60ce3-ef7a-4584-b858-194b0d3a836f
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_ads_type
+    - node.type.n_advertisement
+    - taxonomy.vocabulary.t_advertisement_types
+  enforced:
+    module:
+      - av_ads
+id: node.n_advertisement.field_n_ads_type
+field_name: field_n_ads_type
+entity_type: node
+bundle: n_advertisement
+label: Typ
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      t_advertisement_types: t_advertisement_types
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

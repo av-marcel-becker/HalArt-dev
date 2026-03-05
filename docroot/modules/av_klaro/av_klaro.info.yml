@@ -1,0 +1,11 @@
+name: 'AV Klaro'
+type: module
+description: 'Klaro'
+package: 'AV-Studio - Tools'
+version: '0.1'
+core_version_requirement: ^10 || ^11
+dependencies:
+  - drupal:klaro
+#libraries:
+#  - av_klaro/av_klaro
+  

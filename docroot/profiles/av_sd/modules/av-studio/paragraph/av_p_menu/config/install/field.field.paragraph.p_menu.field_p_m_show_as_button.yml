@@ -1,0 +1,26 @@
+uuid: bda0a10e-082c-4542-90ec-955cf9914e08
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_m_show_as_button
+    - paragraphs.paragraphs_type.p_menu
+  enforced:
+    module:
+      - av_p_menu
+id: paragraph.p_menu.field_p_m_show_as_button
+field_name: field_p_m_show_as_button
+entity_type: paragraph
+bundle: p_menu
+label: 'Darstellung als Button'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

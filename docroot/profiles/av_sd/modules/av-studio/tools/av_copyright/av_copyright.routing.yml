@@ -1,0 +1,9 @@
+av_copyright.settings:
+  path: '/admin/config/system/av_copyright'
+  defaults:
+    _form: '\Drupal\av_copyright\Form\CopyrightSettings'
+    _title: 'AV-Studio Tools - Copyright Settings'
+  requirements:
+    _permission: 'administer AV Tools - Copyright configuration'
+# options:
+#    no_cache: 'TRUE'

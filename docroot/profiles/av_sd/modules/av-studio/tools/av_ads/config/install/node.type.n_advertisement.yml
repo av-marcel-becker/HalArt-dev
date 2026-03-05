@@ -1,0 +1,25 @@
+uuid: 95616370-b90c-4978-be27-f4cda2185a6c
+langcode: de
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - node_revision_delete
+  enforced:
+    module:
+      - av_ads
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  node_revision_delete:
+    minimum_revisions_to_keep: 10
+    minimum_age_to_delete: 0
+    when_to_delete: 0
+name: 'Anzeige (Ads)'
+type: n_advertisement
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

@@ -1,0 +1,12 @@
+dependencies:
+  enforced:
+    module:
+      - av_scroll
+top_icon: '<i class="fa-regular fa-chevron-up"></i>'
+top_threshold: '500'
+top_show: 1
+bottom_icon: '<i class="fa-regular fa-chevron-down"></i>'
+bottom_threshold: '500'
+bottom_show: 0
+target_icon: '<i class="fa-regular fa-chevron-down"></i>'
+target_show: 0

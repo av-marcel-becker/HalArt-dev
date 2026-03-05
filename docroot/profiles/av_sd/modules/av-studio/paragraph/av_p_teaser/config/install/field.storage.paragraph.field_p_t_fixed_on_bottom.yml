@@ -1,0 +1,22 @@
+uuid: 901bc6ce-e099-4e40-967f-c1c82bb19d74
+langcode: de
+status: true
+dependencies:
+  module:
+    - paragraphs
+  enforced:
+    module:
+      - av_p_teaser
+third_party_settings: { }
+id: paragraph.field_p_t_fixed_on_bottom
+field_name: field_p_t_fixed_on_bottom
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

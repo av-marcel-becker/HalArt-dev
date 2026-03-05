@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_teaser
+name: is_teaser_100p_bp1200_1200px
+label: 'Teaser 100% - bp1200 (B=1200px)'
+effects:
+  332964ad-d140-4233-bc6e-d815b133d2d6:
+    uuid: 332964ad-d140-4233-bc6e-d815b133d2d6
+    id: image_scale
+    weight: 1
+    data:
+      width: 2400
+      height: null
+      upscale: false
+  d547b106-1557-49c8-91d5-e61926192b53:
+    uuid: d547b106-1557-49c8-91d5-e61926192b53
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

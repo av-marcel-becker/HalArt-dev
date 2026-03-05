@@ -1,0 +1,30 @@
+{#
+   item.content
+#}
+{{ attach_library('av_ics/av_ics') }}
+{% for item in items %}
+   {% set maxLength = 32 %}
+   {#% set allowedTags = ['strong', 'em', 'a'] %#}
+   {% set allowedTags = [] %}
+   {% set shortenedText = item.content['#item'].second|striptags(allowedTags)|truncate(maxLength, true, '...') %}  
+   {% set shortenedTextFilename = item.content['#item'].second|striptags(allowedTags)|truncate(16, true, '')|replace({'ä': 'ae', 'ö': 'oe', 'ü': 'ue', 'ß': 'ss'})|replace({"/[^a-zA-Z0-9]/": ""}) %}  
+   {% set description = item.content['#item'].second|striptags(allowedTags)|truncate(71, true, '...') %} {# ics max 75 char #}  
+   {% set start = item.content['#item'].first['#text']|date("Y-m-d") %}
+   <li>
+      <div class="section-custom gl cssf--grid-layout">
+         <div class="gc gbl cssf--gc_content cssf--grid-brick-layout cssf--ai_stretch">
+            <div class="r1 cssf--gcol100--d_flex--fw_wrap cssf--mq768--gcolx3 cssf--p_var-region-spacing cssf--as_unset cssf--jc_start cssf--ac_unset">     
+               {{ item.content['#item'].first['#text']|date("l")|t }}<br>
+               {{ item.content['#item'].first['#text']|date("d.m.Y") }}
+            </div>      
+            <div class="r2 cssf--gcol100--d_flex--fw_wrap cssf--mq768--gcolx3 cssf--p_var-region-spacing cssf--as_unset cssf--jc_start cssf--ac_unset">     
+               <av-ics filename="termin___{{ shortenedTextFilename }}__{{ item.content['#item'].first['#text']|date("l")|t }}__{{ item.content['#item'].first['#text']|date("d_m_Y") }}" start="{{ start }}" summary="{{ shortenedText }}" description="{{ description }}" title="Termin für den Kalender downloaden"><i class="fa-light fa-list-check"></i></av-ics>
+            </div>
+            <div class="r3 cssf--gcol100--d_flex--fw_wrap cssf--mq768--gcolx6 cssf--p_var-region-spacing cssf--as_unset cssf--jc_start cssf--ac_unset">     
+               {{ item.content['#item'].second }}
+            </div>
+         </div>
+      </div> 
+   </li>
+{% endfor %}
+

@@ -1,0 +1,61 @@
+uuid: ee2730cd-fa83-4856-b835-a21aa617376e
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p_headline.field_p_h_headline
+    - field.field.paragraph.p_headline.field_p_h_headline_number
+    - field.field.paragraph.p_headline.field_p_h_link
+    - paragraphs.paragraphs_type.p_headline
+  module:
+    - length_indicator
+    - link
+    - maxlength
+  enforced:
+    module:
+      - av_p_headline
+id: paragraph.p_headline.default
+targetEntityType: paragraph
+bundle: p_headline
+mode: default
+content:
+  field_p_h_headline:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      length_indicator:
+        indicator: true
+        indicator_opt:
+          optimin: 15
+          optimax: 50
+          tolerance: 10
+      maxlength:
+        maxlength_js: null
+        maxlength_js_label: 'Eingabe begrenzt auf @limit Zeichen, verbleibend: <strong>@remaining</strong>'
+  field_p_h_headline_number:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_p_h_link:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true

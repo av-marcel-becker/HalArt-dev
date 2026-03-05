@@ -1,0 +1,13 @@
+uuid: 90a23c4d-ed08-42fa-ac7c-3aa77ca00b43
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_predefined_sections
+id: p_predefined_sections
+label: 'Vordefinierter Abschnitt (Slider Folien)'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

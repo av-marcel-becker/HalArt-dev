@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_image
+name: is_33p_bp1400_467px
+label: '33% - bp1400 (B=467px)'
+effects:
+  0e26ce0c-3edf-438f-a0f9-2c1ce17152e0:
+    uuid: 0e26ce0c-3edf-438f-a0f9-2c1ce17152e0
+    id: image_scale
+    weight: 1
+    data:
+      width: 934
+      height: null
+      upscale: false
+  4564c278-4f4a-4936-9d69-f94ad8094f7d:
+    uuid: 4564c278-4f4a-4936-9d69-f94ad8094f7d
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

@@ -1,0 +1,20 @@
+uuid: c62d6f97-3f1b-4a37-93ae-391547fe9550
+langcode: de
+status: false
+dependencies:
+  theme:
+    - av_sub
+id: av_sub_secondary_local_tasks
+theme: av_sub
+region: content
+weight: 1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Sekundäre Reiter'
+  provider: core
+  label_display: '0'
+  primary: false
+  secondary: true
+visibility: {  }

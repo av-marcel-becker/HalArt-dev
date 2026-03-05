@@ -1,0 +1,13 @@
+uuid: ca5ee8b8-f9d3-4443-a9c1-629789f89854
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - av_n_directory_page
+id: node.dm_directory_list_item
+label: 'Verzeichnis Listen-Element'
+targetEntityType: node
+cache: true

@@ -1,0 +1,43 @@
+uuid: ec68682e-284a-4afd-8b13-fdae519f6724
+langcode: de
+status: true
+dependencies:
+  config:
+    - image.style.is_fp_66p_bp576_576px
+    - image.style.is_fp_66p_bp768_768px
+    - image.style.is_fp_66p_bp1200_800px
+    - image.style.is_fp_66p_bp1400_934px
+    - image.style.is_fp_66p_bp992_661px
+  enforced:
+    module:
+      - av_p_image
+id: ris_fp_66p
+label: 'FP 66%'
+image_style_mappings:
+  -
+    breakpoint_id: av_p_image.css_framework.1200
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_fp_66p_bp1400_934px
+  -
+    breakpoint_id: av_p_image.css_framework.992
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_fp_66p_bp1200_800px
+  -
+    breakpoint_id: av_p_image.css_framework.768
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_fp_66p_bp992_661px
+  -
+    breakpoint_id: av_p_image.css_framework.576
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_fp_66p_bp768_768px
+  -
+    breakpoint_id: av_p_image.css_framework.0
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_fp_66p_bp576_576px
+breakpoint_group: av_p_image
+fallback_image_style: is_fp_66p_bp1400_934px

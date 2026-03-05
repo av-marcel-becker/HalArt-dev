@@ -1,0 +1,12 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - paragraphs
+  enforced:
+    module:
+      - av_p_teaser
+id: paragraph.dm_teaser_33pz
+label: 'Teaser 33% Zoom'
+targetEntityType: paragraph
+cache: true

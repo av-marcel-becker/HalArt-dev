@@ -1,0 +1,21 @@
+uuid: e85f08d9-321c-4d85-9fe6-81a1396e6f06
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_sports_club_page
+  enforced:
+    module:
+      - av_n_sports_club_page
+id: node.n_sports_club_page.title
+field_name: title
+entity_type: node
+bundle: n_sports_club_page
+label: Überschrift
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

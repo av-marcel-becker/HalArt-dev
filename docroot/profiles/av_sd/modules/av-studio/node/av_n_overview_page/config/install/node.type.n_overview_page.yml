@@ -1,0 +1,39 @@
+uuid: 188405a0-d996-476c-b7f7-cee80eca8184
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_overview_page
+  module:
+    - menu_ui
+    - node_revision_delete
+    #- scheduler
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+#  scheduler:
+#    expand_fieldset: when_required
+#    fields_display_mode: fieldset
+#    publish_enable: true
+#    publish_past_date: publish
+#    publish_required: false
+#    publish_revision: true
+#    publish_touch: true
+#    unpublish_enable: true
+#    unpublish_required: false
+#    unpublish_revision: true
+#    publish_past_date_created: false
+  node_revision_delete:
+    minimum_revisions_to_keep: 10
+    minimum_age_to_delete: 3
+    when_to_delete: 12
+name: 'Übersichtsseite'
+type: n_overview_page
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

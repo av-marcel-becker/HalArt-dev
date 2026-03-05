@@ -1,0 +1,13 @@
+av_n_notification:
+  version: 0.1
+  js:
+    js/av_n_notification.js: {}
+  css:
+    theme:
+      css/av_n_notification.css: {}
+#  dependencies:
+#    - cookies/cookiesjsr
+#    - core/drupal
+#    - core/drupalSettings
+#    - core/jquery
+#    - core/jquery.once

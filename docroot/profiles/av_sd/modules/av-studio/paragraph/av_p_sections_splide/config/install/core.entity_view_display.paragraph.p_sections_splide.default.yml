@@ -1,0 +1,15 @@
+uuid: 40326dbb-f155-4029-911a-456067f28db2
+langcode: de
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.p_sections_splide
+  enforced:
+    module:
+      - av_p_sections_splide
+id: paragraph.p_sections_splide.default
+targetEntityType: paragraph
+bundle: p_sections_splide
+mode: default
+content: {  }
+hidden: {  }

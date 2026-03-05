@@ -1,0 +1,7 @@
+av_l_sections_teaser.settings:
+  path: '/admin/config/system/av_layout/sections_teaser'
+  defaults:
+    _form: '\Drupal\av_l_sections_teaser\Form\LayoutSectionsTeaserSettingsForm'
+    _title: 'AV-Layout Teaser Sections Settings'
+  requirements:
+    _permission: 'administer AV-Layout configuration'

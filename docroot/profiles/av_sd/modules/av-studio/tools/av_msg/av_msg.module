@@ -1,0 +1,15 @@
+<?php
+   /**
+    * hook_theme
+    */
+    /*  
+   function av_msg_theme($existing, $type, $theme, $path) 
+      {
+         return [
+               'av_msg__status_messages' => [
+                     'base hook' => 'status_messages',
+                   'template' => 'av-msg--status-messages',
+                  ],
+            ];
+      } 
+     */

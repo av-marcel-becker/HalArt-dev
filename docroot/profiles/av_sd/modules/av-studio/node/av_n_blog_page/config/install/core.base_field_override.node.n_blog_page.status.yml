@@ -1,0 +1,25 @@
+uuid: d48ba057-f731-49c7-b583-0e0bed07265d
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_blog_page
+  enforced:
+    module:
+      - av_n_blog_page
+id: node.n_blog_page.status
+field_name: status
+entity_type: node
+bundle: n_blog_page
+label: Veröffentlicht
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_image
+name: is_25p_bp1200_600px
+label: '25% - bp1200 (B=600px)'
+effects:
+  f55c5a24-b322-485c-b07b-e7edb2fe8300:
+    uuid: f55c5a24-b322-485c-b07b-e7edb2fe8300
+    id: image_scale
+    weight: 1
+    data:
+      width: 1200
+      height: null
+      upscale: false
+  bf2b5287-81c5-4029-b2d4-568b490e26bc:
+    uuid: bf2b5287-81c5-4029-b2d4-568b490e26bc
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

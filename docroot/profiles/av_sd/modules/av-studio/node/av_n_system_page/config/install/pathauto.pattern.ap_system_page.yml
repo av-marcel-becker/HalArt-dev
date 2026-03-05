@@ -1,0 +1,25 @@
+uuid: c21c094e-61d8-4701-a3cc-5ec6446535b5
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_system_page
+  module:
+    - node
+id: ap_system_page
+label: Systemseite
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  32121f6d-520d-434d-b3c5-4092e85ddaf4:
+    id: 'entity_bundle:node'
+    bundles:
+      n_system_page: n_system_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 32121f6d-520d-434d-b3c5-4092e85ddaf4
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,18 @@
+/* Stellt sicher, dass der Inhaltsbereich einen vertikalen Scrollbalken hat, wenn der Inhalt überläuft. */
+.ui-dialog-content {
+  overflow-y: auto;
+  /* Wichtig: Verhindert, dass jQuery UI die Höhe bei 'auto' überschreibt. */
+  height: auto !important;
+}
+
+/* Optional: Stellt sicher, dass der Dialog die volle verfügbare Breite hat (z.B. 80% der Viewport-Breite) */
+.ui-dialog.fixed-full-height-processed {
+  width: 80% !important; /* Passen Sie dies nach Bedarf an */
+  max-width: 1000px; /* Optional: Eine maximale Breite festlegen */
+}
+
+/* Stellt sicher, dass die Höhe des Dialogs durch das JavaScript richtig gesetzt wird. */
+.ui-dialog.fixed-full-height-processed {
+  /* Setzt die minimale Höhe, falls der Inhalt sehr klein ist. */
+  min-height: 200px; 
+}

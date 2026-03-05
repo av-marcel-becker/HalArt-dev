@@ -1,0 +1,25 @@
+uuid: bde477e1-e4b4-4bdb-ba94-5bbb036b43d8
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_achievements_page
+  enforced:
+    module:
+      - av_n_achievements_page
+id: node.n_achievements_page.status
+field_name: status
+entity_type: node
+bundle: n_achievements_page
+label: Veröffentlicht
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

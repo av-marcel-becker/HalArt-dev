@@ -1,0 +1,6 @@
+av_n_sports_club_page.sports_club_page:
+  title: 'Sportvereine'
+  parent: system.admin_content
+  route_name: av_n_sports_club_page.sports_club_page
+  menu_name: admin
+  url: internal:/admin/content/sports_club_page

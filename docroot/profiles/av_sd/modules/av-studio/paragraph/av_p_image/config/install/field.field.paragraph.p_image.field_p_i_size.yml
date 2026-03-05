@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_i_size
+    - paragraphs.paragraphs_type.p_image
+  module:
+    - options
+  enforced:
+    module:
+      - av_p_image
+id: paragraph.p_image.field_p_i_size
+field_name: field_p_i_size
+entity_type: paragraph
+bundle: p_image
+label: Bildgröße
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: '50'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

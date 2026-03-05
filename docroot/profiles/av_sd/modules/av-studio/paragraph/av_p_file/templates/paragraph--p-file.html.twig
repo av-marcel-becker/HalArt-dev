@@ -1,0 +1,33 @@
+{{ attach_library('av_p_file/av_p_file') }}
+{% set attributes_layout = attributes %}
+{% if not attributes_layout %}
+    {% set attributes_layout = create_attribute() %}
+{% endif %}
+{% if not attributes_ul %}
+    {% set attributes_ul = create_attribute() %}
+{% endif %}
+{% block paragraph %}
+   {% block content %}
+      
+      {% set show_as_button = paragraph.field_p_f_show_as_button.0.value %}
+      {#% set files = content.field_p_f_file['#items'] %#}
+      {% 
+         set classes_layout = [
+               'cssf--w100p',
+            ] 
+      %}
+      {% 
+         set classes_ul = [
+               'ph-file-list',
+               show_as_button ? 'show-as-button' : 'show-as-list',
+            ] 
+      %}
+      <div{{ attributes_layout.addClass(classes_layout) }}>
+
+         <ul{{ attributes_ul.addClass(classes_ul) }}>
+            {{ content|without(['field_p_f_show_as_button']) }}
+         </ul>
+      </div>
+
+   {% endblock %}
+{% endblock paragraph %}

@@ -1,0 +1,170 @@
+uuid: d203f4de-bc00-4f9d-960c-03f95d9ac2b1
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p_cards.field_p_c_ads_placeholder
+    - field.field.paragraph.p_cards.field_p_c_design
+    - field.field.paragraph.p_cards.field_p_c_highlight
+    - field.field.paragraph.p_cards.field_p_c_image_second
+    - field.field.paragraph.p_cards.field_p_c_fixed_on_bottom
+    - field.field.paragraph.p_cards.field_p_c_image
+    - field.field.paragraph.p_cards.field_p_c_image_full_size
+    - field.field.paragraph.p_cards.field_p_c_label
+    - field.field.paragraph.p_cards.field_p_c_link
+    - field.field.paragraph.p_cards.field_p_c_size
+    - field.field.paragraph.p_cards.field_p_c_text
+    - field.field.paragraph.p_cards.field_p_c_text_unlimited
+    - field.field.paragraph.p_cards.field_p_c_title
+    - field.field.paragraph.p_cards.field_p_c_title_jewelry
+    - field.field.paragraph.p_cards.field_p_c_enable_crop
+    - paragraphs.paragraphs_type.p_cards
+  module:
+    - link
+    - options
+    - text
+  enforced:
+    module:
+      - av_p_cards
+id: paragraph.p_cards.default
+targetEntityType: paragraph
+bundle: p_cards
+mode: default
+content:
+  field_p_c_ads_placeholder:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_p_c_design:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_p_c_highlight:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_p_c_image_second:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_p_c_fixed_on_bottom:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_p_c_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_p_c_image_full_size:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_p_c_label:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_p_c_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_p_c_size:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_p_c_text:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_p_c_text_unlimited:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_p_c_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_p_c_title_jewelry:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_p_c_enable_crop:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 14
+    region: content
+hidden:
+  search_api_excerpt: true

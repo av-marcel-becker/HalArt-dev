@@ -1,0 +1,107 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\node\NodeInterface;
+use Drupal\Core\Datetime\DrupalDateTime;
+use Drupal\mb_dev_api\Dev;
+
+/**
+ * Implements hook_theme().
+ */
+function av_n_notification_theme($existing, $type, $theme, $path) {
+  return [
+    'n_notification_list' => [
+      'variables' => ['notifications' => []],
+      'template' => 'n-notification-list',
+      'path' => $path . '/templates',
+    ],
+    'n_notification' => [
+      'variables' => ['content' => []],
+      'template' => 'n-notification',
+      'path' => $path . '/templates',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_page_attachments().
+ */
+function av_n_notification_page_attachments(array &$attachments) {
+  $current_path = \Drupal::request()->getPathInfo();
+  $current_time = new DrupalDateTime();
+
+  $nids = \Drupal::entityQuery('node')
+    ->condition('type', 'n_notification')
+    ->condition('status', NodeInterface::PUBLISHED)
+    ->accessCheck(FALSE)
+    ->execute();
+
+  if (!empty($nids)) {
+    $nodes = \Drupal\node\Entity\Node::loadMultiple($nids);
+    foreach ($nodes as $node) {
+      $display_location = $node->get('field_n_n_display_location')->first()->getUrl()->toString();
+      $display_period = $node->get('field_n_n_display_period')->getValue();
+
+      if (strtok($display_location, '?') === $current_path && is_within_display_period($display_period, $current_time)) {
+        $view_builder = \Drupal::entityTypeManager()->getViewBuilder('node');
+        $build = $view_builder->view($node, 'default');
+        $rendered_content = \Drupal::service('renderer')->render($build);
+        $attachments['#attached']['drupalSettings']['av_n_notification'][$node->id()] = $rendered_content;
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function av_n_notification_preprocess_page(&$variables) {
+  $current_path = \Drupal::request()->getPathInfo();
+  $current_time = new DrupalDateTime();
+
+  $nids = \Drupal::entityQuery('node')
+    ->condition('type', 'n_notification')
+    ->condition('status', NodeInterface::PUBLISHED)
+    ->accessCheck(FALSE)
+    ->execute();
+
+  if (!empty($nids)) {
+    $nodes = \Drupal\node\Entity\Node::loadMultiple($nids);
+    $view_builder = \Drupal::entityTypeManager()->getViewBuilder('node');
+    $notifications = [];
+
+    foreach ($nodes as $node) {
+      $display_location = $node->get('field_n_n_display_location')->first()->getUrl()->toString();
+      $display_period = $node->get('field_n_n_display_period')->getValue();
+
+      if (strtok($display_location, '?') === $current_path && is_within_display_period($display_period, $current_time)) {
+        $build = $view_builder->view($node, 'default');
+        $notifications[] = [
+          '#theme' => 'n_notification',
+          '#content' => \Drupal::service('renderer')->render($build),
+        ];
+      }
+    }
+
+    $variables['notifications'] = [
+      '#theme' => 'n_notification_list',
+      '#notifications' => $notifications,
+    ];
+  }
+}
+
+/**
+ * Helper function to check if current time is within display period.
+ */
+function is_within_display_period($display_period, $current_time) {
+  if (empty($display_period)) {
+    return TRUE; // If no period is set, always display
+  }
+
+  $start_date = new DrupalDateTime($display_period[0]['value']);
+  $end_date = new DrupalDateTime($display_period[0]['end_value']);
+  $start_date->modify('+2 hours');
+  $end_date->modify('+2 hours');
+  # Dev::dump($current_time->format('Y-m-d H:i:s').': '.$start_date->format('Y-m-d H:i:s').' - '.$end_date->format('Y-m-d H:i:s'), 'msg');
+  return $current_time >= $start_date && $current_time <= $end_date;
+}

@@ -1,0 +1,11 @@
+uuid: 39330118-d830-4f38-a77d-3f5f2b1a0d68
+langcode: de
+status: true
+dependencies: {  }
+machine: ei_bak
+description: null
+name: BAK
+weight: ''
+url: ''
+fg_color: '#ffffff'
+bg_color: '#0000c2'

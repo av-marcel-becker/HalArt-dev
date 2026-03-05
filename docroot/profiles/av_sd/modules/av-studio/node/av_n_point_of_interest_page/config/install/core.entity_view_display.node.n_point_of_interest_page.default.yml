@@ -1,0 +1,109 @@
+uuid: 6b155890-d954-48cb-867d-d35ef645bb9f
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.node.n_point_of_interest_page.body
+    - field.field.node.n_point_of_interest_page.field_image
+    - field.field.node.n_point_of_interest_page.field_n_poip_content
+    - field.field.node.n_point_of_interest_page.field_n_poip_geodata
+    - field.field.node.n_point_of_interest_page.field_n_poip_item_settings
+    - field.field.node.n_point_of_interest_page.field_n_poip_show_fill
+    - field.field.node.n_point_of_interest_page.field_n_poip_show_stroke
+    - field.field.node.n_point_of_interest_page.field_n_poip_tag
+    - node.type.n_point_of_interest_page
+  enforced:
+    module:
+      - av_n_point_of_interest_page
+  module:
+    - layout_paragraphs
+    - leaflet
+    - user
+third_party_settings: { }
+id: node.n_point_of_interest_page.default
+targetEntityType: node
+bundle: n_point_of_interest_page
+mode: default
+content:
+  field_n_poip_content:
+    type: layout_paragraphs
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: { }
+    region: content
+  field_n_poip_geodata:
+    weight: 0
+    label: hidden
+    settings:
+      multiple_map: false
+      popup_content: ''
+      leaflet_map: 'OSM Mapnik'
+      height: 400
+      height_unit: px
+      fullscreen_control: true
+      gesture_handling: true
+      reset_map:
+        position: topright
+        control: false
+      map_position:
+        zoom: 12
+        minZoom: 1
+        maxZoom: 18
+        zoomFiner: 0
+        force: false
+      icon:
+        iconType: html
+        iconUrl: '[node:field_n_poip_item_settings:entity:field_t_ispoip_marker_path]?color=[node:field_n_poip_item_settings:entity:field_t_ispoip_marker_color:color]&number=[node:field_n_poip_item_settings:entity:field_t_ispoip_marker_labelling]'
+        shadowUrl: ''
+        html: "<div class=\"fa-4x\">\r\n  <span class=\"fa-layers fa-fw\">\r\n    <i class=\"[node:field_n_poip_item_settings:entity:field_t_ispoip_fa_marker_icon]\" style=\"color: [node:field_n_poip_item_settings:entity:field_t_ispoip_marker_color]\"></i>\r\n    <span class=\"fa-layers-text fa-inverse\" data-fa-transform=\"shrink-10 up-2\" style=\"font-weight:600\" style=\"#[node:field_n_poip_item_settings:entity:field_t_ispoip_exp_color]\">[node:field_n_poip_item_settings:entity:field_t_ispoip_marker_labelling]</span>\r\n    <i class=\"[node:field_n_poip_item_settings:entity:field_t_ispoip_fa_exp_icon] fa-inverse\" data-fa-transform=\"shrink-8 up-2\" data-set-color=\"[node:field_n_poip_item_settings:entity:field_t_ispoip_exp_color]\"></i>\r\n  </span>\r\n</div>"
+        html_class: leaflet-map-divicon
+        iconSize:
+          x: '64'
+          'y': '64'
+        iconAnchor:
+          x: '32'
+          'y': '64'
+        shadowSize:
+          x: ''
+          'y': ''
+        shadowAnchor:
+          x: ''
+          'y': ''
+        popupAnchor:
+          x: '-55'
+          'y': '0'
+      path: '{"color":"#[node:field_n_poip_item_settings:entity:field_t_ispoip_stroke_color:color]","opacity":"[node:field_n_poip_show_stroke:value]","stroke":true,"weight":3,"fill":"depends","fillColor":"#[node:field_n_poip_item_settings:entity:field_t_ispoip_fill_color:color]","fillOpacity":"[node:field_n_poip_show_fill]"}'
+      popup: false
+      hide_empty_map: false
+      disable_wheel: false
+      leaflet_markercluster:
+        control: false
+        options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds": false}'
+      geocoder:
+        control: false
+        settings:
+          position: topright
+          input_size: 25
+          providers: {  }
+          min_terms: 4
+          delay: 800
+          zoom: 16
+          popup: false
+          options: ''
+      weight: null
+    third_party_settings: { }
+    type: leaflet_formatter_default
+    region: content
+hidden:
+  body: true
+  content_moderation_control: true
+  field_image: true
+  field_n_poip_item_settings: true
+  field_n_poip_show_fill: true
+  field_n_poip_show_stroke: true
+  field_n_poip_tag: true
+  langcode: true
+  links: true

@@ -1,0 +1,6 @@
+av_n_point_of_interest_page.point_of_interest_page:
+  title: 'Ort (POI) Seiten'
+  parent: system.admin_content
+  route_name: av_n_point_of_interest_page.point_of_interest_page
+  menu_name: admin
+  url: internal:/admin/content/point_of_interest_page

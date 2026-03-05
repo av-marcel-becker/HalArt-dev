@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_image
+name: is_33p_bp992_331px
+label: '33% - bp992 (B=331px)'
+effects:
+  9ef3ca3d-a9b5-4297-9d86-905e16d3484b:
+    uuid: 9ef3ca3d-a9b5-4297-9d86-905e16d3484b
+    id: image_scale
+    weight: 1
+    data:
+      width: 662
+      height: null
+      upscale: false
+  40f11489-8bac-4f3a-ba1a-5daac3cd8139:
+    uuid: 40f11489-8bac-4f3a-ba1a-5daac3cd8139
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

@@ -1,0 +1,15 @@
+uuid: c95b018c-79fb-4435-b6a4-7a71c004762a
+langcode: de
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.p_sections_slider
+  enforced:
+    module:
+      - av_p_sections_slider
+id: paragraph.p_sections_slider.default
+targetEntityType: paragraph
+bundle: p_sections_slider
+mode: default
+content: {  }
+hidden: {  }

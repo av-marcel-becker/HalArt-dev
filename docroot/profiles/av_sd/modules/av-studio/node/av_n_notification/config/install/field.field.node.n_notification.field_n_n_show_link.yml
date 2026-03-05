@@ -1,0 +1,26 @@
+uuid: 046c4f14-cb6f-4da2-b014-11dc6cf681d3
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_n_show_link
+    - node.type.n_notification
+  enforced:
+    module:
+      - av_n_notification
+id: node.n_notification.field_n_n_show_link
+field_name: field_n_n_show_link
+entity_type: node
+bundle: n_notification
+label: 'Link anzeigen'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

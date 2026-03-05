@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_image
+name: is_100p_bp768_768px
+label: '100% - bp768 (B=768px)'
+effects:
+  55ea559b-8b2a-4a17-aa82-ed2a7112160a:
+    uuid: 55ea559b-8b2a-4a17-aa82-ed2a7112160a
+    id: image_scale
+    weight: 1
+    data:
+      width: 1536
+      height: null
+      upscale: false
+  4d60e0f0-5782-4572-b39c-b826e0732e2b:
+    uuid: 4d60e0f0-5782-4572-b39c-b826e0732e2b
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

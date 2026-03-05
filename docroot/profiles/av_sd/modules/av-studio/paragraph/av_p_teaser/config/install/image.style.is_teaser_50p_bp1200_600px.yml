@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_teaser
+name: is_teaser_50p_bp1200_600px
+label: 'Teaser 50% - bp1200 (B=600px)'
+effects:
+  ce8fb155-b5cf-4678-8d5f-2f27e2bb6874:
+    uuid: ce8fb155-b5cf-4678-8d5f-2f27e2bb6874
+    id: image_scale
+    weight: 1
+    data:
+      width: 1200
+      height: null
+      upscale: false
+  660103d9-dcbc-4560-8f71-ea2cad8b1735:
+    uuid: 660103d9-dcbc-4560-8f71-ea2cad8b1735
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

@@ -1,0 +1,25 @@
+uuid: 74428c05-afba-492e-8609-b11a5ee77a1e
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_hall_of_fame_page
+  module:
+    - node
+id: ap_hall_of_fame_page
+label: Hall of Fame Seite
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents:join-path]/[node:title]'
+selection_criteria:
+  bb8bf108-37c6-4cde-abaf-b77fcb4e2460:
+    id: 'entity_bundle:node'
+    bundles:
+      n_hall_of_fame_page: n_hall_of_fame_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: bb8bf108-37c6-4cde-abaf-b77fcb4e2460
+selection_logic: and
+weight: -5
+relationships: {  }

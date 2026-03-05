@@ -1,0 +1,53 @@
+uuid: c6263d2f-7adf-4cc5-a40b-3da6ff7e0b66
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_c_image
+    - paragraphs.paragraphs_type.p_cards
+  module:
+    - image
+    - image_replace
+  enforced:
+    module:
+      - av_p_cards
+third_party_settings:
+  image_replace:
+    image_style_map:
+      is_ads_bp1200:
+        source_field: '0'
+      is_ads_bp576:
+        source_field: '0'
+      is_ads_bp768:
+        source_field: '0'
+      is_ads_bp992:
+        source_field: '0'
+id: paragraph.p_cards.field_p_c_image
+field_name: field_p_c_image
+entity_type: paragraph
+bundle: p_cards
+label: Bild
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'p_cards/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png jpg jpeg gif'
+  max_filesize: '2 MB'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

@@ -1,0 +1,11 @@
+av_n_directory_page.directory_page.add:
+  route_name: node.add
+  title: 'Verzeichnis hinzufügen'
+  weight: 10
+  appears_on:
+    - view.v_content_directory_page.v_content_directory_page
+  route_parameters: 
+    node_type: 'n_directory_page'
+#  options:
+#    query:
+#      destination: /admin/content/directory_page

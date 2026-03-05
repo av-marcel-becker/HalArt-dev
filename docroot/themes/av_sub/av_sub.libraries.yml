@@ -1,0 +1,59 @@
+#erl:
+#  version: VERSION
+#  css:
+#    theme:
+#      css/fonts.css: {}
+#      css/vars.css: {}   
+#      css/global.css: {} 
+#share:
+#  version: VERSION
+#  css:
+#    theme:
+#      css/modules/av-share.css: {}    
+cookies:
+  version: VERSION
+  css:
+    theme:
+      css/modules/cookies.css: {}
+av_flyout:
+  version: VERSION
+  css:
+    theme:
+      css/modules/av_flyout.css: { weight: 10001 }
+global-vars:     
+  version: VERSION
+  css:
+    theme:   
+      css/vars.css: { weight: 10000 } 
+backend:      
+  version: VERSION
+  css:
+    theme:
+      css/fonts.css: { weight: 10001 }      
+      css/global.css: { weight: 10001 }   
+global:
+  version: VERSION
+  css:
+    theme:
+      css/fonts.css: { weight: 10001 }      
+      css/global.css: { weight: 10001 }   
+      css/frontend.css: { weight: 10001 }
+      #css/scroll_to_top.css: {}   
+      #css/scroll_menu.css: {}   
+      #css/msg.css: {}
+      # css/event_view.css: {}
+  js:  
+    js/misc.js: {}
+    #js/file_upload.js: {}
+    #js/views_filter_tags.js: {}
+#    js/preset.js: {}
+  dependencies:
+    - av_sub/global-vars
+    - av_sub/cookies
+    - av_sub/av_flyout
+    #- core/jquery
+#    - av_sub/share
+    #- core/modernizr
+    #- av_base/css_framework
+    #- av_base/fontawesome
+    #- av_base/mmenu

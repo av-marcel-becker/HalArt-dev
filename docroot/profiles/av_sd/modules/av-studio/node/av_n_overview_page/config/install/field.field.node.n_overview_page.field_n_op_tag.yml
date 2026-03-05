@@ -1,0 +1,32 @@
+uuid: a7253e67-bb84-4d33-bfeb-572639ad7251
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_op_tag
+    - node.type.n_overview_page
+    - taxonomy.vocabulary.t_tags_overview_page
+  enforced:
+    module:
+      - av_n_overview_page
+id: node.n_overview_page.field_n_op_tag
+field_name: field_n_op_tag
+entity_type: node
+bundle: n_overview_page
+label: Tagging
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      t_tags_overview_page: t_tags_overview_page
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

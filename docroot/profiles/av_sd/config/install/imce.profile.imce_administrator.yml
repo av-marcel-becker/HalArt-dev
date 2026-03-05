@@ -1,0 +1,26 @@
+uuid: 8d27d9c5-baba-4481-a699-f9bcec16c0af
+langcode: de
+status: true
+dependencies: {  }
+id: imce_administrator
+label: Administrator
+description: ''
+conf:
+  extensions: 'png jpg pdf mp4'
+  maxsize: null
+  quota: null
+  maxwidth: 4096
+  maxheight: 4096
+  replace: 0
+  thumbnail_style: medium
+  thumbnail_grid_style: true
+  ignore_usage: false
+  folders:
+    -
+      path: '[user:uid]_[user:display-name]'
+      permissions:
+        all: true
+    -
+      path: share
+      permissions:
+        all: true

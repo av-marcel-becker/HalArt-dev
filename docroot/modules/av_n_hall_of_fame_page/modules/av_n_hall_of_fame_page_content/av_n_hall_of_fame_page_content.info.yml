@@ -1,0 +1,7 @@
+name: 'AV Node - Hall of Fame Page Content'
+type: module
+description: 'AV-Studio Node - Hall of Fame Page Content'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Node'
+dependencies:
+  - av_n_hall_of_fame_page

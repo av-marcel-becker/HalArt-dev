@@ -1,0 +1,6 @@
+av_n_system_page.system_page:
+  title: 'Systemseiten'
+  parent: system.admin_content
+  route_name: av_n_system_page.system_page
+  menu_name: admin
+  url: internal:/admin/content/system_page

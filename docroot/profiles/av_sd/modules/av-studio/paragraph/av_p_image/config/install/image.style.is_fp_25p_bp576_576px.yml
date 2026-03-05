@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - crop
+  enforced:
+    module:
+      - av_p_image
+name: is_fp_25p_bp576_576px
+label: 'FP 25% - bp576 (B=576px)'
+effects:
+  a613e6a8-9fde-4261-952e-3255b3a5af1b:
+    uuid: a613e6a8-9fde-4261-952e-3255b3a5af1b
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1152
+      height: 768
+      crop_type: focal_point
+  8d0b9e07-db82-4c00-809a-08b375ddf155:
+    uuid: 8d0b9e07-db82-4c00-809a-08b375ddf155
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

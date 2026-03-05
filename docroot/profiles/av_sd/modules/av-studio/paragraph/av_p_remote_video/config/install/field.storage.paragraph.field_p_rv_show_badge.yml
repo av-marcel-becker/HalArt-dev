@@ -1,0 +1,22 @@
+uuid: c4ad41b1-0db5-43e2-83af-3e7e20b31d27
+langcode: de
+status: true
+dependencies:
+  module:
+    - paragraphs
+  enforced:
+    module:
+      - av_p_remote_video
+third_party_settings: { }
+id: paragraph.field_p_rv_show_badge
+field_name: field_p_rv_show_badge
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

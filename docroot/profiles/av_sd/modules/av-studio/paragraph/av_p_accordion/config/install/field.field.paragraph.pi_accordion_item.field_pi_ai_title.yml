@@ -1,0 +1,21 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pi_ai_title
+    - paragraphs.paragraphs_type.pi_accordion_item
+  enforced:
+    module:
+      - av_p_accordion
+id: paragraph.pi_accordion_item.field_pi_ai_title
+field_name: field_pi_ai_title
+entity_type: paragraph
+bundle: pi_accordion_item
+label: Titel
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

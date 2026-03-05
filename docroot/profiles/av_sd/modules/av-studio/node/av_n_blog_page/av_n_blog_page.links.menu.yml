@@ -1,0 +1,6 @@
+av_n_blog_page.blog_page:
+  title: 'Blog Seite'
+  parent: system.admin_content
+  route_name: av_n_blog_page.blog_page
+  menu_name: admin
+  url: internal:/admin/content/blog_page

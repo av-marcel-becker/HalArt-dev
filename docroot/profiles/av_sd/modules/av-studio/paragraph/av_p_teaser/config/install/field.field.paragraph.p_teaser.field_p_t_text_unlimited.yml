@@ -1,0 +1,27 @@
+uuid: 27814216-178d-4b22-ab39-813415ee8dea
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_t_text_unlimited
+    - paragraphs.paragraphs_type.p_teaser
+  module:
+    - text
+  enforced:
+    module:
+      - av_p_teaser
+third_party_settings: { }
+id: paragraph.p_teaser.field_p_t_text_unlimited
+field_name: field_p_t_text_unlimited
+entity_type: paragraph
+bundle: p_teaser
+label: 'Text (unbegrenzt)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    f_editor: f_editor
+field_type: text_long

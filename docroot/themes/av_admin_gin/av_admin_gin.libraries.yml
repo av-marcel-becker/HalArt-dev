@@ -1,0 +1,51 @@
+css_framework_3:
+  header: true
+  version: 0.1
+  css:
+    theme:
+#      /libraries/CSS-Framework-3/dist/preset.css: { weight: -100 }
+      /libraries/CSS-Framework-3/dist/preset-var.css: { weight: -10 }
+      /libraries/CSS-Framework-3/dist/text.css: { weight: -9 }
+      /libraries/CSS-Framework-3/dist/form.css: { weight: -9 }
+  js:
+    /libraries/CSS-Framework-3/dist/cssf-vars.js: { weight: -101 }
+    /libraries/CSS-Framework-3/dist/cssf.js: { weight: -100 }
+#ckeditor-assets:
+#  version: 1.x
+#  dependencies:
+#    - av_admin_gin/css_framework_2
+htmlWatcher:
+  version: 0.1
+  js:
+    js/htmlWatcher.js: {}
+up_down_scroll:
+  version: 0.1
+  css:
+    theme:
+      css/up_down_scroll.css: {}
+  js:
+    js/up_down_scroll.js: {}
+dialog_fix:
+  version: 0.1
+  css:
+    theme:
+      css/dialog_fix.css: {}
+  js:
+    js/dialog_fix.js: {}
+global:
+  version: 1.x
+  css:
+    theme:
+      css/av_admin_gin.css: {}  
+  js: 
+    js/av_admin_gin.js: {}  
+  dependencies:
+    - av_admin_gin/dialog_fix
+    - av_admin_gin/htmlWatcher
+    - av_admin_gin/css_framework_2
+    - av_admin_gin/up_down_scroll
+    - av_base/fontawesome
+    - av_base/backend
+    - av_sub/global-vars
+    - av_sub/backend
+#    #- core/jquery

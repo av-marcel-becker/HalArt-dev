@@ -1,0 +1,16 @@
+uuid: a7a873e7-14af-49c9-b316-60c0f5bef7d7
+langcode: de
+status: true
+dependencies: 
+  enforced:
+    module:
+      - av_n_map_page
+id: map_with_poi
+label: 'Kartenseite <-> Ort (POI)'
+enabled: true
+first_field: field_n_mp_poi
+second_field: field_n_poip_map
+bundles:
+  node:
+    - n_map_page
+    - n_point_of_interest_page

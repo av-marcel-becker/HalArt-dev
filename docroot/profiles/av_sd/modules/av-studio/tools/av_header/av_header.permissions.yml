@@ -1,0 +1,4 @@
+'administer AV Header configuration':
+   title: 'administer AV Header configuration'
+   description: 'all permissions'
+   restrict access: true

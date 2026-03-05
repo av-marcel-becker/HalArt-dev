@@ -1,0 +1,25 @@
+uuid: ff1e5391-1c2b-497c-85bd-163065b4912f
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_course_page
+  module:
+    - node
+id: ap_course_page
+label: Lehrgangs-Seite
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents:join-path]/[node:title]'
+selection_criteria:
+  bb599536-1169-4b3f-8792-8175af744d96:
+    id: 'entity_bundle:node'
+    bundles:
+      n_course_page: n_course_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: bb599536-1169-4b3f-8792-8175af744d96
+selection_logic: and
+weight: -5
+relationships: {  }

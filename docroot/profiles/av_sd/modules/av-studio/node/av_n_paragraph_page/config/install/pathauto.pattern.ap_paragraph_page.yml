@@ -1,0 +1,25 @@
+uuid: 11d047df-6e10-4d0a-ba97-ae67b3e40a6b
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_paragraph_page
+  module:
+    - node
+id: ap_paragraph_page
+label: Absatzseite
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents:join-path]/[node:title]'
+selection_criteria:
+  a0562c32-876b-40ae-91cf-ec0a887f426b:
+    id: 'entity_bundle:node'
+    bundles:
+      n_paragraph_page: n_paragraph_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: a0562c32-876b-40ae-91cf-ec0a887f426b
+selection_logic: and
+weight: -5
+relationships: {  }

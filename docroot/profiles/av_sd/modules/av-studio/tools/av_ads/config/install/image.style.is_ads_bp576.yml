@@ -1,0 +1,18 @@
+uuid: c69b85c4-3a1e-440e-b1c0-8496acafd6fd
+langcode: de
+status: true
+dependencies:
+  module:
+    - image_replace
+  enforced:
+    module:
+      - av_ads
+name: is_ads_bp576
+label: 'Anzeige - bp576'
+effects:
+  7a9618d4-b99a-47a8-8627-c2fbaf4d0143:
+    uuid: 7a9618d4-b99a-47a8-8627-c2fbaf4d0143
+    id: image_replace
+    weight: 1
+    data:
+      image_style: is_ads_bp576

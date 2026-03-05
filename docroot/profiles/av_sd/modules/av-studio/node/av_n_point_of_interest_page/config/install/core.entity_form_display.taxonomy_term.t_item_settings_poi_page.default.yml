@@ -1,0 +1,143 @@
+uuid: 0b1161b7-22ba-48dd-8d8e-1359817911fa
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.t_item_settings_poi_page.field_t_ispoip_exp_color
+    - field.field.taxonomy_term.t_item_settings_poi_page.field_t_ispoip_fa_exp_icon
+    - field.field.taxonomy_term.t_item_settings_poi_page.field_t_ispoip_fa_marker_icon
+    - field.field.taxonomy_term.t_item_settings_poi_page.field_t_ispoip_fill_color
+    - field.field.taxonomy_term.t_item_settings_poi_page.field_t_ispoip_marker_color
+    - field.field.taxonomy_term.t_item_settings_poi_page.field_t_ispoip_marker_labelling
+    - field.field.taxonomy_term.t_item_settings_poi_page.field_t_ispoip_stroke_color
+    - taxonomy.vocabulary.t_item_settings_poi_page
+  enforced:
+    module:
+      - av_n_point_of_interest_page
+  module:
+    - color_field
+    - path
+    - text
+id: taxonomy_term.t_item_settings_poi_page.default
+targetEntityType: taxonomy_term
+bundle: t_item_settings_poi_page
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 8
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_t_ispoip_exp_color:
+    weight: 5
+    settings:
+      show_input: '1'
+      palette: ''
+      show_palette: '0'
+      show_palette_only: '0'
+      show_buttons: '0'
+      allow_empty: '0'
+    third_party_settings: {  }
+    type: color_field_widget_spectrum
+    region: content
+  field_t_ispoip_fa_exp_icon:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_t_ispoip_fa_marker_icon:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_t_ispoip_fill_color:
+    weight: 7
+    settings:
+      show_input: '1'
+      palette: ''
+      show_palette: '0'
+      show_palette_only: '0'
+      show_buttons: '0'
+      allow_empty: '0'
+    third_party_settings: {  }
+    type: color_field_widget_spectrum
+    region: content
+  field_t_ispoip_marker_color:
+    weight: 2
+    settings:
+      show_input: '1'
+      palette: ''
+      show_palette: '0'
+      show_palette_only: '0'
+      show_buttons: '0'
+      allow_empty: '0'
+    third_party_settings: {  }
+    type: color_field_widget_spectrum
+    region: content
+  field_t_ispoip_marker_labelling:
+    weight: 4
+    settings:
+      size: 3
+      placeholder: ''
+    third_party_settings:
+      length_indicator:
+        indicator: true
+        indicator_opt:
+          optimin: 1
+          optimax: 3
+          tolerance: 0
+      maxlength:
+        maxlength_js: null
+        maxlength_js_label: 'Eingabe begrenzt auf @limit Zeichen, verbleibend: <strong>@remaining</strong>'
+    type: string_textfield
+    region: content
+  field_t_ispoip_stroke_color:
+    weight: 6
+    settings:
+      show_input: '1'
+      palette: ''
+      show_palette: '0'
+      show_palette_only: '0'
+      show_buttons: '0'
+      allow_empty: '0'
+    third_party_settings: {  }
+    type: color_field_widget_spectrum
+    region: content
+  langcode:
+    type: language_select
+    weight: 9
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 11
+    region: content
+    third_party_settings: {  }
+hidden: {  }

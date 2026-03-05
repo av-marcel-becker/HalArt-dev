@@ -1,0 +1,25 @@
+uuid: 68793eae-f512-4fda-a4aa-cd0176a39d14
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_blog_page
+  module:
+    - node
+id: ap_blog_page
+label: 'Blog Seite'
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents:join-path]/[node:title]'
+selection_criteria:
+  2fcf3f9e-9ba2-4272-aef8-c3b083d9bc0b:
+    id: 'entity_bundle:node'
+    bundles:
+      n_blog_page: n_blog_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 2fcf3f9e-9ba2-4272-aef8-c3b083d9bc0b
+selection_logic: and
+weight: -5
+relationships: {  }

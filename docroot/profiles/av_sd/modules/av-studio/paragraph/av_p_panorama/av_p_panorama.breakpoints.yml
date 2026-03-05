@@ -1,0 +1,36 @@
+av_p_panorama.css_framework.0:
+  label: '0'
+  mediaQuery: '(min-width: 0px)'
+  weight: 0
+  multipliers:
+    - 1x
+av_p_panorama.css_framework.576:
+  label: '576'
+  mediaQuery: '(min-width: 576px)'
+  weight: 1
+  multipliers:
+    - 1x
+av_p_panorama.css_framework.768:
+  label: '768'
+  mediaQuery: '(min-width: 768px)'
+  weight: 2
+  multipliers:
+    - 1x
+av_p_panorama.css_framework.992:
+  label: '992'
+  mediaQuery: '(min-width: 992px)'
+  weight: 3
+  multipliers:
+    - 1x
+av_p_panorama.css_framework.1200:
+  label: '1200'
+  mediaQuery: '(min-width: 1200px)'
+  weight: 4
+  multipliers:
+    - 1x
+av_p_panorama.css_framework.1400:
+  label: '1400'
+  mediaQuery: '(min-width: 1400px)'
+  weight: 5
+  multipliers:
+    - 1x

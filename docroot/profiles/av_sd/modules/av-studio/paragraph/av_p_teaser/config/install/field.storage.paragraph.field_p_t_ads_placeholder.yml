@@ -1,0 +1,22 @@
+uuid: 8b8fb7cb-6f54-46a6-85ab-13579fc190d2
+langcode: de
+status: true
+dependencies:
+  module:
+    - paragraphs
+  enforced:
+    module:
+      - av_p_teaser
+third_party_settings: { }
+id: paragraph.field_p_t_ads_placeholder
+field_name: field_p_t_ads_placeholder
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

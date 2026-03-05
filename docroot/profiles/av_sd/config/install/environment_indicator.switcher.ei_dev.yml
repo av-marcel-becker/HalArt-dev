@@ -1,0 +1,11 @@
+uuid: 3e2e4c82-93d4-4058-bfcd-dbc9e3fae0ce
+langcode: de
+status: true
+dependencies: {  }
+machine: ei_dev
+description: null
+name: DEV
+weight: ''
+url: ''
+fg_color: '#ffffff'
+bg_color: '#00c200'

@@ -1,0 +1,42 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - image.style.is_33p_bp1400_467px
+    - image.style.is_33p_bp1200_400px
+    - image.style.is_33p_bp992_331px
+    - image.style.is_33p_bp768_768px
+    - image.style.is_33p_bp576_576px
+  enforced:
+    module:
+      - av_p_image
+id: ris_33p
+label: '33%'
+image_style_mappings:
+  -
+    breakpoint_id: av_p_image.css_framework.1200
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_33p_bp1400_467px
+  -
+    breakpoint_id: av_p_image.css_framework.992
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_33p_bp1200_400px
+  -
+    breakpoint_id: av_p_image.css_framework.768
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_33p_bp992_331px
+  -
+    breakpoint_id: av_p_image.css_framework.576
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_33p_bp768_768px
+  -
+    breakpoint_id: av_p_image.css_framework.0
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_33p_bp576_576px
+breakpoint_group: av_p_image
+fallback_image_style: is_33p_bp1200_400px

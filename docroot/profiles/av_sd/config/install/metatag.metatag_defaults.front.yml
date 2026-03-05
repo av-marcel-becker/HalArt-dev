@@ -1,0 +1,10 @@
+uuid: 7125f2e7-a97f-47e7-a5cf-b2c635d9b36d
+langcode: de
+status: true
+dependencies: {  }
+id: front
+label: Startseite
+tags:
+  canonical_url: '[site:url]'
+  robots: 'index, follow'
+  shortlink: '[site:url]'

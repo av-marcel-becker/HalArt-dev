@@ -1,0 +1,9 @@
+uuid: 0749ff11-e67e-434d-8f46-fe9e00d61b99
+langcode: de
+status: true
+dependencies: {  }
+id: tracking
+label: Nachverfolgung
+weight: 10
+title: Tracking-Cookies
+details: 'Marketing-Cookies stammen von externen Werbeunternehmen ("Third-Party-Cookies") und dienen dazu, Informationen über die vom Nutzer besuchten Webseiten zu sammeln. Dies dient dem Zweck, zielgruppengerechte Inhalte und Werbung für den Nutzer zu erstellen und anzuzeigen.'

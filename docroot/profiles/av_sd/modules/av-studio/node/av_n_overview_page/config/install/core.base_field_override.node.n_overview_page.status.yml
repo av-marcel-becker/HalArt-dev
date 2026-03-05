@@ -1,0 +1,25 @@
+uuid: e5a4a97f-5b83-4e59-b93f-e16bb7ce2ef3
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_overview_page
+  enforced:
+    module:
+      - av_n_overview_page
+id: node.n_overview_page.status
+field_name: status
+entity_type: node
+bundle: n_overview_page
+label: Veröffentlicht
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

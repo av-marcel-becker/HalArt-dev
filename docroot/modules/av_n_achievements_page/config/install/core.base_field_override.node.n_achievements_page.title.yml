@@ -1,0 +1,21 @@
+uuid: e632989a-8281-47f3-b63d-d63a7c096235
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_achievements_page
+  enforced:
+    module:
+      - av_n_achievements_page
+id: node.n_achievements_page.title
+field_name: title
+entity_type: node
+bundle: n_achievements_page
+label: Überschrift
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

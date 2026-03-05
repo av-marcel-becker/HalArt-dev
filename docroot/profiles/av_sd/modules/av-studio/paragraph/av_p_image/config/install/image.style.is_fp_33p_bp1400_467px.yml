@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - crop
+  enforced:
+    module:
+      - av_p_image
+name: is_fp_33p_bp1400_467px
+label: 'FP 33% - bp1400 (B=467px)'
+effects:
+  cee720f4-2ecc-40d8-a0ef-4d6f2b488fe1:
+    uuid: cee720f4-2ecc-40d8-a0ef-4d6f2b488fe1
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 934
+      height: 623
+      crop_type: focal_point
+  2c0bc241-f608-40ae-8977-2cda690d0708:
+    uuid: 2c0bc241-f608-40ae-8977-2cda690d0708
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

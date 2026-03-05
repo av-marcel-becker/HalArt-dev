@@ -1,0 +1,54 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_a_accordion_item
+    - paragraphs.paragraphs_type.p_accordion
+    - paragraphs.paragraphs_type.pi_accordion_item
+  module:
+    - entity_reference_revisions
+  enforced:
+    module:
+      - av_p_accordion
+id: paragraph.p_accordion.field_p_a_accordion_item
+field_name: field_p_a_accordion_item
+entity_type: paragraph
+bundle: p_accordion
+label: 'Akkordeon Element'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      pi_accordion_item: pi_accordion_item
+    target_bundles_drag_drop:
+      pi_accordion_item:
+        enabled: true
+        weight: -17
+      p_accordion:
+        weight: -16
+        enabled: false
+      p_block:
+        weight: -15
+        enabled: false
+      p_image_library:
+        weight: -14
+        enabled: false
+      p_image_upload:
+        weight: -13
+        enabled: false
+      p_section:
+        weight: -12
+        enabled: false
+      p_teaser:
+        weight: -11
+        enabled: false
+      p_wysiwyg:
+        weight: -10
+        enabled: false
+field_type: entity_reference_revisions

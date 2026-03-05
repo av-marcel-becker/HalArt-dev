@@ -1,0 +1,24 @@
+uuid: 6f050e77-bb8d-4577-a9b2-65f465542971
+langcode: de
+status: true
+dependencies:
+  module:
+    - geofield
+    - node
+  enforced:
+    module:
+      - av_n_point_of_interest_page
+third_party_settings: { }
+id: node.field_n_poip_geodata
+field_name: field_n_poip_geodata
+entity_type: node
+type: geofield
+settings:
+  backend: geofield_backend_default
+module: geofield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

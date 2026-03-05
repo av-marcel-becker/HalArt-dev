@@ -1,0 +1,11 @@
+av_n_athlete_of_the_year_page.athlete_of_the_year_page.add:
+  route_name: node.add
+  title: 'Sportler des Jahres Seite hinzufügen'
+  weight: 10
+  appears_on:
+    - view.v_content_athlete_of_the_year_page.v_content_athlete_of_the_year_page
+  route_parameters: 
+    node_type: 'n_athlete_of_the_year_page'
+#  options:
+#    query:
+#      destination: /admin/content/athlete_of_the_year_page

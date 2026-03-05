@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_teaser
+name: is_teaser_50p_bp768_768px
+label: 'Teaser 50% - bp768 (B=768px)'
+effects:
+  aa9050cc-f802-4549-b087-28bb07da3ede:
+    uuid: aa9050cc-f802-4549-b087-28bb07da3ede
+    id: image_scale
+    weight: 1
+    data:
+      width: 1536
+      height: null
+      upscale: false
+  5aaefe16-ffd9-48fe-a7cc-a063e4746808:
+    uuid: 5aaefe16-ffd9-48fe-a7cc-a063e4746808
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

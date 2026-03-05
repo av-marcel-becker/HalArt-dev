@@ -1,0 +1,32 @@
+uuid: 94a3ae4c-d404-4c14-af00-102ad42b9a01
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_mp_tag
+    - node.type.n_map_page
+    - taxonomy.vocabulary.t_tags_map_page
+  enforced:
+    module:
+      - av_n_map_page
+id: node.n_map_page.field_n_mp_tag
+field_name: field_n_mp_tag
+entity_type: node
+bundle: n_map_page
+label: Tagging
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      t_tags_map_page: t_tags_map_page
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

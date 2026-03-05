@@ -1,0 +1,106 @@
+av-flyout {
+   --av-flyout-z-index: 4;
+   --av-flyout-top: auto;
+   --av-flyout-right: auto;
+   --av-flyout-bottom: 0;
+   --av-flyout-left: 50%;
+   --av-flyout-transform: translateX(-50%);
+   --av-flyout-flex-direction: row;
+   
+   --av-flyout-item-li-margin: var(--size-0) var(--size-10);
+   
+   --av-flyout-item-a-padding: var(--size-0);
+   --av-flyout-item-a-flex-direction: column;
+   
+   --av-flyout-item-icon-color: var(--color-1);
+   --av-flyout-item-icon-background: var(--color-2);
+   --av-flyout-item-icon-font-size: var(--size-28);
+   --av-flyout-item-icon-line-height: var(--size-28);
+   --av-flyout-item-icon-width: var(--size-48);
+   --av-flyout-item-icon-height: var(--size-48);
+   --av-flyout-item-icon-border: 0 solid transparent;
+   --av-flyout-item-icon-border-radius: 0;
+   --av-flyout-item-icon-padding: 0;
+   --av-flyout-item-icon-margin: 0;
+   --av-flyout-item-icon-font-family: var(--font-family-fa);
+   --av-flyout-item-icon-font-style: var(--font-style-fa);
+   --av-flyout-item-icon-font-weight: var(--font-weight-fa-light);
+   --av-flyout-item-icon-font-variant: var(--font-variant-fa);
+   
+   --av-flyout-item-label-padding: 0 var(--size-15);
+   --av-flyout-item-label-text-align: left;   
+   --av-flyout-item-label-font-size: var(--size-18);
+   --av-flyout-item-label-line-height: var(--size-22);
+   --av-flyout-item-label-font-family: var(--font-family-2);
+   --av-flyout-item-label-font-style: var(--font-style-2);
+   --av-flyout-item-label-font-weight: var(--font-weight-2);
+   --av-flyout-item-label-color: var(--color-1);
+   --av-flyout-item-label-background: var(--color-2);
+   --av-flyout-item-label-top: auto;
+   --av-flyout-item-label-right: auto;
+   --av-flyout-item-label-bottom: calc(-100% - var(--av-flyout-item-icon-height));
+   --av-flyout-item-label-left: auto;
+   --av-flyout-item-label-transition: top 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0s,
+                                      right 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0s,
+                                      bottom 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0s,
+                                      left 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) 0s;
+   --av-flyout-item-label-transform: rotate(-90deg);
+   --av-flyout-item-label-transform-origin: top left;
+   --av-flyout-item-label-color: var(--av-flyout-item-hover-label-color);
+           
+   /* hover */        
+   --av-flyout-item-hover-label-color: var(--color-2);
+   --av-flyout-item-hover-label-background: var(--color-1);
+   
+   --av-flyout-item-hover-icon-color: var(--color-2);
+   --av-flyout-item-hover-icon-background: var(--color-1);
+   
+   --av-flyout-item-hover-label-top: auto;
+   --av-flyout-item-hover-label-right: auto;
+   --av-flyout-item-hover-label-bottom: 0;
+   --av-flyout-item-hover-label-left: auto;
+}
+
+
+
+@media (min-width: 768px) {
+   av-flyout {
+      --av-flyout-top: 50%;
+      --av-flyout-right: 0;
+      --av-flyout-bottom: auto;
+      --av-flyout-left: auto;
+      --av-flyout-transform: translateY(-50%);
+      --av-flyout-flex-direction: column;
+      
+      --av-flyout-item-label-top: auto;
+      --av-flyout-item-label-right: calc(-100% - var(--av-flyout-item-icon-width));
+      --av-flyout-item-label-bottom: auto;
+      --av-flyout-item-label-left: auto;
+      --av-flyout-item-label-transform: none;
+      --av-flyout-item-label-transform-origin: center center;
+      --av-flyout-item-label-font-size: var(--size-18);
+      --av-flyout-item-label-line-height: var(--size-22);
+      --av-flyout-item-label-padding: var(--size-0) var(--size-15);
+      --av-flyout-item-label-transform: none;
+      
+      --av-flyout-item-li-margin: var(--size-10) var(--size-0);
+
+      
+      --av-flyout-item-a-flex-direction: row;
+      
+      --av-flyout-item-width: var(--size-48);
+      --av-flyout-item-height: var(--size-48);
+      
+      /* hover */
+      --av-flyout-item-hover-label-color: var(--color-2);
+      --av-flyout-item-hover-label-background: var(--color-1);
+      
+      --av-flyout-item-hover-icon-color: var(--color-2);
+      --av-flyout-item-hover-icon-background: var(--color-1);
+      
+      --av-flyout-item-hover-label-top: auto;
+      --av-flyout-item-hover-label-right: var(--av-flyout-item-icon-width);
+      --av-flyout-item-hover-label-bottom: auto;
+      --av-flyout-item-hover-label-left: auto;
+   }
+}

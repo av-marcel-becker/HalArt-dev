@@ -1,0 +1,22 @@
+uuid: 65c90571-3966-4113-98cc-4a2aa50aad9d
+langcode: de
+status: true
+dependencies:
+  module:
+    - paragraphs
+  enforced:
+    module:
+      - av_p_teaser
+third_party_settings: { }
+id: paragraph.field_p_t_orientation_horizontal
+field_name: field_p_t_orientation_horizontal
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

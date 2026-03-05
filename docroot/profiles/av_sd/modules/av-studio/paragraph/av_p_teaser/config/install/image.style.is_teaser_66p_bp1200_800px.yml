@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_teaser
+name: is_teaser_66p_bp1200_800px
+label: 'Teaser 66% - bp1200 (B=800px)'
+effects:
+  7c70aeca-515c-4b48-87c1-d401bce89254:
+    uuid: 7c70aeca-515c-4b48-87c1-d401bce89254
+    id: image_scale
+    weight: 1
+    data:
+      width: 1600
+      height: null
+      upscale: false
+  74ad122b-ec21-4064-8b14-d377e8c24c31:
+    uuid: 74ad122b-ec21-4064-8b14-d377e8c24c31
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

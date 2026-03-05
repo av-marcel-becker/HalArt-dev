@@ -1,0 +1,67 @@
+.klaro {
+    --klaro-primary-color: var(--color-3);
+    --klaro-link-color: var(--klaro-primary-color);
+    --klaro-link-color-hover: var(--color-4);
+    --klaro-link-decoration: inherit;
+    --klaro-link-decoration-hover: inherit;
+    --klaro-link-decoration-line: inherit;
+    --klaro-link-decoration-line-hover: inherit;
+    --klaro-button-bg: var(--klaro-primary-color);
+    --klaro-button-text-color: #fff;
+    --klaro-button-border: 3px solid var(--color-3);
+    --klaro-button-border-radius: 6px;
+    --klaro-button-padding: 10px 15px;
+    --klaro-button-font-size: inherit;
+    --klaro-button-font-weight: inherit;
+    --klaro-button-line-height: 1rem;
+    --klaro-button-box-shadow: inherit;
+    --klaro-button-bg-hover: var(--color-4);
+    --klaro-button-text-color-hover: var(--color-2);
+    --klaro-button-border-hover: 3px solid var(--color-4);
+    --klaro-button-focus-outline: 2px solid var(--klaro-primary-color);
+    --klaro-button-focus-outline-offset: 2px;
+    --klaro-button-focus-box-shadow: inherit;
+    --klaro-dialog-focus-outline: auto;
+    --klaro-dialog-focus-box-shadow: 0 0 0 2px var(--klaro-primary-color),0 4px 6px 0 rgba(0,0,0,0.2),5px 5px 10px 0 rgba(0,0,0,0.19);
+    --font-size: 16px;
+    --font-family: var(--font-family-1);
+    --title-font-family: inherit;
+    --klaro-slider-bg: var(--white2);
+    --klaro-slider-bg-active: var(--klaro-primary-color);
+    --klaro-slider-bg-required: var(--klaro-primary-color);
+    --green1: var(--klaro-link-color);
+    --green2: var(--klaro-link-color);
+    --green3: var(--klaro-link-color);
+   
+}
+.cm-btn-danger {    
+   --klaro-button-bg: var(--color-2);
+   --klaro-button-text-color: var(--color-3);
+   --klaro-button-border: 3px solid var(--color-3);
+   --klaro-button-border-radius: 6px;
+   --klaro-button-padding: 10px 15px;
+   --klaro-button-font-size: inherit;
+   --klaro-button-font-weight: inherit;
+   --klaro-button-line-height: 1rem;
+   --klaro-button-box-shadow: inherit;
+   --klaro-button-bg-hover: var(--color-4);
+   --klaro-button-text-color-hover: var(--color-2);
+   --klaro-button-border-hover: 3px solid var(--color-4);
+   --klaro-button-focus-outline: 2px solid var(--klaro-primary-color);
+   --klaro-button-focus-outline-offset: 2px;
+   --klaro-button-focus-box-shadow: inherit;
+}
+/* klaro */
+.cm-powered-by {
+   display: none !important;
+}
+.klaro .cookie-modal .cm-modal .cm-header h1 {
+   font-size: 1.5em;
+}
+.cm-caret a {
+   font-size: .9em;
+}
+.cn-body h2 {
+   font-weight: bold;
+   font-size: 1.15em;
+}

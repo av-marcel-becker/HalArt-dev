@@ -1,0 +1,23 @@
+uuid: 7adbdd4f-6fe5-4465-81f8-2dd9846a5c1c
+langcode: de
+status: true
+dependencies:
+  module:
+    - link
+    - node
+  enforced:
+    module:
+      - av_n_notification
+third_party_settings: { }
+id: node.field_n_n_link
+field_name: field_n_n_link
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

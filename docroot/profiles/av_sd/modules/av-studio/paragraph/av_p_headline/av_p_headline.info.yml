@@ -1,0 +1,18 @@
+name: 'AV Paragraph - Headline'
+type: module
+description: 'AV-Studio Paragraph - Headline'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Paragraph'
+dependencies:
+  - length_indicator
+  - link
+  - maxlength
+  - options
+  - paragraphs
+  
+  
+  
+  
+  
+  
+    

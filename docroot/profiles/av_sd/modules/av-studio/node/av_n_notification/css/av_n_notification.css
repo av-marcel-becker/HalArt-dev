@@ -1,0 +1,77 @@
+:root {
+   --av-notification-header-text-icon-font-weight: normal;
+   --av-notification-header-text-icon-content: "\f129";
+   --av-notification-header-text-icon-font-family: "Font Awesome 6 Pro";
+   --av-notification-header-text-icon-color: var(--color-3);
+   --av-notification-header-text-icon-font-size: 1.5em;
+   --av-notification-header-text-icon-min-height: 24px;
+   --av-notification-header-text-icon-top: 0;
+   --av-notification-header-text-icon-left: 0;
+   --av-notification-header-text-icon-background: none;
+   --av-notification-header-text-icon-width: auto;
+   --av-notification-header-text-icon-height: auto;   
+   --av-notification-header-text-icon-border: none;
+   --av-notification-header-text-icon-border-radius: 0 0 0 0; 
+
+   --av-notification-close-icon-font-weight: normal;
+   --av-notification-close-icon-content: "\f00d";
+   --av-notification-close-icon-font-family: "Font Awesome 6 Pro";
+   --av-notification-close-icon-color: #000;
+   --av-notification-close-icon-font-size: 1.5em;
+   --av-notification-close-icon-min-height: 24px;
+   --av-notification-close-icon-top: -0.25em;
+   --av-notification-close-icon-right: 0;
+   --av-notification-close-icon-left: auto;
+   --av-notification-close-icon-background: transparent;
+   --av-notification-close-icon-width: auto;
+   --av-notification-close-icon-height: auto;
+   --av-notification-close-icon-border: none;
+   --av-notification-close-icon-border-radius: 0 0 0 0;
+
+   --av-notification-header-text-font-weight: bold;
+   --av-notification-header-text-color: #000;
+   --av-notification-header-text-font-size: 1.5em;
+   --av-notification-header-text-font-family: sans-serif;
+   --av-notification-header-text-min-height: 0;
+   --av-notification-header-text-padding: 0 calc(var(--av-notification-close-icon-font-size) + 0px) 0 calc(var(--av-notification-header-text-icon-font-size) + 0px);
+
+   --av-notification-footer-text-font-weight: normal;
+   --av-notification-footer-text-color: #666;
+   --av-notification-footer-text-font-size: 1em;
+   --av-notification-footer-text-font-family: sans-serif;
+
+   --av-notification-content-font-weight: normal;
+   --av-notification-content-color: #000;
+   --av-notification-content-font-size: 1em;
+   --av-notification-content-font-family: sans-serif;
+   --av-notification-content-padding: 0;
+
+   --av-notification-link-color: #fff;
+   --av-notification-link-font-weight: normal;
+   --av-notification-link-font-size: 1em;
+   --av-notification-link-font-family: sans-serif;
+   --av-notification-link-background-color: #000; 
+   --av-notification-link-border: 1px solid #000;
+   --av-notification-link-border-radius: 4px;
+   --av-notification-link-padding: 10px 20px;
+   --av-notification-link-hover-color: #000;
+   --av-notification-link-hover-background-color: #fff; 
+   --av-notification-link-hover-border: 1px solid #000;
+
+   /* Layout and spacing */
+   --av-notification-body-padding: 20px;
+   --av-notification-header-padding: 0;
+   --av-notification-header-margin: 0 0 15px 0;
+   --av-notification-footer-padding: 15px 0 0 0;
+   --av-notification-footer-margin: 0;
+
+   --av-notification-header-min-height: 0;
+   --av-notification-footer-min-height: 0;
+
+   /* Overlay and body box styles */
+   --av-notification-overlay-background: rgba(0, 0, 0, 0.5);
+   --av-notification-body-background: #fff;
+   --av-notification-body-width: 300px;
+   --av-notification-body-border-radius: 5px;
+   --av-notification-body-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}

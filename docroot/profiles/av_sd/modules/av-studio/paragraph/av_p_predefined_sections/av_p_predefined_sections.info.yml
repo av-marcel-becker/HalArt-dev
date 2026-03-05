@@ -1,0 +1,12 @@
+name: 'AV Paragraph - Predefined Sections'
+type: module
+description: 'AV-Studio Paragraph - Predefined Sections'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Paragraph'
+dependencies:
+  - paragraphs
+  - layout_paragraphs
+  - entity_reference_revisions
+  - paragraphs
+  - taxonomy
+    

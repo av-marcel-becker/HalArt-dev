@@ -1,0 +1,69 @@
+uuid: b6e75716-e5f9-4bbf-b9ef-7237424a96e8
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_pp_content
+    - node.type.n_paragraph_page
+    - paragraphs.paragraphs_type.p_block
+    - paragraphs.paragraphs_type.p_predefined_sections
+    - paragraphs.paragraphs_type.p_sections
+    - paragraphs.paragraphs_type.p_sections_block
+    - paragraphs.paragraphs_type.p_sections_system
+    - paragraphs.paragraphs_type.p_sections_teaser
+    - paragraphs.paragraphs_type.p_wysiwyg
+    - paragraphs.paragraphs_type.p_wysiwyg_system
+  module:
+    - entity_reference_revisions
+  enforced:
+    module:
+      - av_n_paragraph_page
+id: node.n_paragraph_page.field_n_pp_content
+field_name: field_n_pp_content
+entity_type: node
+bundle: n_paragraph_page
+label: Inhaltsbereich
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      p_sections_system: p_sections_system
+      p_wysiwyg_system: p_wysiwyg_system
+      p_sections: p_sections
+      p_sections_teaser: p_sections_teaser
+      p_sections_block: p_sections_block
+      p_wysiwyg: p_wysiwyg
+      p_predefined_sections: p_predefined_sections
+      p_block: p_block
+    negate: 0
+    target_bundles_drag_drop:
+      p_block:
+        weight: -10
+        enabled: true
+      p_predefined_sections:
+        weight: -11
+        enabled: true
+      p_sections:
+        weight: -15
+        enabled: true
+      p_sections_block:
+        weight: -13
+        enabled: true
+      p_sections_system:
+        weight: -17
+        enabled: true
+      p_sections_teaser:
+        weight: -14
+        enabled: true
+      p_wysiwyg:
+        weight: -12
+        enabled: true
+      p_wysiwyg_system:
+        weight: -16
+        enabled: true
+field_type: entity_reference_revisions

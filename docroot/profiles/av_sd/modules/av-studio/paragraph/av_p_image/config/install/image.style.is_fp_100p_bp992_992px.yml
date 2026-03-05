@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - crop
+  enforced:
+    module:
+      - av_p_image
+name: is_fp_100p_bp992_992px
+label: 'FP 100% - bp992 (B=992px)'
+effects:
+  fdfb6b4c-0d39-4dea-9ccc-74a0527b8b85:
+    uuid: fdfb6b4c-0d39-4dea-9ccc-74a0527b8b85
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1984
+      height: 850
+      crop_type: focal_point
+  c4fc2117-07f3-4819-8a05-d967ee4c0de6:
+    uuid: c4fc2117-07f3-4819-8a05-d967ee4c0de6
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - crop
+  enforced:
+    module:
+      - av_p_teaser
+name: is_teaser_fp_33p_bp768_768px
+label: 'Teaser FP 33% - bp768 (B=768px)'
+effects:
+  b0968e2d-aa53-4cbe-8bf5-1a574923998c:
+    uuid: b0968e2d-aa53-4cbe-8bf5-1a574923998c
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1536
+      height: 864
+      crop_type: focal_point
+  910d7daa-f903-4549-b04d-cd4bd8fb3c3b:
+    uuid: 910d7daa-f903-4549-b04d-cd4bd8fb3c3b
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

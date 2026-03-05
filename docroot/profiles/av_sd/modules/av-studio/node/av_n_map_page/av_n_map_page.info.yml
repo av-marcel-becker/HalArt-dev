@@ -1,0 +1,32 @@
+name: 'AV Node - Map Page'
+type: module
+description: 'AV-Studio Node - Map Page'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Node'
+dependencies:
+  - content_moderation
+  - cshs
+  - node
+  - taxonomy
+  - user
+  - menu_ui
+  - node_revision_delete
+  - entity_reference_revisions
+  - paragraphs
+  - image
+  - text
+  - layout_paragraphs
+  - allowed_formats
+  - field_group
+  - focal_point
+  - imce
+  - length_indicator
+  - maxlength
+  - path
+  - av_n_default
+
+  #- scheduler
+  #- pathauto
+  
+  - cer
+  - av_n_point_of_interest_page

@@ -1,0 +1,9 @@
+uuid: 2553b79a-34b2-4a05-a7da-5a681fc65562
+langcode: de
+status: true
+dependencies: {  }
+id: csg_statistics
+label: Statistiken
+weight: 50
+title: Statistiken
+details: 'Die verwendeten Besucher Zähldienste generieren Statistiken die dabei helfen, die Seite zu verbessern.'

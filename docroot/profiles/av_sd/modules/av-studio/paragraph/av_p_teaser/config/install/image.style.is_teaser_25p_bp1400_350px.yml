@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_teaser
+name: is_teaser_25p_bp1400_350px
+label: 'Teaser 25% - bp1400 (B=350px)'
+effects:
+  5d9ab3bb-0d80-442a-9c93-0e6401ac43c4:
+    uuid: 5d9ab3bb-0d80-442a-9c93-0e6401ac43c4
+    id: image_scale
+    weight: 1
+    data:
+      width: 700
+      height: null
+      upscale: false
+  547907b5-8510-4fad-97eb-992e27855e48:
+    uuid: 547907b5-8510-4fad-97eb-992e27855e48
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

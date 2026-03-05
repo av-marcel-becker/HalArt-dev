@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_image
+name: is_100p_bp1400_1400px
+label: '100% - bp1400 (B=1400px)'
+effects:
+  e13b63aa-e67f-4791-969f-cbd2c912f903:
+    uuid: e13b63aa-e67f-4791-969f-cbd2c912f903
+    id: image_scale
+    weight: 1
+    data:
+      width: 2800
+      height: null
+      upscale: false
+  d951cf0c-9242-47a8-b825-f49acfcb6c67:
+    uuid: d951cf0c-9242-47a8-b825-f49acfcb6c67
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

@@ -1,0 +1,11 @@
+uuid: 64ac5472-e88b-4545-8c60-8d333f2a9750
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_news_page
+name: 'Tags für Newsseite'
+vid: t_tags_news_page
+description: ''
+weight: 0

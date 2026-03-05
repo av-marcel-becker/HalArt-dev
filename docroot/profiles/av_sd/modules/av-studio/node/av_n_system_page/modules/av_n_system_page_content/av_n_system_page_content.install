@@ -1,0 +1,101 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for the standard installation profile.
+ */
+
+#use Drupal\user\Entity\User;
+#use Drupal\shortcut\Entity\Shortcut;
+#use Drupal\taxonomy\Entity\Term;
+use Drupal\node\Entity\Node;
+#use Drupal\block\Entity\Block;
+#use Drupal\block_content\Entity\BlockContent;
+#use Drupal\paragraphs\Entity\Paragraph;
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function av_n_system_page_content_install() 
+   {
+      /* *************************************************************************** */
+
+         # https://www.drupal.org/project/media_entity/issues/2813025
+         
+         // add 403
+         $node = Node::create([
+               'type' => 'n_system_page',
+               'langcode' => 'de',
+               'uid' => 1,
+               'field_author' => 1,
+               #'moderation_state' => 'published',
+               'status' => 1,
+               'title' => 'Fehler 403',
+               'field_n_sp_title' => 'Ups! Sie haben Fehler 403  gefunden.',
+               'body' => [
+                  #   'summary' => substr(strip_tags('Test'), 0, 100),
+                     'value' => 'Es tut uns leid, aber Sie haben keine Berechtigung, die von Ihnen aufgerufene Seite anzusehen :(',
+                     'format' => 'plain_text'
+                  ],	
+            ]);
+         $node->save();
+         
+         // add 404
+         $node = Node::create([
+               'type' => 'n_system_page',
+               'langcode' => 'de',
+               'uid' => 1,
+               'field_author' => 1,
+               #'moderation_state' => 'published',
+               'status' => 1,
+               'title' => 'Fehler 404',
+               'field_n_sp_title' => 'Ups! Sie haben Fehler  404 gefunden.',
+               'body' => [
+                  #   'summary' => substr(strip_tags('Test'), 0, 100),
+                     'value' => '<p><strong>Es tut uns leid, aber die Seite, die Sie aufgerufen haben, gibt es leider nicht :(</strong></p><p>Damit Sie Ihre gewünschte Seite finden, prüfen Sie nochmals kurz, ob sich in der URL vielleicht ein Schreibfehler eingeschlichen hat und korrigieren diesen.</p><p>Wenn Sie stattdessen lieber auf unsere Startseite zurückwollen, klicken Sie bitte <a href="/" title="Zur Startseite">hier</a>.</p>',
+                     'format' => 'f_editor'
+                  ],	
+            ]);
+         $node->save();
+         
+         // add impress
+         $node = Node::create([
+               'type' => 'n_system_page',
+               'langcode' => 'de',
+               'uid' => 1,
+               'field_author' => 1,
+               #'moderation_state' => 'published',
+               'status' => 1,
+               'title' => 'Impressum',
+               'field_n_sp_title' => 'Impressum',
+               'body' => [
+                  #   'summary' => substr(strip_tags('Test'), 0, 100),
+                     'value' => 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+                     'format' => 'plain_text'
+                  ],	
+            ]);
+         $node->save();
+		 
+         // add privacy policy
+         $node = Node::create([
+               'type' => 'n_system_page',
+               'langcode' => 'de',
+               'uid' => 1,
+               'field_author' => 1,
+               #'moderation_state' => 'published',
+               'status' => 1,
+               'title' => 'Datenschutzerklärung',
+               'field_n_sp_title' => 'Datenschutzerklärung',
+               'body' => [
+                  #   'summary' => substr(strip_tags('Test'), 0, 100),
+                     'value' => 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+                     'format' => 'plain_text'
+                  ],	
+            ]);
+         $node->save();
+         
+   }

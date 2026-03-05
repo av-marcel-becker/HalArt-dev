@@ -1,0 +1,11 @@
+uuid: b0c30260-c99a-4c76-be95-d7397bfbb72d
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_types_of_sports_page
+name: 'Tags für Sportarten-Seite'
+vid: t_tags_types_of_sports_page
+description: ''
+weight: 0

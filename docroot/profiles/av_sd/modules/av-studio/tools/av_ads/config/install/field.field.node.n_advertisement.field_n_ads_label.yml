@@ -1,0 +1,24 @@
+uuid: 913da3b2-7558-4380-9a6f-2a9d7ec32d6c
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_ads_label
+    - node.type.n_advertisement
+  enforced:
+    module:
+      - av_ads
+id: node.n_advertisement.field_n_ads_label
+field_name: field_n_ads_label
+entity_type: node
+bundle: n_advertisement
+label: Label
+description: '<a href="/ads" target="_blank">Schnittstelle</a> (<a href="/ads/57" target="_blank">Schnittstelle (57)</a>)'
+required: false
+translatable: false
+default_value:
+  -
+    value: Anzeige
+default_value_callback: ''
+settings: {  }
+field_type: string

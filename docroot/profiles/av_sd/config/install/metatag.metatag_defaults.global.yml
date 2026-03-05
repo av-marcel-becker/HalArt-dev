@@ -1,0 +1,36 @@
+uuid: d3d7357d-94af-40f5-bd1d-44d572f6415f
+langcode: de
+status: true
+dependencies: {  }
+id: global
+label: Global
+tags:
+  apple_touch_icon: /themes/av_sub/favicon/apple-touch-icon-60x60.png
+  apple_touch_icon_114x114: /themes/av_sub/favicon/apple-touch-icon-114x114.png
+  apple_touch_icon_120x120: /themes/av_sub/favicon/apple-touch-icon-120x120.png
+  apple_touch_icon_144x144: /themes/av_sub/favicon/apple-touch-icon-144x144.png
+  apple_touch_icon_152x152: /themes/av_sub/favicon/apple-touch-icon-152x152.png
+  apple_touch_icon_180x180: /themes/av_sub/favicon/apple-touch-icon.png
+  apple_touch_icon_72x72: /themes/av_sub/favicon/apple-touch-icon-72x72.png
+  apple_touch_icon_76x76: /themes/av_sub/favicon/apple-touch-icon-76x76.png
+  apple_touch_icon_precomposed: /themes/av_sub/favicon/apple-touch-icon-57x57-precomposed.png
+  apple_touch_icon_precomposed_114x114: /themes/av_sub/favicon/apple-touch-icon-114x114-precomposed.png
+  apple_touch_icon_precomposed_120x120: /themes/av_sub/favicon/apple-touch-icon-120x120-precomposed.png
+  apple_touch_icon_precomposed_144x144: /themes/av_sub/favicon/apple-touch-icon-144x144-precomposed.png
+  apple_touch_icon_precomposed_152x152: /themes/av_sub/favicon/apple-touch-icon-152x152-precomposed.png
+  apple_touch_icon_precomposed_180x180: /themes/av_sub/favicon/apple-touch-icon-180x180-precomposed.png
+  apple_touch_icon_precomposed_72x72: /themes/av_sub/favicon/apple-touch-icon-72x72-precomposed.png
+  apple_touch_icon_precomposed_76x76: /themes/av_sub/favicon/apple-touch-icon-76x76-precomposed.png
+  canonical_url: '[current-page:url]'
+  icon_16x16: /themes/av_sub/favicon/favicon-16x16.png
+  icon_192x192: /themes/av_sub/favicon/android-chrome-192x192.png
+  icon_32x32: /themes/av_sub/favicon/favicon-32x32.png
+  icon_96x96: /themes/av_sub/favicon/android-chrome-96x96.png
+  og_description: '[node:summary]'
+  og_image: '[node:field_image:is_fp_100p_bp768_768px:url]'
+  og_site_name: '[site:name]'
+  og_title: '[current-page:title]'
+  og_url: '[current-page:url]'
+  robots: 'index, follow'
+  shortcut_icon: /themes/av_sub/favicon/favicon.ico
+  title: '[current-page:title] | [site:name]'

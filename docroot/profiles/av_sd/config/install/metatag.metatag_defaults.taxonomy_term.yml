@@ -1,0 +1,11 @@
+uuid: 0ccdaabe-126f-4a1b-9a3a-01b9b440df07
+langcode: de
+status: true
+dependencies: {  }
+id: taxonomy_term
+label: Taxonomie-Begriff
+tags:
+  canonical_url: '[term:url]'
+  description: '[term:description]'
+  robots: 'noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate'
+  title: '[term:name] | [site:name]'

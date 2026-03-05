@@ -1,0 +1,29 @@
+uuid: c694c12b-e5fe-43da-8c9a-ad98ed1c021d
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_op_content
+    - node.type.n_overview_page
+  module:
+    - entity_reference_revisions
+  enforced:
+    module:
+      - av_n_overview_page
+id: node.n_overview_page.field_n_op_content
+field_name: field_n_op_content
+entity_type: node
+bundle: n_overview_page
+label: Inhaltsbereich
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop: { }
+field_type: entity_reference_revisions

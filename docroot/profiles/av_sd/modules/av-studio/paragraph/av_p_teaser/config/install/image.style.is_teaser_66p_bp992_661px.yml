@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_teaser
+name: is_teaser_66p_bp992_661px
+label: 'Teaser 66% - bp992 (B=661px)'
+effects:
+  f3f589ac-f14e-4324-89bd-fc3d6d1823f6:
+    uuid: f3f589ac-f14e-4324-89bd-fc3d6d1823f6
+    id: image_scale
+    weight: 1
+    data:
+      width: 1322
+      height: null
+      upscale: false
+  bd9be8ca-e474-448b-a0f6-c1229f90d67c:
+    uuid: bd9be8ca-e474-448b-a0f6-c1229f90d67c
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

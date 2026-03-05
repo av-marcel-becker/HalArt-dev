@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_cards
+name: is_cards_66p_bp1400_934px
+label: 'Card 66% - bp1400 (B=934px)'
+effects:
+  f8b0b03c-4798-45d3-af66-7e3fd6869d6b:
+    uuid: f8b0b03c-4798-45d3-af66-7e3fd6869d6b
+    id: image_scale
+    weight: 1
+    data:
+      width: 1868
+      height: null
+      upscale: false
+  c098817a-8242-4d83-9f21-abf39908504d:
+    uuid: c098817a-8242-4d83-9f21-abf39908504d
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

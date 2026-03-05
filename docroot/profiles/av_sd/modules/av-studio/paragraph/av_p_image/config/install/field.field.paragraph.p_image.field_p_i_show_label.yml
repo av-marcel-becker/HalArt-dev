@@ -1,0 +1,26 @@
+uuid: ef8d7b32-5f12-4d2d-9df5-9fd0f3e5f8be
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_i_show_label
+    - paragraphs.paragraphs_type.p_image
+  enforced:
+    module:
+      - av_p_image
+id: paragraph.p_image.field_p_i_show_label
+field_name: field_p_i_show_label
+entity_type: paragraph
+bundle: p_image
+label: 'Beschriftung Anzeigen'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Beschriftung wird angezeigt'
+  off_label: 'Beschriftung wird nicht angezeigt'
+field_type: boolean

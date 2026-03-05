@@ -1,0 +1,11 @@
+uuid: 89b94d07-e4c6-4aff-8589-33992a8dbcad
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_course_page
+name: 'Tags für Lehrgangs-Seite'
+vid: t_tags_course_page
+description: ''
+weight: 0

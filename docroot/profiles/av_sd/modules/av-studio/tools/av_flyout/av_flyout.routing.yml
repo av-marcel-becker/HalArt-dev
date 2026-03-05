@@ -1,0 +1,9 @@
+av_flyout.settings:
+  path: '/admin/config/system/av_flyout'
+  defaults:
+    _form: '\Drupal\av_flyout\Form\AvFlyoutSettings'
+    _title: 'AV Flyout Settings'
+  requirements:
+    _permission: 'administer AV Flyout configuration'
+# options:
+#    no_cache: 'TRUE'

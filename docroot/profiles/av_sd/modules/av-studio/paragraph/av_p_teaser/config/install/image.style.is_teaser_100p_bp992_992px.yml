@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_teaser
+name: is_teaser_100p_bp992_992px
+label: 'Teaser 100% - bp992 (B=992px)'
+effects:
+  5d31d684-8aaa-46a2-ac73-c1d860b6b7c9:
+    uuid: 5d31d684-8aaa-46a2-ac73-c1d860b6b7c9
+    id: image_scale
+    weight: 1
+    data:
+      width: 1984
+      height: null
+      upscale: false
+  c37609ee-3c01-4521-847d-985d7d4d9493:
+    uuid: c37609ee-3c01-4521-847d-985d7d4d9493
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

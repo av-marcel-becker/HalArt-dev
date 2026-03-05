@@ -1,0 +1,13 @@
+uuid: 62ffea90-032b-4c3f-b73d-c292164fadbd
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_remote_video
+id: p_remote_video
+label: 'Remote Video'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,21 @@
+uuid: bd1779de-eb1d-45c3-bb43-e6988e70ab23
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_types_of_sports_page
+  enforced:
+    module:
+      - av_n_types_of_sports_page
+id: node.n_types_of_sports_page.title
+field_name: title
+entity_type: node
+bundle: n_types_of_sports_page
+label: Überschrift
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

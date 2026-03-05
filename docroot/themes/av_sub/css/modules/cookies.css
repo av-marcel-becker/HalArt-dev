@@ -1,0 +1,60 @@
+body #cookiesjsr 
+   {      
+      font-family: sans-serif;
+      --default-margin: 1.25em;
+      --font-size-reset: 1rem;
+
+      --btn-font-color: #000;/* # */
+      --btn-border-color: #000;/* # */
+      --btn-bg-color: #fff;/* # */
+      --btn-prime-font-color: #000;/* # */
+      --btn-prime-border-color: #000;/* # */
+      --btn-prime-bg-color: #FFF;/* # */
+      --btn-inv-font-color: #000;/* # */
+      --btn-inv-border-color: #000;/* # */
+      --btn-inv-bg-color: #FFF;/* # */
+      --btn-prime-inv-font-color: #000;/* # */
+      --btn-prime-inv-border-color: #000;/* # */
+      --btn-prime-inv-bg-color: #fff;/* # */
+
+      --link-list-font-color: #000;/* # */
+      --link-list-separator-color: #000;/* # */
+
+      --banner-logo-offset: 100px;
+      --banner-bg-color: #F4F4F4;/* # */
+      --banner-font-color: #000;/* # */
+
+      --layer-header-height: 3.5em;
+      --layer-header-bg-color: #FFF;
+      --layer-header-font-color: #000;/* # */
+      --layer-body-bg-color: #F4F4F4;/* #rgba(92, 89, 89, 0.05) */
+      --layer-tab-bg-color: #FFF;
+      --layer-tab-font-color: #000;/* # */
+      --layer-tab-active-bg-color: #F4F4F4;/* #rgba(92, 89, 89, 0.1) */
+      --layer-tab-active-font-color: #000;/* # */
+      --layer-bg-dark: #004c93;
+      --layer-font-light: #000;/* # */
+      --layer-font-dark: #000f37;
+      --layer-border-color: transparent;/* # #e4e5e6*/
+      --layer-footer-bg-color: #FFF;
+      --layer-footer-font-color: #000;/* # */
+      --layer-footer-height: 4.5em;
+
+      --switch-border-color: #5C5959;/* # */
+      --switch-handle-color: #5C5959;/* # */
+      --switch-bg-off: #fff;/* ##F4F4F4 */
+      --switch-bg-on: #00AA00;/* # */
+      --switch-width: 45px;
+      --switch-height: 20px;
+      --switch-always-on-font-color: #00AA00;
+      --switch-always-on-bg-color: #FFF;
+   }
+body #cookiesjsr .cookiesjsr-service-group
+   {      
+      margin: 0;
+      padding: 0;
+   }
+body #cookiesjsr .cookiesjsr-service-group:marker
+   {      
+      content: '';
+   }

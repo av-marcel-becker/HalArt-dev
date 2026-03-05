@@ -1,0 +1,12 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - paragraphs
+  enforced:
+    module:
+      - av_p_image
+id: paragraph.dm_fp_25p
+label: 'FP 25%'
+targetEntityType: paragraph
+cache: true

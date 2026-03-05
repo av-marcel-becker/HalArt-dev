@@ -1,0 +1,109 @@
+uuid: 2e17fe4c-34ea-4764-8342-10cee7b64f17
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_blog_page
+  enforced:
+    module:
+      - av_n_blog_page
+  module:
+    - content_moderation
+id: w_blog_page
+label: 'Blog Seite'
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      label: Entwurf
+      published: false
+      default_revision: false
+      weight: 0
+    published:
+      label: Veröffentlicht
+      published: true
+      default_revision: true
+      weight: 1
+    w_bp_archives:
+      published: false
+      default_revision: true
+      label: Archiv
+      weight: 2
+    w_bp_presentation:
+      published: false
+      default_revision: false
+      label: Moderation
+      weight: 3
+    w_bp_release_planned:
+      published: false
+      default_revision: true
+      label: 'Veröffentlichung geplant'
+      weight: 4
+    w_bp_unpublished:
+      published: false
+      default_revision: true
+      label: Unveröffentlicht
+      weight: 5
+  transitions:
+    create_new_draft:
+      label: 'Neuen Entwurf erstellen'
+      to: draft
+      weight: 0
+      from:
+        - draft
+        - published
+        - w_bp_archives
+        - w_bp_presentation
+        - w_bp_release_planned
+        - w_bp_unpublished
+    publish:
+      label: Veröffentlichen
+      to: published
+      weight: 1
+      from:
+        - draft
+        - published
+        - w_bp_archives
+        - w_bp_presentation
+        - w_bp_release_planned
+        - w_bp_unpublished
+    w_bp_archive:
+      label: Archivieren
+      from:
+        - published
+        - w_bp_unpublished
+      to: w_bp_archives
+      weight: 2
+    w_bp_do_not_publish:
+      label: 'nicht veröffentlichen'
+      from:
+        - draft
+        - published
+        - w_bp_archives
+        - w_bp_presentation
+        - w_bp_release_planned
+        - w_bp_unpublished
+      to: w_bp_unpublished
+      weight: 5
+    w_bp_moderate:
+      label: Moderieren
+      from:
+        - draft
+        - w_bp_archives
+        - w_bp_presentation
+        - w_bp_unpublished
+      to: w_bp_presentation
+      weight: 3
+    w_bp_schedule_publication:
+      label: 'Veröffentlichung planen'
+      from:
+        - draft
+        - w_bp_presentation
+        - w_bp_release_planned
+        - w_bp_unpublished
+      to: w_bp_release_planned
+      weight: 4
+  entity_types:
+    node:
+      - n_blog_page
+  default_moderation_state: draft

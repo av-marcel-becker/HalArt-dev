@@ -1,0 +1,6 @@
+av_n_map_page.map_page:
+  title: 'Kartenseiten'
+  parent: system.admin_content
+  route_name: av_n_map_page.map_page
+  menu_name: admin
+  url: internal:/admin/content/map_page

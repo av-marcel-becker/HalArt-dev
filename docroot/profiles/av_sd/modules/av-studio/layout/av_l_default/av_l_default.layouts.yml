@@ -1,0 +1,13 @@
+reset:
+  label: 'Reset'
+  category: 'Reset'
+  #class: '\Drupal\ds\Plugin\DsLayout'
+  #class: '\Drupal\layout_options\Plugin\Layout\LayoutOptions'
+  template: layouts/templates/reset
+  #library: av_layouts/css_framework
+  #icon: layouts/images/100.png
+  icon_map:
+    - [container_reset]
+  regions:
+    container_content:
+      label: 'Inhalt'

@@ -1,0 +1,21 @@
+uuid: a9cca5f7-06c2-45d4-bf42-b09c99854c13
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_point_of_interest_page
+  enforced:
+    module:
+      - av_n_point_of_interest_page
+id: node.n_point_of_interest_page.title
+field_name: title
+entity_type: node
+bundle: n_point_of_interest_page
+label: Überschrift
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: 959ceb90-88bd-4ca2-a8f7-fe9e836ea5d6
+langcode: de
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+  enforced:
+    module:
+      - av_p_sections_teaser
+id: p_sections_teaser
+label: 'Teaser Abschnitt'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      section_teaser: 'Teaser Abschnitt'

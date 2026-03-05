@@ -1,0 +1,50 @@
+.ad-list-item
+   {
+      text-align: center;
+      margin-top: 0rem;
+      margin-bottom: 0rem;
+      padding: var(--size-20) var(--size-0);
+      border-top: var(--size-1) solid var(--color-6);
+      margin: var(--size-0) var(--size-20) var(--size-0) var(--size-20);
+      font-size: 0rem;
+   }
+.ad-list-item:last-child
+   {
+      border-bottom: var(--size-1) solid var(--color-6);
+   }
+.ad-label
+   { 
+      display: inline-block;
+      font-family: var(--font-family-2);
+      font-style: var(--font-style-2);
+      font-weight: var(--font-weight-2);
+      font-size: var(--size-10);
+      line-height: var(--size-13);
+      height: var(--size-15);
+      padding: var(--size-1) var(--size-5) var(--size-1) var(--size-5);
+      color: var(--color-4);
+      background-color: var(--color-5);
+      width: auto;
+      position: absolute;
+      top: var(--size--15);
+      left: 0rem;
+   }   
+.ad-banner a
+   {
+      display: inline-block;
+   }
+.ad-iframe,
+.ad-banner,
+.ad-banner a
+   {
+      position: relative
+   }
+   
+.ad-default-item
+   {
+      
+   }
+.ad-teaser-item
+   {
+      
+   }

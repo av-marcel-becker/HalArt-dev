@@ -1,0 +1,24 @@
+uuid: ea3ea85c-ce31-4e78-bdee-9a367aa92320
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_panorama
+  module:
+    - color_field
+    - paragraphs
+third_party_settings: { }
+id: paragraph.field_p_p_bg_color
+field_name: field_p_p_bg_color
+entity_type: paragraph
+type: color_field_type
+settings:
+  format: '#hexhex'
+module: color_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

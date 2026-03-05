@@ -1,0 +1,9 @@
+av_copyright:
+  version: 0.1
+  css:
+    theme:
+      css/av_copyright.css: { }
+  js: 
+    js/av_copyright.js: { }
+#  dependencies:
+#    - -/- 

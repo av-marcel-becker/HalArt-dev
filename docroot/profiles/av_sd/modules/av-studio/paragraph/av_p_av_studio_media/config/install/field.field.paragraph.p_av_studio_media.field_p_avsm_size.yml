@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_avsm_size
+    - paragraphs.paragraphs_type.p_av_studio_media
+  module:
+    - options
+  enforced:
+    module:
+      - av_p_av_studio_media
+id: paragraph.p_av_studio_media.field_p_avsm_size
+field_name: field_p_avsm_size
+entity_type: paragraph
+bundle: p_av_studio_media
+label: 'Größe'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: '33'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,13 @@
+uuid: 0f59db50-4738-45ff-b86d-664ca6b567dd
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_av_studio_media
+id: p_av_studio_media
+label: 'AV-Studio - Media'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

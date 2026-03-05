@@ -1,0 +1,22 @@
+uuid: 9c910f92-dbc7-4a1e-8674-222ab5713e44
+langcode: de
+status: true
+dependencies:
+  module:
+    - paragraphs
+  enforced:
+    module:
+      - av_p_image
+third_party_settings: { }
+id: paragraph.field_p_i_enable_link
+field_name: field_p_i_enable_link
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

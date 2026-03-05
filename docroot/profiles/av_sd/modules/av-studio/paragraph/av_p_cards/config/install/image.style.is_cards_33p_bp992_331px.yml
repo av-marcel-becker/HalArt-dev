@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_cards
+name: is_cards_33p_bp992_331px
+label: 'Card 33% - bp992 (B=331px)'
+effects:
+  0d61eae3-a339-4165-bab2-2dfcc8e331e1:
+    uuid: 0d61eae3-a339-4165-bab2-2dfcc8e331e1
+    id: image_scale
+    weight: 1
+    data:
+      width: 662
+      height: null
+      upscale: false
+  a8e87a71-ef00-4287-a616-63b02784acdb:
+    uuid: a8e87a71-ef00-4287-a616-63b02784acdb
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

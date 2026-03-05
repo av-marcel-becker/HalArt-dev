@@ -1,0 +1,26 @@
+uuid: d2893f9c-4b5b-4365-9b25-1ae6c570dd5d
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_rv_show_label
+    - paragraphs.paragraphs_type.p_remote_video
+  enforced:
+    module:
+      - av_p_remote_video
+id: paragraph.p_remote_video.field_p_rv_show_label
+field_name: field_p_rv_show_label
+entity_type: paragraph
+bundle: p_remote_video
+label: 'Beschriftung Anzeigen'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Beschriftung wird angezeigt'
+  off_label: 'Beschriftung wird nicht angezeigt'
+field_type: boolean

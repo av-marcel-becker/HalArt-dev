@@ -1,0 +1,39 @@
+mmenu: 
+  version: 9.2.0
+  css:
+    theme:
+      /libraries/mmenu/dist/mmenu.css: {}
+  js:
+    /libraries/mmenu/dist/mmenu.js: { }
+#mmenu-mburger-webcomponent: 
+#  version: 3.1.4
+#  header: true
+#  js:
+#    /libraries/mmenu-mburger-webcomponent/dist/mburger/index.js: { minified: true }
+#mburger: 
+#  version: 1.3.3
+#  css:
+#    theme:
+#      /libraries/mburger/dist/mburger.css: {}
+#  header: true
+#  js:
+#    #/libraries/mburger/dist/mburger.js: { minified: true, attributes: { defer: true } }
+#    #/libraries/mburger/dist/mburger.js: { minified: true, attributes: { async: true }, weight: 0 }
+#    #/libraries/mburger/dist/mburger.js: { type: external, minified: true, attributes: { async: true }, weight: 0 }
+#    /libraries/mburger/dist/mburger.js: { weight: -100 }
+#    #header: true
+#     # preprocess: false
+#    #/libraries/mburger/dist/mburger.js: {type: external,attributes: { async: true }}
+av_mmenu: 
+  version: 9.2.0
+  css:
+    theme:
+      css/av_mmenu.css: {}
+  js:
+    js/av_mmenu.js: {}
+  dependencies:
+    - av_mmenu/mmenu
+#    - core/jquery
+#    - av_mmenu/mburger
+#    - av_mmenu/mmenu-mburger-webcomponent
+      

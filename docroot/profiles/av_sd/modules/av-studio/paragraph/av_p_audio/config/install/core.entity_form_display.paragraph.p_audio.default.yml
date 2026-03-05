@@ -1,0 +1,58 @@
+uuid: 05cd22b7-20e7-4932-b672-002f61e2fcbc
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p_audio.field_p_ao_audio
+    - field.field.paragraph.p_audio.field_p_ao_label
+    - field.field.paragraph.p_audio.field_p_ao_show_label
+    - field.field.paragraph.p_audio.field_p_ao_size
+    - paragraphs.paragraphs_type.p_audio
+  module:
+    - file
+    - text
+  enforced:
+    module:
+      - av_p_audio
+id: paragraph.p_audio.default
+targetEntityType: paragraph
+bundle: p_audio
+mode: default
+content:
+  field_p_ao_audio:
+    type: file_generic
+    weight: 3
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_p_ao_label:
+    type: text_textarea
+    weight: 4
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_p_ao_show_label:
+    type: boolean_checkbox
+    weight: 1
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_p_ao_size:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true

@@ -1,0 +1,145 @@
+    {#
+    /**
+     * @file
+     * Default theme implementation for the basic structure of a single Drupal page.
+     *
+     * Variables:
+     * - logged_in: A flag indicating if user is logged in.
+     * - root_path: The root path of the current page (e.g., node, admin, user).
+     * - node_type: The content type for the current node, if the page is a node.
+     * - head_title: List of text elements that make up the head_title variable.
+     *   May contain one or more of the following:
+     *   - title: The title of the page.
+     *   - name: The name of the site.
+     *   - slogan: The slogan of the site.
+     * - page_top: Initial rendered markup. This should be printed before 'page'.
+     * - page: The rendered page markup.
+     * - page_bottom: Closing rendered markup. This variable should be printed after
+     *   'page'.
+     * - db_offline: A flag indicating if the database is offline.
+     * - placeholder_token: The token for generating head, css, js and js-bottom
+     *   placeholders.
+     *
+     * @see template_preprocess_html()
+     *
+     * @ingroup themeable
+     */
+    #}
+     {%
+        set body_classes = [
+          logged_in ? 'user-logged-in',
+          not root_path ? 'path-frontpage' : 'path-' ~ root_path|clean_class,
+          node_type ? 'page-node-type-' ~ node_type|clean_class,
+          db_offline ? 'db-offline',
+          user.hasPermission('administer')  ? 'isAdmin',
+          user.getRoles()|join(' role_'),
+          node_type|clean_class
+        ]
+      %}
+    <!DOCTYPE html>
+    <html{{ html_attributes }}>
+      <head>
+        <head-placeholder token="{{ placeholder_token }}">
+        <title>{{ head_title|safe_join(' | ') }}</title>
+        <css-placeholder token="{{ placeholder_token }}">
+        <js-placeholder token="{{ placeholder_token }}">
+   
+         <style>      
+            .page-loading {
+               position: fixed;
+               top: 0;
+               left: 0;
+               width: 100vw;
+               height: 100vh;
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               background-color: Canvas;
+               color: CanvasText;
+               z-index: 9999;
+            }
+
+            .page-loader {
+               width: 48px;
+               height: 48px;
+               border: 5px solid currentColor;
+               border-bottom-color: transparent;
+               border-radius: 50%;
+               box-sizing: border-box;
+               animation: rotation 1s linear infinite;
+               margin-bottom: 16px;
+            }
+
+            .page-loading-text {
+               font-size: 1.2rem;
+               margin-top: 16px;
+               font-family: -apple-system, BlinkMacSystemFont, 
+                            'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+                            'Helvetica Neue', sans-serif;
+               -webkit-font-smoothing: antialiased;
+               -moz-osx-font-smoothing: grayscale;
+               text-rendering: optimizeLegibility;
+            }
+
+            @keyframes rotation {
+               0% {
+                   transform: rotate(0deg);
+               }
+               100% {
+                   transform: rotate(360deg);
+               }
+            }
+         </style>
+      </head>
+      <body{{ attributes.addClass(body_classes) }}>
+         <div class="page-loading cssf--d_none" role="status" aria-live="polite" aria-busy="true">
+           <span class="page-loader" aria-hidden="true"></span>
+           <span class="page-loading-text">Seite wird geladen...</span>
+         </div>
+        {#
+          Keyboard navigation/accessibility link to main content section in
+          page.html.twig.
+        #}
+        {#
+        <a href="javascript:av_focus();" rel="nofollow" class="visually-hidden focusable accessibility-nav" style="position: fixed !important;">
+          {{ 'Fokusmarkierung umschalten'|t({'langcode': 'de'}) }}
+        </a>#}   
+        <av-accessibility type="focus" class="cssf--tpl-hide cssf--tpl-focus--tpl-show--d_inline-block--tpl-overlay-wrapper--pos_fixed--z_9998 cssf--tpl-before--tpl-overlay-background cssf--tpl-after--tpl-overlay-foreground accessibility-nav">{{ 'Fokus Kennzeichnung umschalten'|t({'langcode': 'de'}) }}</av-accessibility>
+        <av-accessibility type="size" settings="[18,20]" class="cssf--tpl-hide cssf--tpl-focus--tpl-show--d_inline-block--tpl-overlay-wrapper--pos_fixed--z_9998 cssf--tpl-before--tpl-overlay-background cssf--tpl-after--tpl-overlay-foreground accessibility-nav">{{ 'Schriftgröße umschalten'|t({'langcode': 'de'}) }}</av-accessibility>
+        <av-accessibility type="contrast" class="cssf--tpl-hide cssf--tpl-focus--tpl-show--d_inline-block--tpl-overlay-wrapper--tpl-pos_fixed--z_9998 cssf--tpl-before--tpl-overlay-background cssf--tpl-after--tpl-overlay-foreground accessibility-nav">{{ 'Kontrast umschalten'|t({'langcode': 'de'}) }}</av-accessibility>
+
+        <a href="#main-content" rel="nofollow" class="cssf--tpl-hide cssf--tpl-focus--tpl-show--d_inline-block--tpl-overlay-wrapper--pos_fixed--z_9998 cssf--tpl-before--tpl-overlay-background cssf--tpl-after--tpl-overlay-foreground accessibility-nav" style="position: fixed !important;">
+          {{ 'Skip to main content'|t }}
+        </a>
+        {{ page_top }}
+        {{ page }}
+        {{ page_bottom }}
+        <js-bottom-placeholder token="{{ placeholder_token }}">
+        {#
+            <av-scroll type="top">{{ drupal_config('av_scroll.settings', 'top_icon') }}</av-scroll> 
+            <av-scroll type="bottom">{{ drupal_config('av_scroll.settings', 'bottom_icon') }}</av-scroll> 
+            <av-scroll type="target">{{ drupal_config('av_scroll.settings', 'target_icon') }}</av-scroll> 
+        #}
+        {% if drupal_config('av_scroll.settings', 'top_show') %}
+           {% set top_threshold_setting =  drupal_config('av_scroll.settings', 'top_threshold') %}
+           {% set top_threshold =  top_threshold_setting??'500' %}
+           <av-scroll type="top" threshold="{{ top_threshold }}" title="Zurück zum Seitenanfang">{{ drupal_config('av_scroll.settings', 'top_icon')|raw }}</av-scroll> 
+        {% endif %}
+        {% if drupal_config('av_scroll.settings', 'bottom_show') %}
+           {% set bottom_threshold_setting =  drupal_config('av_scroll.settings', 'top_threshold') %}
+           {% set bottom_threshold =  bottom_threshold_setting??'500' %}
+           <av-scroll type="bottom" threshold="{{ bottom_threshold }}">{{ drupal_config('av_scroll.settings', 'bottom_icon')|raw }}</av-scroll> 
+        {% endif %}
+        <av-msg width="300px" height="200px" title="Info" settings='{"additionalSetting": "value"}' translation='{"en": {"Close": "Close", "Info": "Information"}, "de": {"Close": "Schließen", "Info": "Information"}}'></av-msg>
+        {% set items_count = drupal_config('av_flyout.settings', 'setup_items_count') %}
+        {% if items_count > 0 %}
+           {{ attach_library('av_flyout/av_flyout') }}
+           <av-flyout>
+              {% for i in 1..items_count %}
+                  <av-flyout-item href="{{ drupal_config('av_flyout.settings', 'item_'~loop.index~'_a_href') }}" title="{{ drupal_config('av_flyout.settings', 'item_'~loop.index~'_a_title') }}" rel="nofollow" icon="{{ drupal_config('av_flyout.settings', 'item_'~loop.index~'_icon') }}">{{ drupal_config('av_flyout.settings', 'item_'~loop.index~'_label') }}</av-flyout-item>
+               {% endfor %}
+           </av-flyout>
+        {% endif %}
+      </body>
+    </html>

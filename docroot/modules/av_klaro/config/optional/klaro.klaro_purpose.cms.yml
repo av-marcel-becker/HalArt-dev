@@ -1,0 +1,10 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_klaro
+id: cms
+label: Dienstbereitstellung
+description: 'Diese Dienste sind für die korrekte Funktion dieser Website unerlässlich. Sie können sie hier nicht deaktivieren, da diese Seite sonst nicht richtig funktionieren würde.'
+weight: -1

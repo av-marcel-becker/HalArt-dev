@@ -1,0 +1,12 @@
+name: 'AV Paragraph - Panorama'
+type: module
+description: 'AV-Studio Paragraph - Panorama'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Paragraph'
+dependencies:
+  - image
+  - text
+  - options
+  - paragraphs
+  - color_field
+  

@@ -1,0 +1,12 @@
+<?php
+   /**
+    * hook_theme
+    */
+   function av_p_sections_block_theme($existing, $type, $theme, $path) 
+      {
+         return [
+               'paragraph__p_sections_block' => [
+                     'base hook' => 'paragraph',
+                  ],
+            ];
+      } 

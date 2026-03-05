@@ -1,0 +1,6 @@
+av_n_hall_of_fame_page.hall_of_fame_page:
+  title: 'Hall of Fame Seiten'
+  parent: system.admin_content
+  route_name: av_n_hall_of_fame_page.hall_of_fame_page
+  menu_name: admin
+  url: internal:/admin/content/hall_of_fame_page

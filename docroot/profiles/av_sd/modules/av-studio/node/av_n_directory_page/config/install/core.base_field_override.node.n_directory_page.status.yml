@@ -1,0 +1,25 @@
+uuid: f5159fef-06ef-4e79-91b2-8e840e5af27d
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_directory_page
+  enforced:
+    module:
+      - av_n_directory_page
+id: node.n_directory_page.status
+field_name: status
+entity_type: node
+bundle: n_directory_page
+label: Veröffentlicht
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

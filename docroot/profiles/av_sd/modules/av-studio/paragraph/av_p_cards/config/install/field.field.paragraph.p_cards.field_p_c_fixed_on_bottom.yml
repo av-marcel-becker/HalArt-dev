@@ -1,0 +1,26 @@
+uuid: 424b8da7-32e3-4246-9945-349de2d75259
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_c_fixed_on_bottom
+    - paragraphs.paragraphs_type.p_cards
+  enforced:
+    module:
+      - av_p_cards
+id: paragraph.p_cards.field_p_c_fixed_on_bottom
+field_name: field_p_c_fixed_on_bottom
+entity_type: paragraph
+bundle: p_cards
+label: 'Text-/ Button unten anheften'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

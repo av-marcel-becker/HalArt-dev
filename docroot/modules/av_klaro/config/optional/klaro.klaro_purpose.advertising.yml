@@ -1,0 +1,9 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_klaro
+id: advertising
+label: 'Werbung und Marketing'
+weight: 0

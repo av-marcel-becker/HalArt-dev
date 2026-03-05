@@ -1,0 +1,11 @@
+uuid: d2df611d-c8e0-411b-900f-3ed6b6010d4c
+langcode: de
+status: true
+dependencies: {  }
+id: node
+label: Inhalt
+tags:
+  canonical_url: '[node:url]'
+  description: '[node:summary]'
+  robots: 'index, follow'
+  title: '[node:title] | [site:name]'

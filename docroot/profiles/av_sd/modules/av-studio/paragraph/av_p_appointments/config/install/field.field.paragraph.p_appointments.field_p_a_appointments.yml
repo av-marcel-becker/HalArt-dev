@@ -1,0 +1,42 @@
+uuid: 6ffc2506-9d32-4537-866d-5785f7c11687
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_a_appointments
+    - paragraphs.paragraphs_type.p_appointments
+  module:
+    - double_field
+  enforced:
+    module:
+      - av_p_appointments
+id: paragraph.p_appointments.field_p_a_appointments
+field_name: field_p_a_appointments
+entity_type: paragraph
+bundle: p_appointments
+label: Termine
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  first:
+    label: ''
+    list: false
+    allowed_values: {  }
+    max: null
+    min: null
+    required: true
+    on_label: An
+    off_label: Aus
+  second:
+    label: ''
+    list: false
+    allowed_values: {  }
+    max: null
+    min: null
+    required: true
+    on_label: An
+    off_label: Aus
+field_type: double_field

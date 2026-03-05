@@ -1,0 +1,10 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_klaro
+id: analytics
+label: Statistik
+description: 'Statistik Cookies erfassen Informationen anonym. Diese Informationen helfen uns zu verstehen, wie unsere Besucher unsere Website nutzen. Die Datenerfassung erfolgt auf unseren eigenen Servern und ihre Daten werden nicht an Dritte weitergegeben.'
+weight: 1

@@ -1,0 +1,4 @@
+'administer AV Flyout configuration':
+   title: 'administer AV Flyout configuration'
+   description: 'all permissions'
+   restrict access: true

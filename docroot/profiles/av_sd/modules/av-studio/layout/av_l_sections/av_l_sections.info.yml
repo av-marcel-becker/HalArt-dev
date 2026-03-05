@@ -1,0 +1,7 @@
+name: 'AV-Layouts - Sections'
+type: module
+description: 'Add custom Layouts: Sections'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Layouts'
+dependencies:
+  - av_l_default:av_l_default

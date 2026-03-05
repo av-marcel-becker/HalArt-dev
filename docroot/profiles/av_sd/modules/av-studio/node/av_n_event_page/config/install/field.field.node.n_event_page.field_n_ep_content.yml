@@ -1,0 +1,29 @@
+uuid: 5a4b9654-cd7b-40e1-a3ff-c04dca1b3df1
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_ep_content
+    - node.type.n_event_page
+  module:
+    - entity_reference_revisions
+  enforced:
+    module:
+      - av_n_event_page
+id: node.n_event_page.field_n_ep_content
+field_name: field_n_ep_content
+entity_type: node
+bundle: n_event_page
+label: Inhaltsbereich
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop: { }
+field_type: entity_reference_revisions

@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - crop
+  enforced:
+    module:
+      - av_p_teaser
+name: is_teaser_fp_50p_bp1400_700px
+label: 'Teaser FP 50% - bp1400 (B=700px)'
+effects:
+  cebe2728-0f73-4896-ab76-0fd37097477f:
+    uuid: cebe2728-0f73-4896-ab76-0fd37097477f
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1400
+      height: 788
+      crop_type: focal_point
+  3ca0be9a-7ea8-4101-b603-0e168bb4dc64:
+    uuid: 3ca0be9a-7ea8-4101-b603-0e168bb4dc64
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

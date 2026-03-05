@@ -1,0 +1,41 @@
+css_framework_3:
+  header: true
+  version: 0.1
+  css:
+    theme:
+      /libraries/CSS-Framework-3/dist/preset.css: { weight: -100 }
+      /libraries/CSS-Framework-3/dist/preset-var.css: { weight: -10 }
+      /libraries/CSS-Framework-3/dist/text.css: { weight: -9 }
+      /libraries/CSS-Framework-3/dist/form.css: { weight: -9 }
+
+  js:
+    /libraries/CSS-Framework-3/dist/cssf-vars.js: { weight: -101 }
+    /libraries/CSS-Framework-3/dist/cssf.js: { weight: -100 }
+fontawesome:
+  version: 7.1.0
+  css:
+    theme:
+      /libraries/fontawesome/css/fontawesome.min.css: {}
+      /libraries/fontawesome/css/brands.min.css: {}
+      /libraries/fontawesome/css/light.min.css: {}
+      /libraries/fontawesome/css/regular.min.css: {}
+      /libraries/fontawesome/css/solid.min.css: {}
+#  js:
+#    /libraries/fontawesome/js/all.min.js: {}
+
+
+backend:
+  version: VERSION
+  css:
+    theme:
+      css/vars.css: { weight: 0 }
+global:
+  version: VERSION
+  css:
+    theme:
+      css/vars.css: { weight: 0 }
+      css/preset.css: { weight: 0 }
+
+  dependencies:
+    - av_base/css_framework_3
+    - av_base/fontawesome

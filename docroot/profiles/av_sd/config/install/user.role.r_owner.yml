@@ -1,0 +1,9 @@
+uuid: 3559e6f4-5385-4169-a644-4f4470e0899d
+langcode: de
+status: true
+dependencies: {  }
+id: r_owner
+label: 'besitzhabende Person'
+weight: 3
+is_admin: null
+permissions: {  }

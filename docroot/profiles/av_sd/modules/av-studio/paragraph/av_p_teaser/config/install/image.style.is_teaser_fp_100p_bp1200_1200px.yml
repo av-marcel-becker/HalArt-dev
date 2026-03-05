@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - crop
+  enforced:
+    module:
+      - av_p_teaser
+name: is_teaser_fp_100p_bp1200_1200px
+label: 'Teaser FP 100% - bp1200 (B=1200px)'
+effects:
+  b6ca3c81-c635-4f6c-9832-a45005f3b471:
+    uuid: b6ca3c81-c635-4f6c-9832-a45005f3b471
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 2400
+      height: 1028
+      crop_type: focal_point
+  d4a33fdc-e733-42db-a849-67f5f1b8d619:
+    uuid: d4a33fdc-e733-42db-a849-67f5f1b8d619
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

@@ -1,0 +1,10 @@
+av_share.settings:
+  title: 'AV Share - Settings'
+  description: 'Set Share settings'
+  parent: 'system.admin_config_system'
+  route_name: 'av_share.settings'
+#av_share.settings.twitter:
+#  title: 'AV Share - Twitter'
+#  description: 'Set Twitter settings'
+#  parent: 'av_share.settings'
+#  route_name: 'av_share.settings.twitter'

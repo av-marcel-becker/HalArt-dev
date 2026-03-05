@@ -1,0 +1,21 @@
+uuid: a57c3fee-0bad-4064-bfa3-e6b61d71be55
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_athlete_of_the_year_page
+  enforced:
+    module:
+      - av_n_athlete_of_the_year_page
+id: node.n_athlete_of_the_year_page.title
+field_name: title
+entity_type: node
+bundle: n_athlete_of_the_year_page
+label: Überschrift
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

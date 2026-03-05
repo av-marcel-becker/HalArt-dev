@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - crop
+  enforced:
+    module:
+      - av_p_image
+name: is_fp_100p_bp576_576px
+label: 'FP 100% - bp576 (B=576px)'
+effects:
+  285383a2-e953-4a95-8155-db5caa128377:
+    uuid: 285383a2-e953-4a95-8155-db5caa128377
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1152
+      height: 494
+      crop_type: focal_point
+  442f3bcf-03ac-4fcd-9723-37692ee6c2dc:
+    uuid: 442f3bcf-03ac-4fcd-9723-37692ee6c2dc
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

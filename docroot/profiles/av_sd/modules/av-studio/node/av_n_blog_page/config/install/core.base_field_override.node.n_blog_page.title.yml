@@ -1,0 +1,21 @@
+uuid: 757edbcf-d3a7-40ef-ab3b-56df54dbd677
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_blog_page
+  enforced:
+    module:
+      - av_n_blog_page
+id: node.n_blog_page.title
+field_name: title
+entity_type: node
+bundle: n_blog_page
+label: Überschrift
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

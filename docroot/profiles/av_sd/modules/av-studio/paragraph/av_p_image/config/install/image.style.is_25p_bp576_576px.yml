@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_image
+name: is_25p_bp576_576px
+label: '25% - bp576 (B=576px)'
+effects:
+  f9a241d9-de4d-4c2e-865f-ef1cd63c2425:
+    uuid: f9a241d9-de4d-4c2e-865f-ef1cd63c2425
+    id: image_scale
+    weight: 1
+    data:
+      width: 1152
+      height: null
+      upscale: false
+  937e15d1-96be-4e92-8209-f1ca0c5d9776:
+    uuid: 937e15d1-96be-4e92-8209-f1ca0c5d9776
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

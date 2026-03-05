@@ -1,0 +1,9 @@
+uuid: 9a0b74eb-49e8-45d1-ab0f-f3bf8a6a2dbb
+langcode: de
+status: true
+dependencies: {  }
+id: csg_support
+label: Support
+weight: 50
+title: Support
+details: 'Mit Support Dienste können Sie mit uns in Kontakt treten und uns Verbesserungsvorschläge mitteilen oder Fragen stellen.'

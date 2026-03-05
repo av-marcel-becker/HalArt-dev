@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_cards
+name: is_cards_100p_bp1400_1400px
+label: 'Card 100% - bp1400 (B=1400px)'
+effects:
+  72e67078-e10b-4e9e-9ee9-8c85296d35ae:
+    uuid: 72e67078-e10b-4e9e-9ee9-8c85296d35ae
+    id: image_scale
+    weight: 1
+    data:
+      width: 2800
+      height: null
+      upscale: false
+  8fd5aca4-55e8-4860-b25b-10f7e5992523:
+    uuid: 8fd5aca4-55e8-4860-b25b-10f7e5992523
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

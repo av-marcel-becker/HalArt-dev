@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_cards
+name: is_cards_66p_bp576_576px
+label: 'Card 66% - bp576 (B=576px)'
+effects:
+  8f35d912-879f-48d5-a5cb-36bd0c2dbb32:
+    uuid: 8f35d912-879f-48d5-a5cb-36bd0c2dbb32
+    id: image_scale
+    weight: 1
+    data:
+      width: 1152
+      height: null
+      upscale: false
+  4c558b20-a93d-4014-9729-5846b79b4b7e:
+    uuid: 4c558b20-a93d-4014-9729-5846b79b4b7e
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

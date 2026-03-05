@@ -1,0 +1,9 @@
+langcode: de
+login_redirection:
+  anonymous: null
+  authenticated: /admin/content
+  administrator: /admin/content
+  r_editor: /admin/content
+  r_owner: /admin/content
+  r_moderator: /admin/content
+exclude_urls: ''

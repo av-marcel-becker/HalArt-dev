@@ -1,0 +1,9 @@
+av_msg:
+  version: 0.1
+  css:
+    theme:
+      css/av_msg.css: { }
+  js: 
+    js/av_msg.js: { }
+#  dependencies:
+#    - -/- 

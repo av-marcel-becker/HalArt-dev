@@ -1,0 +1,11 @@
+av_n_overview_page.overview_page.add:
+  route_name: node.add
+  title: 'Übersichtsseite hinzufügen'
+  weight: 10
+  appears_on:
+    - view.v_content_overview_page.v_content_overview_page
+  route_parameters: 
+    node_type: 'n_overview_page'
+#  options:
+#    query:
+#      destination: /admin/content/overview_page

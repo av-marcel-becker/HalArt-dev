@@ -1,0 +1,26 @@
+uuid: 45d2e188-ec09-4482-a502-93ef58eb7d02
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_n_display_location
+    - node.type.n_notification
+  module:
+    - link
+  enforced:
+    module:
+      - av_n_notification
+id: node.n_notification.field_n_n_display_location
+field_name: field_n_n_display_location
+entity_type: node
+bundle: n_notification
+label: Anzeige-Ort
+description: 'Leer lassen um die Benachrichtigung überall anzuzeigen.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 1
+field_type: link

@@ -1,0 +1,25 @@
+uuid: e0538ca8-0a9e-42ee-9e5a-12214a7f334b
+langcode: de
+status: true
+dependencies:
+  module:
+    - paragraphs
+  enforced:
+    module:
+      - av_p_headline
+third_party_settings: { }
+id: paragraph.field_p_h_headline
+field_name: field_p_h_headline
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

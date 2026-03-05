@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_cards
+name: is_cards_66p_bp992_661px
+label: 'Card 66% - bp992 (B=661px)'
+effects:
+  2281027d-45d5-45bb-99cd-30dfb4ce899d:
+    uuid: 2281027d-45d5-45bb-99cd-30dfb4ce899d
+    id: image_scale
+    weight: 1
+    data:
+      width: 1322
+      height: null
+      upscale: false
+  3e1afe96-d827-42b0-a491-eef22b243e84:
+    uuid: 3e1afe96-d827-42b0-a491-eef22b243e84
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

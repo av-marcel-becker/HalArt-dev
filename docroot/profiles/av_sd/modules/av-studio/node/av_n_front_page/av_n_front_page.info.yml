@@ -1,0 +1,28 @@
+name: 'AV Node - Front Page'
+type: module
+description: 'AV-Studio Node - Front Page'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Node'
+dependencies:
+  - allowed_formats
+  - content_moderation
+  - focal_point
+  - imce
+  - cshs
+  - pathauto
+  #- entity_reference_layout
+  - layout_paragraphs
+  - field_group
+  - length_indicator
+  - maxlength
+  - path
+  #- scheduler
+  - text
+  - user
+  - node
+  - paragraphs
+  - taxonomy
+  - menu_ui
+  - node_revision_delete
+  - av_n_default
+  #- av_p_section

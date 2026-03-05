@@ -1,0 +1,43 @@
+uuid: 3a8a1e64-c4aa-4177-b4b2-8b3b59463a1a
+langcode: de
+status: true
+dependencies:
+  config:
+    - image.style.is_cards_fp_100p_bp1400_1400px
+    - image.style.is_cards_fp_100p_bp1200_1200px
+    - image.style.is_cards_fp_100p_bp576_576px
+    - image.style.is_cards_fp_100p_bp768_768px
+    - image.style.is_cards_fp_100p_bp992_992px
+  enforced:
+    module:
+      - av_p_cards
+id: ris_cards_fp_100p
+label: 'Cards FP 100%'
+image_style_mappings:
+  -
+    breakpoint_id: av_p_cards.css_framework.1200
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_cards_fp_100p_bp1400_1400px
+  -
+    breakpoint_id: av_p_cards.css_framework.992
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_cards_fp_100p_bp1200_1200px
+  -
+    breakpoint_id: av_p_cards.css_framework.768
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_cards_fp_100p_bp992_992px
+  -
+    breakpoint_id: av_p_cards.css_framework.576
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_cards_fp_100p_bp768_768px
+  -
+    breakpoint_id: av_p_cards.css_framework.0
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_cards_fp_100p_bp576_576px
+breakpoint_group: av_p_cards
+fallback_image_style: is_cards_fp_100p_bp1200_1200px

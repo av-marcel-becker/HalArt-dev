@@ -1,0 +1,18 @@
+uuid: f7b7b211-3efd-4e9f-90f9-e1ea9e922582
+langcode: de
+status: true
+dependencies:
+  module:
+    - image_replace
+  enforced:
+    module:
+      - av_ads
+name: is_ads_bp1200
+label: 'Anzeige - bp1200 '
+effects:
+  1de06190-a78d-4927-b7b7-52d570663f0f:
+    uuid: 1de06190-a78d-4927-b7b7-52d570663f0f
+    id: image_replace
+    weight: 1
+    data:
+      image_style: is_ads_bp1200

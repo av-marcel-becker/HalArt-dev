@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_image
+name: is_75p_bp1200_900px
+label: '75% - bp1200 (B=900px)'
+effects:
+  4fde5644-328a-4c2f-9809-83ab06e749db:
+    uuid: 4fde5644-328a-4c2f-9809-83ab06e749db
+    id: image_scale
+    weight: 1
+    data:
+      width: 1800
+      height: null
+      upscale: false
+  0ec9d05a-5be4-4fce-874a-be611775a2d0:
+    uuid: 0ec9d05a-5be4-4fce-874a-be611775a2d0
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

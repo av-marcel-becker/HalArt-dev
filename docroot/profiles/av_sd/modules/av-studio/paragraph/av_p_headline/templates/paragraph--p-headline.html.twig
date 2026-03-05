@@ -1,0 +1,60 @@
+{%
+  set classes = [
+    'p-headline',
+    'cssf--w100p--position-relative',
+    'cssf--flex-layout',
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+
+{#
+   field_p_h_headline
+   field_p_h_headline_number
+   field_p_h_link
+ 
+#}
+{% set title = elements.field_p_h_headline['#items'].0.value %}
+{% set h = elements.field_p_h_headline_number['#items'].0.value %}
+
+{% set link = elements.field_p_h_link['#items'] %}
+{% set link_uri = link.0.uri %}
+{% set link_url = link.get(0).getUrl().toString() %}
+{#% set link_url = link.0.uri|replace({'internal:':''}) %#}
+{% set link_title = link.0.title %}
+{% set link_extern_on = link.get(0).getUrl().external %}
+{% set link_options = link.0.options %}
+{% if link.0 and link.0.options.attributes is iterable %}
+   {% set link_attributes = create_attribute(link.0.options.attributes) %}
+{% else %}
+   {% set link_attributes = create_attribute() %}
+{% endif %}
+
+
+{% if link_extern_on %}
+   {% set link_attributes = link_attributes.setAttribute('target', '_blank').setAttribute('rel', 'noindex nofollow') %}
+{% endif %}
+
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+      {% block content %}      
+         <div class="inner-wrapper cssf cssf--fcol100--layout-gap--flex-layout--fw_wrap--jc_between--w100p--position-relative cssf--mq768--fw_nowrap">
+            <div class="cssf--fcolauto--py10 p-wysiwyg">
+               <{{ h }}>{{ title }}</{{ h }}>
+            </div>
+            {% if link_url %}
+               <div class="cssf--as_center--flex-shrink_0--py10">
+                  <a href="{{ link_url }}" title="{{ title }} - {{ link_title }}"{{ link_attributes.addClass(['link-btn']) }}>{{ link_title }}</a>
+               </div>     
+            {% endif %}
+         </div>
+      {% endblock %}
+  </div>
+{% endblock paragraph %}
+
+
+
+
+

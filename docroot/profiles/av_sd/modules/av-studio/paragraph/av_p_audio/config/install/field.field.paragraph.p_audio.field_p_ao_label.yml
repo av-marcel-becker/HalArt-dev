@@ -1,0 +1,28 @@
+uuid: 95471ca6-8521-4507-b834-94cc190a3451
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_ao_label
+    - paragraphs.paragraphs_type.p_audio
+  module:
+    - text
+  enforced:
+    module:
+      - av_p_audio
+third_party_settings: { }
+id: paragraph.p_audio.field_p_ao_label
+field_name: field_p_ao_label
+entity_type: paragraph
+bundle: p_audio
+label: Beschriftung
+description: 'Wenn das Beschriftungsfeld aktiviert wurde, kann hier ein individualer Text eingefügt werden. Alternativ kann dieses Feld leer gelassen werden, insofern vorhanden wird dann die hinterlegte Beschriftung der Audio genommen.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    f_editor: f_editor
+    plain_text: plain_text
+field_type: text_long

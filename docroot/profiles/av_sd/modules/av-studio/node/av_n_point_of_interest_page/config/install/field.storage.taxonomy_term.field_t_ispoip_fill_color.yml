@@ -1,0 +1,24 @@
+uuid: 90b94f78-304e-482e-91b5-0eca841e6c7c
+langcode: de
+status: true
+dependencies:
+  module:
+    - color_field
+    - taxonomy
+  enforced:
+    module:
+      - av_n_point_of_interest_page
+third_party_settings: { }
+id: taxonomy_term.field_t_ispoip_fill_color
+field_name: field_t_ispoip_fill_color
+entity_type: taxonomy_term
+type: color_field_type
+settings:
+  format: hexhex
+module: color_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,34 @@
+uuid: c256ac0c-ce5c-498f-af01-2c06fc841d58
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_ads_iframe
+    - node.type.n_advertisement
+  module:
+    - iframe
+  enforced:
+    module:
+      - av_ads
+id: node.n_advertisement.field_n_ads_iframe
+field_name: field_n_ads_iframe
+entity_type: node
+bundle: n_advertisement
+label: iFrame
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: null
+  headerlevel: '3'
+  class: ads-iframe
+  frameborder: '0'
+  scrolling: auto
+  transparency: '0'
+  allowfullscreen: '0'
+  tokensupport: '0'
+  width: null
+  height: null
+field_type: iframe

@@ -1,0 +1,505 @@
+{#
+   field_p_t_image
+   field_p_t_label
+   field_p_t_link
+   field_p_t_social_links
+   field_p_t_title_jewelry
+   field_p_t_title
+   field_p_t_text
+   field_p_t_text_unlimited
+   field_p_t_size
+   field_p_t_image_full_size
+   field_p_t_ads_placeholder
+   field_p_t_design
+   <pre>{{ dump(_context|keys) }}</pre>
+   <pre>{{ dump(content|keys) }}</pre>
+   <pre>{{ dump(ds_content|keys) }}</pre>
+   <pre>{{ dump(paragraph|keys) }}</pre>
+   <pre>{{ dump(img|keys) }}</pre>
+   <pre>{{ dump(link|keys) }}</pre>
+   <pre>{{ dump(_context) }}</pre>
+   
+#}
+{{ attach_library('av_p_teaser/av_p_teaser') }}
+{% block paragraph %}
+    {% block content %}
+      {#{ content }#}
+      {% set social_on = content.field_p_t_social_links['#items'].0.value %}
+      {% set fullsize_on = content.field_p_t_image_full_size['#items'].0.value %}
+      {% set ads_on = content.field_p_t_ads_placeholder['#items'].0.value %}
+      {% set highlight_on = content.field_p_t_highlight['#items'].0.value %}
+      {% set orientation_horizontal_on = content.field_p_t_orientation_horizontal['#items'].0.value %}
+      {% set image_second_on = content.field_p_t_image_second['#items'].0.value %}
+      {% set fixed_on_bottom_on = content.field_p_t_fixed_on_bottom['#items'].0.value %}
+      {% set size = content.field_p_t_size['#items'].0.value %}
+      {% set design = content.field_p_t_design['#items'].0.value %}
+      {% set enable_zoom = paragraph.field_p_t_enable_zoom.0.value %}
+      {% set enable_crop = paragraph.field_p_t_enable_crop.0.value %}
+      {% set label = content.field_p_t_label['#items'].0.value %}
+      {% set title_top = content.field_p_t_title_jewelry['#items'].0.value %}
+      {% set title = content.field_p_t_title['#items'].0.value %}
+      {% set text = content.field_p_t_text['#items'].0.value %}
+      {% set text_unlimited = content.field_p_t_text_unlimited['#items'].0.value %}
+      {% set link = content.field_p_t_link['#items'] %}
+      {% set link_uri = link.0.uri %}
+      {% set link_url = link.get(0).getUrl().toString() %}
+      {#% set link_url = link.0.uri|replace({'internal:':''}) %#}
+      {% set link_title = link.0.title %}
+      {% set link_extern_on = link.get(0).getUrl().external %}
+      {% set link_options = link.0.options %}
+      {% if link.0 and link.0.options.attributes is iterable %}
+         {% set link_attributes = create_attribute(link.0.options.attributes) %}
+      {% else %}
+         {% set link_attributes = create_attribute() %}
+      {% endif %}
+
+      {% set img = content.field_p_t_image['#items'].0 %}
+      {% set img_target_id = img.target_id %}
+      {% set img_alt = img.alt %}
+      {% set img_title = img.title %}
+      {% set img_width = img.width %}
+      {% set img_height = img.height %}
+      {#% set img_url = {{ node.field_main_image.entity.uri.value | image_style('thumbnail') }} %#}
+
+      {% if link_extern_on %}
+         {% set link_attributes = link_attributes.setAttribute('target', '_blank').setAttribute('rel', 'noindex nofollow') %}
+      {% endif %}
+      {#% set main_attributes = create_attribute() %#}
+      {#% set main_class = [
+                     'ph-teaser', 
+                     'position-relative', 
+                     'col-b12', 
+                     'bp-576-col-b6', 
+                     'bp-768-col-b4', 
+                     'bp-992-col-b3', 
+                     not ads_on?'flex',
+                     'm-0',
+                     ads_on?'teaser-ads',
+                     ads_on?'d-none',
+                  ]%#}
+      {% set main_class = [
+                     'ph-teaser', 
+                     'rt',
+                     'cssf--position_relative',
+                     'cssf--d_flex--fw_wrap--w100p',
+                     'cssf--p_var-region-spacing',
+                     'cssf--as_unset--jc_start--ac_stretch',
+                     'cssf--m0',
+                     not ads_on?'flex',
+                     ads_on?'teaser-ads',
+                     highlight_on?'highlight', 
+                     'paragraph',
+                     'paragraph--type--' ~ paragraph.bundle|clean_class,
+                     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+                     not paragraph.isPublished() ? 'paragraph--unpublished',
+                     ads_on?'cssf--d_none',
+                     design?design
+                  ]%}
+      {% set size_class = []%}
+      {% set size_second_class = []%}
+                    {# ads_on?'backend-ads',  #}    
+      {% if size == 'teaser-size-100' %}
+         {% set main_class  = main_class|merge([ 
+                        'teaser-size-100',
+                     ])
+         %}
+         {% set size_class  = size_class|merge([ 
+                        'cssf--gcol100',
+                     ])
+                     %}
+         {% set size_second_class  = size_second_class|merge([ 
+                        'cssf--gcol100',
+                     ])
+                     %}
+      {% elseif size == 'teaser-size-66' %}
+         {% set main_class  = main_class|merge([ 
+                        'teaser-size-66', 
+                     ])
+                     %}  
+         {% set size_class  = size_class|merge([ 
+                        'cssf--gcol100',
+                        'cssf--mq576--gcol100',
+                        'cssf--mq768--gcol100',
+                        'cssf--mq992--gcol50',
+                        'cssf--mq1200--gcol66',
+                     ]) 
+         %}
+         {% set size_second_class  = size_second_class|merge([ 
+                        'cssf--gcol100',
+                        'cssf--mq576--gcol100',
+                        'cssf--mq768--gcol100',
+                        'cssf--mq992--gcol50',
+                        'cssf--mq1200--gcol33',
+                     ]) 
+         %}
+      {% elseif size == 'teaser-size-50' %}
+         {% set main_class  = main_class|merge([ 
+                        'teaser-size-50', 
+                     ])
+                     %}
+         {% set size_class  = size_class|merge([ 
+                        'cssf--gcol100',
+                        'cssf--mq576--gcol100',
+                        'cssf--mq768--gcol100',
+                        'cssf--mq992--gcol50',
+                        'cssf--mq1200--gcol50',
+                     ])
+         %}
+         {% set size_second_class  = size_second_class|merge([ 
+                        'cssf--gcol100',
+                        'cssf--mq576--gcol100',
+                        'cssf--mq768--gcol100',
+                        'cssf--mq992--gcol50',
+                        'cssf--mq1200--gcol50',
+                     ])
+         %}
+      {% elseif size == 'teaser-size-33' %}
+         {% set main_class  = main_class|merge([ 
+                        'teaser-size-33', 
+                     ])
+                     %}
+         {% set size_class  = size_class|merge([ 
+                        'cssf--gcol100',
+                        'cssf--mq576--gcol100',
+                        'cssf--mq768--gcol50',
+                        'cssf--mq992--gcol33',
+                        'cssf--mq1200--gcol33',
+                     ])
+         %}
+         {% set size_second_class  = size_second_class|merge([ 
+                        'cssf--gcol100',
+                        'cssf--mq576--gcol100',
+                        'cssf--mq768--gcol50',
+                        'cssf--mq992--gcol66',
+                        'cssf--mq1200--gcol66',
+                     ])
+         %}
+      {% elseif size == 'teaser-size-25' %}
+         {% set main_class  = main_class|merge([ 
+                        'teaser-size-25', 
+                     ])
+                     %}
+         {% set size_class  = size_class|merge([ 
+                        'cssf--gcol100',
+                        'cssf--mq576--gcol100',
+                        'cssf--mq768--gcol50',
+                        'cssf--mq992--gcol33',
+                        'cssf--mq1200--gcol25',
+                     ])
+         %}
+         {% set size_second_class  = size_second_class|merge([ 
+                        'cssf--gcol100',
+                        'cssf--mq576--gcol100',
+                        'cssf--mq768--gcol50',
+                        'cssf--mq992--gcol66',
+                        'cssf--mq1200--gcol75',
+                     ])
+         %}
+      {% else %}
+         {% set main_class  = main_class|merge([ 
+                        'teaser-size-33', 
+                     ])
+                     %}
+         {% set size_class  = size_class|merge([ 
+                        'cssf--gcol100',
+                        'cssf--mq576--gcol100',
+                        'cssf--mq768--gcol50',
+                        'cssf--mq992--gcol33',
+                        'cssf--mq1200--gcol33',
+                     ]) 
+         %}
+         {% set size_second_class  = size_second_class|merge([ 
+                        'cssf--gcol100',
+                        'cssf--mq576--gcol100',
+                        'cssf--mq768--gcol50',
+                        'cssf--mq992--gcol66',
+                        'cssf--mq1200--gcol66',
+                     ]) 
+         %}
+      {% endif %}
+      
+      {% if orientation_horizontal_on %}
+         <div {{ attributes.addClass(main_class).addClass(['cssf--gcolx12', 'horizontal']) }}>
+      {% else %}
+         <div {{ attributes.addClass(main_class).addClass(size_class).addClass('vertical') }}>
+      {% endif %}
+      <div class="cssf cssf--d_contents">
+         {% set inner_wrapper_attributes = create_attribute() %}
+         {# 'cssf--position_relative--w100p--flex-layout--fw_nowrap', #}
+         {# 'cssf--grid-brick-layout', #}
+         {% set inner_wrapper_class  = [ 
+                        'inner-wrapper',
+                        'cssf--position_relative--w100p--fw_nowrap',  
+                        'gbl cssf--grid-brick-layout cssf--ai_stretch',
+                        not orientation_horizontal_on?'cssf--gap_0'                   
+                     ]
+         %}
+         <div{{ inner_wrapper_attributes.addClass(inner_wrapper_class) }}>
+            {% if ads_on %}
+            
+            {% else %}
+               {#% if link and fullsize_on %#}
+               {% if link or fullsize_on %}
+                  <a href="{{ link_url }}" title="{{ title ? (link_title ? title~' - '~link_title : title) : link_title }}"{{ link_attributes.addClass(['cssf--d_contents', 'position-relative', 'col-b12','flex', 'flex-column', 'flex-nowrap']) }}>
+               
+               {% endif %}
+                  {% if label %}
+                        <span class="label">{{ label }}</span>
+                  {% endif %}
+                  {% if img_target_id %}
+                  
+                     {% set image_wrapper_attributes = create_attribute() %}
+                     {% set image_wrapper_class  = [ 
+                                    'image-wrapper',
+                                    'cssf--o_0',
+                                    image_second_on?'cssf--mq768--o_1',
+                                 ]
+                     %}
+                     {% if orientation_horizontal_on %}
+                        {% set image_wrapper_class  = image_wrapper_class|merge(size_class) %}
+                     {% else %}
+                        {% set image_wrapper_class  = image_wrapper_class|merge(['cssf--gcolx12']) %}
+                     {% endif %}
+                     <div{{ image_wrapper_attributes.addClass(image_wrapper_class) }}>
+                        {% if fullsize_on %}
+                           <div class="image-fullsize">         
+                              {% if img_target_id %}
+                                 <picture>
+                                    {{ drupal_image(img_target_id,'', {loading: 'lazy', alt: '', role: 'presentation', 'aria-hidden': 'true'}) }}
+                                 </picture>
+                              {% endif %} 
+                           </div>
+                        {% else %}
+                           <div class="image-crop">
+                              <figure class="cssf--d_flex">
+                                 {% set responsive_image_style = '' %}
+                                 {% set view = 'dm_teaser_fp_33p' %}
+                                 {% set responsive = false %}
+
+                                 {% if(size) %}
+                                    {% if(size == "teaser-size-100") %}
+                                       {% if(enable_crop) %}
+                                          {%  set responsive_image_style = 'ris_teaser_fp_100p' %}
+                                       {% else %}
+                                          {%  set responsive_image_style = 'ris_teaser_100p' %}
+                                       {% endif %}    
+                                       {% if(enable_zoom) %}
+                                          {% if(enable_crop) %}
+                                             {%  set view = 'dm_teaser_fp_100pz' %}
+                                          {% else %}
+                                             {%  set view = 'dm_teaser_100pz' %}
+                                          {% endif %} 
+                                       {% else %}
+                                          {% if(enable_crop) %}
+                                             {%  set view = 'dm_teaser_fp_100p' %}
+                                          {% else %}
+                                             {%  set view = 'dm_teaser_100p' %}
+                                          {% endif %} 
+                                       {% endif %}                                       
+                                       {% set responsive = true %}
+                                    {% elseif(size == "teaser-size-75") %}
+                                       {% if(enable_crop) %}
+                                          {%  set responsive_image_style = 'ris_teaser_fp_75p' %}
+                                       {% else %}
+                                          {%  set responsive_image_style = 'ris_teaser_75p' %}
+                                       {% endif %}
+                                       {% if(enable_zoom) %}
+                                          {% if(enable_crop) %}
+                                             {%  set view = 'dm_teaser_fp_75pz' %}
+                                          {% else %}
+                                             {%  set view = 'dm_teaser_75pz' %}
+                                          {% endif %} 
+                                       {% else %}
+                                          {% if(enable_crop) %}
+                                             {%  set view = 'dm_teaser_fp_75p' %}
+                                          {% else %}
+                                             {%  set view = 'dm_teaser_75p' %}
+                                          {% endif %} 
+                                       {% endif %} 
+                                       {% set responsive = true %}
+                                    {% elseif(size == "teaser-size-66") %}
+                                       {% if(enable_crop) %}
+                                          {%  set responsive_image_style = 'ris_teaser_fp_66p' %}
+                                       {% else %}
+                                          {%  set responsive_image_style = 'ris_teaser_66p' %}
+                                       {% endif %}
+                                       {% if(enable_zoom) %}
+                                          {% if(enable_crop) %}
+                                             {%  set view = 'dm_teaser_fp_66pz' %}
+                                          {% else %}
+                                             {%  set view = 'dm_teaser_66pz' %}
+                                          {% endif %} 
+                                       {% else %}
+                                          {% if(enable_crop) %}
+                                             {%  set view = 'dm_teaser_fp_66p' %}
+                                          {% else %}
+                                             {%  set view = 'dm_teaser_66p' %}
+                                          {% endif %} 
+                                       {% endif %} 
+                                       {% set responsive = true %}
+                                    {% elseif(size == "teaser-size-50") %}  
+                                       {% if(enable_crop) %}
+                                          {%  set responsive_image_style = 'ris_teaser_fp_50p' %}
+                                       {% else %}
+                                          {%  set responsive_image_style = 'ris_teaser_50p' %}
+                                       {% endif %}
+                                       {% if(enable_zoom) %}
+                                          {% if(enable_crop) %}
+                                             {%  set view = 'dm_teaser_fp_50pz' %}
+                                          {% else %}
+                                             {%  set view = 'dm_teaser_50pz' %}
+                                          {% endif %} 
+                                       {% else %}
+                                          {% if(enable_crop) %}
+                                             {%  set view = 'dm_teaser_fp_50p' %}
+                                          {% else %}
+                                             {%  set view = 'dm_teaser_50p' %}
+                                          {% endif %} 
+                                       {% endif %} 
+                                       {% set responsive = true %}
+                                    {% elseif(size == "teaser-size-33") %}  
+                                       {% if(enable_crop) %}
+                                          {%  set responsive_image_style = 'ris_teaser_fp_33p' %}
+                                       {% else %}
+                                          {%  set responsive_image_style = 'ris_teaser_33p' %}
+                                       {% endif %}
+                                       {% if(enable_zoom) %}
+                                          {% if(enable_crop) %}
+                                             {%  set view = 'dm_teaser_fp_33pz' %}
+                                          {% else %}
+                                             {%  set view = 'dm_teaser_33pz' %}
+                                          {% endif %} 
+                                       {% else %}
+                                          {% if(enable_crop) %}
+                                             {%  set view = 'dm_teaser_fp_33p' %}
+                                          {% else %}
+                                             {%  set view = 'dm_teaser_33p' %}
+                                          {% endif %} 
+                                       {% endif %} 
+                                       {% set responsive = true %}
+                                    {% elseif(size == "teaser-size-25") %} 
+                                       {% if(enable_crop) %}
+                                          {%  set responsive_image_style = 'ris_teaser_fp_25p' %}
+                                       {% else %}
+                                          {%  set responsive_image_style = 'ris_teaser_25p' %}
+                                       {% endif %}
+                                       {% if(enable_zoom) %}
+                                          {% if(enable_crop) %}
+                                             {%  set view = 'dm_teaser_fp_25pz' %}
+                                          {% else %}
+                                             {%  set view = 'dm_teaser_25pz' %}
+                                          {% endif %} 
+                                       {% else %}
+                                          {% if(enable_crop) %}
+                                             {%  set view = 'dm_teaser_fp_25p' %}
+                                          {% else %}
+                                             {%  set view = 'dm_teaser_25p' %}
+                                          {% endif %} 
+                                       {% endif %} 
+                                       {% set responsive = true %}
+                                    {% endif %}    
+                                 {% endif %}
+                                 {{ paragraph.field_p_t_image|view(view) }} 
+                              </figure>
+                              {#% if img_target_id %}
+                                 {% if size == 'teaser-size-100' %}
+                                    {{ drupal_image(img_target_id, 'ris_fp_100p', responsive=true) }}
+                                 {% elseif size == 'teaser-size-66' %}
+                                    {{ drupal_image(img_target_id, 'ris_fp_66p', responsive=true) }}  
+                                 {% elseif size == 'teaser-size-50' %}
+                                    {{ drupal_image(img_target_id, 'ris_fp_50p', responsive=true) }}
+                                 {% elseif size == 'teaser-size-33' %}
+                                    {{ drupal_image(img_target_id, 'ris_fp_33p', responsive=true) }}
+                                 {% elseif size == 'teaser-size-25' %}
+                                    {{ drupal_image(img_target_id, 'ris_fp_25p', responsive=true) }}
+                                 {% else %}
+                                    {{ drupal_image(img_target_id, 'ris_fp_33p', responsive=true) }}
+                                 {% endif %}
+                              {% endif %#} 
+                           </div>
+                        {% endif %}      
+                     </div>
+                  {% endif %}
+
+                  {% if not fullsize_on %}
+                  
+                     {% set content_attributes = create_attribute() %}
+                     {% set content_class  = [ 
+                                    'content',
+                                    'cssf--position_relative--w100p--flex-layout--fd_column--fw_nowrap--o_1',
+                                    fixed_on_bottom_on?'cssf--target-tag-div--target-pseudo-class-last-child--mt_auto',
+                                    image_second_on?'cssf--mq768--o_0',
+                                 ]
+                     %}
+                     {% if orientation_horizontal_on %}
+                        {% set content_class  = content_class|merge(size_second_class) %}
+                     {% else %}
+                        {% set content_class  = content_class|merge(['cssf--gcolx12']) %}
+                     {% endif %}
+                     <div{{ content_attributes.addClass(content_class) }}>
+                        {% if title_top and not fullsize_on %}
+                           <div class="topline-wrapper cssf--w100p">
+                              {{ title_top }}
+                           </div>
+                        {% endif %}
+                        {% if title %}
+                           <div class="title-wrapper cssf--w100p">
+                              {# <h5>{{ title }}</h5> #}
+                              <span class="heading" role="heading">{{ title }}</span>
+                           </div>
+                        {% endif %}
+                        {% if text  %}
+                           <div class="text-wrapper cssf--w100p">
+                              <p>{{ text }}</p>
+                           </div>
+                        {% endif %}
+                        {% if text_unlimited  %}
+                           <div class="text-wrapper cssf--w100p">
+                              {{ text_unlimited|raw }}
+                           </div>
+                        {% endif %}
+                        {% if link  %}
+                           <div class="text-link">
+                              {#% if link_title %}
+                                 <a href="{{ link_url }}" class="link-bottom-right" title="{{ link_title }}"{{ link_attributes }}>{{ link_title }}</a>
+                              {% else %}
+                                 <a href="{{ link_url }}" class="link-arrow-right" title="mehr erfahren"{{ link_attributes }}><i class="fa-light fa-arrow-right"></i></a>
+                              {% endif %#}
+                              {% if link_title %}
+                                 <span class="link" title="{{ link_title }}"{{ link_attributes }}>{{ link_title }}</span>
+                              {% else %}
+                                 <span class="link" title="mehr erfahren"{{ link_attributes }}>mehr erfahren</span>
+                              {% endif %}
+                           </div>
+                        {% endif %}
+                     </div>
+                  {% endif %}
+               {#% if link and fullsize_on %#}
+               {% if link or fullsize_on %}
+                  </a>
+               {% endif %}      
+            {% endif %}
+
+         </div>
+      </div>
+      </div>
+
+    {% endblock %}
+{% endblock paragraph %}
+
+
+
+
+
+
+
+
+{#% if node.field_link.0.url.external %}
+  <a href="{{ node.field_link.uri }}">
+    {{ node.field_link.title }}
+  </a>
+{% else %}
+  <a href="{{ path(node.field_link.0.url.routeName, node.field_link.0.url.routeParameters) }}">
+    {{ node.field_link.title }}
+  </a>
+{% endif %#}

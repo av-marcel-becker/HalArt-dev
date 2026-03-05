@@ -1,0 +1,32 @@
+uuid: 8d9995de-3f6a-415e-bed3-a855619996b9
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_ads_position
+    - node.type.n_advertisement
+    - taxonomy.vocabulary.t_advertisement_position
+  enforced:
+    module:
+      - av_ads
+id: node.n_advertisement.field_n_ads_position
+field_name: field_n_ads_position
+entity_type: node
+bundle: n_advertisement
+label: Position
+description: "Position in Listen:<br>\r\n- Positionierung orientiert sich an der vorhandenen Liste z. B. Existieren 25 Listenelemente die \"3. Position\" ist dann vor dem 3. Listen Element<br>\r\nPositionierung mit Platzhaltern:<br>\r\n- Positionierung orientiert sich nach den Platzhaltern, existieren 3 Platzhalter so ist z. B. die \"2. Position\" der 2. Platzhalter"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      t_advertisement_position: t_advertisement_position
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

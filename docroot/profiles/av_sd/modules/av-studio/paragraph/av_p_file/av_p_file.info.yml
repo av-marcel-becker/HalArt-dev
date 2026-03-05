@@ -1,0 +1,8 @@
+name: 'AV Paragraph - File'
+type: module
+description: 'AV-Studio Paragraph - File'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Paragraph'
+dependencies:  
+  - paragraphs
+  - file

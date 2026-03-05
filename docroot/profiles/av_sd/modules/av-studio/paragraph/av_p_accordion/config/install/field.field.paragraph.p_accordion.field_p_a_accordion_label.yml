@@ -1,0 +1,21 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_a_accordion_label
+    - paragraphs.paragraphs_type.p_accordion
+  enforced:
+    module:
+      - av_p_accordion
+id: paragraph.p_accordion.field_p_a_accordion_label
+field_name: field_p_a_accordion_label
+entity_type: paragraph
+bundle: p_accordion
+label: 'Akkordeon Beschriftung'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: 8526a9d9-5459-4a87-b723-9ad2f084771b
+langcode: de
+status: true
+dependencies:
+  module:
+    - iframe
+    - paragraphs
+  enforced:
+    module:
+      - av_p_av_studio_media
+third_party_settings: { }
+id: paragraph.field_p_avsm_media
+field_name: field_p_avsm_media
+entity_type: paragraph
+type: iframe
+settings: {  }
+module: iframe
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

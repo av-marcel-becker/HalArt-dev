@@ -1,0 +1,286 @@
+section_system_1x100:
+  label: '1x100 S.-Abschnitt'
+  category: 'System Abschnitte'
+  template: layouts/templates/section_system_1x100
+  class: '\Drupal\av_l_sections_system\SectionSystem1x100Options'
+  library: av_l_default/css_framework_3
+  icon_map:
+    - [header]
+    - [region_1]
+    - [region_1]
+    - [region_1]
+    - [footer]
+  default_region: region_1
+  regions:
+    header:
+      label: 'Kopfbereich'
+    region_1:
+      label: '1. Region'
+    footer:
+      label: 'Fußbereich'
+      
+section_system_4x25:
+  label: '4x25 S.-Abschnitt'
+  category: 'System Abschnitte'
+  template: layouts/templates/section_system_4x25
+  class: '\Drupal\av_l_sections_system\SectionSystem4x25Options'
+  library: av_l_default/css_framework_3
+  icon_map:
+    - [header,header,header,header]
+    - [region_1,region_2,region_3,region_4]
+    - [region_1,region_2,region_3,region_4]
+    - [region_1,region_2,region_3,region_4]
+    - [footer,footer,footer,footer]
+  default_region: region_1
+  regions:
+    header:
+      label: 'Kopfbereich'
+    region_1:
+      label: '1. Region'
+    region_2:
+      label: '2. Region'
+    region_3:
+      label: '3. Region'
+    region_4:
+      label: '4. Region'
+    footer:
+      label: 'Fußbereich'
+      
+section_system_3x33:
+  label: '3x33 S.-Abschnitt'
+  category: 'System Abschnitte'
+  template: layouts/templates/section_system_3x33
+  class: '\Drupal\av_l_sections_system\SectionSystem3x33Options'
+  library: av_l_default/css_framework_3
+  icon_map:
+    - [header,header,header]
+    - [region_1,region_2,region_3]
+    - [region_1,region_2,region_3]
+    - [region_1,region_2,region_3]
+    - [footer,footer,footer]
+  default_region: region_1
+  regions:
+    header:
+      label: 'Kopfbereich'
+    region_1:
+      label: '1. Region'
+    region_2:
+      label: '2. Region'
+    region_3:
+      label: '3. Region'
+    footer:
+      label: 'Fußbereich'
+      
+section_system_25_50_25:
+  label: '25/50/25 S.-Abschnitt'
+  category: 'System Abschnitte'
+  template: layouts/templates/section_system_25_50_25
+  class: '\Drupal\av_l_sections_system\SectionSystem3x33Options'
+  library: av_l_default/css_framework_3
+  icon_map:
+    - [header,header,header,header]
+    - [region_1,region_2,region_2,region_3]
+    - [region_1,region_2,region_2,region_3]
+    - [region_1,region_2,region_2,region_3]
+    - [footer,footer,footer,footer]
+  default_region: region_1
+  regions:
+    header:
+      label: 'Kopfbereich'
+    region_1:
+      label: '1. Region'
+    region_2:
+      label: '2. Region'
+    region_3:
+      label: '3. Region'
+    footer:
+      label: 'Fußbereich'
+      
+section_system_2x50:
+  label: '2x50 S.-Abschnitt'
+  category: 'System Abschnitte'
+  template: layouts/templates/section_system_2x50
+  class: '\Drupal\av_l_sections_system\SectionSystem2x50Options'
+  library: av_l_default/css_framework_3
+  icon_map:
+    - [header,header]
+    - [region_1,region_2]
+    - [region_1,region_2]
+    - [region_1,region_2]
+    - [footer,footer]
+  default_region: region_1
+  regions:
+    header:
+      label: 'Kopfbereich'
+    region_1:
+      label: '1. Region'
+    region_2:
+      label: '2. Region'
+    footer:
+      label: 'Fußbereich'
+      
+section_system_66_33:
+  label: '66/33 S.-Abschnitt'
+  category: 'System Abschnitte'
+  template: layouts/templates/section_system_66_33
+  class: '\Drupal\av_l_sections_system\SectionSystem2x50Options'
+  library: av_l_default/css_framework_3
+  icon_map:
+    - [header,header,header]
+    - [region_1,region_1,region_2]
+    - [region_1,region_1,region_2]
+    - [region_1,region_1,region_2]
+    - [footer,footer,footer]
+  default_region: region_1
+  regions:
+    header:
+      label: 'Kopfbereich'
+    region_1:
+      label: '1. Region'
+    region_2:
+      label: '2. Region'
+    footer:
+      label: 'Fußbereich'
+      
+section_system_33_66:
+  label: '33/66 S.-Abschnitt'
+  category: 'System Abschnitte'
+  template: layouts/templates/section_system_33_66
+  class: '\Drupal\av_l_sections_system\SectionSystem2x50Options'
+  library: av_l_default/css_framework_3
+  icon_map:
+    - [header,header,header]
+    - [region_1,region_2,region_2]
+    - [region_1,region_2,region_2]
+    - [region_1,region_2,region_2]
+    - [footer,footer,footer]
+  default_region: region_1
+  regions:
+    header:
+      label: 'Kopfbereich'
+    region_1:
+      label: '1. Region'
+    region_2:
+      label: '2. Region'
+    footer:
+      label: 'Fußbereich'
+
+section_system_75_25:
+  label: '75/25 S.-Abschnitt'
+  category: 'System Abschnitte'
+  template: layouts/templates/section_system_75_25
+  class: '\Drupal\av_l_sections_system\SectionSystem2x50Options'
+  library: av_l_default/css_framework_3
+  icon_map:
+    - [header,header,header]
+    - [region_1,region_1,region_1,region_2]
+    - [region_1,region_1,region_1,region_2]
+    - [region_1,region_1,region_1,region_2]
+    - [footer,footer,footer]
+  default_region: region_1
+  regions:
+    header:
+      label: 'Kopfbereich'
+    region_1:
+      label: '1. Region'
+    region_2:
+      label: '2. Region'
+    footer:
+      label: 'Fußbereich'
+
+section_system_25_75:
+  label: '25/75 S.-Abschnitt'
+  category: 'System Abschnitte'
+  template: layouts/templates/section_system_25_75
+  class: '\Drupal\av_l_sections_system\SectionSystem2x50Options'
+  library: av_l_default/css_framework_3
+  icon_map:
+    - [header,header,header]
+    - [region_2,region_1,region_1,region_1]
+    - [region_2,region_1,region_1,region_1]
+    - [region_2,region_1,region_1,region_1]
+    - [footer,footer,footer]
+  default_region: region_1
+  regions:
+    header:
+      label: 'Kopfbereich'
+    region_1:
+      label: '1. Region'
+    region_2:
+      label: '2. Region'
+    footer:
+      label: 'Fußbereich'
+      
+section_system_block:
+  label: 'Block S.-Abschnitt'
+  category: 'System Abschnitte'
+  template: layouts/templates/section_system_block
+  class: '\Drupal\av_l_sections_system\SectionSystemBlockOptions'
+  library: av_l_default/css_framework_3
+  icon_map:
+    - [region_1]
+  default_region: region_1
+  regions:
+    region_1:
+      label: '1. Region'
+      
+section_system_teaser:
+  label: 'Teaser S.-Abschnitt'
+  category: 'System Abschnitte'
+  template: layouts/templates/section_system_teaser
+  class: '\Drupal\av_l_sections_system\SectionSystemTeaserOptions'
+  library: av_l_default/css_framework_3
+  icon_map:
+    - [header]
+    - [t1,t2,t3]
+    - [t4,t5,t6]
+    - [t7,t8,t9]
+    - [footer]
+  default_region: region_1
+  regions:
+    header:
+      label: 'Kopfbereich'
+    region_1:
+      label: '1. Region'
+    footer:
+      label: 'Fußbereich'
+      
+section_system_gallery:
+  label: 'Galerie S.-Abschnitt'
+  category: 'Abschnitte'
+  template: layouts/templates/section_system_gallery
+  class: '\Drupal\av_l_sections\SectionSystemGalleryOptions'
+  library: av_l_default/css_framework_3
+#  library: av_l_default/gallery
+  icon_map:
+    - [header]
+    - [t1,t2,t3]
+    - [t4,t5,t6]
+    - [t7,t8,t9]
+    - [footer]
+  default_region: region_1
+  regions:
+    header:
+      label: 'Kopfbereich'
+    region_1:
+      label: '1. Region'
+    footer:
+      label: 'Fußbereich'
+
+section_system_slider:
+  label: 'Slider Abschnitt'
+  category: 'Abschnitte'
+  template: layouts/templates/section_system_slider
+  class: '\Drupal\av_l_sections\SectionSystemSliderOptions'
+  library: av_l_default/css_framework_3
+#  library: av_l_default/gallery
+  icon_map:
+    - [t1,t1,t1,t1,t1,t1]
+    - [t1,t1,t1,t1,t1,t1]
+    - [t2,t1,t1,t1,t1,t3]
+    - [t1,t1,t1,t1,t1,t1]
+    - [t1,t1,t1,t1,t1,t1]
+  default_region: region_1
+  regions:
+    region_1:
+      label: '1. Region'

@@ -1,0 +1,37 @@
+name: 'AV Node - POI Page'
+type: module
+description: 'AV-Studio Node - POI Page'
+core_version_requirement: ^9.1 || ^10
+package: 'AV-Studio - Node'
+dependencies:
+  - content_moderation
+  - cshs
+  - node
+  - taxonomy
+  - user
+  - menu_ui
+  - node_revision_delete
+  - entity_reference_revisions
+  - paragraphs
+  - image
+  - text
+  - layout_paragraphs
+  - allowed_formats
+  - field_group
+  - focal_point
+  - imce
+  - length_indicator
+  - maxlength
+  - path
+  - av_n_default
+
+  #- scheduler
+  #- pathauto
+  
+  - color_field
+  - leaflet_views
+  - leaflet
+  - geofield
+  #- leaflet_geojson_file
+  - file
+

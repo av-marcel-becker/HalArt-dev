@@ -1,0 +1,22 @@
+uuid: 33f1faf4-e142-4f0d-9cb6-ca973dd39f0d
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - cookies_matomo
+id: matomo
+label: 'Matomo Analytics'
+group: tracking
+info:
+  value: ''
+  format: full_html
+consentRequired: true
+purpose: ''
+processor: ''
+processorContact: ''
+processorUrl: ''
+processorPrivacyPolicyUrl: ''
+processorCookiePolicyUrl: ''
+placeholderMainText: 'Dieser Dienst wurde blockiert, da Matomo Cookies (noch) nicht akzeptiert wurden.'
+placeholderAcceptText: 'Nur Matomo Cookies akzeptieren.'

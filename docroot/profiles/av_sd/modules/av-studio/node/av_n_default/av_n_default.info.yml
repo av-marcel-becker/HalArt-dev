@@ -1,0 +1,13 @@
+name: 'AV Node - Default'
+type: module
+description: 'AV-Studio Node - Default'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Node'
+dependencies:
+  - node
+  - text
+##  - media
+  - taxonomy
+  - file
+  - image
+  - matomo:matomo

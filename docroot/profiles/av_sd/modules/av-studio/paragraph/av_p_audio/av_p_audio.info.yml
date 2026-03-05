@@ -1,0 +1,15 @@
+name: 'AV Paragraph - Audio'
+type: module
+description: 'AV-Studio Paragraph - Audio'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Paragraph'
+dependencies:
+  - drupal:text
+  - drupal:file
+  - drupal:options
+  - imce:imce
+  - paragraphs:paragraphs
+  - mediaelement:mediaelement
+
+
+  

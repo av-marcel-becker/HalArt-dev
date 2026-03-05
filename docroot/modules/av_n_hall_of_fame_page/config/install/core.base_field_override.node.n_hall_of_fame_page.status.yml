@@ -1,0 +1,25 @@
+uuid: 7c31e5b4-47fa-4308-b011-3c3f54399c69
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_hall_of_fame_page
+  enforced:
+    module:
+      - av_n_hall_of_fame_page
+id: node.n_hall_of_fame_page.status
+field_name: status
+entity_type: node
+bundle: n_hall_of_fame_page
+label: Veröffentlicht
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

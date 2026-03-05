@@ -1,0 +1,24 @@
+uuid: 50a5f8df-aaf0-4879-9240-e6c08de71f9c
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_t_ispoip_fa_exp_icon
+    - taxonomy.vocabulary.t_item_settings_poi_page
+  enforced:
+    module:
+      - av_n_point_of_interest_page
+id: taxonomy_term.t_item_settings_poi_page.field_t_ispoip_fa_exp_icon
+field_name: field_t_ispoip_fa_exp_icon
+entity_type: taxonomy_term
+bundle: t_item_settings_poi_page
+label: 'Fontawesome Ausdruck Icon'
+description: 'Wenn kein Icon genutzt wird ist es notwendig ein Leerzeichen einzutragen!!! '
+required: false
+translatable: false
+default_value:
+  -
+    value: ' '
+default_value_callback: ''
+settings: {  }
+field_type: string

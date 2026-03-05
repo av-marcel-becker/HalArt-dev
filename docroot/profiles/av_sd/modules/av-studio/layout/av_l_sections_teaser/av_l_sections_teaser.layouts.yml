@@ -1,0 +1,21 @@
+section_teaser:
+  label: 'Teaser Abschnitt'
+  category: 'Teaser Abschnitte'
+  template: layouts/templates/section_teaser
+  class: '\Drupal\av_l_sections_teaser\SectionTeaserOptions'
+  library: av_l_default/css_framework_3
+  icon_map:
+    - [header]
+    - [t1,t2,t3]
+    - [t4,t5,t5]
+    - [t7,t8,t9]
+    - [footer]
+  default_region: region_1
+  regions:
+#    header:
+#      label: 'Kopfbereich'
+    region_1:
+      label: '1. Region'
+#    footer:
+#      label: 'Fußbereich'
+    

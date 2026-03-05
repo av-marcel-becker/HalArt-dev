@@ -1,0 +1,10 @@
+name: 'AV Menu'
+type: module
+description: 'Menu'
+package: 'AV-Studio - Tools'
+version: 0.1
+core_version_requirement: ^10 || ^11
+#dependencies:
+#  - 
+  
+  

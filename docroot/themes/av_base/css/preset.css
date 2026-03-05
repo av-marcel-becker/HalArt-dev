@@ -1,0 +1,9 @@
+.ph-wysiwyg {
+   margin: var(--default-text-margin);
+}
+.ph-wysiwyg:first-child {
+   margin-top: 0rem;
+}
+.ph-wysiwyg:last-child {
+   margin-bottom: 0rem;
+}

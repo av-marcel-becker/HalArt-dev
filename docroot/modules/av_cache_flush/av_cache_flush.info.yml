@@ -1,0 +1,5 @@
+name: AV - Cache Flush
+type: module
+description: 'Löscht den Cache regelmäßig und bietet eine externe Löschung über Token.'
+core_version_requirement: ^9 || ^10
+package: 'AV-Studio - Tools'

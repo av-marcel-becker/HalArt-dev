@@ -1,0 +1,26 @@
+name: 'AV-Studio Sub Theme'
+type: theme
+description: 'Sub Theme'
+core_version_requirement: ^10 || ^11
+base theme: av_base
+#logo: logo.png
+#screenshot: screenshot.png
+libraries:
+  - av_sub/global
+ckeditor5-stylesheets:
+#  - css/vars.css - wird im backend über dependencies global-vars hinzugefügt
+  - css/fonts.css
+  - css/global.css
+##  - css/preset.css
+##  - css/form.css
+##  - css/ckeditor.css
+regions:
+  header: 'Header'
+  content: 'Content'
+  footer: 'Footer'
+  hidden_footer: '[hidden] Page Footer'
+  hidden_admin: '[Administrator] Versteckte Region für referenzierte Blöcke'
+  hidden_staff: '[Staff] Versteckte Region für referenzierte Blöcke'
+#regions_hidden:
+#  - hidden_admin
+#  - hidden_editorial_staff

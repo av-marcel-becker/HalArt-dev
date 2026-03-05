@@ -1,0 +1,303 @@
+section_1x100:
+  label: '1x100 Abschnitt'
+  category: 'Abschnitte'
+  template: layouts/templates/section_1x100
+  class: '\Drupal\av_l_sections\Section1x100Options'
+  library: av_l_default/css_framework_3
+  icon_map:
+    - [header]
+    - [region_1]
+    - [region_1]
+    - [region_1]
+    - [footer]
+  default_region: region_1
+  regions:
+    header:
+      label: 'Kopfbereich'
+    region_1:
+      label: '1. Region'
+    footer:
+      label: 'Fußbereich'
+      
+section_4x25:
+  label: '4x25 Abschnitt'
+  category: 'Abschnitte'
+  template: layouts/templates/section_4x25
+  class: '\Drupal\av_l_sections\Section4x25Options'
+  library: av_l_default/css_framework_3
+  icon_map:
+    - [header,header,header,header]
+    - [region_1,region_2,region_3,region_4]
+    - [region_1,region_2,region_3,region_4]
+    - [region_1,region_2,region_3,region_4]
+    - [footer,footer,footer,footer]
+  default_region: region_1
+  regions:
+    header:
+      label: 'Kopfbereich'
+    region_1:
+      label: '1. Region'
+    region_2:
+      label: '2. Region'
+    region_3:
+      label: '3. Region'
+    region_4:
+      label: '4. Region'
+    footer:
+      label: 'Fußbereich'
+      
+section_3x33:
+  label: '3x33 Abschnitt'
+  category: 'Abschnitte'
+  template: layouts/templates/section_3x33
+  class: '\Drupal\av_l_sections\Section3x33Options'
+  library: av_l_default/css_framework_3
+  icon_map:
+    - [header,header,header]
+    - [region_1,region_2,region_3]
+    - [region_1,region_2,region_3]
+    - [region_1,region_2,region_3]
+    - [footer,footer,footer]
+  default_region: region_1
+  regions:
+    header:
+      label: 'Kopfbereich'
+    region_1:
+      label: '1. Region'
+    region_2:
+      label: '2. Region'
+    region_3:
+      label: '3. Region'
+    footer:
+      label: 'Fußbereich'
+      
+section_25_50_25:
+  label: '25/50/25 Abschnitt'
+  category: 'Abschnitte'
+  template: layouts/templates/section_25_50_25
+  class: '\Drupal\av_l_sections\Section3x33Options'
+  library: av_l_default/css_framework_3
+  icon_map:
+    - [header,header,header,header]
+    - [region_1,region_2,region_2,region_3]
+    - [region_1,region_2,region_2,region_3]
+    - [region_1,region_2,region_2,region_3]
+    - [footer,footer,footer,footer]
+  default_region: region_1
+  regions:
+    header:
+      label: 'Kopfbereich'
+    region_1:
+      label: '1. Region'
+    region_2:
+      label: '2. Region'
+    region_3:
+      label: '3. Region'
+    footer:
+      label: 'Fußbereich'
+      
+section_2x50:
+  label: '2x50 Abschnitt'
+  category: 'Abschnitte'
+  template: layouts/templates/section_2x50
+  class: '\Drupal\av_l_sections\Section2x50Options'
+  library: av_l_default/css_framework_3
+  icon_map:
+    - [header,header]
+    - [region_1,region_2]
+    - [region_1,region_2]
+    - [region_1,region_2]
+    - [footer,footer]
+  default_region: region_1
+  regions:
+    header:
+      label: 'Kopfbereich'
+    region_1:
+      label: '1. Region'
+    region_2:
+      label: '2. Region'
+    footer:
+      label: 'Fußbereich'
+      
+section_66_33:
+  label: '66/33 Abschnitt'
+  category: 'Abschnitte'
+  template: layouts/templates/section_66_33
+  class: '\Drupal\av_l_sections\Section2x50Options'
+  library: av_l_default/css_framework_3
+  icon_map:
+    - [header,header,header]
+    - [region_1,region_1,region_2]
+    - [region_1,region_1,region_2]
+    - [region_1,region_1,region_2]
+    - [footer,footer,footer]
+  default_region: region_1
+  regions:
+    header:
+      label: 'Kopfbereich'
+    region_1:
+      label: '1. Region'
+    region_2:
+      label: '2. Region'
+    footer:
+      label: 'Fußbereich'
+      
+section_33_66:
+  label: '33/66 Abschnitt'
+  category: 'Abschnitte'
+  template: layouts/templates/section_33_66
+  class: '\Drupal\av_l_sections\Section2x50Options'
+  library: av_l_default/css_framework_3
+  icon_map:
+    - [header,header,header]
+    - [region_1,region_2,region_2]
+    - [region_1,region_2,region_2]
+    - [region_1,region_2,region_2]
+    - [footer,footer,footer]
+  default_region: region_1
+  regions:
+    header:
+      label: 'Kopfbereich'
+    region_1:
+      label: '1. Region'
+    region_2:
+      label: '2. Region'
+    footer:
+      label: 'Fußbereich'
+
+section_75_25:
+  label: '75/25 Abschnitt'
+  category: 'Abschnitte'
+  template: layouts/templates/section_75_25
+  class: '\Drupal\av_l_sections\Section2x50Options'
+  library: av_l_default/css_framework_3
+  icon_map:
+    - [header,header,header]
+    - [region_1,region_1,region_1,region_2]
+    - [region_1,region_1,region_1,region_2]
+    - [region_1,region_1,region_1,region_2]
+    - [footer,footer,footer]
+  default_region: region_1
+  regions:
+    header:
+      label: 'Kopfbereich'
+    region_1:
+      label: '1. Region'
+    region_2:
+      label: '2. Region'
+    footer:
+      label: 'Fußbereich'
+
+section_25_75:
+  label: '25/75 Abschnitt'
+  category: 'Abschnitte'
+  template: layouts/templates/section_25_75
+  class: '\Drupal\av_l_sections\Section2x50Options'
+  library: av_l_default/css_framework_3
+  icon_map:
+    - [header,header,header]
+    - [region_2,region_1,region_1,region_1]
+    - [region_2,region_1,region_1,region_1]
+    - [region_2,region_1,region_1,region_1]
+    - [footer,footer,footer]
+  default_region: region_1
+  regions:
+    header:
+      label: 'Kopfbereich'
+    region_1:
+      label: '1. Region'
+    region_2:
+      label: '2. Region'
+    footer:
+      label: 'Fußbereich'
+      
+section_block:
+  label: 'Block Abschnitt'
+  category: 'Abschnitte'
+  template: layouts/templates/section_block
+  class: '\Drupal\av_l_sections\SectionBlockOptions'
+  library: av_l_default/css_framework_3
+  icon_map:
+    - [region_1]
+  default_region: region_1
+  regions:
+    region_1:
+      label: '1. Region'
+      
+#section_teaser:
+#  label: 'Teaser Abschnitt'
+#  category: 'Abschnitte'
+#  template: layouts/templates/section_teaser
+#  class: '\Drupal\av_l_sections\SectionTeaserOptions'
+#  library: av_l_default/css_framework_3
+#  icon_map:
+#    - [header]
+#    - [t1,t2,t3]
+#    - [t4,t5,t6]
+#    - [t7,t8,t9]
+#    - [footer]
+#  default_region: region_1
+#  regions:
+#    header:
+#      label: 'Kopfbereich'
+#    region_1:
+#      label: '1. Region'
+#    footer:
+#      label: 'Fußbereich'
+      
+section_gallery:
+  label: 'Galerie Abschnitt'
+  category: 'Abschnitte'
+  template: layouts/templates/section_gallery
+  class: '\Drupal\av_l_sections\SectionGalleryOptions'
+  library: av_l_default/css_framework_3
+#  library: av_l_default/gallery
+  icon_map:
+    - [header]
+    - [t1,t2,t3]
+    - [t4,t5,t6]
+    - [t7,t8,t9]
+    - [footer]
+  default_region: region_1
+  regions:
+    header:
+      label: 'Kopfbereich'
+    region_1:
+      label: '1. Region'
+    footer:
+      label: 'Fußbereich'
+      
+section_slider:
+  label: 'Slider Abschnitt'
+  category: 'Abschnitte'
+  template: layouts/templates/section_slider
+  class: '\Drupal\av_l_sections\SectionSliderOptions'
+  library: av_l_default/css_framework_3
+#  library: av_l_default/gallery
+  icon_map:
+    - [t1,t1,t1,t1,t1,t1]
+    - [t1,t1,t1,t1,t1,t1]
+    - [t2,t1,t1,t1,t1,t3]
+    - [t1,t1,t1,t1,t1,t1]
+    - [t1,t1,t1,t1,t1,t1]
+  default_region: region_1
+  regions:
+    region_1:
+      label: '1. Region'
+
+section_splide:
+  label: 'Splide Slider Abschnitt '
+  category: 'Abschnitte'
+  template: layouts/templates/section_splide
+  class: '\Drupal\av_l_sections\SectionSliderOptions'
+  library: av_l_default/css_framework_3
+  icon_map:
+    - [t1,t1,t1,t1,t1,t1]
+    - [t1,t1,t1,t1,t1,t1]
+    - [t2,t1,t1,t1,t1,t3]
+    - [t1,t1,t1,t1,t1,t1]
+    - [t1,t1,t1,t1,t1,t1]
+  default_region: region_1
+  regions:
+    region_1:
+      label: '1. Region'

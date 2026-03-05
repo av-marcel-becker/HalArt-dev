@@ -1,0 +1,29 @@
+uuid: 56ff3866-f112-4062-af08-8aceb1b8fed1
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_ads_time_range
+    - node.type.n_advertisement
+  module:
+    - datetime_range
+  enforced:
+    module:
+      - av_ads
+id: node.n_advertisement.field_n_ads_time_range
+field_name: field_n_ads_time_range
+entity_type: node
+bundle: n_advertisement
+label: Zeitspanne
+description: "Start- und Enddatum ist hier die gesamte Laufzeit der Anzeige bzw. für die spezielle Zeiteinstellung.<br>\r\nDie Start- und Endzeit gibt an, wann die Anzeige zu sehen ist.<br>\r\nBsp: 01.01.2022 - 01.01.2023 von 00:00 -23:59 - Die Anzeige wird 1 Jahr lang zu jeder Zeit angezeigt<br>\r\nBsp: 01.01.2022 - 01.01.2023 von 00:00 -04:00 - Die Anzeige wird 1 Jahr lang immer nur in der Nacht angezeigt von 0 bis 4 Uhr<br>\r\n(Mehrere Einträge möglich z. B. um Anzeigen 2 mal am Tag anzeigen zu lassen oder für verschiedene Laufzeiten)"
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: relative
+    default_date: 'today -2 hours'
+    default_end_date_type: relative
+    default_end_date: 'today +21 hours +59 minutes'
+default_value_callback: ''
+settings: {  }
+field_type: daterange

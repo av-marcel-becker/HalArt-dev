@@ -1,0 +1,25 @@
+uuid: 21d137a9-fc86-4762-8e65-9c6719205f6e
+langcode: de
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - node
+    - paragraphs
+  enforced:
+    module:
+      - av_n_types_of_sports_page
+third_party_settings: { }
+id: node.field_n_tosp_content
+field_name: field_n_tosp_content
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

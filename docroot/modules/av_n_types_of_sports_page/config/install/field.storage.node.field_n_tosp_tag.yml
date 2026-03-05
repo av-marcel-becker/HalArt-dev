@@ -1,0 +1,24 @@
+uuid: 914889fa-0eb4-4e4e-9fbf-2ff5d850c897
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_types_of_sports_page
+  module:
+    - node
+    - taxonomy
+third_party_settings: { }
+id: node.field_n_tosp_tag
+field_name: field_n_tosp_tag
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

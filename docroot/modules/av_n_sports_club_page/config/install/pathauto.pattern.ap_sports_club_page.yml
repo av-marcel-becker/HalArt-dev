@@ -1,0 +1,25 @@
+uuid: 6d1d6bc7-4f9d-40a6-bea6-c7c6561dd7f6
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_sports_club_page
+  module:
+    - node
+id: ap_sports_club_page
+label: Sportvereine
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents:join-path]/[node:title]'
+selection_criteria:
+  6d1d6bc7-4f9d-40a6-bea6-c7c6561dd7f6:
+    id: 'entity_bundle:node'
+    bundles:
+      n_sports_club_page: n_sports_club_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 6d1d6bc7-4f9d-40a6-bea6-c7c6561dd7f6
+selection_logic: and
+weight: -5
+relationships: {  }

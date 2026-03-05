@@ -1,0 +1,27 @@
+uuid: 03d0a89b-39dc-4f60-a8a2-3ad1524f9048
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_t_text
+    - paragraphs.paragraphs_type.p_teaser
+  module:
+    - text
+  enforced:
+    module:
+      - av_p_teaser
+third_party_settings: { }
+id: paragraph.p_teaser.field_p_t_text
+field_name: field_p_t_text
+entity_type: paragraph
+bundle: p_teaser
+label: Teasertext
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    plain_text: plain_text
+field_type: text_long

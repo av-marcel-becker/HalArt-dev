@@ -1,0 +1,9 @@
+av_menu:
+  version: 0.1
+  css:
+    theme:
+      css/av_menu.css: { }
+  js: 
+    js/av_menu.js: { }
+#  dependencies:
+#    - -/- 

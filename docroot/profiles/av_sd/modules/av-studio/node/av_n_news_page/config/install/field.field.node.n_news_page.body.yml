@@ -1,0 +1,29 @@
+uuid: ea1984a4-d388-4686-8e00-3fe3e8c17ca1
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.n_news_page
+  enforced:
+    module:
+      - av_n_news_page
+  module:
+    - text
+third_party_settings: { }
+id: node.n_news_page.body
+field_name: body
+entity_type: node
+bundle: n_news_page
+label: 'Kurze Zusammenfassung / -Beschreibung'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    plain_text: plain_text
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

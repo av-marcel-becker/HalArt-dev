@@ -1,0 +1,22 @@
+uuid: 885e774d-ea34-4e84-8a3e-7ef84420cc11
+langcode: de
+status: true
+dependencies:
+  module:
+    - paragraphs
+  enforced:
+    module:
+      - av_p_audio
+third_party_settings: { }
+id: paragraph.field_p_ao_show_label
+field_name: field_p_ao_show_label
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

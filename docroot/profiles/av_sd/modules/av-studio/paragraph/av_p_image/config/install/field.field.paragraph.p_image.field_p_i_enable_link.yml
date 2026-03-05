@@ -1,0 +1,26 @@
+uuid: 4c3e0f12-ffa3-41e3-83df-96a8f5d2d9be
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_i_enable_link
+    - paragraphs.paragraphs_type.p_image
+  enforced:
+    module:
+      - av_p_image
+id: paragraph.p_image.field_p_i_enable_link
+field_name: field_p_i_enable_link
+entity_type: paragraph
+bundle: p_image
+label: 'Bild verlinken'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

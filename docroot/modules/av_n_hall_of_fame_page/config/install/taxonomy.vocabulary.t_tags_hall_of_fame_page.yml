@@ -1,0 +1,11 @@
+uuid: 2203ef84-3285-437b-86a5-165fc5bb40ce
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_hall_of_fame_page
+name: 'Tags für Hall of Fame Seite'
+vid: t_tags_hall_of_fame_page
+description: ''
+weight: 0

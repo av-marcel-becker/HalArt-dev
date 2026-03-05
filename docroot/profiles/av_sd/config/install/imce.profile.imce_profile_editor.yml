@@ -1,0 +1,26 @@
+uuid: 27b60aae-8d90-4f80-83b2-1380067e5d6e
+langcode: de
+status: true
+dependencies: {  }
+id: imce_profile_editor
+label: Redaktion
+description: ''
+conf:
+  extensions: 'png jpg pdf mp4'
+  maxsize: null
+  quota: null
+  maxwidth: 4096
+  maxheight: 4096
+  replace: 0
+  thumbnail_style: medium
+  thumbnail_grid_style: true
+  ignore_usage: false
+  folders:
+    -
+      path: '[user:uid]_[user:display-name]'
+      permissions:
+        all: true
+    -
+      path: share
+      permissions:
+        all: true

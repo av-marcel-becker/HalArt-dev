@@ -1,0 +1,13 @@
+uuid: cec6f766-fd56-4dfb-97a9-a581019cc988
+langcode: de
+status: true
+dependencies: 
+  enforced:
+    module:
+      - av_p_cards
+id: p_cards
+label: 'Cards'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

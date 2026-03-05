@@ -1,0 +1,32 @@
+uuid: f6fd78f5-b4c8-4e10-b27e-0995a60c3eaf
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_pp_tag
+    - node.type.n_paragraph_page
+    - taxonomy.vocabulary.t_tags_paragraph_page
+  enforced:
+    module:
+      - av_n_paragraph_page
+id: node.n_paragraph_page.field_n_pp_tag
+field_name: field_n_pp_tag
+entity_type: node
+bundle: n_paragraph_page
+label: Tagging
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      t_tags_paragraph_page: t_tags_paragraph_page
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

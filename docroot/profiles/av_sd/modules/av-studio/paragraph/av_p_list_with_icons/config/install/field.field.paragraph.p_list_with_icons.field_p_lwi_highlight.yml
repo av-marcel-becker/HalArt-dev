@@ -1,0 +1,26 @@
+uuid: 55b75818-0eb8-4654-9537-7955dd65beab
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_lwi_highlight
+    - paragraphs.paragraphs_type.p_list_with_icons
+  enforced:
+    module:
+      - av_p_list_with_icons
+id: paragraph.p_list_with_icons.field_p_lwi_highlight
+field_name: field_p_lwi_highlight
+entity_type: paragraph
+bundle: p_list_with_icons
+label: Hervorheben
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: hervorgehoben
+  off_label: 'nicht hervorgehoben'
+field_type: boolean

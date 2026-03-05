@@ -1,0 +1,37 @@
+uuid: 0448f3c9-d89b-483c-a364-ed60c76abb51
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p_file.field_p_f_file
+    - paragraphs.paragraphs_type.p_file
+  module:
+    - file
+    - imce
+  enforced:
+    module:
+      - av_p_file
+id: paragraph.p_file.default
+targetEntityType: paragraph
+bundle: p_file
+mode: default
+content:
+  field_p_f_file:
+    type: file_generic
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings:
+      imce:
+        enabled: true
+  status:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  uid: true

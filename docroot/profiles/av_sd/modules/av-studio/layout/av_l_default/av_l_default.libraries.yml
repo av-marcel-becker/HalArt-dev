@@ -1,0 +1,26 @@
+css_framework_3:
+  header: true
+  version: 0.1
+  css:
+    theme:
+#      /libraries/CSS-Framework-3/dist/preset.css: { weight: -100 }
+      /libraries/CSS-Framework-3/dist/preset-var.css: { weight: -10 }
+#     /libraries/CSS-Framework-3/dist/text.css: { weight: -9 }
+#      /libraries/CSS-Framework-3/dist/form.css: { weight: -9 }
+  js:
+    /libraries/CSS-Framework-3/dist/cssf-vars.js: { weight: -101 }
+    /libraries/CSS-Framework-3/dist/cssf.js: { weight: -100 }
+#photoswipe:
+#  version: VERSION
+#  version: 5.3.6
+#  css:
+#    theme:
+#      /libraries/PhotoSwipe-5.3.6/dist/photoswipe.css: { }
+#  dependencies:
+#    - photoswipe/photoswipe.local
+#    - photoswipe/photoswipe.init
+#gallery:
+#  version: VERSION
+#  dependencies:
+#    - av_l_default/css_framework_2
+#    - av_l_default/photoswipe

@@ -1,0 +1,23 @@
+uuid: e96fea06-6e35-4040-b33f-001bac2f6980
+langcode: de
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+  enforced:
+    module:
+      - av_p_teaser
+third_party_settings: { }
+id: paragraph.field_p_t_link
+field_name: field_p_t_link
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

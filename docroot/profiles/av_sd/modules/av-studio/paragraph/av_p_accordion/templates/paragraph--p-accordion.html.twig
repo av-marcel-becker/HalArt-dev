@@ -1,0 +1,48 @@
+{#
+/**
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ *
+ * @ingroup themeable
+ */
+#}
+{{ attach_library('av_p_accordion/av_p_accordion') }}
+{% set attributes_layout = attributes %}
+{% set attributes_flex = create_attribute() %}
+{% set attributes_container_accordion = region_attributes.container_accordion %}
+{% if not attributes_layout %}
+    {% set attributes_layout = create_attribute() %}
+{% endif %}
+{% if not attributes_container_accordion %}
+    {% set attributes_container_accordion = create_attribute() %}
+{% endif %}
+{% 
+   set classes_layout = [
+         'ph-accordion',
+         'ph-accordion-wrapper',
+      ] 
+%}
+{% 
+   set classes_flex = [
+      ] 
+%}
+{% 
+   set classes_container_accordion = [
+         'ph-accordion-container', 
+         'cssf--w100p', 
+      ] 
+%}
+<div{{ attributes_layout.addClass(classes_layout) }}>
+   <div {{ attributes_flex.addClass(classes_flex) }}>
+      <div {{ attributes_container_accordion.addClass(classes_container_accordion) }}>
+         {#% if content.field_p_a_accordion_label %#}
+         {% if content.field_p_a_accordion_label|render|striptags|trim %}
+            <div class="ph-accordion-label">
+               <h3>{{ content.field_p_a_accordion_label }}</h3>
+            </div>
+         {% endif %}
+         {{ content.field_p_a_accordion_item }}
+      </div>
+   </div>
+</div>

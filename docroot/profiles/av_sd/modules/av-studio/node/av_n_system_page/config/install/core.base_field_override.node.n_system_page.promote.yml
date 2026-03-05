@@ -1,0 +1,25 @@
+uuid: cdd5bba5-0899-483e-bfd0-63a10af461c1
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_system_page
+  enforced:
+    module:
+      - av_n_system_page
+id: node.n_system_page.promote
+field_name: promote
+entity_type: node
+bundle: n_system_page
+label: 'Auf der Startseite anzeigen'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

@@ -1,0 +1,25 @@
+uuid: f9de165c-ee60-4157-890c-cc440d9c647f
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_advertisement
+  enforced:
+    module:
+      - av_ads
+id: node.n_advertisement.status
+field_name: status
+entity_type: node
+bundle: n_advertisement
+label: Veröffentlicht
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

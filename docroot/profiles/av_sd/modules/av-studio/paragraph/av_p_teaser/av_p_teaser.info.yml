@@ -1,0 +1,23 @@
+name: 'AV Paragraph - Teaser'
+type: module
+description: 'AV-Studio Paragraph - Teaser'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Paragraph'
+dependencies:  
+  - conditional_fields
+  - focal_point
+  - imce
+  - link
+  - text
+  - responsive_image
+  - image
+  - image_replace
+  - allowed_formats
+  - paragraphs
+  - file
+  - options
+  - photoswipe
+  - av_ads
+      
+
+  

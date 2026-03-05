@@ -1,0 +1,11 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_accordion
+id: p_accordion
+label: Akkordeon
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

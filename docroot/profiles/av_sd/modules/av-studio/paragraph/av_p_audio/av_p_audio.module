@@ -1,0 +1,15 @@
+<?php
+   /**
+    * hook_theme
+    */
+   function av_p_audio_theme($existing, $type, $theme, $path) 
+      {
+         return [
+               'paragraph__p_audio' => [     
+                     'base hook' => 'paragraph',
+                  ],
+               'field__field_p_ao_audio' => [     
+                     'base hook' => 'field',
+                  ],
+            ];
+      } 

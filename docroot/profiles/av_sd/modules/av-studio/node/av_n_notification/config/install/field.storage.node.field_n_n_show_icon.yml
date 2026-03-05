@@ -1,0 +1,22 @@
+uuid: bcdbfe19-4555-4102-a614-2bc83fb64cf1
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - av_n_notification
+third_party_settings: { }
+id: node.field_n_n_show_icon
+field_name: field_n_n_show_icon
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

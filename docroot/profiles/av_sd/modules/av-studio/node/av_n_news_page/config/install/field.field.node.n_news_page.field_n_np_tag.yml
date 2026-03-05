@@ -1,0 +1,32 @@
+uuid: 291c1313-67e1-4803-af26-89a299cc37a9
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_np_tag
+    - node.type.n_news_page
+    - taxonomy.vocabulary.t_tags_news_page
+  enforced:
+    module:
+      - av_n_news_page
+id: node.n_news_page.field_n_np_tag
+field_name: field_n_np_tag
+entity_type: node
+bundle: n_news_page
+label: Tagging
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      t_tags_news_page: t_tags_news_page
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

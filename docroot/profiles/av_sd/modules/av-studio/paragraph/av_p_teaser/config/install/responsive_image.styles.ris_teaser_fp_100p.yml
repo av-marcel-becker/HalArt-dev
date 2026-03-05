@@ -1,0 +1,42 @@
+uuid: 594ee63f-3d07-4cc8-a39c-394271c4ab27
+langcode: de
+status: true
+dependencies:
+  config:
+    - image.style.is_teaser_fp_100p_bp1200_1200px
+    - image.style.is_teaser_fp_100p_bp576_576px
+    - image.style.is_teaser_fp_100p_bp768_768px
+    - image.style.is_teaser_fp_100p_bp992_992px
+  enforced:
+    module:
+      - av_p_teaser
+id: ris_teaser_fp_100p
+label: 'Teaser FP 100%'
+image_style_mappings:
+  -
+    breakpoint_id: av_p_teaser.css_framework.1200
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_teaser_fp_100p_bp1400_1400px
+  -
+    breakpoint_id: av_p_teaser.css_framework.992
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_teaser_fp_100p_bp1200_1200px
+  -
+    breakpoint_id: av_p_teaser.css_framework.768
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_teaser_fp_100p_bp992_992px
+  -
+    breakpoint_id: av_p_teaser.css_framework.576
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_teaser_fp_100p_bp768_768px
+  -
+    breakpoint_id: av_p_teaser.css_framework.0
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: is_teaser_fp_100p_bp576_576px
+breakpoint_group: av_p_teaser
+fallback_image_style: is_teaser_fp_100p_bp1200_1200px

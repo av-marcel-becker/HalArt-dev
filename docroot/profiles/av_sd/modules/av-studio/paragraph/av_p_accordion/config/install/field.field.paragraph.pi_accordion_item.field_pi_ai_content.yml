@@ -1,0 +1,54 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pi_ai_content
+    - paragraphs.paragraphs_type.p_wysiwyg
+    - paragraphs.paragraphs_type.pi_accordion_item
+  module:
+    - entity_reference_revisions
+  enforced:
+    module:
+      - av_p_accordion
+id: paragraph.pi_accordion_item.field_pi_ai_content
+field_name: field_pi_ai_content
+entity_type: paragraph
+bundle: pi_accordion_item
+label: Inhalt
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      p_wysiwyg: p_wysiwyg
+    target_bundles_drag_drop:
+      p_wysiwyg:
+        enabled: true
+        weight: -17
+      pi_accordion_item:
+        weight: -16
+        enabled: false
+      p_accordion:
+        weight: -15
+        enabled: false
+      p_block:
+        weight: -14
+        enabled: false
+      p_image_library:
+        weight: -13
+        enabled: false
+      p_image_upload:
+        weight: -12
+        enabled: false
+      p_section:
+        weight: -11
+        enabled: false
+      p_teaser:
+        weight: -10
+        enabled: false
+field_type: entity_reference_revisions

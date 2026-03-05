@@ -1,0 +1,26 @@
+<?php
+
+    #use Drupal\av_ads\Dev;
+   
+   /**
+    * Implements hook_page_attachments().
+    */
+   function av_ads_page_attachments(array &$attachments) 
+      {
+         $route_name = \Drupal::routeMatch()->getRouteName();
+         #Dev::msg($route_name);
+         if($route_name == 'view.v_event_list.v_event') 
+            {  
+              # $attachments['#attached']['library'][] = 'av_ads/av_ads_42';
+            }
+         if(\Drupal::service('path.matcher')->isFrontPage()) 
+            {  
+             # $attachments['#attached']['library'][] = 'av_ads/av_ads_40';
+            }
+         $current_user = \Drupal::currentUser();
+         $roles = $current_user->getRoles();
+         if(in_array('administrator',$roles) && $route_name == 'view.v_event_list.v_event') 
+            {  
+         
+            }
+      }

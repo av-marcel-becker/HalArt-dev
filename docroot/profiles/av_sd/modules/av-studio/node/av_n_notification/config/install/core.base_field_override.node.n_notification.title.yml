@@ -1,0 +1,21 @@
+uuid: 123d2a87-916e-4474-a39c-fe3a300345c5
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_notification
+  enforced:
+    module:
+      - av_n_notification
+id: node.n_notification.title
+field_name: title
+entity_type: node
+bundle: n_notification
+label: 'Interner Titel'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

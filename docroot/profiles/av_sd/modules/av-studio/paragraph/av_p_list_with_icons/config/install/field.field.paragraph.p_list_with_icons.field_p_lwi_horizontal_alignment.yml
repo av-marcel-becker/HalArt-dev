@@ -1,0 +1,26 @@
+uuid: 37717d03-1251-4ad7-8b6c-c9c72771c742
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_lwi_horizontal_alignment
+    - paragraphs.paragraphs_type.p_list_with_icons
+  enforced:
+    module:
+      - av_p_list_with_icons
+id: paragraph.p_list_with_icons.field_p_lwi_horizontal_alignment
+field_name: field_p_lwi_horizontal_alignment
+entity_type: paragraph
+bundle: p_list_with_icons
+label: 'Horizontale Ausrichtung'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'horizontal ausgerichtet'
+  off_label: 'vertikal ausgerichtet'
+field_type: boolean

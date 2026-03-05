@@ -1,0 +1,39 @@
+uuid: ffef5f71-11f7-425a-8a2c-2f81d912ee71
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p_predefined_sections.field_p_ps_predefined_sections
+    - paragraphs.paragraphs_type.p_predefined_sections
+  enforced:
+    module:
+      - av_p_predefined_sections
+id: paragraph.p_predefined_sections.default
+targetEntityType: paragraph
+bundle: p_predefined_sections
+mode: default
+content:
+  field_p_ps_predefined_sections:
+    type: entity_reference_autocomplete
+    weight: 1
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  layout_paragraphs_fields:
+    weight: -200
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true

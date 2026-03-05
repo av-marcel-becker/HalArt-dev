@@ -1,0 +1,109 @@
+uuid: 7a292a81-1c2f-4494-983b-099753c02ee2
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_system_page
+  enforced:
+    module:
+      - av_n_system_page
+  module:
+    - content_moderation
+id: w_system_page
+label: Systemseite
+type: content_moderation
+type_settings:
+  states:
+    draft:
+      label: Entwurf
+      published: false
+      default_revision: false
+      weight: 0
+    published:
+      label: Veröffentlicht
+      published: true
+      default_revision: true
+      weight: 1
+    w_sp_archives:
+      published: false
+      default_revision: true
+      label: Archiv
+      weight: 2
+    w_sp_presentation:
+      published: false
+      default_revision: false
+      label: Moderation
+      weight: 3
+    w_sp_release_planned:
+      published: false
+      default_revision: true
+      label: 'Veröffentlichung geplant'
+      weight: 4
+    w_sp_unpublished:
+      published: false
+      default_revision: true
+      label: Unveröffentlicht
+      weight: 5
+  transitions:
+    create_new_draft:
+      label: 'Neuen Entwurf erstellen'
+      to: draft
+      weight: 0
+      from:
+        - draft
+        - published
+        - w_sp_archives
+        - w_sp_presentation
+        - w_sp_release_planned
+        - w_sp_unpublished
+    publish:
+      label: Veröffentlichen
+      to: published
+      weight: 1
+      from:
+        - draft
+        - published
+        - w_sp_archives
+        - w_sp_presentation
+        - w_sp_release_planned
+        - w_sp_unpublished
+    w_sp_archive:
+      label: Archivieren
+      from:
+        - published
+        - w_sp_unpublished
+      to: w_sp_archives
+      weight: 2
+    w_sp_do_not_publish:
+      label: 'nicht veröffentlichen'
+      from:
+        - draft
+        - published
+        - w_sp_archives
+        - w_sp_presentation
+        - w_sp_release_planned
+        - w_sp_unpublished
+      to: w_sp_unpublished
+      weight: 5
+    w_sp_moderate:
+      label: Moderieren
+      from:
+        - draft
+        - w_sp_archives
+        - w_sp_presentation
+        - w_sp_unpublished
+      to: w_sp_presentation
+      weight: 3
+    w_sp_schedule_publication:
+      label: 'Veröffentlichung planen'
+      from:
+        - draft
+        - w_sp_presentation
+        - w_sp_release_planned
+        - w_sp_unpublished
+      to: w_sp_release_planned
+      weight: 4
+  entity_types:
+    node:
+      - n_system_page
+  default_moderation_state: draft

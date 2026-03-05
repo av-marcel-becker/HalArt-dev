@@ -1,0 +1,24 @@
+uuid: c1a9481b-031d-47b9-a884-729b2357f9cb
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+  enforced:
+    module:
+      - av_ads
+third_party_settings: { }
+id: node.field_n_ads_location
+field_name: field_n_ads_location
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

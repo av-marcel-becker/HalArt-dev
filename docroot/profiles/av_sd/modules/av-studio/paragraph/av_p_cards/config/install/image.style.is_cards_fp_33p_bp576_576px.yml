@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - crop
+  enforced:
+    module:
+      - av_p_cards
+name: is_cards_fp_33p_bp576_576px
+label: 'Card FP 33% - bp576 (B=576px)'
+effects:
+  4f3e4d56-038e-4d88-b8b4-be78adca5dee:
+    uuid: 4f3e4d56-038e-4d88-b8b4-be78adca5dee
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1152
+      height: 648
+      crop_type: focal_point
+  490f3015-fb58-40f6-809b-0f8e643a9f3d:
+    uuid: 490f3015-fb58-40f6-809b-0f8e643a9f3d
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

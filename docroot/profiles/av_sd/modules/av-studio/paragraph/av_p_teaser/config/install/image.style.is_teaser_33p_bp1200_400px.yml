@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_teaser
+name: is_teaser_33p_bp1200_400px
+label: 'Teaser 33% - bp1200 (B=400px)'
+effects:
+  c207ae72-befc-4ca4-b1bf-3867bd8329de:
+    uuid: c207ae72-befc-4ca4-b1bf-3867bd8329de
+    id: image_scale
+    weight: 1
+    data:
+      width: 800
+      height: null
+      upscale: false
+  9516749f-ee40-44ce-8dcf-b62770e40730:
+    uuid: 9516749f-ee40-44ce-8dcf-b62770e40730
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

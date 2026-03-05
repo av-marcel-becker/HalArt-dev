@@ -1,0 +1,23 @@
+uuid: 25d27613-00ca-445f-9b3d-0c320ab98a43
+langcode: de
+status: true
+dependencies:
+  module:
+    - geofield
+    - paragraphs
+  enforced:
+    module:
+      - av_p_single_location_map
+id: paragraph.field_p_slm_poi
+field_name: field_p_slm_poi
+entity_type: paragraph
+type: geofield
+settings:
+  backend: geofield_backend_default
+module: geofield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

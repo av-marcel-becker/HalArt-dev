@@ -1,0 +1,25 @@
+uuid: cde97842-2861-45b2-a394-360a4886d67c
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_p_bg_color
+    - paragraphs.paragraphs_type.p_panorama
+  enforced:
+    module:
+      - av_p_panorama
+  module:
+    - color_field
+id: paragraph.p_panorama.field_p_p_bg_color
+field_name: field_p_p_bg_color
+entity_type: paragraph
+bundle: p_panorama
+label: Hintergrundfarbe
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

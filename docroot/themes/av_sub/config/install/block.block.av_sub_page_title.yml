@@ -1,0 +1,18 @@
+uuid: 3a92095e-e8bd-44a2-94e9-f95735d21100
+langcode: de
+status: true
+dependencies:
+  theme:
+    - av_sub
+id: av_sub_page_title
+theme: av_sub
+region: content
+weight: -3
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Seitentitel
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,9 @@
+uuid: c45c3161-d7fb-4226-9aaf-129d2357ea35
+langcode: de
+status: true
+dependencies: {  }
+id: marketing
+label: Marketing
+weight: 20
+title: Marketing
+details: 'Kundenkommunikation und Marketinginstrumente.'

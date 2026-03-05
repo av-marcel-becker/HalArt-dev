@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - crop
+  enforced:
+    module:
+      - av_p_cards
+name: is_cards_fp_100p_bp992_992px
+label: 'Card FP 100% - bp992 (B=992px)'
+effects:
+  ad46d292-a6a4-4988-b4e7-b0e4856e932b:
+    uuid: ad46d292-a6a4-4988-b4e7-b0e4856e932b
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1984
+      height: 850
+      crop_type: focal_point
+  d5493b6e-677e-4b92-8557-75194fb3cc85:
+    uuid: d5493b6e-677e-4b92-8557-75194fb3cc85
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

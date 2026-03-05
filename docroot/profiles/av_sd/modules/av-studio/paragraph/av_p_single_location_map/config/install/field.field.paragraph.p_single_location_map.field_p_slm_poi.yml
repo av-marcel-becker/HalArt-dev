@@ -1,0 +1,24 @@
+uuid: c67ded7d-6473-4f35-93a5-6fd354305245
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_slm_poi
+    - paragraphs.paragraphs_type.p_single_location_map
+  module:
+    - geofield
+  enforced:
+    module:
+      - av_p_single_location_map
+id: paragraph.p_single_location_map.field_p_slm_poi
+field_name: field_p_slm_poi
+entity_type: paragraph
+bundle: p_single_location_map
+label: Karte
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

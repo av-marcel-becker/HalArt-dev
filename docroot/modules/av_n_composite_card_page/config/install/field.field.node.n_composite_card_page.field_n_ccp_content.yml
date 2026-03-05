@@ -1,0 +1,29 @@
+uuid: eee637b3-bc17-45b6-b4e8-95b40615b928
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_ccp_content
+    - node.type.n_composite_card_page
+  module:
+    - entity_reference_revisions
+  enforced:
+    module:
+      - av_n_composite_card_page
+id: node.n_composite_card_page.field_n_ccp_content
+field_name: field_n_ccp_content
+entity_type: node
+bundle: n_composite_card_page
+label: Inhaltsbereich
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop: { }
+field_type: entity_reference_revisions

@@ -1,0 +1,28 @@
+uuid: 6f2d5768-1df1-4f20-97d8-aa201afbca28
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_n_text
+    - filter.format.plain_text
+    - node.type.n_notification
+  module:
+    - text
+  enforced:
+    module:
+      - av_n_notification
+third_party_settings: { }
+id: node.n_notification.field_n_n_text
+field_name: field_n_n_text
+entity_type: node
+bundle: n_notification
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - plain_text
+field_type: text_long

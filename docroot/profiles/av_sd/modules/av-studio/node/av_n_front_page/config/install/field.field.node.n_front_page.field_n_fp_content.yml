@@ -1,0 +1,29 @@
+uuid: 70b2810d-8756-44d9-8722-2e41b72ecc43
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_fp_content
+    - node.type.n_front_page
+  module:
+    - entity_reference_revisions
+  enforced:
+    module:
+      - av_n_front_page
+id: node.n_front_page.field_n_fp_content
+field_name: field_n_fp_content
+entity_type: node
+bundle: n_front_page
+label: Inhaltsbereich
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop: { }
+field_type: entity_reference_revisions

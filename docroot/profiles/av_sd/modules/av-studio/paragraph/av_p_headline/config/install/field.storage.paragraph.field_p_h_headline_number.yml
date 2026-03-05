@@ -1,0 +1,43 @@
+uuid: 0afd9f6a-50f5-4508-aac7-7eee7148d939
+langcode: de
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+  enforced:
+    module:
+      - av_p_headline
+third_party_settings: { }
+id: paragraph.field_p_h_headline_number
+field_name: field_p_h_headline_number
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: h1
+      label: h1
+    -
+      value: h2
+      label: h2
+    -
+      value: h3
+      label: h3
+    -
+      value: h4
+      label: h4
+    -
+      value: h5
+      label: h5
+    -
+      value: h6
+      label: h6
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

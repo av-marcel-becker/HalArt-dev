@@ -1,0 +1,45 @@
+uuid: d0f40048-1526-40d9-9e22-fc50ce18b9d4
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.dm_100p
+    - field.field.paragraph.p_image.field_p_i_align_center
+    - field.field.paragraph.p_image.field_p_i_enable_link
+    - field.field.paragraph.p_image.field_p_i_enable_zoom
+    - field.field.paragraph.p_image.field_p_i_image
+    - field.field.paragraph.p_image.field_p_i_label
+    - field.field.paragraph.p_image.field_p_i_link
+    - field.field.paragraph.p_image.field_p_i_show_label
+    - field.field.paragraph.p_image.field_p_i_size
+    - paragraphs.paragraphs_type.p_image
+    - responsive_image.styles.ris_100p
+  module:
+    - responsive_image
+  enforced:
+    module:
+      - av_p_image
+id: paragraph.p_image.dm_100p
+targetEntityType: paragraph
+bundle: p_image
+mode: dm_100p
+content:
+  field_p_i_image:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: ris_100p
+      image_link: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_p_i_align_center: true
+  field_p_i_enable_link: true
+  field_p_i_enable_zoom: true
+  field_p_i_label: true
+  field_p_i_link: true
+  field_p_i_show_label: true
+  field_p_i_size: true

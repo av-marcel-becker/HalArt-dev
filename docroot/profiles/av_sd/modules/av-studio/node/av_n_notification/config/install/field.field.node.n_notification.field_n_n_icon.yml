@@ -1,0 +1,26 @@
+uuid: cb1e98fa-4b53-40ad-b9dd-eb16587a786a
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_n_icon
+    - node.type.n_notification
+  module:
+    - options
+  enforced:
+    module:
+      - av_n_notification
+id: node.n_notification.field_n_n_icon
+field_name: field_n_n_icon
+entity_type: node
+bundle: n_notification
+label: ICON
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: fa-info
+default_value_callback: ''
+settings: {  }
+field_type: list_string

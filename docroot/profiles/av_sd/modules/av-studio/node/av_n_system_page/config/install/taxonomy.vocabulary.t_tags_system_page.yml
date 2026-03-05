@@ -1,0 +1,11 @@
+uuid: 38feaac8-80d9-4960-aa63-2baf1968b5ff
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_system_page
+name: 'Tags für Systemseite'
+vid: t_tags_system_page
+description: ''
+weight: 0

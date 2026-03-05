@@ -1,0 +1,29 @@
+uuid: 4d79ddba-66c8-45ee-9125-2feab6dd1996
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.t_predefined_sections.field_t_ps_content
+    - taxonomy.vocabulary.t_predefined_sections
+  module:
+    - layout_paragraphs
+  enforced:
+    module:
+      - av_p_predefined_sections
+id: taxonomy_term.t_predefined_sections.default
+targetEntityType: taxonomy_term
+bundle: t_predefined_sections
+mode: default
+content:
+  field_t_ps_content:
+    type: layout_paragraphs
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  description: true
+  langcode: true

@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - crop
+  enforced:
+    module:
+      - av_p_image
+name: is_fp_75p_bp992_744px
+label: 'FP 75% - bp992 (B=744px)'
+effects:
+  2dc7df2b-a5ab-48dc-869d-9b13245e0cfc:
+    uuid: 2dc7df2b-a5ab-48dc-869d-9b13245e0cfc
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1488
+      height: 992
+      crop_type: focal_point
+  d0b270c3-4b02-450a-89fd-460d3ce65a4c:
+    uuid: d0b270c3-4b02-450a-89fd-460d3ce65a4c
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

@@ -1,0 +1,5 @@
+av_scroll.settings:
+  title: 'AV-Studio Tools - Scroll Settings'
+  description: 'Set AV-Studio Tools - Scroll settings'
+  parent: 'system.admin_config_system'
+  route_name: 'av_scroll.settings'

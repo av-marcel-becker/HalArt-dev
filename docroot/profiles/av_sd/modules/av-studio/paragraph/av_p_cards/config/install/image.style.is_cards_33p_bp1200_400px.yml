@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_cards
+name: is_cards_33p_bp1200_400px
+label: 'Card 33% - bp1200 (B=400px)'
+effects:
+  4690dece-2dd5-4964-adc0-7647395a6aa6:
+    uuid: 4690dece-2dd5-4964-adc0-7647395a6aa6
+    id: image_scale
+    weight: 1
+    data:
+      width: 800
+      height: null
+      upscale: false
+  0585c372-18c5-401c-aa9c-f2a5c0d55d64:
+    uuid: 0585c372-18c5-401c-aa9c-f2a5c0d55d64
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

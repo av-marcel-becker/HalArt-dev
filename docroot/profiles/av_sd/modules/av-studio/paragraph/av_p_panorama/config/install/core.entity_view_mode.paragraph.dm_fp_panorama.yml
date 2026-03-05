@@ -1,0 +1,12 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - paragraphs
+  enforced:
+    module:
+      - av_p_panorama
+id: paragraph.dm_fp_panorama
+label: 'Panorama'
+targetEntityType: paragraph
+cache: true

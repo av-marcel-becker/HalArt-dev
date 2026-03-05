@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_teaser
+name: is_teaser_66p_bp1400_934px
+label: 'Teaser 66% - bp1400 (B=934px)'
+effects:
+  3b51b148-7ebc-465d-bfe4-fd1a063f8955:
+    uuid: 3b51b148-7ebc-465d-bfe4-fd1a063f8955
+    id: image_scale
+    weight: 1
+    data:
+      width: 1868
+      height: null
+      upscale: false
+  f3c44983-cf73-49f9-9aa8-ba70463e3c0e:
+    uuid: f3c44983-cf73-49f9-9aa8-ba70463e3c0e
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

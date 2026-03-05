@@ -1,0 +1,28 @@
+uuid: f6c936d1-d49e-4ccc-81a2-b29ff91f1180
+langcode: de
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.p_sections_splide
+  enforced:
+    module:
+      - av_p_sections_splide
+id: paragraph.p_sections_splide.default
+targetEntityType: paragraph
+bundle: p_sections_splide
+mode: default
+content:
+  layout_paragraphs_fields:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 0
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true

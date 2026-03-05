@@ -1,0 +1,22 @@
+name: 'AV-Admin Gin Theme'
+type: theme
+description: 'Admin Gin Theme'
+core_version_requirement: ^10 || ^11
+libraries:
+  - av_admin_gin/global
+#stylesheets-remove:
+#  - 'core/themes/seven/css/theme/media-library.css'
+base theme: gin
+screenshot: screenshot.png
+regions:
+  header: 'Header'
+  pre_content: 'Pre-content'
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  sidebar_first: 'First sidebar'
+regions_hidden:
+  - sidebar_first

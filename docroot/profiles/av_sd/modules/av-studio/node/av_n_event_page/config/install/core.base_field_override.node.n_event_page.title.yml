@@ -1,0 +1,21 @@
+uuid: bd9c65b3-41dd-46a8-b39f-65c8ee3887de
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_event_page
+  enforced:
+    module:
+      - av_n_event_page
+id: node.n_event_page.title
+field_name: title
+entity_type: node
+bundle: n_event_page
+label: Überschrift
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

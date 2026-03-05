@@ -1,0 +1,9 @@
+av_p_accordion:
+  version: 1.x
+  css:
+    theme:
+      css/av_p_accordion.css: {}
+  js: 
+    js/av_p_accordion.js: {} 
+#  dependencies:
+#    - core/jquery

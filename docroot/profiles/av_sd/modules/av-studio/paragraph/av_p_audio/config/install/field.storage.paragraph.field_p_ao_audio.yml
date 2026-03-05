@@ -1,0 +1,26 @@
+uuid: cef30dcc-8566-4fb2-a6a8-1f5e1e24e634
+langcode: de
+status: true
+dependencies:
+  module:
+    - file
+    - paragraphs
+  enforced:
+    module:
+      - av_p_audio
+id: paragraph.field_p_ao_audio
+field_name: field_p_ao_audio
+entity_type: paragraph
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

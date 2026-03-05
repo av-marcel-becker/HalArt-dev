@@ -1,0 +1,10 @@
+abs_urls: false
+admin_theme: false
+roles_profiles:
+  administrator:
+    public: imce_administrator
+    private: imce_administrator
+  r_editor:
+    public: imce_profile_editor
+    private: imce_profile_editor
+langcode: de

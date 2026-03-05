@@ -1,0 +1,5 @@
+av_flyout.settings:
+  title: 'AV Flyout - Settings'
+  description: 'Set Flyout settings'
+  parent: 'system.admin_config_system'
+  route_name: 'av_flyout.settings'

@@ -1,0 +1,109 @@
+dependencies:
+  enforced:
+    module:
+      - av_l_sections_system
+default_section_expansion: "cssf--gc_content|Container für Standard Inhalte\r\ncssf--gc_outside|Container für Teaser oder Eye-Catcher\r\ncssf--gc_full|Container für Blöcke"
+default_section_align_items: "cssf--ai_stretch|Auf volle Höhe ausdehnen\r\ncssf--ai_start|oben positionieren\r\ncssf--ai_center|mittig positionieren\r\ncssf--ai_end|unten positionieren"
+default_section_background_color: "#000000|cssf--tpl-bg-var_1\r\n#ffffff|cssf--tpl-bg-var_2\r\n#ffaaaa|cssf--tpl-bg-var_3\r\n#aaffaa|cssf--tpl-bg-var_4\r\n#aaaaff|cssf--tpl-bg-var_5\r\n#ffffaa|cssf--tpl-bg-var_6\r\n#ffaaff|cssf--tpl-bg-var_7\r\n#aaffff|cssf--tpl-bg-var_8\r\n#aa3333|cssf--tpl-bg-var_9\r\n#33aa33|cssf--tpl-bg-var_10\r\n#3333aa|cssf--tpl-bg-var_11\r\n#aaaa33|cssf--tpl-bg-var_12\r\n#aa33aa|cssf--tpl-bg-var_13\r\n#33aaaa|cssf--tpl-bg-var_14"
+default_section_custom: "custom-section-none|-\r\ncustom-section-1|Benutzerdefiniert 1"
+default_header_justify_content: "cssf--jc_start|links\r\ncssf--jc_center|mittig\r\ncssf--jc_end|rechts"
+default_header_align_content: "cssf--ac_start|oben\r\ncssf--ac_center|mittig\r\ncssf--ac_end|unten"
+default_header_background_color: "#000000|cssf--tpl-bg-var_1\r\n#ffffff|cssf--tpl-bg-var_2\r\n#ffaaaa|cssf--tpl-bg-var_3\r\n#aaffaa|cssf--tpl-bg-var_4\r\n#aaaaff|cssf--tpl-bg-var_5\r\n#ffffaa|cssf--tpl-bg-var_6\r\n#ffaaff|cssf--tpl-bg-var_7\r\n#aaffff|cssf--tpl-bg-var_8\r\n#aa3333|cssf--tpl-bg-var_9\r\n#33aa33|cssf--tpl-bg-var_10\r\n#3333aa|cssf--tpl-bg-var_11\r\n#aaaa33|cssf--tpl-bg-var_12\r\n#aa33aa|cssf--tpl-bg-var_13\r\n#33aaaa|cssf--tpl-bg-var_14"
+default_header_custom: "custom-region-header-none|-\r\ncustom-region-header-1|Benutzerdefiniert 1"
+default_region_1_align_self: "cssf--as_unset|-\r\ncssf--as_stretch|Auf Container-Höhe ausdehnen\r\ncssf--as_start|oben positionieren\r\ncssf--as_center|mittig positionieren\r\ncssf--as_end|unten positionieren"
+default_region_1_justify_content: "cssf--jc_start|links\r\ncssf--jc_center|mittig\r\ncssf--jc_end|rechts"
+default_region_1_align_content: "cssf--ac_start|oben\r\ncssf--ac_center|mittig\r\ncssf--ac_end|unten"
+default_region_1_background_color: "#000000|cssf--tpl-bg-var_1\r\n#ffffff|cssf--tpl-bg-var_2\r\n#ffaaaa|cssf--tpl-bg-var_3\r\n#aaffaa|cssf--tpl-bg-var_4\r\n#aaaaff|cssf--tpl-bg-var_5\r\n#ffffaa|cssf--tpl-bg-var_6\r\n#ffaaff|cssf--tpl-bg-var_7\r\n#aaffff|cssf--tpl-bg-var_8\r\n#aa3333|cssf--tpl-bg-var_9\r\n#33aa33|cssf--tpl-bg-var_10\r\n#3333aa|cssf--tpl-bg-var_11\r\n#aaaa33|cssf--tpl-bg-var_12\r\n#aa33aa|cssf--tpl-bg-var_13\r\n#33aaaa|cssf--tpl-bg-var_14"
+default_region_1_custom: "custom-region-1-none|-\r\ncustom-region-1-1|Benutzerdefiniert 1"
+default_region_2_align_self: "cssf--as_unset|-\r\ncssf--as_stretch|Auf Container-Höhe ausdehnen\r\ncssf--as_start|oben positionieren\r\ncssf--as_center|mittig positionieren\r\ncssf--as_end|unten positionieren"
+default_region_2_justify_content: "cssf--jc_start|links\r\ncssf--jc_center|mittig\r\ncssf--jc_end|rechts"
+default_region_2_align_content: "cssf--ac_start|oben\r\ncssf--ac_center|mittig\r\ncssf--ac_end|unten"
+default_region_2_background_color: "#000000|cssf--tpl-bg-var_1\r\n#ffffff|cssf--tpl-bg-var_2\r\n#ffaaaa|cssf--tpl-bg-var_3\r\n#aaffaa|cssf--tpl-bg-var_4\r\n#aaaaff|cssf--tpl-bg-var_5\r\n#ffffaa|cssf--tpl-bg-var_6\r\n#ffaaff|cssf--tpl-bg-var_7\r\n#aaffff|cssf--tpl-bg-var_8\r\n#aa3333|cssf--tpl-bg-var_9\r\n#33aa33|cssf--tpl-bg-var_10\r\n#3333aa|cssf--tpl-bg-var_11\r\n#aaaa33|cssf--tpl-bg-var_12\r\n#aa33aa|cssf--tpl-bg-var_13\r\n#33aaaa|cssf--tpl-bg-var_14"
+default_region_2_custom: "custom-region-2-none|-\r\ncustom-region-2-1|Benutzerdefiniert 1"
+default_region_3_align_self: "cssf--as_unset|-\r\ncssf--as_stretch|Auf Container-Höhe ausdehnen\r\ncssf--as_start|oben positionieren\r\ncssf--as_center|mittig positionieren\r\ncssf--as_end|unten positionieren"
+default_region_3_justify_content: "cssf--jc_start|links\r\ncssf--jc_center|mittig\r\ncssf--jc_end|rechts"
+default_region_3_align_content: "cssf--ac_start|oben\r\ncssf--ac_center|mittig\r\ncssf--ac_end|unten"
+default_region_3_background_color: "#000000|cssf--tpl-bg-var_1\r\n#ffffff|cssf--tpl-bg-var_2\r\n#ffaaaa|cssf--tpl-bg-var_3\r\n#aaffaa|cssf--tpl-bg-var_4\r\n#aaaaff|cssf--tpl-bg-var_5\r\n#ffffaa|cssf--tpl-bg-var_6\r\n#ffaaff|cssf--tpl-bg-var_7\r\n#aaffff|cssf--tpl-bg-var_8\r\n#aa3333|cssf--tpl-bg-var_9\r\n#33aa33|cssf--tpl-bg-var_10\r\n#3333aa|cssf--tpl-bg-var_11\r\n#aaaa33|cssf--tpl-bg-var_12\r\n#aa33aa|cssf--tpl-bg-var_13\r\n#33aaaa|cssf--tpl-bg-var_14"
+default_region_3_custom: "custom-region-3-none|-\r\ncustom-region-3-1|Benutzerdefiniert 1"
+default_region_4_align_self: "cssf--as_unset|-\r\ncssf--as_stretch|Auf Container-Höhe ausdehnen\r\ncssf--as_start|oben positionieren\r\ncssf--as_center|mittig positionieren\r\ncssf--as_end|unten positionieren"
+default_region_4_justify_content: "cssf--jc_start|links\r\ncssf--jc_center|mittig\r\ncssf--jc_end|rechts"
+default_region_4_align_content: "cssf--ac_start|oben\r\ncssf--ac_center|mittig\r\ncssf--ac_end|unten"
+default_region_4_background_color: "#000000|cssf--tpl-bg-var_1\r\n#ffffff|cssf--tpl-bg-var_2\r\n#ffaaaa|cssf--tpl-bg-var_3\r\n#aaffaa|cssf--tpl-bg-var_4\r\n#aaaaff|cssf--tpl-bg-var_5\r\n#ffffaa|cssf--tpl-bg-var_6\r\n#ffaaff|cssf--tpl-bg-var_7\r\n#aaffff|cssf--tpl-bg-var_8\r\n#aa3333|cssf--tpl-bg-var_9\r\n#33aa33|cssf--tpl-bg-var_10\r\n#3333aa|cssf--tpl-bg-var_11\r\n#aaaa33|cssf--tpl-bg-var_12\r\n#aa33aa|cssf--tpl-bg-var_13\r\n#33aaaa|cssf--tpl-bg-var_14"
+default_region_4_custom: "custom-region-4-none|-\r\ncustom-region-4-1|Benutzerdefiniert 1"
+default_footer_justify_content: "cssf--jc_start|links\r\ncssf--jc_center|mittig\r\ncssf--jc_end|rechts"
+default_footer_align_content: "cssf--ac_start|oben\r\ncssf--ac_center|mittig\r\ncssf--ac_end|unten"
+default_footer_background_color: "#000000|cssf--tpl-bg-var_1\r\n#ffffff|cssf--tpl-bg-var_2\r\n#ffaaaa|cssf--tpl-bg-var_3\r\n#aaffaa|cssf--tpl-bg-var_4\r\n#aaaaff|cssf--tpl-bg-var_5\r\n#ffffaa|cssf--tpl-bg-var_6\r\n#ffaaff|cssf--tpl-bg-var_7\r\n#aaffff|cssf--tpl-bg-var_8\r\n#aa3333|cssf--tpl-bg-var_9\r\n#33aa33|cssf--tpl-bg-var_10\r\n#3333aa|cssf--tpl-bg-var_11\r\n#aaaa33|cssf--tpl-bg-var_12\r\n#aa33aa|cssf--tpl-bg-var_13\r\n#33aaaa|cssf--tpl-bg-var_14"
+default_footer_custom: "custom-region-footer-none|-\r\ncustom-region-footer-1|Benutzerdefiniert 1"
+preset_section_header: 0
+preset_section_footer: 0
+preset_section_expansion: cssf--gc_content
+preset_section_gap: 1
+preset_section_spacing: 1
+preset_section_align_items: cssf--ai_stretch
+preset_section_background_color: ''
+preset_section_custom: ''
+preset_header_justify_content: cssf--jc_start
+preset_header_align_content: cssf--ac_start
+preset_header_background_color: ''
+preset_header_custom: ''
+preset_region_1_align_self: cssf--as_unset
+preset_region_1_justify_content: cssf--jc_start
+preset_region_1_align_content: cssf--ac_start
+preset_region_1_background_color: ''
+preset_region_1_custom: ''
+preset_region_2_align_self: cssf--as_unset
+preset_region_2_justify_content: cssf--jc_start
+preset_region_2_align_content: cssf--ac_start
+preset_region_2_background_color: ''
+preset_region_2_custom: ''
+preset_region_3_align_self: cssf--as_unset
+preset_region_3_justify_content: cssf--jc_start
+preset_region_3_align_content: cssf--ac_start
+preset_region_3_background_color: ''
+preset_region_3_custom: ''
+preset_region_4_align_self: cssf--as_unset
+preset_region_4_justify_content: cssf--jc_start
+preset_region_4_align_content: cssf--ac_start
+preset_region_4_background_color: ''
+preset_region_4_custom: ''
+preset_footer_justify_content: cssf--jc_start
+preset_footer_align_content: cssf--ac_start
+preset_footer_background_color: ''
+preset_footer_custom: ''
+active_section_header: 1
+active_section_footer: 1
+active_section_id: 1
+active_section_expansion: 1
+active_section_gap: 0
+active_section_spacing: 1
+active_section_align_items: 0
+active_section_background_color: 1
+active_section_custom: 0
+active_header_justify_content: 0
+active_header_align_content: 0
+active_header_background_color: 1
+active_header_custom: 0
+active_region_1_align_self: 0
+active_region_1_justify_content: 0
+active_region_1_align_content: 0
+active_region_1_background_color: 1
+active_region_1_custom: 0
+active_region_2_align_self: 0
+active_region_2_justify_content: 0
+active_region_2_align_content: 0
+active_region_2_background_color: 1
+active_region_2_custom: 0
+active_region_3_align_self: 0
+active_region_3_justify_content: 0
+active_region_3_align_content: 0
+active_region_3_background_color: 1
+active_region_3_custom: 0
+active_region_4_align_self: 0
+active_region_4_justify_content: 0
+active_region_4_align_content: 0
+active_region_4_background_color: 1
+active_region_4_custom: 0
+active_footer_justify_content: 0
+active_footer_align_content: 0
+active_footer_background_color: 1
+active_footer_custom: 0

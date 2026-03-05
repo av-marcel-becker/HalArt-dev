@@ -1,0 +1,42 @@
+<?php
+#use Drupal\views\ResultRow;
+#use Drupal\views\Plugin\views\row\RowPluginBase;
+#use Drupal\Core\Field\FieldItemListInterface;
+#use Drupal\leaflet_views\Plugin\views\style\LeafletMap;
+#use Drupal\leaflet_views\Plugin\views\style\MarkerDefault;
+   
+function av_leaflet_map_cartodb_light_leaflet_map_info() 
+   {     
+      return [
+               'CartoDB - light' => [
+                                       'label' => 'CartoDB - light',
+                                       'description' => t('CartoDB - light Map'),
+                                       'settings' => [
+                                                        'dragging' => TRUE,
+                                                        'touchZoom' => TRUE,
+                                                        'scrollWheelZoom' => TRUE,
+                                                        'doubleClickZoom' => TRUE,
+                                                        'zoomControl' => TRUE,
+                                                        'attributionControl' => TRUE,
+                                                        'trackResize' => TRUE,
+                                                        'fadeAnimation' => TRUE,
+                                                        'zoomAnimation' => TRUE,
+                                                        'closePopupOnClick' => TRUE,
+                                                        'layerControl' => TRUE,
+                                                        // 'minZoom' => 10,
+                                                        // 'maxZoom' => 15,
+                                                        // 'zoom' => 15, // set the map zoom fixed to 15.
+                                                      ],
+                                       'layers' => [
+                                                      'earth' => [
+                                                                     'urlTemplate' => '//{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
+                                                                     'options' => [
+                                                                                    'attribution' => '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+                                                                                  ],
+                                                                 ],
+                                                  ],
+        
+         'plugins' => [],
+       ],
+     ];
+   }

@@ -1,0 +1,33 @@
+uuid: 6d46fc02-f5da-404a-afa7-483214e430ab
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.dm_teaser_fp_66p
+    - field.field.paragraph.p_teaser.field_p_t_image
+    - field.field.paragraph.p_teaser.field_p_t_label
+    - paragraphs.paragraphs_type.p_teaser
+    - responsive_image.styles.ris_teaser_fp_66p
+  module:
+    - responsive_image
+  enforced:
+    module:
+      - av_p_teaser
+id: paragraph.p_teaser.dm_teaser_fp_66p
+targetEntityType: paragraph
+bundle: p_teaser
+mode: dm_teaser_fp_66p
+content:
+  field_p_t_image:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: ris_teaser_fp_66p
+      image_link: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_p_t_label: true

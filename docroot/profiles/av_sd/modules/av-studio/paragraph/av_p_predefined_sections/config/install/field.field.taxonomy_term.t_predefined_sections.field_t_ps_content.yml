@@ -1,0 +1,47 @@
+uuid: 72528b64-dc6d-44b7-83c5-bca503e2fafa
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_t_ps_content
+    - taxonomy.vocabulary.t_predefined_sections
+  module:
+    - entity_reference_revisions
+  enforced:
+    module:
+      - av_p_predefined_sections
+id: taxonomy_term.t_predefined_sections.field_t_ps_content
+field_name: field_t_ps_content
+entity_type: taxonomy_term
+bundle: t_predefined_sections
+label: Inhalt
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 0
+    target_bundles_drag_drop:
+      p_block:
+        weight: 7
+        enabled: false
+      p_sections:
+        weight: 8
+        enabled: false
+      p_sections_block:
+        weight: 9
+        enabled: false
+      p_sections_system:
+        weight: 10
+        enabled: false
+      p_sections_teaser:
+        weight: 11
+        enabled: false
+      p_wysiwyg:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

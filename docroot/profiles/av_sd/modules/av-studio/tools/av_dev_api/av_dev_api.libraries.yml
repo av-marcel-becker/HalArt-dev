@@ -1,0 +1,6 @@
+av_dev_api:
+  version: 0.1
+  js: 
+    js/av_dev_api.js: {}
+#  dependencies:
+#    - core/jquery 

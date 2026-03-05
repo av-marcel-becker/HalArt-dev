@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_ao_size
+    - paragraphs.paragraphs_type.p_audio
+  module:
+    - options
+  enforced:
+    module:
+      - av_p_audio
+id: paragraph.p_audio.field_p_ao_size
+field_name: field_p_ao_size
+entity_type: paragraph
+bundle: p_audio
+label: Ausdehnungsgröße
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: '50'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

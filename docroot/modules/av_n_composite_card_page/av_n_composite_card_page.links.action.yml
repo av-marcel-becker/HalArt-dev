@@ -1,0 +1,11 @@
+av_n_composite_card_page.composite_card_page.add:
+  route_name: node.add
+  title: 'Sedcards-Seite hinzufügen'
+  weight: 10
+  appears_on:
+    - view.v_content_composite_card_page.v_content_composite_card_page
+  route_parameters: 
+    node_type: 'n_composite_card_page'
+#  options:
+#    query:
+#      destination: /admin/content/composite_card_page

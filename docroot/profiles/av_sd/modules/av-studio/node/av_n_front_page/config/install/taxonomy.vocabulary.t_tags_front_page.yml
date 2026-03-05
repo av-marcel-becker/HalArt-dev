@@ -1,0 +1,11 @@
+uuid: 3cf70cc3-890d-46fa-a60d-f2dc4c0a7706
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_front_page
+name: 'Tags für Startseite'
+vid: t_tags_front_page
+description: ''
+weight: 0

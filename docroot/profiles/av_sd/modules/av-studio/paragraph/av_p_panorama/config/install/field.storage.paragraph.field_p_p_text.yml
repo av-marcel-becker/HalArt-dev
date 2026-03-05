@@ -1,0 +1,23 @@
+uuid: c75c80c3-90e8-4d18-b18d-522c202ee55c
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_panorama
+  module:
+    - paragraphs
+    - text
+third_party_settings: { }
+id: paragraph.field_p_p_text
+field_name: field_p_p_text
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

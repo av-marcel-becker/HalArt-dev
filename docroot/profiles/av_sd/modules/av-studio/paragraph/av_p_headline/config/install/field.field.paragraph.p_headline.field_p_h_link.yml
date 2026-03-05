@@ -1,0 +1,26 @@
+uuid: b3bbeeda-86b6-4801-aa6b-bc9b1aea081d
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_h_link
+    - paragraphs.paragraphs_type.p_headline
+  module:
+    - link
+  enforced:
+    module:
+      - av_p_headline
+id: paragraph.p_headline.field_p_h_link
+field_name: field_p_h_link
+entity_type: paragraph
+bundle: p_headline
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 1
+field_type: link

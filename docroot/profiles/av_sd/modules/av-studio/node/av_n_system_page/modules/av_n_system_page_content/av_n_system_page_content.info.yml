@@ -1,0 +1,7 @@
+name: 'AV Node - System Page Content'
+type: module
+description: 'AV-Studio Node - System Page Content'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Node'
+dependencies:
+  - av_n_system_page

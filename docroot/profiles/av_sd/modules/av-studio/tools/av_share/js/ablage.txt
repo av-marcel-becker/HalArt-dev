@@ -1,0 +1,5 @@
+         <div class="av-share-link-overlay" style="display: none;">
+            <input type="text" class="av-share-link-url">
+            <button class="av-share-link-copy">Copy</button>
+            <button class="av-share-link-close">close</button>
+         </div>

@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - crop
+  enforced:
+    module:
+      - av_p_teaser
+name: is_teaser_fp_75p_bp576_576px
+label: 'Teaser FP 75% - bp576 (B=576px)'
+effects:
+  7b3e3310-ad14-4b00-9729-dd7b7d1f744f:
+    uuid: 7b3e3310-ad14-4b00-9729-dd7b7d1f744f
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1152
+      height: 768
+      crop_type: focal_point
+  cf4ed50d-0a59-4a69-ac07-ee7fe7d90862:
+    uuid: cf4ed50d-0a59-4a69-ac07-ee7fe7d90862
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

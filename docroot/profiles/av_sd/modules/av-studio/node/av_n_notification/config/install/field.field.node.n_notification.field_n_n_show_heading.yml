@@ -1,0 +1,26 @@
+uuid: 290c80c9-a4e3-44a1-9fd5-414593d5bac6
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_n_show_heading
+    - node.type.n_notification
+  enforced:
+    module:
+      - av_n_notification
+id: node.n_notification.field_n_n_show_heading
+field_name: field_n_n_show_heading
+entity_type: node
+bundle: n_notification
+label: 'Überschrift anzeigen'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

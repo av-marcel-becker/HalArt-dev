@@ -1,0 +1,24 @@
+uuid: 3b3425a0-1d72-47b2-a29b-429c0f9ff4e0
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_composite_card_page
+  module:
+    - node
+    - taxonomy
+third_party_settings: { }
+id: node.field_n_ccp_tag
+field_name: field_n_ccp_tag
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

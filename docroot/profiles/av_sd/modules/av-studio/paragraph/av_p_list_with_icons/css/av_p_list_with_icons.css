@@ -1,0 +1,53 @@
+/*
+.horizontal .
+*/
+
+.ph-list-with-icons {
+   /*
+   --ul-margin: var(--default-text-margin, 0);
+   --ul-padding: 0;
+   --ul-li-font-size: var(--clamp-1200-size-20);
+   --ul-li-line-height: 1.2;
+   --ul-li-font-family: var(--font-family-1);
+   --ul-li-font-style: normal;
+   --ul-li-font-variant: normal;
+   --ul-li-font-weight: normal;
+   --ul-li-color: var(--color-3);
+   --ul-li-margin: 0;
+ */
+   --ul-li-margin-left: 0;
+   --ul-li-padding: 0;
+   --ul-li-padding-left: 0;
+   
+   --ul-li-marker-content: "";
+   --ul-li-marker-color: unset;
+   --ul-li-marker-font-family: unset;
+   --ul-li-marker-font-style: unset;
+   --ul-li-marker-font-weight: unset;
+   --ul-li-marker-font-variant: unset;
+   --ul-li-marker-font-size: unset;
+   --ul-li-marker-line-height: unset;
+  
+}
+.ph-list-with-icons ul {
+   
+}
+.ph-list-with-icons ul.horizontal {
+   
+}
+.ph-list-with-icons ul.highlight {
+   
+}
+.ph-list-with-icons ul.list-as-button {
+   
+}
+.ph-list-with-icons li .fa-li {
+   margin-top: 0rem;
+   font-size: 1.25em;
+}
+.ph-list-with-icons li:marker {
+   content: '';
+}
+.ph-list-with-icons li p {
+   margin: 0 ;
+}

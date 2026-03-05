@@ -1,0 +1,8 @@
+av_klaro:
+  version: VERSION
+  css:
+    theme:
+      css/av_klaro.css: { }
+  js: 
+    js/av_klaro.js: { }
+    

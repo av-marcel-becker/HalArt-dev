@@ -1,0 +1,215 @@
+/*
+:root {
+   --ph-menu-h6-color: unset;
+   --ph-menu-h6-font-family: unset;
+   --ph-menu-h6-font-style: unset;
+   --ph-menu-h6-font-weight: unset;
+   --ph-menu-h6-font-size: unset;
+   --ph-menu-h6-line-height: unset;
+   --ph-menu-h6-margin: unset;
+   --ph-menu-h6-padding: unset;
+   --ph-menu-h6-position: unset;
+   --ph-menu-h6-height: unset;
+   --ph-menu-h6-width: unset;
+   --ph-menu-h6-overflow: unset;
+   --ph-menu-h6-clip: unset;
+   --ph-menu-h6-white-space: unset;
+   --ph-menu-ul-margin: unset;
+   --ph-menu-ul-padding: unset;
+   --ph-menu-ul-gap: unset;
+   --ph-menu-li-margin: unset;
+   --ph-menu-li-padding: unset;
+   --ph-menu-li-grid-column: unset;
+   --ph-menu-li-border-bottom: unset;
+   --ph-menu-li-first-child-border-top: unset;
+   --ph-menu-a-font-family: unset;
+   --ph-menu-a-font-style: unset;
+   --ph-menu-a-font-weight: unset;
+   --ph-menu-a-font-size: unset;
+   --ph-menu-a-line-height: unset;
+   --ph-menu-a-padding: unset;
+   --ph-menu-a-text-decoration: unset;
+   --ph-menu-a-text-transform: unset;
+   --ph-menu-a-color: unset;
+   --ph-menu-a-background: unset;
+   --ph-menu-a-border: unset;
+   --ph-menu-a-border-radius: unset;
+   --ph-menu-a-text-align: unset;
+   --ph-menu-a-justify-content: unset;
+   --ph-menu-a-transition: unset;
+   --ph-menu-a-min-height: unset;
+   --ph-menu-a-after-content: unset;
+   --ph-menu-a-after-font-family: unset;
+   --ph-menu-a-after-font-style: unset;
+   --ph-menu-a-after-font-weight: unset;
+   --ph-menu-a-after-font-variant: unset;
+   --ph-menu-a-after-font-size: unset;
+   --ph-menu-a-after-border: unset;
+   --ph-menu-a-after-border-radius: unset;
+   --ph-menu-a-after-color: unset;
+   --ph-menu-a-after-background: unset;
+   --ph-menu-a-after-padding: unset;
+   --ph-menu-a-after-margin: unset;
+   --ph-menu-a-after-position: unset;
+   --ph-menu-a-after-top: unset;
+   --ph-menu-a-after-right: unset;
+   --ph-menu-a-after-left: unset;
+   --ph-menu-a-after-bottom: unset;
+   --ph-menu-a-after-transition: unset;
+   --ph-menu-a-hover-font-family: unset;
+   --ph-menu-a-hover-font-style: unset;
+   --ph-menu-a-hover-font-weight: unset;
+   --ph-menu-a-hover-font-size: unset;
+   --ph-menu-a-hover-line-height: unset;
+   --ph-menu-a-hover-text-decoration: unset;
+   --ph-menu-a-hover-text-transform: unset;
+   --ph-menu-a-hover-color: unset;
+   --ph-menu-a-hover-background: unset;
+   --ph-menu-a-hover-border: unset;
+   --ph-menu-a-hover-border-radius: unset;
+   --ph-menu-a-hover-transition: unset;
+   --ph-menu-a-hover-after-content: unset;
+   --ph-menu-a-hover-after-font-family: unset;
+   --ph-menu-a-hover-after-font-style: unset;
+   --ph-menu-a-hover-after-font-weight: unset;
+   --ph-menu-a-hover-after-font-variant: unset;
+   --ph-menu-a-hover-after-font-size: unset;
+   --ph-menu-a-hover-after-border: unset;
+   --ph-menu-a-hover-after-border-radius: unset;
+   --ph-menu-a-hover-after-color: unset;
+   --ph-menu-a-hover-after-background: unset;
+   --ph-menu-a-hover-after-transition: unset;
+}
+.ph-menu.show-as-button {
+   
+}
+.ph-menu.show-as-list {
+   
+}
+*/
+
+.ph-menu {
+   position: relative !important;
+}
+.ph-menu h6 {
+   color: var(--ph-menu-h6-color, black) !important;
+   font-family: var(--ph-menu-h6-font-family, sans-serif) !important;
+   font-style: var(--ph-menu-h6-font-style, normal) !important;
+   font-weight: var(--ph-menu-h6-font-weight, normal) !important;
+   font-size: var(--ph-menu-h6-font-size, 16px) !important;
+   line-height: var(--ph-menu-h6-line-height, 1.5) !important;
+   margin: var(--ph-menu-h6-margin, 0) !important;
+   padding: var(--ph-menu-h6-padding, 0) !important;
+   position: var(--ph-menu-h6-position, absolute) !important;
+   height: var(--ph-menu-h6-height, 1px) !important;
+   width: var(--ph-menu-h6-width, 1px) !important;
+   overflow: var(--ph-menu-h6-overflow, hidden) !important;
+   clip: var(--ph-menu-h6-clip, rect(1px, 1px, 1px, 1px)) !important;
+   white-space: var(--ph-menu-h6-white-space, nowrap) !important;
+}
+.ph-menu ul {
+   margin: var(--ph-menu-ul-margin, 0) !important;
+   padding: var(--ph-menu-ul-padding, 0) !important;
+   gap: var(--ph-menu-ul-gap, var(--layout-gap)) !important;
+}
+.ph-menu:first-child ul {
+   margin-top: 0!important;
+}
+.ph-menu:last-child ul {
+   margin-bottom: 0!important;
+}
+.ph-menu li {
+   display: flex;
+   margin: var(--ph-menu-li-margin, 0) !important;
+   padding: var(--ph-menu-li-padding, 0) !important;
+   grid-column: var(--ph-menu-li-grid-column, span 4) !important;
+   border-bottom: var(--ph-menu-li-border-bottom, 1px black solid) !important;
+}
+.ph-menu li:first-child {
+   border-top: var(--ph-menu-li-first-child-border-top, 1px black solid) !important;
+}
+.ph-menu li::marker {
+   content: '' !important;
+}
+.ph-menu.show-as-list li:first-child {
+   margin-top: 0!important;
+}
+.ph-menu.show-as-list li:last-child {
+   margin-bottom: 0!important;
+}
+.ph-menu li a {
+   position: relative;
+   display: inline-flex !important;
+   align-items: center !important;
+   align-self: stretch !important;
+   font-family: var(--ph-menu-a-font-family, sans-serif) !important;
+   font-style: var(--ph-menu-a-font-style, normal) !important;
+   font-weight: var(--ph-menu-a-font-weight, normal) !important;
+   font-size: var(--ph-menu-a-font-size, 16px) !important;
+   line-height: var(--ph-menu-a-line-height, 1.5) !important;
+   padding: var(--ph-menu-a-padding, 25px 25px) !important;
+   text-decoration: var(--ph-menu-a-text-decoration, none) !important;
+   text-transform: var(--ph-menu-a-text-transform, none) !important;
+   color: var(--ph-menu-a-color, black) !important;
+   background: var(--ph-menu-a-background, white) !important;
+   border: var(--ph-menu-a-border, 1px solid black) !important;
+   border-radius: var(--ph-menu-a-border-radius, 0px) !important;
+   text-align: var(--ph-menu-a-text-align, center) !important;
+   justify-content: var(--ph-menu-a-justify-content, center) !important;
+   transition: var(--ph-menu-a-transition, all 0.15s ease-in-out) !important;
+   min-height: var(--ph-menu-a-min-height, 0) !important;
+}
+.ph-menu li a::after {
+   -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+   text-rendering: auto;
+   line-height: 1;
+   display: inline-block;
+   position: var(--ph-menu-a-after-position, relative) !important;
+   top:  var(--ph-menu-a-after-top, unset) !important;
+   right: var(--ph-menu-a-after-right, unset) !important;
+   left: var(--ph-menu-a-after-left, unset) !important;
+   bottom: var(--ph-menu-a-after-bottom, unset) !important;
+   content: var(--ph-menu-a-after-content, '') !important;
+   font-family: var(--ph-menu-a-after-font-family, sans-serif) !important;
+   font-style: var(--ph-menu-a-after-font-style, normal) !important;
+   font-weight: var(--ph-menu-a-after-font-weight, normal) !important;
+   font-variant: var(--ph-menu-a-after-font-variant, normal) !important;
+   font-size: var(--ph-menu-a-after-font-size, 1em) !important;
+   border: var(--ph-menu-a-after-border, 0px solid black) !important;
+   border-radius: var(--ph-menu-a-after-border-radius, 0) !important;
+   color: var(--ph-menu-a-after-color, black) !important;
+   background: var(--ph-menu-a-after-background, transparent) !important;
+   padding: var(--ph-menu-a-after-padding, 0) !important;
+   margin: var(--ph-menu-a-after-margin, 0) !important;
+   transition: var(--ph-menu-a-after-transition, all 0.15s ease-in-out) !important;
+}
+.ph-menu li a:hover,
+.ph-menu li a:focus {
+   font-family: var(--ph-menu-a-hover-font-family, var(--ph-menu-a-font-family)) !important;
+   font-style: var(--ph-menu-a-hover-font-style, var(--ph-menu-a-font-style)) !important;
+   font-weight: var(--ph-menu-a-hover-font-weight, var(--ph-menu-a-font-weight)) !important;
+   font-size: var(--ph-menu-a-hover-font-size, var(--ph-menu-a-font-size)) !important;
+   line-height: var(--ph-menu-a-hover-line-height, var(--ph-menu-a-line-height)) !important;
+   text-decoration: var(--ph-menu-a-hover-text-decoration, var(--ph-menu-a-text-decoration)) !important;
+   text-transform: var(--ph-menu-a-hover-text-transform, var(--ph-menu-a-text-transform)) !important;
+   color: var(--ph-menu-a-hover-color, var(--ph-menu-a-color)) !important;
+   background: var(--ph-menu-a-hover-background, var(--ph-menu-a-background)) !important;
+   border: var(--ph-menu-a-hover-border, var(--ph-menu-a-border)) !important;
+   border-radius: var(--ph-menu-a-hover-border-radius, var(--ph-menu-a-border-radius)) !important;
+   transition: var(--ph-menu-a-hover-transition, var(--ph-menu-a-transition)) !important;
+}
+.ph-menu li a:hover::after,
+.ph-menu li a:focus::after {
+   content: var(--ph-menu-a-hover-after-content, var(--ph-menu-a-after-content)) !important;
+   font-family: var(--ph-menu-a-hover-after-font-family, var(--ph-menu-a-after-font-family)) !important;
+   font-style: var(--ph-menu-a-hover-after-font-style, var(--ph-menu-a-after-font-style)) !important;
+   font-weight: var(--ph-menu-a-hover-after-font-weight, var(--ph-menu-a-after-font-weight)) !important;
+   font-variant: var(--ph-menu-a-hover-after-font-variant, var(--ph-menu-a-after-font-variant)) !important;
+   font-size: var(--ph-menu-a-hover-after-font-size, var(--ph-menu-a-after-font-size)) !important;
+   border: var(--ph-menu-a-hover-after-border, var(--ph-menu-a-after-border)) !important;
+   border-radius: var(--ph-menu-a-hover-after-border-radius, var(--ph-menu-a-after-border-radius)) !important;
+   color: var(--ph-menu-a-hover-after-color, var(--ph-menu-a-after-color)) !important;
+   background: var(--ph-menu-a-hover-after-background, var(--ph-menu-a-after-background)) !important;
+   transition: var(--ph-menu-a-hover-after-transition, var(--ph-menu-a-after-transition)) !important;
+}

@@ -1,0 +1,286 @@
+{#
+/**
+ * Available variables:
+ * - content: The content for this layout.
+ * - attributes: HTML attributes for the layout <div>.
+ * @ingroup themeable
+ *
+ * - settings
+ * - region_attributes
+ * ----------------------------------------------------
+ * - settings.label (string)
+ *
+ * - settings.default_settings.default_section_expansion (string (key|string))
+ * - settings.default_settings.default_section_align_items (string (key|string))
+ * - settings.default_settings.default_section_background_color (string (key|string))
+ * - settings.default_settings.default_section_custom (string (key|string))
+ *
+ * - settings.default_settings.default_header_align_self (string (key|string))
+ * - settings.default_settings.default_header_justify_content (string (key|string))
+ * - settings.default_settings.default_header_align_content (string (key|string)) 
+ * - settings.default_settings.default_header_background_color (string (key|string))
+ * - settings.default_settings.default_header_custom (string (key|string))
+ *
+ * - settings.default_settings.default_region_1_align_self (string (key|string)) 
+ * - settings.default_settings.default_region_1_justify_content (string (key|string))
+ * - settings.default_settings.default_region_1_align_content (string (key|string))
+ * - settings.default_settings.default_region_1_background_color (string (key|string)) 
+ * - settings.default_settings.default_region_1_custom (string (key|string))
+ *
+ * - settings.default_settings.default_region_2_align_self (string (key|string)) 
+ * - settings.default_settings.default_region_2_justify_content (string (key|string))
+ * - settings.default_settings.default_region_2_align_content (string (key|string))
+ * - settings.default_settings.default_region_2_background_color (string (key|string)) 
+ * - settings.default_settings.default_region_2_custom (string (key|string))
+ *
+ * - settings.default_settings.default_region_3_align_self (string (key|string)) 
+ * - settings.default_settings.default_region_3_justify_content (string (key|string))
+ * - settings.default_settings.default_region_3_align_content (string (key|string))
+ * - settings.default_settings.default_region_3_background_color (string (key|string)) 
+ * - settings.default_settings.default_region_3_custom (string (key|string))
+ *
+ * - settings.default_settings.default_region_4_align_self (string (key|string)) 
+ * - settings.default_settings.default_region_4_justify_content (string (key|string))
+ * - settings.default_settings.default_region_4_align_content (string (key|string))
+ * - settings.default_settings.default_region_4_background_color (string (key|string)) 
+ * - settings.default_settings.default_region_4_custom (string (key|string))
+ *
+ * - settings.default_settings.default_footer_align_self (string (key|string))
+ * - settings.default_settings.default_footer_justify_content (string (key|string))
+ * - settings.default_settings.default_footer_align_content (string (key|string)) 
+ * - settings.default_settings.default_footer_background_color (string (key|string))
+ * - settings.default_settings.default_footer_custom (string (key|string))
+ *
+ *
+ *
+ * - settings.default_settings.preset_section_header (int / bool) 
+ * - settings.default_settings.preset_section_footer (int / bool) 
+ * - settings.default_settings.preset_section_expansion (string (key; class) 
+ * - settings.default_settings.preset_section_gap (int / bool) 
+ * - settings.default_settings.preset_section_spacing (int / bool) 
+ * - settings.default_settings.preset_section_align_items (string (key; class)
+ * - settings.default_settings.preset_section_background_color (string (key; class)
+ * - settings.default_settings.preset_section_custom (string (key; class)
+ *
+ * - settings.default_settings.preset_header_align_self (string (key; class) 
+ * - settings.default_settings.preset_header_justify_content (string (key; class) 
+ * - settings.default_settings.preset_header_align_content (string (key; class)
+ * - settings.default_settings.preset_header_background_color (string (key; color) 
+ * - settings.default_settings.preset_header_custom (string (key; class) 
+ *
+ * - settings.default_settings.preset_region_1_align_self (string (key; class) 
+ * - settings.default_settings.preset_region_1_justify_content (string (key; class) 
+ * - settings.default_settings.preset_region_1_align_content (string (key; class)
+ * - settings.default_settings.preset_region_1_background_color (string (key; color) 
+ * - settings.default_settings.preset_region_1_custom (string (key; class) 
+ *
+ * - settings.default_settings.preset_region_2_align_self (string (key; class) 
+ * - settings.default_settings.preset_region_2_justify_content (string (key; class) 
+ * - settings.default_settings.preset_region_2_align_content (string (key; class)
+ * - settings.default_settings.preset_region_2_background_color (string (key; color) 
+ * - settings.default_settings.preset_region_2_custom (string (key; class) 
+ *
+ * - settings.default_settings.preset_region_3_align_self (string (key; class) 
+ * - settings.default_settings.preset_region_3_justify_content (string (key; class) 
+ * - settings.default_settings.preset_region_3_align_content (string (key; class)
+ * - settings.default_settings.preset_region_3_background_color (string (key; color) 
+ * - settings.default_settings.preset_region_3_custom (string (key; class) 
+ *
+ * - settings.default_settings.preset_region_4_align_self (string (key; class) 
+ * - settings.default_settings.preset_region_4_justify_content (string (key; class) 
+ * - settings.default_settings.preset_region_4_align_content (string (key; class)
+ * - settings.default_settings.preset_region_4_background_color (string (key; color) 
+ * - settings.default_settings.preset_region_4_custom (string (key; class) 
+ *
+ * - settings.default_settings.preset_footer_align_self (string (key; class) 
+ * - settings.default_settings.preset_footer_justify_content (string (key; class) 
+ * - settings.default_settings.preset_footer_align_content (string (key; class)
+ * - settings.default_settings.preset_footer_background_color (string (key; color) 
+ * - settings.default_settings.preset_footer_custom (string (key; class) 
+ *
+ * 
+ * 
+ * - settings.default_settings.active_section_header (int / bool)
+ * - settings.default_settings.active_section_footer (int / bool)
+ * - settings.default_settings.active_section_id (int / bool)
+ * - settings.default_settings.active_section_expansion (int / bool)
+ * - settings.default_settings.active_section_gap (int / bool)
+ * - settings.default_settings.active_section_spacing (int / bool)
+ * - settings.default_settings.active_section_align_items (int / bool)
+ * - settings.default_settings.active_section_background_color (int / bool)
+ * - settings.default_settings.active_section_custom (int / bool)
+ *
+ * - settings.default_settings.active_header_align_self (int / bool)
+ * - settings.default_settings.active_header_justify_content (int / bool)
+ * - settings.default_settings.active_header_align_content (int / bool)
+ * - settings.default_settings.active_header_background_color (int / bool)
+ * - settings.default_settings.active_header_custom (int / bool)
+ *
+ * - settings.default_settings.active_region_1_align_self (int / bool)
+ * - settings.default_settings.active_region_1_justify_content (int / bool)
+ * - settings.default_settings.active_region_1_align_content (int / bool)
+ * - settings.default_settings.active_region_1_background_color (int / bool)
+ * - settings.default_settings.active_region_1_custom (int / bool)
+ *
+ * - settings.default_settings.active_region_2_align_self (int / bool)
+ * - settings.default_settings.active_region_2_justify_content (int / bool)
+ * - settings.default_settings.active_region_2_align_content (int / bool)
+ * - settings.default_settings.active_region_2_background_color (int / bool)
+ * - settings.default_settings.active_region_2_custom (int / bool)
+ *
+ * - settings.default_settings.active_region_3_align_self (int / bool)
+ * - settings.default_settings.active_region_3_justify_content (int / bool)
+ * - settings.default_settings.active_region_3_align_content (int / bool)
+ * - settings.default_settings.active_region_3_background_color (int / bool)
+ * - settings.default_settings.active_region_3_custom (int / bool)
+ *
+ * - settings.default_settings.active_region_4_align_self (int / bool)
+ * - settings.default_settings.active_region_4_justify_content (int / bool)
+ * - settings.default_settings.active_region_4_align_content (int / bool)
+ * - settings.default_settings.active_region_4_background_color (int / bool)
+ * - settings.default_settings.active_region_4_custom (int / bool)
+ *
+ * - settings.default_settings.active_footer_align_self (int / bool)
+ * - settings.default_settings.active_footer_justify_content (int / bool)
+ * - settings.default_settings.active_footer_align_content (int / bool)
+ * - settings.default_settings.active_footer_background_color (int / bool)
+ * - settings.default_settings.active_footer_custom (int / bool)
+ *
+ * - settings.default_settings.colors_with_class_array.section (key (color): class)(array: key = color; value = class)
+ * - settings.default_settings.colors_with_class_array.header (key (color): class)(array: key = color; value = class)
+ * - settings.default_settings.colors_with_class_array.region_1 (key (color): class)(array: key = color; value = class)
+ * - settings.default_settings.colors_with_class_array.region_2 (key (color): class)(array: key = color; value = class)
+ * - settings.default_settings.colors_with_class_array.region_3 (key (color): class)(array: key = color; value = class)
+ * - settings.default_settings.colors_with_class_array.region_4 (key (color): class)(array: key = color; value = class)
+ * - settings.default_settings.colors_with_class_array.footer (key (color): class)(array: key = color; value = class)
+ *
+ *
+ *
+ * - settings.section_expansion (string (class))
+ * - settings.section_spacing (int / bool)
+ * - settings.section_id (string (id))
+ * - settings.section_gap (int / bool)
+ * - settings.section_align_items (string (class))
+ * - settings.section_background_color.color (color)
+ * - settings.section_custom (string (class))
+ *
+ * - settings.header_align_self (string (class))
+ * - settings.header_justify_content (string (class))
+ * - settings.header_align_content (string (class))
+ * - settings.header_background_color.color (color)
+ * - settings.header_custom (string (class))
+ *
+ * - settings.footer_align_self (string (class))
+ * - settings.footer_justify_content (string (class))
+ * - settings.footer_align_content (string (class))
+ * - settings.footer_background_color.color (color)
+ * - settings.footer_custom (string (class))
+ * ----------------------------------------------------
+ */<pre>{{ dump(settings) }}</pre>
+#}
+
+{% set container_attributes = attributes %}
+
+{% if region_wrapper_attributes %}
+
+{% else %}
+   {% set region_wrapper_attributes = create_attribute() %}
+{% endif %}
+
+{% if region_attributes.header %}
+   {% set region_attributes_header = region_attributes.header %}
+{% else %}
+   {% set region_attributes_header = create_attribute() %}
+{% endif %}
+
+{% if region_attributes.region_1 %}
+   {% set region_attributes_region_1 = region_attributes.region_1 %}
+{% else %}
+   {% set region_attributes_region_1 = create_attribute() %}
+{% endif %}
+
+{% if region_attributes.footer %}
+   {% set region_attributes_footer = region_attributes.footer %}
+{% else %}
+   {% set region_attributes_footer = create_attribute() %}
+{% endif %}
+
+{% 
+   set container_classes = [
+         'section-teaser',
+         'gl',
+         'cssf--tpl-grid-layout',
+         (settings.section_gap)?'':'cssf--val-layout-gap_0rem',
+         (settings.section_spacing)?'':'cssf--val-container-spacing_var-layout-gap',
+         (settings.section_background_color.color in settings.default_settings.colors_with_class_array.section|keys)?settings.default_settings.colors_with_class_array.section[settings.section_background_color.color], 
+         (settings.section_custom is iterable)?settings.section_custom|filter(item => item != 0)|join(' '),
+      ]  
+%}
+
+{% 
+   set region_wrapper_classes = [
+         'gc',
+         'gbl',
+         settings.section_expansion??'',
+         'cssf--tpl-grid-brick-layout',
+         'cssf--grid-auto-flow_row_dense',
+         (settings.section_align_items)??''
+      ]  
+%}
+
+{% 
+   set  region_classes_header = [
+         'rh',
+         'cssf--tpl-gcol100--d_flex--fwrap_wrap',
+         (settings.header_background_color.color in settings.default_settings.colors_with_class_array.header|keys)?settings.default_settings.colors_with_class_array.header[settings.header_background_color.color],
+         (settings.header_background_color.color in settings.default_settings.colors_with_class_array.header|keys)?'cssf--tpl-var_p_val-region-with-color-spacing_var-region-spacing':'cssf--p_var-region-spacing',
+         (settings.header_align_self)??'',
+         (settings.header_justify_content)??'',
+         (settings.header_align_content)??'',
+         (settings.header_custom is iterable)?settings.header_custom|filter(item => item != 0)|join(' '),
+      ] 
+%}
+
+{% 
+   set  region_classes_region_1 = [
+      ] 
+%}
+
+{% 
+   set  region_classes_footer = [
+         'rf',
+         'cssf--tpl-gcol100--d_flex--fwrap_wrap',
+         (settings.footer_background_color.color in settings.default_settings.colors_with_class_array.footer|keys)?settings.default_settings.colors_with_class_array.footer[settings.footer_background_color.color],
+         (settings.footer_background_color.color in settings.default_settings.colors_with_class_array.footer|keys)?'cssf--tpl-var_p_val-region-with-color-spacing_var-region-spacing':'cssf--p_var-region-spacing',
+         (settings.footer_align_self)??'',
+         (settings.footer_justify_content)??'',
+         (settings.footer_align_content)??'',
+         (settings.footer_custom is iterable)?settings.footer_custom|filter(item => item != 0)|join(' '),
+      ] 
+%}
+
+{% if settings.default_settings.active_section_id and settings.section_id %}
+   {% set container_attributes = container_attributes.setAttribute('id', settings.section_id) %}
+{% endif %}
+
+<div{{ container_attributes.addClass(container_classes) }}>
+   <div{{ region_attributes_region_1.addClass(region_wrapper_classes) }}>
+   
+      {% if content.header and settings.section_header %}    
+         <div{{ region_attributes_header.addClass(region_classes_header) }}>     
+            {{ content.header }}
+         </div>
+      {% endif %}
+      
+      {% if content.region_1 %}       
+         {{ content.region_1 }}
+      {% endif %}
+
+      {% if content.footer and settings.section_footer %}    
+         <div{{ region_attributes_footer.addClass(region_classes_footer) }}>     
+            {{ content.footer }}
+         </div>
+      {% endif %}
+      
+   </div>
+</div>

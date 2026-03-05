@@ -1,0 +1,26 @@
+uuid: c198e0ff-3ec7-4544-8c47-95ebaca50da7
+langcode: de
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+  enforced:
+    module:
+      - av_p_sections_system
+id: p_sections_system
+label: 'System Abschnitt'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+#      section_system: 'Unformatierter Abschnitt '
+      section_system_1x100: '1x100 Abschnitt'
+      section_system_2x50: '2x50 Abschnitt'
+      section_system_66_33: '66/33 Abschnitt'
+      section_system_33_66: '33/66 Abschnitt'
+      section_system_3x33: '3x33 Abschnitt'
+      section_system_25_50_25: '25/50/25 Abschnitt'
+      section_system_4x25: '4x25 Abschnitt'

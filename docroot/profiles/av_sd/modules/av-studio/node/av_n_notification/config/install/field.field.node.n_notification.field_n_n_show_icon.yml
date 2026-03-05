@@ -1,0 +1,26 @@
+uuid: 9f069e00-7157-4e4d-8b5a-381ecde96291
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_n_show_icon
+    - node.type.n_notification
+  enforced:
+    module:
+      - av_n_notification
+id: node.n_notification.field_n_n_show_icon
+field_name: field_n_n_show_icon
+entity_type: node
+bundle: n_notification
+label: 'ICON anzeigen'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

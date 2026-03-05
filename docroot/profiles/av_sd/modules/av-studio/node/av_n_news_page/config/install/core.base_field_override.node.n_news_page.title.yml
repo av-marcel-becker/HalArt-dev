@@ -1,0 +1,21 @@
+uuid: be154036-93c2-4aca-ae8b-51bf26e6f1f5
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_news_page
+  enforced:
+    module:
+      - av_n_news_page
+id: node.n_news_page.title
+field_name: title
+entity_type: node
+bundle: n_news_page
+label: Überschrift
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

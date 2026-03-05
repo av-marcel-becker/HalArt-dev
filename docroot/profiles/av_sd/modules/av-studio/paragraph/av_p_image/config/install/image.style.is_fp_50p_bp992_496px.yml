@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - crop
+  enforced:
+    module:
+      - av_p_image
+name: is_fp_50p_bp992_496px
+label: 'FP 50% - bp992 (B=496px)'
+effects:
+  83ab1d6d-50eb-406a-b764-155bbe54e6b4:
+    uuid: 83ab1d6d-50eb-406a-b764-155bbe54e6b4
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 992
+      height: 662
+      crop_type: focal_point
+  b113d464-e2ea-4e33-afb0-97f4e0a2a0e6:
+    uuid: b113d464-e2ea-4e33-afb0-97f4e0a2a0e6
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

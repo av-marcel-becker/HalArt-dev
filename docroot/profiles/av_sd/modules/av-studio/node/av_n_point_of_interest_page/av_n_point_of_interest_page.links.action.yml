@@ -1,0 +1,11 @@
+av_n_point_of_interest_page.point_of_interest_page.add:
+  route_name: node.add
+  title: 'Ort (POI) hinzufügen'
+  weight: 10
+  appears_on:
+    - view.v_content_point_of_interest_page.v_content_point_of_interest_page
+  route_parameters: 
+    node_type: 'n_point_of_interest_page'
+#  options:
+#    query:
+#      destination: /admin/content/point_of_interest_page

@@ -1,0 +1,25 @@
+uuid: 38735fdb-331a-47d3-85b2-fb5ebf253e95
+langcode: de
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - node
+    - paragraphs
+  enforced:
+    module:
+      - av_n_hall_of_fame_page
+third_party_settings: { }
+id: node.field_n_hofp_content
+field_name: field_n_hofp_content
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

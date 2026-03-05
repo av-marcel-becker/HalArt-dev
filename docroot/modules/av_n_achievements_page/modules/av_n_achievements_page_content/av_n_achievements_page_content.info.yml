@@ -1,0 +1,7 @@
+name: 'AV Node - Achievements Page Content'
+type: module
+description: 'AV-Studio Node - Achievements Page Content'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Node'
+dependencies:
+  - av_n_achievements_page

@@ -1,0 +1,23 @@
+uuid: 5919e24e-931c-4b5c-9c2b-dbaab919fd8e
+langcode: de
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+  enforced:
+    module:
+      - av_p_list_with_icons
+third_party_settings: { }
+id: paragraph.field_pi_lwii_link
+field_name: field_pi_lwii_link
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

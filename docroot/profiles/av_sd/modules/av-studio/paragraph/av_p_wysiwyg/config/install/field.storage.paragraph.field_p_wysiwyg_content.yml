@@ -1,0 +1,21 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+  enforced:
+    module:
+      - av_p_wysiwyg
+id: paragraph.field_p_wysiwyg_content
+field_name: field_p_wysiwyg_content
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

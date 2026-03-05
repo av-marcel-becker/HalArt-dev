@@ -1,0 +1,18 @@
+view.v_content_map_page.v_content_map_page:
+  title: 'Kartenseiten'
+  route_name: view.v_content_map_page.v_content_map_page
+  base_route: system.admin_content
+  weight: 10
+
+view.v_content_map_page.v_content_map_page.sub:
+  title: 'Kartenseiten'
+  parent_id: view.v_content_map_page.v_content_map_page
+  route_name: view.v_content_map_page.v_content_map_page
+  weight: 10
+
+view.v_content_map_has_poi.v_content_map_has_poi:
+  title: 'Karte hat Orte (POIs)'
+  parent_id: view.v_content_map_page.v_content_map_page
+  route_name: view.v_content_map_has_poi.v_content_map_has_poi
+  weight: 20
+  

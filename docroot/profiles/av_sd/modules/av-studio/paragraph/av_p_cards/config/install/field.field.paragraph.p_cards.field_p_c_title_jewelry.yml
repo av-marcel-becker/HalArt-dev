@@ -1,0 +1,22 @@
+uuid: 744e56b3-cf6f-451c-8e27-09bee7507129
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_c_title_jewelry
+    - paragraphs.paragraphs_type.p_cards
+  enforced:
+    module:
+      - av_p_cards
+id: paragraph.p_cards.field_p_c_title_jewelry
+field_name: field_p_c_title_jewelry
+entity_type: paragraph
+bundle: p_cards
+label: Schmucktitel
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

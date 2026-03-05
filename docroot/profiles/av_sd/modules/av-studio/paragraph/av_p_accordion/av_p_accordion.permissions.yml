@@ -1,0 +1,4 @@
+'administer AV Paragraph - Accordion configuration':
+   title: 'administer AV Paragraph - Accordion configuration'
+   description: 'all permissions'
+   restrict access: true

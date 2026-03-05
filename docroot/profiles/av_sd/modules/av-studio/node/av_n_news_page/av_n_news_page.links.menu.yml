@@ -1,0 +1,6 @@
+av_n_news_page.news_page:
+  title: 'Newsseiten'
+  parent: system.admin_content
+  route_name: av_n_news_page.news_page
+  menu_name: admin
+  url: internal:/admin/content/news_page

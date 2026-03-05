@@ -1,0 +1,28 @@
+uuid: 3cd080aa-79f5-4243-bf0a-a35f21b370c9
+langcode: de
+status: true
+dependencies:
+  module:
+    - node
+    - options
+  enforced:
+    module:
+      - av_n_notification
+third_party_settings: { }
+id: node.field_n_n_icon
+field_name: field_n_n_icon
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: f129
+      label: Info
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

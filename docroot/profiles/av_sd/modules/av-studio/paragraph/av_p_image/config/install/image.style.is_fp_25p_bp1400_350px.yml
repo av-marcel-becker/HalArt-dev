@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - crop
+  enforced:
+    module:
+      - av_p_image
+name: is_fp_25p_bp1400_350px
+label: 'FP 25% - bp1400 (B=350px)'
+effects:
+  863e265e-b834-4215-8f9f-26cff3c5fc74:
+    uuid: 863e265e-b834-4215-8f9f-26cff3c5fc74
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 700
+      height: 545
+      crop_type: focal_point
+  6ff93a67-ad3b-49c1-b083-19edda626a3b:
+    uuid: 6ff93a67-ad3b-49c1-b083-19edda626a3b
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

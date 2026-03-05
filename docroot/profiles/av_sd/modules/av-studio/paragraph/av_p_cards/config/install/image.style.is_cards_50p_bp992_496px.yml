@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_cards
+name: is_cards_50p_bp992_496px
+label: 'Card 50% - bp992 (B=496px)'
+effects:
+  3da9158c-079a-4866-8be8-ad0b7f361564:
+    uuid: 3da9158c-079a-4866-8be8-ad0b7f361564
+    id: image_scale
+    weight: 1
+    data:
+      width: 992
+      height: null
+      upscale: false
+  bf60198e-03f1-422d-9f69-88f2ee7742b6:
+    uuid: bf60198e-03f1-422d-9f69-88f2ee7742b6
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

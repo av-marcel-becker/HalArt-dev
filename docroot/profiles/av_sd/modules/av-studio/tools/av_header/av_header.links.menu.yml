@@ -1,0 +1,5 @@
+av_header.settings:
+  title: 'AV Header - Settings'
+  description: 'Set Header settings'
+  parent: 'system.admin_config_system'
+  route_name: 'av_header.settings'

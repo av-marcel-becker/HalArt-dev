@@ -1,0 +1,10 @@
+services:
+  av_cache_flush.cache_flusher:
+    class: Drupal\av_cache_flush\CacheFlusher
+    arguments: 
+      - '@cache.default'
+      - '@config.factory'
+      - '@kernel'
+      - '@request_stack'
+      - '@messenger'
+      - '@cache_tags.invalidator'

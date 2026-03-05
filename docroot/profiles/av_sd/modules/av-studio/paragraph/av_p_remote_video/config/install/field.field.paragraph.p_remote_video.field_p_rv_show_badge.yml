@@ -1,0 +1,26 @@
+uuid: 9c533336-c776-4cd0-965b-5e72b807380f
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_rv_show_badge
+    - paragraphs.paragraphs_type.p_remote_video
+  enforced:
+    module:
+      - av_p_remote_video
+id: paragraph.p_remote_video.field_p_rv_show_badge
+field_name: field_p_rv_show_badge
+entity_type: paragraph
+bundle: p_remote_video
+label: 'Plakette Anzeigen'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

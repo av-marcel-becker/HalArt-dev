@@ -1,0 +1,10 @@
+name: 'AV-Block Type - System Block'
+type: module
+description: 'AV-Studio Block Type - System Block'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Block'
+dependencies:
+  - layout_paragraphs
+  - block_content
+  - entity_reference_revisions
+  - paragraphs

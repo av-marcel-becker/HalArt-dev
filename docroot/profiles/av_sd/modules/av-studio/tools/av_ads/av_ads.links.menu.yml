@@ -1,0 +1,6 @@
+av_ads.advertisement:
+  title: 'Anzeige (Ads)'
+  parent: system.admin_content
+  route_name: av_ads.advertisement
+  menu_name: admin
+  url: internal:/admin/content/advertisement

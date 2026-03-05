@@ -1,0 +1,26 @@
+uuid: 3bfcb229-2a24-4e9d-8946-0c5b25356de8
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_t_ads_placeholder
+    - paragraphs.paragraphs_type.p_teaser
+  enforced:
+    module:
+      - av_p_teaser
+id: paragraph.p_teaser.field_p_t_ads_placeholder
+field_name: field_p_t_ads_placeholder
+entity_type: paragraph
+bundle: p_teaser
+label: 'Platzhalter Anzeige (Ads)'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

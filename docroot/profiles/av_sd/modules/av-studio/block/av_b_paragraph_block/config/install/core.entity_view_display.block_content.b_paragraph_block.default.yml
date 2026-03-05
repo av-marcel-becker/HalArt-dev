@@ -1,0 +1,29 @@
+uuid: e2897ef3-48bb-41ab-af9a-43efe8c575f2
+langcode: de
+status: true
+dependencies:
+  config:
+    - block_content.type.b_paragraph_block
+    - field.field.block_content.b_paragraph_block.field_b_pb_content
+  enforced:
+    module:
+      - av_b_paragraph_block
+  module:
+    - layout_paragraphs
+third_party_settings: { }
+id: block_content.b_paragraph_block.default
+targetEntityType: block_content
+bundle: b_paragraph_block
+mode: default
+content:
+  field_b_pb_content:
+    type: layout_paragraphs
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: { }
+    region: content
+hidden:
+  langcode: true

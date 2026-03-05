@@ -1,0 +1,11 @@
+av_n_system_page.system_page.add:
+  route_name: node.add
+  title: 'Systemseite hinzufügen'
+  weight: 10
+  appears_on:
+    - view.v_content_system_page.v_content_system_page
+  route_parameters: 
+    node_type: 'n_system_page'
+#  options:
+#    query:
+#      destination: /admin/content/system_page

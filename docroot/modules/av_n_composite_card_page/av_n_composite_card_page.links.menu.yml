@@ -1,0 +1,6 @@
+av_n_composite_card_page.composite_card_page:
+  title: 'Sedcards-Seiten'
+  parent: system.admin_content
+  route_name: av_n_composite_card_page.composite_card_page
+  menu_name: admin
+  url: internal:/admin/content/composite_card_page

@@ -1,0 +1,9 @@
+av_header:
+  version: 0.1
+  css:
+    theme:
+      css/av_header.css: { }
+  js: 
+    js/av_header.js: { }
+#  dependencies:
+#    - -/- 

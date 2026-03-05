@@ -1,0 +1,10 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_klaro
+id: external_content
+label: 'Eingebettete externe Inhalte'
+description: 'Integration von Inhalten aus Drittdiensten wie Vimeo oder YouTube. Wenn deaktiviert, werden einige Inhalte nicht dargestellt.'
+weight: 6

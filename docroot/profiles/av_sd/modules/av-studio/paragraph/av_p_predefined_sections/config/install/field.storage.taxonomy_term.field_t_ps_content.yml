@@ -1,0 +1,24 @@
+uuid: 3f9bf305-be37-4962-8fb6-92d22251f270
+langcode: de
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+    - taxonomy
+  enforced:
+    module:
+      - av_p_predefined_sections
+id: taxonomy_term.field_t_ps_content
+field_name: field_t_ps_content
+entity_type: taxonomy_term
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

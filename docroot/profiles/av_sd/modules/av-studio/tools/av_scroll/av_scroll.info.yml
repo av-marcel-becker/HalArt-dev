@@ -1,0 +1,10 @@
+name: 'AV Scroll'
+type: module
+description: 'Scroll'
+package: 'AV-Studio - Tools'
+version: 0.1
+core_version_requirement: ^10 || ^11
+dependencies:
+  - twig_tweak
+  
+  

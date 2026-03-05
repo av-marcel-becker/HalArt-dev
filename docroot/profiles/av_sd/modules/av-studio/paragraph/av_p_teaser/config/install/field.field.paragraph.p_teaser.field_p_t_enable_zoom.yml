@@ -1,0 +1,26 @@
+uuid: 59a307b1-c043-4502-95e3-829d5e68339b
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_t_enable_zoom
+    - paragraphs.paragraphs_type.p_teaser
+  enforced:
+    module:
+      - av_p_teaser
+id: paragraph.p_teaser.field_p_t_enable_zoom
+field_name: field_p_t_enable_zoom
+entity_type: paragraph
+bundle: p_teaser
+label: 'Zoom einschalten'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

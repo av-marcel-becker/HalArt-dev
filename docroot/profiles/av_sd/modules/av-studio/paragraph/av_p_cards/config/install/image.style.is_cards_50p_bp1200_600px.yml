@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_cards
+name: is_cards_50p_bp1200_600px
+label: 'Card 50% - bp1200 (B=600px)'
+effects:
+  6722d99f-e80f-45e4-8945-b6f692d43451:
+    uuid: 6722d99f-e80f-45e4-8945-b6f692d43451
+    id: image_scale
+    weight: 1
+    data:
+      width: 1200
+      height: null
+      upscale: false
+  97cfe91c-9b76-4b21-89da-94bbfe6d3685:
+    uuid: 97cfe91c-9b76-4b21-89da-94bbfe6d3685
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

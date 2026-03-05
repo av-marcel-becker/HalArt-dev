@@ -1,0 +1,51 @@
+/* fix 2025-11-28 */
+.ui-dialog .ui-dialog-content {
+   padding-block: 1rem;
+}
+/* fix 2025-11-25 */
+.ui-dialog .ui-dialog-content form {
+   height: 100% !important;
+}
+.ui-dialog .ui-dialog-content form > .form-wrapper {
+   height: auto !important;
+}
+.ui-dialog .ui-dialog-content .views-offset-top + .form-wrapper {
+   height: calc(100% - 98px) !important;
+}
+/* fix 2025-11-20 */
+.layout-select__item label {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+.layout-select__item label .layout-select__item-title {
+  padding-top: 5px;
+}
+/* ************************** */
+.paragraph--unpublished
+   {
+      border: 4px red solid !important;
+   }
+/* fix */
+/* 2024-02-09 */
+.lpb-btn--add.before,
+.lpb-btn--add.after
+   {
+      display: block !important; /* fix: Galerie Abschnitt + LP Add */
+   }
+/* 2024-02-15 */
+.lpb-layout 
+   {
+      padding: 40px 20px !important; /* fix: Abschnitt und Plus Button */
+   }
+/* 2024-06-24 */
+/*
+.js-lpb-component
+   {
+      width: 100%;
+   }
+*/
+/* linkit fix 2024-09-02 */
+.ui-widget-content.linkit-ui-autocomplete {
+   background: white !important;
+}

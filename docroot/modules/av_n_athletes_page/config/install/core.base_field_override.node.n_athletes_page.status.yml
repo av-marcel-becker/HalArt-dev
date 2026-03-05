@@ -1,0 +1,25 @@
+uuid: d0a4b5f0-e1d2-4e47-ba7d-717080792bd6
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_athletes_page
+  enforced:
+    module:
+      - av_n_athletes_page
+id: node.n_athletes_page.status
+field_name: status
+entity_type: node
+bundle: n_athletes_page
+label: Veröffentlicht
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

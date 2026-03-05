@@ -1,0 +1,26 @@
+uuid: 39c7b5c4-2dba-4b94-abda-a53e1416201b
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_n_show_signature
+    - node.type.n_notification
+  enforced:
+    module:
+      - av_n_notification
+id: node.n_notification.field_n_n_show_signature
+field_name: field_n_n_show_signature
+entity_type: node
+bundle: n_notification
+label: 'Unterschrift anzeigen'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

@@ -1,0 +1,39 @@
+<?php
+   /**
+    * hook_theme
+    */
+   // https://www.drupal.org/docs/develop/theming-drupal/twig-in-drupal/create-custom-twig-templates-for-custom-module
+   function av_p_accordion_theme($existing, $type, $theme, $path) 
+      {
+         return [
+               'paragraph__p_accordion' => [     
+                     'base hook' => 'paragraph',
+                  ],
+               'paragraph__pi_accordion_item' => [     
+                     'base hook' => 'paragraph',
+                  ],
+               'field__paragraph__field_p_a_accordion_item' => [     
+                     'base hook' => 'field',
+                     'variables' => [
+                           'settings' => NULL,
+                        ],
+                  ],
+               'field__paragraph__field_pi_ai_content' => [     
+                     'base hook' => 'field',
+                  ],
+            ];
+      } 
+      
+/**
+ * Implements hook_preprocess_HOOK() for paragraph templates.
+ */
+function av_p_accordion_preprocess_paragraph__pi_accordion_item(&$variables) 
+   {
+      $configFactory = \Drupal::configFactory();
+      $config = $configFactory->get('av_p_accordion.settings');
+      $variables['settings'] = [
+            'icon_plus_icon' => $config->get('icon_plus_icon'),
+            'icon_minus_icon' => $config->get('icon_minus_icon'),
+            'icon_direction_left' => $config->get('icon_direction_left'),
+         ];
+   }

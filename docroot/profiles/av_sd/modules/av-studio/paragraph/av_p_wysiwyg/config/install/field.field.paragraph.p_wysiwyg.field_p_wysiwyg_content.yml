@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_wysiwyg_content
+    - paragraphs.paragraphs_type.p_wysiwyg
+  module:
+    - text
+  enforced:
+    module:
+      - av_p_wysiwyg
+id: paragraph.p_wysiwyg.field_p_wysiwyg_content
+field_name: field_p_wysiwyg_content
+entity_type: paragraph
+bundle: p_wysiwyg
+label: Inhalt
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    f_editor: f_editor
+field_type: text_long

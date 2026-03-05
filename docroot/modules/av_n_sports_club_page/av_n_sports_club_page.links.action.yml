@@ -1,0 +1,11 @@
+av_n_sports_club_page.sports_club_page.add:
+  route_name: node.add
+  title: 'Sportvereine hinzufügen'
+  weight: 10
+  appears_on:
+    - view.v_content_sports_club_page.v_content_sports_club_page
+  route_parameters: 
+    node_type: 'n_sports_club_page'
+#  options:
+#    query:
+#      destination: /admin/content/sports_club_page

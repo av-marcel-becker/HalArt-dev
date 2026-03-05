@@ -1,0 +1,7 @@
+name: 'AV Node - News Page Content'
+type: module
+description: 'AV-Studio Node - News Page Content'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Node'
+dependencies:
+  - av_n_news_page

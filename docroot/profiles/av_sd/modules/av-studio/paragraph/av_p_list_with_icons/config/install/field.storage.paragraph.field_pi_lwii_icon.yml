@@ -1,0 +1,39 @@
+uuid: 6633a912-9288-454e-8a14-c8e0f3916a46
+langcode: de
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+  enforced:
+    module:
+      - av_p_list_with_icons
+id: paragraph.field_pi_lwii_icon
+field_name: field_pi_lwii_icon
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: envelope
+      label: E-Mail
+    -
+      value: phone
+      label: Telefon
+    -
+      value: globe-pointer
+      label: Web
+    -
+      value: mobile_signal_out
+      label: Mobile
+    -
+      value: fax
+      label: Fax
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

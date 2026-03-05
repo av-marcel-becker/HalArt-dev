@@ -1,0 +1,61 @@
+uuid: d0f7b89e-5d78-4d23-96cc-ee7f63862fc6
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.p_audio.field_p_ao_audio
+    - field.field.paragraph.p_audio.field_p_ao_label
+    - field.field.paragraph.p_audio.field_p_ao_show_label
+    - field.field.paragraph.p_audio.field_p_ao_size
+    - paragraphs.paragraphs_type.p_audio
+  module:
+    - mediaelement
+    - options
+    - text
+  enforced:
+    module:
+      - av_p_audio
+id: paragraph.p_audio.default
+targetEntityType: paragraph
+bundle: p_audio
+mode: default
+content:
+  field_p_ao_audio:
+    type: mediaelement_file_audio
+    label: hidden
+    settings:
+      download_link: false
+      download_text: ''
+      controls: '1'
+      multiple_file_display_type: tags
+      preload: none
+      autoplay: 0
+      loop: 0
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_p_ao_label:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_p_ao_show_label:
+    type: boolean
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_p_ao_size:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

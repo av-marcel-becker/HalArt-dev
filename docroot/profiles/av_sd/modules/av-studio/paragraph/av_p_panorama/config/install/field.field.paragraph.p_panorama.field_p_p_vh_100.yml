@@ -1,0 +1,26 @@
+uuid: 18715543-ebab-41e4-b445-611245321b57
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_p_vh_100
+    - paragraphs.paragraphs_type.p_panorama
+  enforced:
+    module:
+      - av_p_panorama
+id: paragraph.p_panorama.field_p_p_vh_100
+field_name: field_p_p_vh_100
+entity_type: paragraph
+bundle: p_panorama
+label: 'volle Display-Höhe'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Ja
+  off_label: Nein
+field_type: boolean

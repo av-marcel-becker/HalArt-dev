@@ -1,0 +1,43 @@
+uuid: be4fbe5b-e366-43b6-a075-e27b32067f45
+langcode: de
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+  enforced:
+    module:
+      - av_p_teaser
+third_party_settings: { }
+id: paragraph.field_p_t_design
+field_name: field_p_t_design
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: teaser-design-0
+      label: Standard
+    -
+      value: teaser-design-1
+      label: 'Design 1'
+    -
+      value: teaser-design-2
+      label: 'Design 2'
+    -
+      value: teaser-design-3
+      label: 'Design 3'
+    -
+      value: teaser-design-4
+      label: 'Design 4'
+    -
+      value: teaser-design-5
+      label: 'Design 5'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

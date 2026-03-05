@@ -1,0 +1,27 @@
+.ph-single-location-map .leaflet-control-zoom {
+   background: rgba(255, 255, 255, 0.75);
+}
+/* leaflet-control-locate leaflet-bar leaflet-control */
+.ph-single-location-map .leaflet-control-locate {
+   background: rgba(255, 255, 255, 0.75);
+}
+.ph-single-location-map .leaflet-control-zoom a.leaflet-control-zoom-in {
+   border-bottom: 1px solid gray;
+}
+.ph-single-location-map .leaflet-control-zoom a.leaflet-control-zoom-in,
+.ph-single-location-map .leaflet-control-zoom a.leaflet-control-zoom-out {
+   display: block;
+   text-decoration: none;
+}
+.ph-single-location-map .leaflet-control-zoom a.leaflet-control-zoom-in:hover,
+.ph-single-location-map .leaflet-control-zoom a.leaflet-control-zoom-in:focus,
+.ph-single-location-map .leaflet-control-zoom a.leaflet-control-zoom-out:hover,
+.ph-single-location-map .leaflet-control-zoom a.leaflet-control-zoom-out:focus {
+   text-decoration: none;
+   background: rgba(255, 255, 255, 1);
+}
+.ph-single-location-map .leaflet-control-locate:hover,
+.ph-single-location-map .leaflet-control-locate:focus {
+   text-decoration: none;
+   background: rgba(255, 255, 255, 1);
+}

@@ -1,0 +1,96 @@
+{{ attach_library('av_p_av_studio_media/av_p_av_studio_media') }}
+{% set size = paragraph.field_p_avsm_size.0.value %}
+{% set badge = paragraph.field_p_avsm_badge.0 %}
+{% set badge_value = paragraph.field_p_avsm_badge.0.value %}
+{% set show_badge = paragraph.field_p_avsm_show_badge.0.value %}
+{% set label_value = paragraph.field_p_avsm_label.0.value %}
+{% set label_format = paragraph.field_p_avsm_label.0.format %}
+{% set label = paragraph.field_p_avsm_label %}
+{% set show_label = paragraph.field_p_avsm_show_label.0.value %}
+{%
+  set main_class = [
+    'p-av-studio-media',
+    'ravsm',
+    'cssf--position_relative',
+    'cssf--gcol100--d_flex--fw_wrap',
+    'cssf--p_var-region-spacing',
+    'cssf--as_unset--jc_start--ac_start',
+    'cssf--m0--w100p',
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% if size == '100' %}
+   {% set main_class  = main_class|merge([ 
+                  'video-size-100',
+               ])
+               %}
+{% elseif size == '66' %}
+   {% set main_class  = main_class|merge([ 
+                  'video-size-66', 
+                  'cssf--mq576--gcol100',
+                  'cssf--mq768--gcol100',
+                  'cssf--mq992--gcol50',
+                  'cssf--mq1200--gcol66',
+               ])
+               %}   
+{% elseif size == '50' %}
+   {% set main_class  = main_class|merge([ 
+                  'video-size-50', 
+                  'cssf--mq576--gcol100',
+                  'cssf--mq768--gcol100',
+                  'cssf--mq992--gcol50',
+                  'cssf--mq1200--gcol50',
+               ])
+               %}
+{% elseif size == '33' %}
+   {% set main_class  = main_class|merge([ 
+                  'video-size-33', 
+                  'cssf--mq576--gcol50',
+                  'cssf--mq768--gcol50',
+                  'cssf--mq992--gcol33',
+                  'cssf--mq1200--gcol33',
+               ])
+               %}
+{% elseif size == '25' %}
+   {% set main_class  = main_class|merge([ 
+                  'video-size-25', 
+                  'cssf--mq576--gcol50',
+                  'cssf--mq768--gcol50',
+                  'cssf--mq992--gcol33',
+                  'cssf--mq1200--gcol25',
+               ])
+               %}
+{% else %}
+   {% set main_class  = main_class|merge([ 
+                  'video-size-33', 
+                  'cssf--mq576--gcol50',
+                  'cssf--mq768--gcol50',
+                  'cssf--mq992--gcol33',
+                  'cssf--mq1200--gcol33',
+               ])
+               %}
+{% endif %}
+{% block paragraph %}
+  <div{{ attributes.addClass(main_class) }}>
+    {% block content %}
+      <figure>
+         {{ content.field_p_avsm_media }}
+         {% if show_badge %}
+            <div class="badge" data-badge="{{ badge_value|replace({'(c)': '&copy;'})|raw }}">{{ badge_value|replace({'(c)': '&copy;'})|raw }}</div>
+         {% endif %}
+         {% if(show_label) %} 
+            <figcaption>
+               {% if(label_value) %}
+                  {{ content.field_p_avsm_label }}
+               {% else %}
+               
+               {% endif %}   
+            </figcaption> 
+         {% endif %}
+      </figure>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

@@ -1,0 +1,14 @@
+share:
+  version: VERSION
+  css:
+    theme:
+      css/share.css: {}
+  js:
+    js/share.js: {}
+    js/setup.js: {}
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery
+    - core/jquery.once
+      

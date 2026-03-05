@@ -1,0 +1,11 @@
+uuid: 33ef7134-80a9-40e6-8e22-329038e1ff4a
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_achievements_page
+name: 'Tags für Erfolgsseite'
+vid: t_tags_achievements_page
+description: ''
+weight: 0

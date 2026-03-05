@@ -1,0 +1,25 @@
+uuid: e45d23f6-ca48-4fb4-a157-e751a0006e3c
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_achievements_page
+  module:
+    - node
+id: ap_achievements_page
+label: Erfolgsseite
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents:join-path]/[node:title]'
+selection_criteria:
+  a6839896-96d0-4269-9f2b-fbb3bc1a76b6:
+    id: 'entity_bundle:node'
+    bundles:
+      n_achievements_page: n_achievements_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: a6839896-96d0-4269-9f2b-fbb3bc1a76b6
+selection_logic: and
+weight: -5
+relationships: {  }

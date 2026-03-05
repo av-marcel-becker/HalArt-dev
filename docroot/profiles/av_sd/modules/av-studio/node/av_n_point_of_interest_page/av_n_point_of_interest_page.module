@@ -1,0 +1,26 @@
+<?php
+
+   /**
+    * Implements hook_page_attachments().
+    */
+   function av_n_point_of_interest_page_page_attachments(array &$attachments) 
+      {
+        $attachments['#attached']['library'][] = 'av_n_point_of_interest_page/n_point_of_interest_page';
+        #$attachments['#attached']['library'][] = 'av_n_point_of_interest_page/jquery-initialize';
+      }
+   function av_n_point_of_interest_page_leaflet_map_info_alter(array &$map_info) 
+      {
+        // Set a custom iconUrl for the default map type.
+        #$map_info['OSM Mapnik']['icon']['iconUrl'] = '/sites/default/files/icon.png';
+        /*
+        $map_info['OSM Mapnik']['path'] = [
+           "color" => "black",
+           "opacity" => "0.8",
+           "stroke" => 2,
+           "fill" => TRUE,
+           "fillColor" => "blue",
+           "fillOpacity" => "0.1",
+         ];*/
+         #$map_info['OSM Mapnik']['path']['color'] = '#ffff00';
+         #$map_info['OSM Mapnik']['path']['fillColor'] = '#ff00ff';
+      }

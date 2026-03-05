@@ -1,0 +1,6 @@
+av_n_notification.notification:
+  title: 'Gottes Wort'
+  parent: system.admin_content
+  route_name: av_n_notification.notification
+  menu_name: admin
+  url: internal:/admin/content/notification

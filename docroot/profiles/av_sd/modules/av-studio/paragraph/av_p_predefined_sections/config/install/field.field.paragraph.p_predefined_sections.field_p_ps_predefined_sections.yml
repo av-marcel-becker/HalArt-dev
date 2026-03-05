@@ -1,0 +1,32 @@
+uuid: 5fa684fb-883f-459e-b0c3-cc7e42ee2c81
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_ps_predefined_sections
+    - paragraphs.paragraphs_type.p_predefined_sections
+    - taxonomy.vocabulary.t_predefined_sections
+  enforced:
+    module:
+      - av_p_predefined_sections
+id: paragraph.p_predefined_sections.field_p_ps_predefined_sections
+field_name: field_p_ps_predefined_sections
+entity_type: paragraph
+bundle: p_predefined_sections
+label: 'Vordefinierte Abschnitte'
+description: '<a href="/admin/structure/taxonomy/manage/t_predefined_sections/overview" target="_blank">Vordefinierte Abschnitte</a>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      t_predefined_sections: t_predefined_sections
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

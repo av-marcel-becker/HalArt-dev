@@ -1,0 +1,6 @@
+#https://www.drupal.org/docs/8/api/menu-api/providing-module-defined-local-tasks
+av_l_sections.settings:
+  title: 'Sections'
+  base_route: 'av_l_default.settings'
+  route_name: 'av_l_sections.settings'
+  weight: 2

@@ -1,0 +1,25 @@
+uuid: 5c7e3ded-a82d-4331-93b4-5e44f3fb05de
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_map_page
+  module:
+    - node
+id: ap_map_page
+label: Kartenseite
+type: 'canonical_entities:node'
+pattern: '[node:menu-link:parents:join-path]/[node:title]'
+selection_criteria:
+  bb57fbaa-5ee3-452d-8338-a41794a57cf2:
+    id: 'entity_bundle:node'
+    bundles:
+      n_map_page: n_map_page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: bb57fbaa-5ee3-452d-8338-a41794a57cf2
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,13 @@
+uuid: baaec879-b4b4-4e1a-99bc-1433f9b779f3
+langcode: de
+status: true
+dependencies: 
+  enforced:
+    module:
+      - av_p_teaser
+id: p_teaser
+label: 'Teaser'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

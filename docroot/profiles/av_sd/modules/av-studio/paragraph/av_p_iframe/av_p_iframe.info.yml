@@ -1,0 +1,8 @@
+name: 'AV Paragraph - iFrame'
+type: module
+description: 'AV-Studio Paragraph - iFrame'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Paragraph'
+dependencies:
+  - iframe
+  - paragraphs

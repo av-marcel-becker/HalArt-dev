@@ -1,0 +1,25 @@
+uuid: ec48a000-dde9-4ab2-bbb9-2dcc2062f21d
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_course_page
+  enforced:
+    module:
+      - av_n_course_page
+id: node.n_course_page.status
+field_name: status
+entity_type: node
+bundle: n_course_page
+label: Veröffentlicht
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

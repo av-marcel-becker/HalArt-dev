@@ -1,0 +1,8 @@
+name: 'AV-Layouts - Default'
+type: module
+description: 'Add custom Layouts: reset; default settings (breakpoint; libraries; Admin settings)'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Layouts'
+dependencies:
+  - color_field:color_field
+#  - photoswipe:photoswipe

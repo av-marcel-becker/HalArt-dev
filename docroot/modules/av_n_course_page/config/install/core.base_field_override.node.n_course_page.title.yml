@@ -1,0 +1,21 @@
+uuid: 1203ae34-204a-4aa5-8857-bfcfc0b64d1a
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_course_page
+  enforced:
+    module:
+      - av_n_course_page
+id: node.n_course_page.title
+field_name: title
+entity_type: node
+bundle: n_course_page
+label: Überschrift
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,11 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_block
+id: p_block
+label: Block
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

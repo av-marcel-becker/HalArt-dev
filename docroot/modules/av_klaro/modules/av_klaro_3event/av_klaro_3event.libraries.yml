@@ -1,0 +1,17 @@
+av_klaro_3event:
+  version: VERSION
+  css:
+    theme:
+      css/av_klaro_3event.css: { }
+#      https://cdn.3mag.eu/widgets/zittau.eu/events/v1/assets/index.css: { external: true }
+  js: 
+    js/av_klaro_3eventav_klaro_3event.js: { }
+#    //cdn.3mag.eu/widgets/zittau.eu/events/v1/assets/index.js:
+#      external: true
+#      attributes:
+#        defer: true
+#        type: module
+#        crossorigin: true
+#    js/av_3event_event_widget_block.js: {}
+    
+

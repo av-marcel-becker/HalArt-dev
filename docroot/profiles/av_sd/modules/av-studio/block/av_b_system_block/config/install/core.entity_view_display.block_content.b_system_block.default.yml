@@ -1,0 +1,29 @@
+uuid: 7d0017a4-9d06-4d95-bbab-474ad785f8d5
+langcode: de
+status: true
+dependencies:
+  config:
+    - block_content.type.b_system_block
+    - field.field.block_content.b_system_block.field_b_sb_content
+  enforced:
+    module:
+      - av_b_system_block
+  module:
+    - layout_paragraphs
+third_party_settings: { }
+id: block_content.b_system_block.default
+targetEntityType: block_content
+bundle: b_system_block
+mode: default
+content:
+  field_b_sb_content:
+    type: layout_paragraphs
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: { }
+    region: content
+hidden:
+  langcode: true

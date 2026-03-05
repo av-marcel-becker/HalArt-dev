@@ -1,0 +1,13 @@
+uuid: 1e210b94-984e-418d-a2e3-98cbdf7ceaac
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_single_location_map
+id: p_single_location_map
+label: 'Karte mit einem Marker'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

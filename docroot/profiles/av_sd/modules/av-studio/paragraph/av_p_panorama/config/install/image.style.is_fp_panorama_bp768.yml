@@ -1,0 +1,26 @@
+uuid: 2495e568-dde6-4af0-bb24-5044c0a1261a
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_panorama
+  module:
+    - focal_point
+name: is_fp_panorama_bp768
+label: 'FP Panorama - bp768 (B=992px)'
+effects:
+  4de0ea27-68d7-4c3c-ac3d-72a4857cd8e7:
+    uuid: 4de0ea27-68d7-4c3c-ac3d-72a4857cd8e7
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1984
+      height: 1200
+      crop_type: focal_point
+  2266a4ba-b96e-4c6e-9355-a8bc2f57812e:
+    uuid: 2266a4ba-b96e-4c6e-9355-a8bc2f57812e
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

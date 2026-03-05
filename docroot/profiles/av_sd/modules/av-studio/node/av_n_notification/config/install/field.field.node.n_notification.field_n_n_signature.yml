@@ -1,0 +1,22 @@
+uuid: e2cb8a1f-446e-473a-909a-f542dcb9d323
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_n_signature
+    - node.type.n_notification
+  enforced:
+    module:
+      - av_n_notification
+id: node.n_notification.field_n_n_signature
+field_name: field_n_n_signature
+entity_type: node
+bundle: n_notification
+label: Unterschrift
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

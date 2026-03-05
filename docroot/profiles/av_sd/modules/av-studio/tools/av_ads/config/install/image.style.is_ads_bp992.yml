@@ -1,0 +1,18 @@
+uuid: c4b348d7-d651-440c-abd1-f657981382ca
+langcode: de
+status: true
+dependencies:
+  module:
+    - image_replace
+  enforced:
+    module:
+      - av_ads
+name: is_ads_bp992
+label: 'Anzeige - bp992'
+effects:
+  9342ed92-348a-4341-8c18-4d876fcf689e:
+    uuid: 9342ed92-348a-4341-8c18-4d876fcf689e
+    id: image_replace
+    weight: 1
+    data:
+      image_style: is_ads_bp992

@@ -1,0 +1,11 @@
+uuid: 18519de6-e240-4506-b0bc-bb4f43172cfb
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_ads
+name: 'Anzeige (Ads) Ort'
+vid: t_advertisement_location
+description: ''
+weight: 0

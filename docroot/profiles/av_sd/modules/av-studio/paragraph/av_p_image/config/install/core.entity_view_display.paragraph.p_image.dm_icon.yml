@@ -1,0 +1,46 @@
+uuid: 10a070c2-6ab1-454a-b922-9acbff9b2f11
+langcode: de
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.dm_icon
+    - field.field.paragraph.p_image.field_p_i_align_center
+    - field.field.paragraph.p_image.field_p_i_enable_link
+    - field.field.paragraph.p_image.field_p_i_enable_zoom
+    - field.field.paragraph.p_image.field_p_i_image
+    - field.field.paragraph.p_image.field_p_i_label
+    - field.field.paragraph.p_image.field_p_i_link
+    - field.field.paragraph.p_image.field_p_i_show_label
+    - field.field.paragraph.p_image.field_p_i_size
+    - paragraphs.paragraphs_type.p_image
+  module:
+    - svg_image
+  enforced:
+    module:
+      - av_p_image
+id: paragraph.p_image.dm_icon
+targetEntityType: paragraph
+bundle: p_image
+mode: dm_icon
+content:
+  field_p_i_image:
+    weight: 0
+    label: hidden
+    settings:
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  field_p_i_align_center: true
+  field_p_i_enable_link: true
+  field_p_i_enable_zoom: true
+  field_p_i_label: true
+  field_p_i_link: true
+  field_p_i_show_label: true
+  field_p_i_size: true

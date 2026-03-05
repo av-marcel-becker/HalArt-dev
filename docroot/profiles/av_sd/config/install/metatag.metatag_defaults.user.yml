@@ -1,0 +1,11 @@
+uuid: 8720af8d-88be-4f5d-b347-0eeb99ba3ebe
+langcode: de
+status: true
+dependencies: {  }
+id: user
+label: Benutzer
+tags:
+  canonical_url: '[user:url]'
+  description: '[site:name]'
+  robots: 'noindex, nofollow, noarchive, nosnippet, noimageindex, notranslate'
+  title: '[user:display-name] | [site:name]'

@@ -1,0 +1,56 @@
+
+{#
+{% set media = paragraph.field_pi_lwii_icon.0.entity %} 
+
+{% set attributes_li = create_attribute() %}
+{% set classes_li = [
+            'ph-list-with-icons-item',
+          ]
+%}
+{% if(paragraph.field_p_lwi_horizontal_alignment.0.value) %}
+   {% set attributes_ul = attributes_ul.addClass('horizontal') %}
+{% endif %}
+
+{% if(paragraph.field_p_lwi_highlight.0.value) %}
+   {% set attributes_ul = attributes_ul.addClass('highlight') %}
+{% endif %}
+
+{% set is_button = paragraph.field_p_lwi_button.0.value %}
+{% if is_button %}
+   {% set attributes_ul = attributes_ul.addClass('list-as-button') %}
+{% endif %}
+#}
+{% block paragraph %}
+   {% block content %}
+      {% set label = paragraph.field_pi_lwii_label.0.value %}
+      {% set icon = paragraph.field_pi_lwii_icon.0.value %}
+      {% set link = paragraph.field_pi_lwii_link.0      %}      
+      {% if link and link.options.attributes is iterable %}
+         {% set link_attributes = create_attribute(link.options.attributes) %}
+      {% else %}
+         {% set link_attributes = create_attribute() %}
+      {% endif %}
+      {% set link_attributes = link_attributes.setAttribute('title', link.title) %}
+      {#
+      {%
+      set classes = [
+      ]
+      %}
+      <div{{ attributes.addClass(classes) }}>
+      </div>
+      #}
+      <li{{ attributes_li.addClass(classes_ul) }}>
+
+         {% if link %}
+            <a href="{{ link.getUrl().toString() }}"{{ link_attributes.addClass(['cssf--d_inline-block--w100p']) }}>
+         {% endif %}
+         {% if icon %}         
+            <span class="{{ is_button }}{{ is_button?'off-fa-li':'fa-li'}}"><i class="fa-solid fa-{{ icon }}"></i></span>
+         {% endif %}
+         {{ label|raw }}
+         {% if link %}
+            </a>
+         {% endif %}
+      </li>    
+   {% endblock %}
+{% endblock paragraph %}

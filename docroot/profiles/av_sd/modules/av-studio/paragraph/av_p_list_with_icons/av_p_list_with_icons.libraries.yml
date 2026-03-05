@@ -1,0 +1,6 @@
+av_p_list_with_icons: 
+  version: 0.1
+  css:
+    theme:
+      css/av_p_list_with_icons.css: {}
+      

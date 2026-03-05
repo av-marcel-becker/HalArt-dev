@@ -1,0 +1,30 @@
+uuid: 9d1cc90b-df8a-490d-b5a2-536d83b75fcb
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_f_file
+    - paragraphs.paragraphs_type.p_file
+  module:
+    - file
+  enforced:
+    module:
+      - av_p_file
+id: paragraph.p_file.field_p_f_file
+field_name: field_p_f_file
+entity_type: paragraph
+bundle: p_file
+label: Datei
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: 'p_file/[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: true
+field_type: file

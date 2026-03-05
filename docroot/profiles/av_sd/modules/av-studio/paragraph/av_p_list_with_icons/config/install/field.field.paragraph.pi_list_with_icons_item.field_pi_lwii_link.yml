@@ -1,0 +1,26 @@
+uuid: 865fce83-78ef-469b-b3ed-af31353fd4d0
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_pi_lwii_link
+    - paragraphs.paragraphs_type.pi_list_with_icons_item
+  module:
+    - link
+  enforced:
+    module:
+      - av_p_list_with_icons
+id: paragraph.pi_list_with_icons_item.field_pi_lwii_link
+field_name: field_pi_lwii_link
+entity_type: paragraph
+bundle: pi_list_with_icons_item
+label: 'Listenelement verlinken'
+description: 'Icon + Inhalt wird verlinkt'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

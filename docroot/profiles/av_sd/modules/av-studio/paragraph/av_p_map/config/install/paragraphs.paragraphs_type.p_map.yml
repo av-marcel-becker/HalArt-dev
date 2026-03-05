@@ -1,0 +1,13 @@
+uuid: 3ac477c5-4c8f-47e9-a0b0-e09e07606bb8
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_map
+id: p_map
+label: 'Karte'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,70 @@
+/*
+--p-panorama--h5--font-family: var(--font-family-1);
+--p-panorama--h5--font-style: var(--font-style-1);
+--p-panorama--h5--font-weight: var(--font-weight-1);
+--p-panorama--h5--font-size: 5.5vw;
+--p-panorama--h5--line-height: 6vw;
+--p-panorama--h5--color: #ffffff;
+--p-panorama--h5--margin: 0rem;
+--p-panorama--p--font-family: var(--font-family-2);
+--p-panorama--p--font-style: var(--font-style-2);
+--p-panorama--p--font-weight: var(--font-weight-2);
+--p-panorama--p--font-size: var(--size-24);
+--p-panorama--p--line-height:  var(--size-28);
+--p-panorama--p--color: #ffffff;
+--p-panorama--p--margin: 0rem;
+--p-panorama--full-height--height: calc(100vh - 60px);
+--p-panorama--full-height--height: calc(100vh - 105px);
+*/
+
+
+.p-panorama h5
+   {
+      font-family: var(--p-panorama--h5--font-family);
+      font-style: var(--p-panorama--h5--font-style);
+      font-weight: var(--p-panorama--h5--font-weight);
+      font-size: var(--p-panorama--h5--font-size) ;
+      line-height: var(--p-panorama--h5--line-height);
+      color: var(--p-panorama--h5--color);
+      margin: var(--p-panorama--h5--margin);
+   }
+.p-panorama p
+   {
+      font-family: var(--p-panorama--p--font-family);
+      font-style: var(--p-panorama--p--font-style);
+      font-weight: var(--p-panorama--p--font-weight);
+      font-size: var(--p-panorama--p--font-size) ;
+      line-height: var(--p-panorama--p--line-height);
+      color: var(--p-panorama--color);
+      margin: var(--p-panorama--p--margin);
+   } /*
+.p-panorama.full-height
+   {
+     
+      height: var(--p-panorama--full-height--height);
+      
+      height: var(--p-panorama--full-height--height);
+   }*/
+.p-panorama.full-height img
+   {
+      /*
+      width: auto;
+      height: var(--p-panorama--full-height--height);
+      max-width: none;
+      max-height: 100%;
+      */      
+      width: 100dvw;
+      height: var(--p-panorama--full-height--height, calc(100dvh - 105px));
+      object-fit: cover; 
+   }
+/* #################################### */  
+/* 
+.p-panorama .panorama-image > div
+   {
+      font-size: 0rem;
+   }
+.p-panorama .panorama-text > div
+   {
+      padding: var(--p-panorama--panorama-text--padding);
+   }
+   */

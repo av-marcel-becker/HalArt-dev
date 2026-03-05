@@ -1,0 +1,11 @@
+uuid: edd9e3a0-04cf-4dd5-8b32-8ce929703001
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_n_event_page
+name: 'Tags für Veranstaltung'
+vid: t_tags_event_page
+description: ''
+weight: 0

@@ -1,0 +1,24 @@
+uuid: 7174278d-3ad3-4740-8f2b-49bdc5677f6f
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_n_heading
+    - node.type.n_notification
+  enforced:
+    module:
+      - av_n_notification
+id: node.n_notification.field_n_n_heading
+field_name: field_n_n_heading
+entity_type: node
+bundle: n_notification
+label: Überschrift
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: Info
+default_value_callback: ''
+settings: {  }
+field_type: string

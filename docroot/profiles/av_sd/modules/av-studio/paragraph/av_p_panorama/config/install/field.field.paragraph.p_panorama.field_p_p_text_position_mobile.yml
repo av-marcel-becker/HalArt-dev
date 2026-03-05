@@ -1,0 +1,26 @@
+uuid: 64e59dda-6870-407e-9610-d58a5e38f1e0
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_p_text_position_mobile
+    - paragraphs.paragraphs_type.p_panorama
+  module:
+    - options
+  enforced:
+    module:
+      - av_p_panorama
+id: paragraph.p_panorama.field_p_p_text_position_mobile
+field_name: field_p_p_text_position_mobile
+entity_type: paragraph
+bundle: p_panorama
+label: 'Ausrichtung Text (Mobile)'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: mc
+default_value_callback: ''
+settings: {  }
+field_type: list_string

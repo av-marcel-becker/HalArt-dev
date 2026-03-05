@@ -1,0 +1,30 @@
+name: 'AV ads'
+type: module
+description: 'custom ads'
+package: 'AV-Studio - Tools'
+version: 0.1
+core_version_requirement: ^10 || ^11
+dependencies:
+  - iframe
+  - image
+  - image_replace
+  - link
+  - datetime_range
+  - node
+  - file
+  - taxonomy
+  - paragraphs
+  - conditional_fields
+  - content_moderation
+  - cshs
+  - field_group
+  - maxlength
+  - path
+  - smart_date
+  - user
+  - menu_ui
+  - node_revision_delete  
+  - responsive_image
+  - av_l_default
+  
+  

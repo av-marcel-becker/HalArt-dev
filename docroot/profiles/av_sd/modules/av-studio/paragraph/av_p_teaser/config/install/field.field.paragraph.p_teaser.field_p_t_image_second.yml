@@ -1,0 +1,26 @@
+uuid: c26fe9df-3ba6-496e-90eb-a34b8eb64067
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_t_image_second
+    - paragraphs.paragraphs_type.p_teaser
+  enforced:
+    module:
+      - av_p_teaser
+id: paragraph.p_teaser.field_p_t_image_second
+field_name: field_p_t_image_second
+entity_type: paragraph
+bundle: p_teaser
+label: 'Bild/ Text tauschen bzw. Bild als zweites'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

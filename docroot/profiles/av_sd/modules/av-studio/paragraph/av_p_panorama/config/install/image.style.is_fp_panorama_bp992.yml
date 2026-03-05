@@ -1,0 +1,26 @@
+uuid: 4429a996-b608-474f-a533-88a619ee8441
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_panorama
+  module:
+    - focal_point
+name: is_fp_panorama_bp992
+label: 'FP Panorama - bp992 (B=1200px)'
+effects:
+  0121afc8-110a-4df6-b888-a5ff2cb6d354:
+    uuid: 0121afc8-110a-4df6-b888-a5ff2cb6d354
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 2400
+      height: 1200
+      crop_type: focal_point
+  3b8f2f2d-a2bd-4077-8a0f-f2f9ef7b8c84:
+    uuid: 3b8f2f2d-a2bd-4077-8a0f-f2f9ef7b8c84
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

@@ -1,0 +1,10 @@
+name: 'AV-Paragraph - Sections Block'
+type: module
+description: 'AV-Studio Paragraph - Sections Block'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Paragraph'
+dependencies:
+  - layout_paragraphs
+  - paragraphs
+  - av_l_sections
+  

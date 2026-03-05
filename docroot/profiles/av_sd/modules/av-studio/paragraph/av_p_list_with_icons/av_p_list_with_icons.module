@@ -1,0 +1,47 @@
+<?php
+   function av_p_list_with_icons_theme_suggestions_fontawesomeicons_alter(array &$suggestions, array $variables)
+      {
+         $suggestions[] = 'fontawesomeicons__' . 'p_icon';  
+      }
+   function av_p_list_with_icons_theme_suggestions_fontawesomeicon_alter(array &$suggestions, array $variables)
+      {
+         $suggestions[] = 'fontawesomeicon__' . 'p_icon';
+      }
+   /**
+    * hook_theme
+    */
+   function av_p_list_with_icons_theme($existing, $type, $theme, $path) 
+      {
+         return [
+                   'paragraph__p_list_with_icons' => [
+                                                         'base hook' => 'paragraph',
+                                                      ],
+                   'paragraph__pi_list_with_icons_item' => [
+                                                         'base hook' => 'paragraph',
+                                                      ],
+                   #'fontawesomeicon__p_icon' => [
+                   #                                      'base hook' => 'fontawesomeicon',
+                   #                                   ],
+                   #'fontawesomeicons__p_icon' => [
+                   #                                      'base hook' => 'fontawesomeicons',
+                   #                                   ],
+                   'field__field_p_lwi_list_item' => [
+                                                         'base hook' => 'field',
+                                                      ],
+                   /*'paragraph__p_section__full' => [
+                                                         'base hook' => 'paragraph',
+                                                      ],
+                                                     
+                   'av_paragraphs_slider' => [
+                                                'base hook' => 'node',
+                                                'base hook' => 'paragraph',
+                                                'base hook' => 'field',
+                                                'variables' => [
+                                                                  'test1' => NULL,
+                                                                  'test2' => NULL,
+                                                                  'test3' => NULL
+                                                               ],
+                                             ],
+                                             */
+               ];
+      } 

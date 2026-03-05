@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - crop
+  enforced:
+    module:
+      - av_p_image
+name: is_fp_100p_bp1400_1400px
+label: 'FP 100% - bp1400 (B=1400px)'
+effects:
+  fcc0adf4-f7b5-40ba-a916-626b611af131:
+    uuid: fcc0adf4-f7b5-40ba-a916-626b611af131
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 2800
+      height: 1199
+      crop_type: focal_point
+  2cbaf314-04b4-4813-866f-39a18602e277:
+    uuid: 2cbaf314-04b4-4813-866f-39a18602e277
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

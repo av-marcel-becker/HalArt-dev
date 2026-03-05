@@ -1,0 +1,9 @@
+av_accessibility:
+  version: 0.1
+  css:
+    theme:
+      css/av_accessibility.css: { }
+  js: 
+    js/av_accessibility.js: { }
+#  dependencies:
+#    - -/- 

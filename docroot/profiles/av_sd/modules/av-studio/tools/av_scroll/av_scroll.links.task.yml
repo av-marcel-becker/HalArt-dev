@@ -1,0 +1,6 @@
+#https://www.drupal.org/docs/8/api/menu-api/providing-module-defined-local-tasks
+av_scroll.settings:
+  title: 'AV Tools - Scroll Settings'
+  base_route: 'av_scroll.settings'
+  route_name: 'av_scroll.settings'
+  weight: 1

@@ -1,0 +1,25 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+function av_p_predefined_sections_theme($existing, $type, $theme, $path)
+   {
+      return [
+            'taxonomy_term__t_predefined_sections' => [
+               'template' => 'taxonomy-term--t-predefined-sections',
+               'base hook' => 'taxonomy_term',
+            ],
+            'field__field_t_ps_content' => [
+               'template' => 'field--field-t-ps-content',
+               'base hook' => 'field',
+            ],
+            'field__field_p_ps_predefined_sections' => [
+               'template' => 'field--field-p-ps-predefined-sections',
+               'base hook' => 'field',
+            ],
+            'paragraph__p_predefined_sections' => [
+               'template' => 'paragraph--p-predefined-sections',
+               'base hook' => 'paragraph',
+            ],
+         ];
+   }

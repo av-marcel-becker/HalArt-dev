@@ -1,0 +1,12 @@
+name: 'AV Paragraph - WYSIWYG System'
+type: module
+description: 'AV-Studio Paragraph - WYSIWYG System'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Paragraph'
+dependencies:
+  - field
+  - paragraphs
+  - allowed_formats
+  - maxlength
+  - text
+    

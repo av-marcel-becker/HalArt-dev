@@ -1,0 +1,23 @@
+langcode: de
+status: true
+dependencies:
+  enforced:
+    module:
+      - av_p_cards
+name: is_cards_100p_bp992_992px
+label: 'Card 100% - bp992 (B=992px)'
+effects:
+  2a147901-a3b4-49d5-86d4-83da4c04c13b:
+    uuid: 2a147901-a3b4-49d5-86d4-83da4c04c13b
+    id: image_scale
+    weight: 1
+    data:
+      width: 1984
+      height: null
+      upscale: false
+  f9ccebf8-345c-4e34-99d6-0e9e704dc359:
+    uuid: f9ccebf8-345c-4e34-99d6-0e9e704dc359
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

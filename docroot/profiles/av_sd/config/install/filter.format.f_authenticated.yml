@@ -1,0 +1,23 @@
+uuid: d9ac2a20-e877-4c8c-b2fc-fdce3c0c77e3
+langcode: de
+status: true
+dependencies: {  }
+name: 'Angemeldeter Benutzer'
+format: f_authenticated
+weight: 0
+filters:
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: true
+    weight: -10
+    settings:
+      allowed_html: '<br> <p>'
+      filter_html_help: false
+      filter_html_nofollow: true

@@ -1,0 +1,31 @@
+uuid: 77568ae8-80c3-4c68-80e4-4857f735ac56
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_poip_map
+    - node.type.n_map_page
+    - node.type.n_point_of_interest_page
+  enforced:
+    module:
+      - av_n_map_page
+id: node.n_point_of_interest_page.field_n_poip_map
+field_name: field_n_poip_map
+entity_type: node
+bundle: n_point_of_interest_page
+label: Map
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      n_map_page: n_map_page
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

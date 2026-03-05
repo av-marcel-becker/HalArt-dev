@@ -1,0 +1,25 @@
+uuid: 43ccbe19-d55b-4748-a2e0-1cffbf9798f3
+langcode: de
+status: true
+dependencies:
+  config:
+    - node.type.n_front_page
+  enforced:
+    module:
+      - av_n_front_page
+id: node.n_front_page.status
+field_name: status
+entity_type: node
+bundle: n_front_page
+label: Veröffentlicht
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: An
+  off_label: Aus
+field_type: boolean

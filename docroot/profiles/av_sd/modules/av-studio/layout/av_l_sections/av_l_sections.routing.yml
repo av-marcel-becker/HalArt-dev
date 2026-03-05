@@ -1,0 +1,7 @@
+av_l_sections.settings:
+  path: '/admin/config/system/av_layout/sections'
+  defaults:
+    _form: '\Drupal\av_l_sections\Form\LayoutSectionsSettingsForm'
+    _title: 'AV-Layout Sections Settings'
+  requirements:
+    _permission: 'administer AV-Layout configuration'

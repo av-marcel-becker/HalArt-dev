@@ -1,0 +1,5 @@
+langcode: de
+tabs: true
+path: true
+enabled_filters:
+  permissions: true

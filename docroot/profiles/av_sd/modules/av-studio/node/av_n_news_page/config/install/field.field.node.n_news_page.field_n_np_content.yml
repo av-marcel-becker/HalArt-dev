@@ -1,0 +1,29 @@
+uuid: 81831b0f-8e0b-4af8-99b5-4044d0599ea0
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_np_content
+    - node.type.n_news_page
+  module:
+    - entity_reference_revisions
+  enforced:
+    module:
+      - av_n_news_page
+id: node.n_news_page.field_n_np_content
+field_name: field_n_np_content
+entity_type: node
+bundle: n_news_page
+label: Inhaltsbereich
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles: null
+    target_bundles_drag_drop: { }
+field_type: entity_reference_revisions

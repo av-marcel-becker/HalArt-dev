@@ -1,0 +1,7 @@
+name: 'AV Node - Course Page Content'
+type: module
+description: 'AV-Studio Node - Course Page Content'
+core_version_requirement: ^10 || ^11
+package: 'AV-Studio - Node'
+dependencies:
+  - av_n_course_page

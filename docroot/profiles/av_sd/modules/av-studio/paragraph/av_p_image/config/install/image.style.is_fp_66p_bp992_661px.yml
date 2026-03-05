@@ -1,0 +1,25 @@
+langcode: de
+status: true
+dependencies:
+  module:
+    - crop
+  enforced:
+    module:
+      - av_p_image
+name: is_fp_66p_bp992_661px
+label: 'FP 66% - bp992 (B=661px)'
+effects:
+  a4625583-c977-42f5-bd12-adfb7ce24c68:
+    uuid: a4625583-c977-42f5-bd12-adfb7ce24c68
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1322
+      height: 744
+      crop_type: focal_point
+  1f6c5be7-f0c7-48f1-be43-26b5a3ade6c3:
+    uuid: 1f6c5be7-f0c7-48f1-be43-26b5a3ade6c3
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp

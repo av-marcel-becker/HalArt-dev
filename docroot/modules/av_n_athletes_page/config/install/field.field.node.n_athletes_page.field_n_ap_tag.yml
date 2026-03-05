@@ -1,0 +1,32 @@
+uuid: 10148bb4-8940-4871-b812-f27aca786618
+langcode: de
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_n_ap_tag
+    - node.type.n_athletes_page
+    - taxonomy.vocabulary.t_tags_athletes_page
+  enforced:
+    module:
+      - av_n_athletes_page
+id: node.n_athletes_page.field_n_ap_tag
+field_name: field_n_ap_tag
+entity_type: node
+bundle: n_athletes_page
+label: Tagging
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      t_tags_athletes_page: t_tags_athletes_page
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
