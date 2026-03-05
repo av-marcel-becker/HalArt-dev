@@ -119,8 +119,7 @@
         "drupal/jsonapi_extras": "^3.26",
         "drupal/simple_sitemap": "^4.2",
         
-        "drupal/ultimate_cron": "^2.0@beta",
-        "fonticonpicker/fonticonpicker": "3.1.1"
+        "drupal/ultimate_cron": "^2.0@beta"
         
     },
     "repositories": [
