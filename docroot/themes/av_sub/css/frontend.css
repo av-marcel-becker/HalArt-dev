@@ -1,0 +1,45 @@
+/* Responsive typography inspired by hal_art_2018 */
+@media (min-width: 576px) {
+   h1 {
+      font-size: 4.5rem;
+      line-height: 4.5rem;
+   }
+}
+
+/* Frontend-specific nav accents */
+.page-header nav {
+   font-family: var(--font-family-1);
+   font-size: 1.125rem;
+   line-height: 1.125rem;
+   text-transform: uppercase;
+   color: var(--color-4);
+}
+
+.page-header nav a {
+   color: inherit;
+}
+
+.page-footer nav {
+   font-family: var(--font-family-1);
+   font-size: 1.125rem;
+   line-height: 1.125rem;
+   color: var(--color-6);
+}
+
+.page-footer nav a {
+   color: inherit;
+}
+
+.page-footer nav a:hover,
+.page-footer nav a:focus {
+   color: var(--color-2);
+}
+
+.teaser-text {
+   font-family: var(--font-family-1);
+   font-style: var(--font-style-1);
+   font-weight: var(--font-weight-1);
+   font-size: 1.5rem;
+   line-height: 2.25rem;
+   color: var(--color-2);
+}

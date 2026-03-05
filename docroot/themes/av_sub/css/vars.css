@@ -3,88 +3,81 @@
       
    }
 :root {
-   /* ***************************************************************** */
-   /* preset fontawesome */
 
-   --font-family-fa: 'Font Awesome 6 Pro';
-   --font-style-fa: normal;
-   --font-weight-fa: 900;
-   --font-weight-fas: 900;
-   --font-weight-fa-solid: 900;
-   --font-weight-far: 400;
-   --font-weight-fa-regular: 400;
-   --font-weight-fal: 300;
-   --font-weight-fa-light: 300;
-   --font-weight-fat: 100;
-   --font-weight-fa-thin: 100;
-   --font-weight-fad: 300;
-   --font-weight-fa-duotone: 300;
-   --font-weight-fab: 400;
-   --font-weight-fa-brands: 400;
-   
-   /* ***************************************************************** */
-   /* --layout-expansion: content; full, content, outside */
+   /* Base font system from hal_art_2018 */
+   --font-family-1: 'Barlow', sans-serif;
+   --font-style-1: normal;
+   --font-weight-1: 700;
+   --font-family-2: 'Barlow', sans-serif;
+   --font-style-2: normal;
+   --font-weight-2: 400;
+   --font-family-3: 'Barlow', sans-serif;
+   --font-style-3: normal;
+   --font-weight-3: 700;
+
+
+
+   /* Layout */
    --layout-gap: var(--size-10);
    --layout-content: 992px;
-   --layout-outside: 1200px; 
-   --container-spacing: var(--size-80);  
-   /* ------------------------------------ */
-   --region-spacing: var(--size-0);      
-   --region-with-color-spacing: var(--size-20);      
-   /* ------------------------------------ */
-   --default-text-margin: var(--size-20) var(--size-0) var(--size-20) var(--size-0); /* p, ul, blockquote... */
-   --default-item-margin: var(--size-10) var(--size-0) var(--size-10) var(--size-0); /* list-item */
-   /* ------------------------------------ */
-   --color-3: #ffaaaa; /* p */
-   --color-4: #aaffaa; /* h1-6 */
-   --color-5: #aaaaff; /* a */
-   --color-6: #ffffaa; /* ah */
-   --color-7: #ffaaff; /* cite */
-   --color-8: #aaffff;
-   --color-9: #aa3333;
-   --color-10: #33aa33;
-   --color-11: #3333aa;
-   --color-12: #aaaa33;
-   --color-13: #aa33aa;
-   --color-14: #33aaaa;
-   /* ------------------------------------ */
+   --layout-outside: 1200px;
+   --container-spacing: var(--size-80);
+   --region-spacing: var(--size-0);
+   --region-with-color-spacing: var(--size-20);
+
+   /* Spacing defaults */
+   --default-text-margin: var(--size-36) var(--size-0);
+   --default-item-margin: var(--size-8) var(--size-0);
+
+   --color-3: #000000; /* p */
+   --color-4: #2c4492; /* h1-6 */
+   --color-5: #2c4492; /* a */
+   --color-6: #c6341a; /* ah */
+   --color-7: #c6341a; /* cite */
+   --color-8: #c6341a;    
+   --color-9: #dd9773;
+   --color-10: #d9dff3;
+   --color-11: #4e88b4;
+   --color-12: #000000;
+   --color-13: #000000;
+   --color-14: #000000;
+
+   /* List defaults */
    --ul-margin: var(--default-text-margin, 0);
    --ul-padding: 0;
-   --ul-li-font-family: sans-serif;
-   --ul-li-font-style: normal;
+   --ul-li-font-family: var(--font-family-2);
+   --ul-li-font-style: var(--font-style-2);
    --ul-li-font-variant: normal;
-   --ul-li-font-weight: normal;
-   --ul-li-color: var(--color-3);
+   --ul-li-font-weight: var(--font-weight-2);
+   --ul-li-color: var(--color-9);
    --ul-li-font-size: var(--size-16);
    --ul-li-line-height: 1.2;
    --ul-li-margin: var(--default-item-margin, 0);
    --ul-li-margin-left: var(--ul-li-font-size);
    --ul-li-padding: 0;
    --ul-li-padding-left: calc(var(--ul-li-font-size) / 2);
-
-   --ul-li-marker-content: "\f061"; /* arrow right */
-   --ul-li-marker-color: var(--ul-li-color);
+   --ul-li-marker-content: "\f061";
+   --ul-li-marker-color: var(--color-4);
    --ul-li-marker-font-family: var(--font-family-fa);
    --ul-li-marker-font-style: var(--font-style-fa);
    --ul-li-marker-font-weight: var(--font-weight-fa-light);
-   --ul-li-marker-font-variant: inherit;
+   --ul-li-marker-font-variant: var(--font-variant-fa);
    --ul-li-marker-font-size: 1em;
    --ul-li-marker-line-height: 1.2;
-   
+
    --ol-margin: var(--default-text-margin, 0);
    --ol-padding: 0;
-   --ol-li-font-family: sans-serif;
-   --ol-li-font-style: normal;
+   --ol-li-font-family: var(--font-family-2);
+   --ol-li-font-style: var(--font-style-2);
    --ol-li-font-variant: normal;
-   --ol-li-font-weight: normal;
-   --ol-li-color: var(--color-3);
+   --ol-li-font-weight: var(--font-weight-2);
+   --ol-li-color: var(--color-9);
    --ol-li-font-size: var(--size-16);
    --ol-li-line-height: 1.2;
    --ol-li-margin: var(--default-item-margin, 0);
    --ol-li-margin-left: var(--ol-li-font-size);
    --ol-li-padding: 0;
    --ol-li-padding-left: calc(var(--ol-li-font-size) / 2);
-   
    --ol-li-marker-color: var(--ol-li-color);
    --ol-li-marker-font-family: inherit;
    --ol-li-marker-font-style: inherit;
