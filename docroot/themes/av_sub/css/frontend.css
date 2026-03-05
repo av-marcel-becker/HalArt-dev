@@ -1,18 +1,32 @@
-/* Responsive typography inspired by hal_art_2018 */
-@media (min-width: 576px) {
-   h1 {
-      font-size: 4.5rem;
-      line-height: 4.5rem;
-   }
+:root {
+   
+   --header-nav-font-family: var(--font-family-1);
+   --header-nav-font-size: 1.125rem;
+   --header-nav-line-height: 1.125rem;
+   --header-nav-text-transform: uppercase;
+   --header-nav-color: var(--color-4);
+
+   --footer-nav-font-family: var(--font-family-1);
+   --footer-nav-font-size: 1.125rem;
+   --footer-nav-line-height: 1.125rem;
+   --footer-nav-color: var(--color-6);
+   --footer-nav-hover-color: var(--color-2);
+
+   --teaser-text-font-family: var(--font-family-1);
+   --teaser-text-font-style: var(--font-style-1);
+   --teaser-text-font-weight: var(--font-weight-1);
+   --teaser-text-font-size: 1.5rem;
+   --teaser-text-line-height: 2.25rem;
+   --teaser-text-color: var(--color-2);
 }
 
 /* Frontend-specific nav accents */
 .page-header nav {
-   font-family: var(--font-family-1);
-   font-size: 1.125rem;
-   line-height: 1.125rem;
-   text-transform: uppercase;
-   color: var(--color-4);
+   font-family: var(--header-nav-font-family);
+   font-size: var(--header-nav-font-size);
+   line-height: var(--header-nav-line-height);
+   text-transform: var(--header-nav-text-transform);
+   color: var(--header-nav-color);
 }
 
 .page-header nav a {
@@ -20,10 +34,10 @@
 }
 
 .page-footer nav {
-   font-family: var(--font-family-1);
-   font-size: 1.125rem;
-   line-height: 1.125rem;
-   color: var(--color-6);
+   font-family: var(--footer-nav-font-family);
+   font-size: var(--footer-nav-font-size);
+   line-height: var(--footer-nav-line-height);
+   color: var(--footer-nav-color);
 }
 
 .page-footer nav a {
@@ -32,14 +46,15 @@
 
 .page-footer nav a:hover,
 .page-footer nav a:focus {
-   color: var(--color-2);
+   color: var(--footer-nav-hover-color);
 }
 
 .teaser-text {
-   font-family: var(--font-family-1);
-   font-style: var(--font-style-1);
-   font-weight: var(--font-weight-1);
-   font-size: 1.5rem;
-   line-height: 2.25rem;
-   color: var(--color-2);
+   font-family: var(--teaser-text-font-family);
+   font-style: var(--teaser-text-font-style);
+   font-weight: var(--teaser-text-font-weight);
+   font-size: var(--teaser-text-font-size);
+   line-height: var(--teaser-text-line-height);
+   color: var(--teaser-text-color);
 }
+
