@@ -247,6 +247,7 @@
    --ol-li-marker-font-variant: inherit;
    --ol-li-marker-font-size: 1em;
    --ol-li-marker-line-height: 1.2;
+   
    --a-display: inline;
    --a-width: unset;
    --a-height: unset;
@@ -259,7 +260,7 @@
    --a-font-weight: inherit;
    --a-font-size: inherit;
    --a-line-height: inherit;
-   --a-color: var(--color-4);
+   --a-color: var(--color-5);
    --a-text-decoration: none;
    --a-background: none;
    --a-border: none;
@@ -269,7 +270,7 @@
    --a-text-decoration-thickness: auto;
    --a-padding: 0;
    --a-margin: 0;
-   --a-transition: 1s ease;
+   --a-transition: 0s ease;
    --a-text-transform: none;
    --a-transform: none;
    --a-letter-spacing: normal;
@@ -277,7 +278,7 @@
    --a-hover-text-decoration: none;
    --a-hover-text-underline-position: under;
    --a-hover-text-decoration-thickness: auto;
-   --a-hover-color: var(--color-2);
+   --a-hover-color: var(--color-6);
    --a-hover-background: none;
    --a-hover-border: none;
    --a-hover-border-radius: 0;
