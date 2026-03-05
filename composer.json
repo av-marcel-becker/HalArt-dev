@@ -120,7 +120,7 @@
         "drupal/simple_sitemap": "^4.2",
         
         "drupal/ultimate_cron": "^2.0@beta",
-        "drupal/fontawesome_iconpicker": "^3.0"
+        "fonticonpicker/fonticonpicker": "3.1.1"
         
     },
     "repositories": [
@@ -162,7 +162,7 @@
                 "version": "3.1.1",
                 "type": "drupal-library",
                 "extra": {
-                    "installer-name": "fonticonpicker--fonticonpicker"
+                    "installer-name": "fonticonpicker--fonticonpicker/dist"
                 },
                 "dist": {
                     "url": "https://github.com/fontIconPicker/fontIconPicker/releases/download/v3.1.1/fontIconPicker.zip",
