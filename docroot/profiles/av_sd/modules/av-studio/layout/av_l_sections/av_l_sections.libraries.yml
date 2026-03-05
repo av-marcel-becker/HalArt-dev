@@ -1,5 +1,5 @@
 av_l_sections:
-  version: VERSION
+  version: 'VERSION'
   css:
     theme:
       css/av_l_sections.css: {}

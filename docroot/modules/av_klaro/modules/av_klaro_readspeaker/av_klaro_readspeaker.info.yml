@@ -2,7 +2,7 @@ name: 'AV Klaro - ReadSpeaker'
 type: module
 description: 'Klaro - ReadSpeaker'
 package: 'AV-Studio - Tools'
-version: 0.1
+version: '0.1'
 core_version_requirement: ^10 || ^11
 dependencies:
   - drupal:klaro

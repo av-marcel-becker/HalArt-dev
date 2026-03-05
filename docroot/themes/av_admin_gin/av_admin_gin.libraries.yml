@@ -1,6 +1,6 @@
 css_framework_3:
   header: true
-  version: 0.1
+  version: '0.1'
   css:
     theme:
 #      /libraries/CSS-Framework-3/dist/preset.css: { weight: -100 }
@@ -15,25 +15,25 @@ css_framework_3:
 #  dependencies:
 #    - av_admin_gin/css_framework_2
 htmlWatcher:
-  version: 0.1
+  version: '0.1'
   js:
     js/htmlWatcher.js: {}
 up_down_scroll:
-  version: 0.1
+  version: '0.1'
   css:
     theme:
       css/up_down_scroll.css: {}
   js:
     js/up_down_scroll.js: {}
 dialog_fix:
-  version: 0.1
+  version: '0.1'
   css:
     theme:
       css/dialog_fix.css: {}
   js:
     js/dialog_fix.js: {}
 global:
-  version: 1.x
+  version: '1.x'
   css:
     theme:
       css/av_admin_gin.css: {}  

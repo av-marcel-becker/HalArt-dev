@@ -1,24 +1,24 @@
 av_ads_base:
-  version: 0.1
+  version: '0.1'
   css:
     theme:
       css/av_ads.css: { }
   js: 
     js/av_ads_base.js: { }
 av_ads_40:
-  version: 0.1
+  version: '0.1'
   js: 
     js/av_ads_40.js: { }
   dependencies:
     - av_ads/av_ads_base 
 av_ads_41:
-  version: 0.1
+  version: '0.1'
   js: 
     js/av_ads_41.js: { }
   dependencies:
     - av_ads/av_ads_base 
 av_ads_42:
-  version: 0.1
+  version: '0.1'
   js: 
     js/av_ads_42.js: { }
   dependencies:

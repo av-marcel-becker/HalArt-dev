@@ -2,7 +2,7 @@ name: 'AV Accessibility - Tab'
 type: module
 description: 'accessibility tools - Tab'
 package: 'AV-Studio - Tools'
-version: 0.1
+version: '0.1'
 core_version_requirement: ^10 || ^11
 #dependencies:
 #  - 

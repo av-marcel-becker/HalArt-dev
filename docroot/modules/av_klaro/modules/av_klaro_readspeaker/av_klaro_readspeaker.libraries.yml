@@ -1,5 +1,5 @@
 av_klaro_readspeaker:
-  version: VERSION
+  version: 'VERSION'
   css:
     theme:
       css/av_klaro_readspeaker.css: { }

@@ -1,6 +1,6 @@
 splide:
   remote: https://splidejs.com/
-  version: 1.x
+  version: '1.x'
   license:
     name: MIT
     url: https://github.com/Splidejs/splide/blob/master/LICENSE

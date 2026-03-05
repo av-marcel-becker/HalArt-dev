@@ -11,28 +11,28 @@
 #    theme:
 #      css/modules/av-share.css: {}    
 cookies:
-  version: VERSION
+  version: 'VERSION'
   css:
     theme:
       css/modules/cookies.css: {}
 av_flyout:
-  version: VERSION
+  version: 'VERSION'
   css:
     theme:
       css/modules/av_flyout.css: { weight: 10001 }
 global-vars:     
-  version: VERSION
+  version: 'VERSION'
   css:
     theme:   
       css/vars.css: { weight: 10000 } 
 backend:      
-  version: VERSION
+  version: 'VERSION'
   css:
     theme:
       css/fonts.css: { weight: 10001 }      
       css/global.css: { weight: 10001 }   
 global:
-  version: VERSION
+  version: 'VERSION'
   css:
     theme:
       css/fonts.css: { weight: 10001 }      

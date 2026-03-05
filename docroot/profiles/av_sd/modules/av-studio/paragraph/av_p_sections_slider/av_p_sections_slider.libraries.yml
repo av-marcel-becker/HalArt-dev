@@ -1,6 +1,6 @@
 slick:
   remote: http://kenwheeler.github.io/slick/
-  version: 1.x
+  version: '1.x'
   license:
     name: MIT
     url: https://github.com/kenwheeler/slick/blob/master/LICENSE

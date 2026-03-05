@@ -1,5 +1,5 @@
 share:
-  version: VERSION
+  version: 'VERSION'
   css:
     theme:
       css/share.css: {}

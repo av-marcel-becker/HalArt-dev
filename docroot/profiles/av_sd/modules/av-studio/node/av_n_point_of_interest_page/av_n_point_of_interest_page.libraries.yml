@@ -5,7 +5,7 @@
 #  dependencies:
 #    - core/jquery
 n_point_of_interest_page:
-  version: VERSION
+  version: 'VERSION'
   js:
     js/poi.js: {}
 #  dependencies:

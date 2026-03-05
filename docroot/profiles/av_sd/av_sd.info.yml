@@ -1,7 +1,7 @@
 name: 'AV-Standard Distribution V5'
 type: profile
 description: 'Universal Installation mit den gängigsten Modulen und Funktionen'
-version: VERSION
+version: 'VERSION'
 core_version_requirement: ^10 || ^11
 'interface translation project': av_sd
 'interface translation server pattern': profiles/av_sd/translations/%language.po

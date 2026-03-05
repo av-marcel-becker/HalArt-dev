@@ -1,5 +1,5 @@
 mmenu: 
-  version: 9.2.0
+  version: '9.2.0'
   css:
     theme:
       /libraries/mmenu/dist/mmenu.css: {}
@@ -25,7 +25,7 @@ mmenu:
 #     # preprocess: false
 #    #/libraries/mburger/dist/mburger.js: {type: external,attributes: { async: true }}
 av_mmenu: 
-  version: 9.2.0
+  version: '9.2.0'
   css:
     theme:
       css/av_mmenu.css: {}

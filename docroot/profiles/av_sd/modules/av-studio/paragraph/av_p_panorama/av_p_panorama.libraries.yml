@@ -1,5 +1,5 @@
 av_p_panorama: 
-  version: 0.1
+  version: '0.1'
   css:
     theme:
       css/av_p_panorama.css: {}

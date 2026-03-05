@@ -1,6 +1,6 @@
 css_framework_3:
   header: true
-  version: 0.1
+  version: '0.1'
   css:
     theme:
       /libraries/CSS-Framework-3/dist/preset.css: { weight: -100 }
@@ -12,7 +12,7 @@ css_framework_3:
     /libraries/CSS-Framework-3/dist/cssf-vars.js: { weight: -101 }
     /libraries/CSS-Framework-3/dist/cssf.js: { weight: -100 }
 fontawesome:
-  version: 7.1.0
+  version: '7.1.0'
   css:
     theme:
       /libraries/fontawesome/css/fontawesome.min.css: {}
@@ -25,12 +25,12 @@ fontawesome:
 
 
 backend:
-  version: VERSION
+  version: 'VERSION'
   css:
     theme:
       css/vars.css: { weight: 0 }
 global:
-  version: VERSION
+  version: 'VERSION'
   css:
     theme:
       css/vars.css: { weight: 0 }
