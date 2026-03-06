@@ -13,46 +13,63 @@ body  {
 
 
 a.btn.toggle-mobile-menu {
- background-color: var(--color-8) !important;
- color: var(--color-2) !important;
- padding: 0 !important;  
- margin: 0rem !important;
- 
- /* border-color: var(--color-2) solid 0.3125rem !important; */
- border-radius: 2rem !important;
- box-shadow: 0rem 0.125rem 0.9375rem rgba(0,0,0,0.15) !important;
- display: inline-flex !important;
- justify-content: center;
- align-items: center;
- width: var(--size-42) !important;
- height: var(--size-42);
+   --a-display: inline-flex;
+   --a-width: var(--size-42);
+   --a-height: var(--size-42);
+   --a-min-height: unset;
+   --a-justify-content: center;
+   --a-align-items: center;
+   --a-align-content: unset;
+   --a-font-family: inherit;
+   --a-font-style: inherit;
+   --a-font-weight: inherit;
+   --a-font-size: inherit;
+   --a-line-height: inherit;
+   --a-color: var(--color-2);
+   --a-text-decoration: none;
+   --a-background: var(--color-8);
+   --a-border: none;
+   --a-border-radius: 2rem;
+   --a-border-bottom: none;
+   --a-text-underline-position: under;
+   --a-text-decoration-thickness: auto;
+   --a-padding: 0;
+   --a-margin: 0;
+   --a-transition: 0s ease;
+   --a-text-transform: none;
+   --a-transform: none;
+   --a-letter-spacing: normal;
+   --a-vertical-align: top;
+   
+   --a-hover-text-decoration: none;
+   --a-hover-text-underline-position: under;
+   --a-hover-text-decoration-thickness: auto;
+   --a-hover-color: var(--color-2);
+   --a-hover-background: var(--color-3);
+   --a-hover-border: none;
+   --a-hover-border-radius: 2rem;
+   --a-hover-border-bottom: none;
+   --a-hover-text-transform: none;
+   --a-hover-transform: none;
+
+   --a-focus-text-decoration: var(--a-hover-text-decoration);
+   --a-focus-text-underline-position: var(--a-hover-text-underline-position);
+   --a-focus-text-decoration-thickness: var(--a-hover-text-decoration-thickness);
+   --a-focus-color: var(--a-hover-color);
+   --a-focus-background: var(--a-hover-background);
+   --a-focus-border: var(--a-hover-border);
+   --a-focus-border-radius: var(--a-hover-border-radius);
+   --a-focus-border-bottom: var(--a-hover-border-bottom);
+   --a-focus-text-transform: var(--a-hover-text-transform);
+   --a-focus-transform: var(--a-hover-transform);
+   
 }
 @media (min-width: 768px)
    {
       a.btn.toggle-mobile-menu {       
-          width: var(--size-58) !important;
-          height: var(--size-58);
-      }
-   }
-a.btn.toggle-mobile-menu:hover,
-a.btn.toggle-mobile-menu:focus {
- background-color: var(--color-3) !important;
- color: var(--color-2) !important;
- padding: 0 !important;  
- margin: 0rem !important;
- 
- display: inline-flex !important;
- justify-content: center;
- align-items: center;
- width: var(--size-42) !important;
- height: var(--size-42);
-}
 
-@media (min-width: 768px)
-   {
-      a.btn.toggle-mobile-menu:hover,
-      a.btn.toggle-mobile-menu:focus {     
-          width: var(--size-58) !important;
-          height: var(--size-58);
+         --a-width: var(--size-58);
+         --a-height: var(--size-58);
       }
    }
+
