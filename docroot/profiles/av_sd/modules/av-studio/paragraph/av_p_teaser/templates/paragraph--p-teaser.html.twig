@@ -240,7 +240,7 @@
             {% else %}
                {#% if link and fullsize_on %#}
                {% if link or fullsize_on %}
-                  <a href="{{ link_url }}" title="{{ title ? (link_title ? title~' - '~link_title : title) : link_title }}"{{ link_attributes.addClass(['cssf--d_contents', 'position-relative', 'col-b12','flex', 'flex-column', 'flex-nowrap']) }}>
+                  <a href="{{ link_url }}" title="{{ title ? (link_title ? title~' - '~link_title : title) : link_title }}"{{ link_attributes.addClass(['cssf--all_unset--h100p--cursor_pointer']) }}>
                
                {% endif %}
                   {% if label %}
