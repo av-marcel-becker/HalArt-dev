@@ -10,7 +10,7 @@ document.addEventListener(
                   login_link = '<a href="/user/logout" class="js-header-logout" rel="nofollow"><i class="fa-light fa-arrow-right-from-bracket"></i></a>';
                }
             
-            var menu_first_check = document.getElementById("block-av-sub-mobile-main-menu");
+            var menu_first_check = document.getElementById("block-b-mobile-menu");
             if(menu_first_check)
                {   
                   const menu_first = new Mmenu( "#block-av-sub-mobile-main-menu", 
