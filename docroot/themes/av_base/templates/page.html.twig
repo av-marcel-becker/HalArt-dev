@@ -97,36 +97,46 @@
    {% if page.footer %}
       <footer class="page-footer cssf">    
          {{ page.footer }}
-         <div class="page-copyright">
-            <span class="page-copyright-text">
-               {% set setup_show_copyright_icon = drupal_config('av_copyright.settings', 'setup_show_copyright_icon') %}
-               {% set setup_year_right = drupal_config('av_copyright.settings', 'setup_year_right') %}
-               {% set setup_text = drupal_config('av_copyright.settings', 'setup_text') %}
-               {% set setup_current_year = drupal_config('av_copyright.settings', 'setup_current_year') %}
-               {% set setup_count_up_the_year = drupal_config('av_copyright.settings', 'setup_count_up_the_year') %}
-               {% set setup_split_symbol = drupal_config('av_copyright.settings', 'setup_split_symbol') %}
-               {% set setup_split_symbol_link = drupal_config('av_copyright.settings', 'setup_split_symbol_link') %}
-               {% if setup_show_copyright_icon %}&copy; {% endif %}
-               {% if setup_year_right %}{{ setup_text }} {% endif %}
-                  {{ setup_current_year }}
-                  {% set currentYear = date('Y')|date('Y') %}
-                  {% if setup_count_up_the_year and currentYear != setup_current_year %} - {{ currentYear }} {% endif %}
-               {% if not setup_year_right %}{{ setup_text }} {% endif %}
-            </span> {{ setup_split_symbol|raw }} 
-            {% set items_count = drupal_config('av_copyright.settings', 'setup_items_count') %}
-            {% if items_count > 0 %}
-               <nav class="cssf--d_inline-block">
-                  <ul class="cssf--d_inline-block--list-style_none--m0--p0">
-                     {% for i in 1..items_count %}
-                        <li class="cssf--d_inline-block--m0--p0">
-                           <a href="{{ drupal_config('av_copyright.settings', 'item_'~loop.index~'_a_href') }}" title="{{ drupal_config('av_copyright.settings', 'item_'~loop.index~'_a_title') }}" rel="nofollow" target="{{ drupal_config('av_copyright.settings', 'item_'~loop.index~'_a_target') }}">{{ drupal_config('av_copyright.settings', 'item_'~loop.index~'_a_label') }}</a>
-                           {% if not loop.last %} {{ setup_split_symbol_link|raw }} {% endif %}
-                        </li>
-                     {% endfor %}
-                  </ul>         
-               </nav>    
-            {% endif %}     
-         </div>         
+         <div class="section-1x100 gl cssf--tpl-grid-layout cssf--val-container-spacing_var-layout-gap">
+            <div class="gc gbl cssf--gc_content cssf--tpl-grid-brick-layout cssf--ai_stretch">
+               <div class="r1 cssf--tpl-gcol100--d_flex--fwrap_wrap cssf--p_var-region-spacing cssf--as_unset cssf--jc_start cssf--ac_unset">     
+                  <div class="ph-wysiwyg cssf--w100p paragraph paragraph--type--p-wysiwyg-system paragraph--view-mode--default">
+
+                     <div class="page-copyright">
+                        <span class="page-copyright-text">
+                           {% set setup_show_copyright_icon = drupal_config('av_copyright.settings', 'setup_show_copyright_icon') %}
+                           {% set setup_year_right = drupal_config('av_copyright.settings', 'setup_year_right') %}
+                           {% set setup_text = drupal_config('av_copyright.settings', 'setup_text') %}
+                           {% set setup_current_year = drupal_config('av_copyright.settings', 'setup_current_year') %}
+                           {% set setup_count_up_the_year = drupal_config('av_copyright.settings', 'setup_count_up_the_year') %}
+                           {% set setup_split_symbol = drupal_config('av_copyright.settings', 'setup_split_symbol') %}
+                           {% set setup_split_symbol_link = drupal_config('av_copyright.settings', 'setup_split_symbol_link') %}
+                           {% if setup_show_copyright_icon %}&copy; {% endif %}
+                           {% if setup_year_right %}{{ setup_text }} {% endif %}
+                              {{ setup_current_year }}
+                              {% set currentYear = date('Y')|date('Y') %}
+                              {% if setup_count_up_the_year and currentYear != setup_current_year %} - {{ currentYear }} {% endif %}
+                           {% if not setup_year_right %}{{ setup_text }} {% endif %}
+                        </span> {{ setup_split_symbol|raw }} 
+                        {% set items_count = drupal_config('av_copyright.settings', 'setup_items_count') %}
+                        {% if items_count > 0 %}
+                           <nav class="cssf--d_inline-block">
+                              <ul class="cssf--d_inline-block--list-style_none--m0--p0">
+                                 {% for i in 1..items_count %}
+                                    <li class="cssf--d_inline-block--m0--p0">
+                                       <a href="{{ drupal_config('av_copyright.settings', 'item_'~loop.index~'_a_href') }}" title="{{ drupal_config('av_copyright.settings', 'item_'~loop.index~'_a_title') }}" rel="nofollow" target="{{ drupal_config('av_copyright.settings', 'item_'~loop.index~'_a_target') }}">{{ drupal_config('av_copyright.settings', 'item_'~loop.index~'_a_label') }}</a>
+                                       {% if not loop.last %} {{ setup_split_symbol_link|raw }} {% endif %}
+                                    </li>
+                                 {% endfor %}
+                              </ul>         
+                           </nav>    
+                        {% endif %}     
+                     </div>      
+                              
+                  </div>
+               </div>
+            </div>
+         </div>       
       </footer> 
    {% endif %}  
    {% if page.hidden_footer %}
