@@ -127,7 +127,14 @@ a.toggle-mobile-menu {
    }
    
 
-.mm-menu .mm-panels > .mm-panel:first-child > .mm-listview > .mm-listitem .mm-panel {
- 
-   font-size: var(--clamp-1400-size-24);
+.mm-menu .mm-listitem.append {
+
+   
+   font-family: var(--font-family-1);
+   font-style: normal;
+   font-variant: normal;
+   font-weight: bold;
+   font-size: var(--clamp-1400-size-18);
+   line-height: 1;
+
 }
