@@ -71,6 +71,7 @@ h6.cssf strong,
    font-weight: var(--h2-font-weight);
    color: var(--h2-color);
    margin: var(--h2-margin);
+   margin-top: 0rem;
    font-size: var(--h2-font-size);
    line-height: var(--h2-line-height);
    letter-spacing: var(--h2-letter-spacing);
