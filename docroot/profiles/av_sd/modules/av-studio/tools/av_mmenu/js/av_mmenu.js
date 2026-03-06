@@ -13,7 +13,7 @@ document.addEventListener(
             var menu_first_check = document.getElementById("block-b-mobile-menu");
             if(menu_first_check)
                {   
-                  const menu_first = new Mmenu( "#block-av-sub-mobile-main-menu", 
+                  const menu_first = new Mmenu( "#block-b-mobile-menu", 
                         {   
                               
                            "slidingSubmenus": false,
@@ -62,7 +62,7 @@ document.addEventListener(
                      
                   /* for anchor links - close after click */   
                   /*
-                  var menuLinks = document.querySelectorAll("#block-av-sub-mobile-main-menu a");
+                  var menuLinks = document.querySelectorAll("#block-b-mobile-menu a");
                       menuLinks.forEach(function(menuLink) {
                           menuLink.addEventListener("click", function() {
                               *//* var api = document.querySelector("#my-menu").mmenu; 
@@ -201,10 +201,10 @@ document.addEventListener("DOMContentLoaded", function()
       new_menu_items.push('<li class="mm-listitem append"><a href="#cookie_einstellungen">Cookie-Einstellungen</a></li>');
       
       
-      var menuList = document.querySelector("#block-av-sub-mobile-main-menu .mm-listview");
+      var menuList = document.querySelector("#block-b-mobile-menu .mm-listview");
           menuList.insertAdjacentHTML("beforeend", new_menu_items.join(""));
       
-      var newMenuItemsLinks = document.querySelectorAll("#block-av-sub-mobile-main-menu .mm-listview .mm-listitem.append a");
+      var newMenuItemsLinks = document.querySelectorAll("#block-b-mobile-menu .mm-listview .mm-listitem.append a");
             for(var i = 0; i < newMenuItemsLinks.length; i++) 
                {
                   newMenuItemsLinks[i].classList.add("mm-listitem__text");
