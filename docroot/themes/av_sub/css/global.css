@@ -1,3 +1,28 @@
 .glossary {
    --h2-font-size: var(--clamp-1400-size-224);
 }
+
+.teaser {
+   --p-font-family: var(--font-family-1);
+   --p-font-style: var(--font-style-1);
+   --p-font-variant: normal;
+   --p-font-weight: var(--font-weight-1);
+   --p-color: var(--color-3);
+   --p-font-size: var(--clamp-1400-size-30);
+}
+h1.cssf strong,
+.cssf h1 strong,
+h2.cssf strong,
+.cssf h2 strong,
+h3.cssf strong,
+.cssf h3 strong,
+h4.cssf strong,
+.cssf h4 strong,
+h5.cssf strong,
+.cssf h5 strong,
+h6.cssf strong,
+.cssf h6 strong {
+   --strong-font-family: 'Barlow', sans-serif;
+   --strong-font-style: normal;
+   --strong-font-weight: 800;
+}
