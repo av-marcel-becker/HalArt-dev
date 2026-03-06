@@ -36,14 +36,11 @@ a.btn.toggle-mobile-menu {
    }
 a.btn.toggle-mobile-menu:hover,
 a.btn.toggle-mobile-menu:focus {
- background-color: var(--color-2) !important;
- color: var(--color-13) !important;
+ background-color: var(--color-3) !important;
+ color: var(--color-2) !important;
  padding: 0 !important;  
  margin: 0rem !important;
  
- border-color: var(--color-13) !important;
- border-style: solid !important;
- border-width: 0.3125rem !important;
  display: inline-flex !important;
  justify-content: center;
  align-items: center;
