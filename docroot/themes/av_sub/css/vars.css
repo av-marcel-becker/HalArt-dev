@@ -399,7 +399,93 @@
    --table-cell-border-top: var(--size-1) solid var(--color-1);
    --table-cell-border-top-left-radius: 0;
    --table-cell-border-top-right-radius: 0;
-
+   /* ##################################################################### */
+   
+   --form-button-font-family: var(--font-family-1, sans-serif);
+   --form-button-font-style: var(--default-font-style, normal);
+   --form-button-font-weight: var(--font-weight-bold, 700);
+   --form-button-color: var(--color-2, #fff);
+   --form-button-background: var(--color-8, #000);
+   --form-button-font-size: var(--size-16, 1rem);
+   --form-button-line-height: var(--size-20, 1.25rem);
+   --form-button-text-transform: var(--default-text-transform, none);
+   --form-button-text-align: center;
+   --form-button-letter-spacing: var(--size-1, 1px);
+   --form-button-padding: var(--size-10, 0.625rem) var(--size-20, 1.25rem);
+   --form-button-margin: var(--size-0, 0rem);
+   --form-button-border: var(--size-0, 0rem);
+   --form-button-border-radius: var(--form-button-line-height);
+   --form-button-width: auto;
+   --form-button-clip-path: var(--default-clip-path, none);
+   --form-button-outline: var(--size-0, 0rem) solid var(--color-x, transparent);    
+   --form-button-transition: none;  
+   --form-button-box-shadow: none; 
+   --form-button-transform: none; 
+   
+   --form-button-hover-font-family: var(--form-button-font-family);
+   --form-button-hover-font-style: var(--form-button-font-style);
+   --form-button-hover-font-weight: var(--form-button-font-weight);
+   --form-button-hover-color: var(--color-2, #000);
+   --form-button-hover-background: var(--color-9, #fff);
+   --form-button-hover-font-size: var(--form-button-font-size);
+   --form-button-hover-line-height: var(--form-button-line-height);
+   --form-button-hover-text-transform: var(--form-button-text-transform);
+   --form-button-hover-text-align: var(--form-button-text-align);
+   --form-button-hover-letter-spacing: var(--form-button-letter-spacing);
+   --form-button-hover-padding: var(--form-button-padding);
+   --form-button-hover-margin: var(--form-button-margin);
+   --form-button-hover-border: var(--form-button-border);
+   --form-button-hover-border-radius: var(--form-button-border-radius);
+   --form-button-hover-width: var(--form-button-width);
+   --form-button-hover-clip-path: var(--form-button-clip-path);
+   --form-button-hover-outline: var(--size-0, 0rem) solid var(--color-x, transparent);   
+   --form-button-hover-transition:  var(--form-button-transition);  
+   --form-button-hover-box-shadow:  var(--form-button-box-shadow); 
+   --form-button-hover-transform: var(--form-button-transform);      
+   
+   --form-button-focus-font-family: var(--form-button-hover-font-family);
+   --form-button-focus-font-style: var(--form-button-hover-font-style);
+   --form-button-focus-font-weight: var(--form-button-hover-font-weight);
+   --form-button-focus-color: var(--form-button-hover-color);
+   --form-button-focus-background: var(--form-button-hover-background);
+   --form-button-focus-font-size: var(--form-button-hover-font-size);
+   --form-button-focus-line-height: var(--form-button-hover-line-height);
+   --form-button-focus-text-transform: var(--form-button-hover-text-transform);
+   --form-button-focus-text-align: var(--form-button-text-align);
+   --form-button-focus-letter-spacing: var(--form-button-hover-letter-spacing);
+   --form-button-focus-padding: var(--form-button-hover-padding);
+   --form-button-focus-margin: var(--form-button-hover-margin);
+   --form-button-focus-border: var(--form-button-hover-border);
+   --form-button-focus-border-radius: var(--form-button-hover-border-radius);
+   --form-button-focus-width: var(--form-button-hover-width);
+   --form-button-focus-clip-path: var(--form-button-hover-clip-path);
+   --form-button-focus-outline: var(--form-button-hover-outline);
+   --form-button-focus-transition:  var(--form-button-hover-transition);  
+   --form-button-focus-box-shadow:  var(--form-button-hover-box-shadow); 
+   --form-button-focus-transform: var(--form-button-hover-transform); 
+   
+   --form-button-active-font-family: var(--form-button-hover-font-family);
+   --form-button-active-font-style: var(--form-button-hover-font-style);
+   --form-button-active-font-weight: var(--form-button-hover-font-weight);
+   --form-button-active-color: var(--form-button-hover-color);
+   --form-button-active-background: var(--form-button-hover-background);
+   --form-button-active-font-size: var(--form-button-hover-font-size);
+   --form-button-active-line-height: var(--form-button-hover-line-height);
+   --form-button-active-text-transform: var(--form-button-hover-text-transform);
+   --form-button-active-text-align: var(--form-button-text-align);
+   --form-button-active-letter-spacing: var(--form-button-hover-letter-spacing);
+   --form-button-active-padding: var(--form-button-hover-padding);
+   --form-button-active-margin: var(--form-button-hover-margin);
+   --form-button-active-border: var(--form-button-hover-border);
+   --form-button-active-border-radius: var(--form-button-hover-border-radius);
+   --form-button-active-width: var(--form-button-hover-width);
+   --form-button-active-clip-path: var(--form-button-hover-clip-path);
+   --form-button-active-outline: var(--form-button-hover-outline);
+   --form-button-active-transition:  var(--form-button-hover-transition);  
+   --form-button-active-box-shadow:  var(--form-button-hover-box-shadow);
+   --form-button-active-transform: var(--form-button-hover-transform);   
+   
+   /* *************************************************************************************** */
 }
 
 
