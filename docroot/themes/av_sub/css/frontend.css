@@ -45,7 +45,7 @@ a.toggle-mobile-menu {
    --a-hover-text-underline-position: under;
    --a-hover-text-decoration-thickness: auto;
    --a-hover-color: var(--color-2);
-   --a-hover-background: var(--color-3);
+   --a-hover-background: var(--color-9);
    --a-hover-border: none;
    --a-hover-border-radius: 2rem;
    --a-hover-border-bottom: none;
