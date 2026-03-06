@@ -106,7 +106,7 @@ a.toggle-mobile-menu {
    --mm-max-size: 100%;
    --mm-min-size: 100%;
    --mm-lineheight: var(--clamp-1400-size-20);
-   --mm-iconbar-size: var(--clamp-1400-size-50);
+   --mm-iconbar-size: var(--clamp-1400-size-64);
    --mm-color-background-highlight: none;
    
    font-family: var(--font-family-1);
