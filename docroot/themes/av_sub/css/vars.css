@@ -405,7 +405,7 @@
    --form-button-font-style: var(--default-font-style, normal);
    --form-button-font-weight: var(--font-weight-bold, 700);
    --form-button-color: var(--color-2, #fff);
-   --form-button-background: var(--color-8, #000);
+   --form-button-background: var(--color-9, #000);
    --form-button-font-size: var(--size-16, 1rem);
    --form-button-line-height: var(--size-20, 1.25rem);
    --form-button-text-transform: var(--default-text-transform, none);
@@ -426,7 +426,7 @@
    --form-button-hover-font-style: var(--form-button-font-style);
    --form-button-hover-font-weight: var(--form-button-font-weight);
    --form-button-hover-color: var(--color-2, #000);
-   --form-button-hover-background: var(--color-9, #fff);
+   --form-button-hover-background: var(--color-8, #fff);
    --form-button-hover-font-size: var(--form-button-font-size);
    --form-button-hover-line-height: var(--form-button-line-height);
    --form-button-hover-text-transform: var(--form-button-text-transform);
