@@ -103,8 +103,8 @@ a.toggle-mobile-menu {
    --mm-color-border: var(--color-x);
    --mm-color-icon: var(--color-9);
    --mm-color-text: var(--color-9);
-   --mm-max-size: 100%;
-   --mm-min-size: 100%;
+   --mm-max-size: unset;
+   --mm-min-size: unset;
    --mm-lineheight: var(--clamp-1400-size-20);
    --mm-iconbar-size: var(--clamp-1400-size-100);
    --mm-color-background-highlight: none;
