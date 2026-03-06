@@ -72,4 +72,28 @@ a.toggle-mobile-menu {
          --a-height: var(--size-64);
       }
    }
-
+   
+.splide {
+   --ul-margin: 0;
+   --ul-padding: 0;
+   --ul-li-margin: 0;
+   --ul-li-margin-left: 0;
+   --ul-li-padding: 0;
+   --ul-li-padding-left: 0;
+   --ul-li-font-family: var(--p-font-family);
+   --ul-li-font-style: var(--p-font-style);
+   --ul-li-font-variant: var(--p-font-variant);
+   --ul-li-font-weight: var(--p-font-weight);
+   --ul-li-color: var(--p-color);
+   --ul-li-font-size: var(--p-font-size);
+   --ul-li-line-height: var(--p-line-height);
+   --ul-li-letter-spacing: var(--p-letter-spacing);
+   --ul-li-marker-content: "";
+   --ul-li-marker-color: var(--color-4);
+   --ul-li-marker-font-family: var(--font-family-fa);
+   --ul-li-marker-font-style: var(--font-style-fa);
+   --ul-li-marker-font-weight: var(--font-weight-fa-light);
+   --ul-li-marker-font-variant: var(--font-variant-fa);
+   --ul-li-marker-font-size: 1em;
+   --ul-li-marker-line-height: 1.2;
+}
