@@ -35,10 +35,10 @@
    --color-6: #c6341a; /* ah */
    --color-7: #c6341a; /* cite */
    --color-8: #c6341a;    
-   --color-9: #4e88b4;
+   --color-9: #2c4492;
    --color-10: #d9dff3;
    --color-11: #dd9773;
-   --color-12: #000000;
+   --color-12: #4e88b4;
    --color-13: #000000;
    --color-14: #000000;
    
@@ -275,6 +275,7 @@
    --a-transform: none;
    --a-letter-spacing: normal;
    --a-vertical-align: top;
+   
    --a-hover-text-decoration: none;
    --a-hover-text-underline-position: under;
    --a-hover-text-decoration-thickness: auto;
