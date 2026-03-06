@@ -14,8 +14,8 @@ body  {
 
 a.toggle-mobile-menu {
    --a-display: inline-flex;
-   --a-width: var(--size-42);
-   --a-height: var(--size-42);
+   --a-width: var(--size-48);
+   --a-height: var(--size-48);
    --a-min-height: unset;
    --a-justify-content: center;
    --a-align-items: center;
@@ -66,10 +66,10 @@ a.toggle-mobile-menu {
 }
 @media (min-width: 768px)
    {
-      a.btn.toggle-mobile-menu {       
+      a.toggle-mobile-menu {       
 
-         --a-width: var(--size-58);
-         --a-height: var(--size-58);
+         --a-width: var(--size-64);
+         --a-height: var(--size-64);
       }
    }
 
