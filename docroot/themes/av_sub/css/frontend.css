@@ -1,4 +1,17 @@
-:root {
+body  {
+   margin: var(--p-margin);
+   font-family: var(--p-font-family);
+   font-style: var(--p-font-style);
+   font-variant: var(--p-font-variant);
+   font-weight: var(--p-font-weight);
+   color: var(--p-color);
+   font-size: var(--p-font-size);
+   line-height: var(--p-line-height);
+   text-align: var(--p-text-align);
+   letter-spacing: var(--p-letter-spacing);
+}
+
+/*:root {
    
    --header-nav-font-family: var(--font-family-1);
    --header-nav-font-size: 1.125rem;
@@ -20,7 +33,6 @@
    --teaser-text-color: var(--color-2);
 }
 
-/* Frontend-specific nav accents */
 .page-header nav {
    font-family: var(--header-nav-font-family);
    font-size: var(--header-nav-font-size);
@@ -57,4 +69,4 @@
    line-height: var(--teaser-text-line-height);
    color: var(--teaser-text-color);
 }
-
+*/
