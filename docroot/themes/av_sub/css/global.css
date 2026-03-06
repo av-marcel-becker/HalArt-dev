@@ -34,5 +34,33 @@ h6.cssf strong,
    padding: var(--size-10);
 }
 
+.ph-teaser .link {
+   font-family: var(--form-button-font-family);
+   font-style: var(--form-button-font-style);
+   font-weight: var(--form-button-font-weight);
+   color: var(--form-button-color);
+   background: var(--form-button-background);
+   font-size: var(--form-button-font-size);
+   line-height: var(--form-button-line-height);
+   text-transform: var(--form-button-text-transform);
+   text-align: var(--form-button-text-align);
+   letter-spacing: var(--form-button-letter-spacing);
+   padding: var(--form-button-padding);
+   margin: var(--form-button-margin);
+   border: var(--form-button-border);
+   border-radius: var(--form-button-border-radius);
+   width: var(--form-button-width);
+   clip-path: var(--form-button-clip-path);
+   outline: var(--form-button-outline);
+   transition: var(--form-button-transition);
+   box-shadow: var(--form-button-box-shadow);
+   transform: var(--form-button-transform);
+}
+.ph-teaser:hover .link,
+.ph-teaser:focus .link {
+   color: var(--form-button-hover-color);
+   background: var(--form-button-hover-background);
+}
+
 
 
