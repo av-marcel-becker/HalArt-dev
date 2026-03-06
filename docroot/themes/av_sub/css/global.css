@@ -31,7 +31,7 @@ h6.cssf strong,
    background-color: var(--color-10);
 }
 .ph-teaser .content {
-   padding: var(--size-10);
+   padding: var(--size-20);
 }
 
 .ph-teaser .link {
@@ -63,7 +63,7 @@ h6.cssf strong,
 }
 .ph-teaser .text-link {
    text-align: right;
-   padding: var(--size-10);
+   padding: var(--size-20);
 }
 .ph-teaser .title-wrapper {
    font-family: var(--h2-font-family);
