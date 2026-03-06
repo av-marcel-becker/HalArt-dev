@@ -1,5 +1,5 @@
 body  {
-   margin: var(--p-margin);
+   margin: 0;
    font-family: var(--p-font-family);
    font-style: var(--p-font-style);
    font-variant: var(--p-font-variant);
