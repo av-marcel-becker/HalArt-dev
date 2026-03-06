@@ -12,7 +12,7 @@ body  {
 }
 
 
-a.btn.toggle-mobile-menu {
+a.toggle-mobile-menu {
    --a-display: inline-flex;
    --a-width: var(--size-42);
    --a-height: var(--size-42);
