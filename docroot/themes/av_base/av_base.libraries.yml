@@ -37,6 +37,5 @@ global:
       css/preset.css: { weight: 0 }
 
   dependencies:
-    - av_sub/global-vars
     - av_base/css_framework_3
     - av_base/fontawesome
