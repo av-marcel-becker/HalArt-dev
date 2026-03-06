@@ -135,6 +135,10 @@ a.toggle-mobile-menu {
    font-size: var(--clamp-1400-size-18);
    line-height: 1;
 }
-.mm-menu .menu-first-close {
+.mm-menu a.menu-first-close, 
+.mm-menu a.menu-first-close:active, 
+.mm-menu a.menu-first-close:hover, 
+.mm-menu a.menu-first-close:link, 
+.mm-menu a.menu-first-close:visited {
    color: var(--color-9);
 }
