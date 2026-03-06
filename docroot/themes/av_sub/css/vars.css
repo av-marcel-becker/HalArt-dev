@@ -496,8 +496,7 @@
 @media (min-width: 576px)
    {
       h1 {
-         font-size: 4.5rem;
-         line-height: 4.5rem;
+         font-size: var(--clamp-1400-size-56);
       }
    }
 @media (min-width: 768px)
