@@ -127,7 +127,7 @@
    --strong-font-weight: var(--font-weight-1);
    --strong-font-size: inherit;
    --strong-line-height: inherit;
-   --strong-color: inherit;
+   --strong-color: var(--color-8);
 
    --em-font-family: sans-serif;
    --em-font-style: italic;
