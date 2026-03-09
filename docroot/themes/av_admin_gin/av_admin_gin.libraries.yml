@@ -42,7 +42,7 @@ global:
   dependencies:
     - av_admin_gin/dialog_fix
     - av_admin_gin/htmlWatcher
-    - av_admin_gin/css_framework_2
+    - av_admin_gin/css_framework_3
     - av_admin_gin/up_down_scroll
     - av_base/fontawesome
     - av_base/backend
