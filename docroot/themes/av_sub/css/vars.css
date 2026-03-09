@@ -520,6 +520,85 @@
    --ph-image-badge-transform-origin: unset;
    --ph-image-badge-border-radius: unset;
    /* *************************************************************************************** */
+   --ph-file-list-ul-display: unset;
+   --ph-file-list-ul-gap: unset;
+   --ph-file-list-ul-margin: unset;
+   --ph-file-list-ul-padding: unset;
+
+   --ph-file-list-ul-li-display: unset;
+   --ph-file-list-ul-li-margin: unset;
+   --ph-file-list-ul-li-margin-left: unset;
+   --ph-file-list-ul-li-padding: unset;
+   --ph-file-list-ul-li-padding-left: unset;
+   --ph-file-list-ul-li-font-family: unset;
+   --ph-file-list-ul-li-font-style: unset;
+   --ph-file-list-ul-li-font-variant: unset;
+   --ph-file-list-ul-li-font-weight: unset;
+   --ph-file-list-ul-li-color: unset;
+   --ph-file-list-ul-li-font-size: unset;
+   --ph-file-list-ul-li-line-height: unset;
+   --ph-file-list-ul-li-border: unset;
+   --ph-file-list-ul-li-border-bottom: unset;
+   --ph-file-list-ul-li-border-top: unset;
+   --ph-file-list-ul-li-background: unset;
+   --ph-file-list-ul-li-transition: unset;
+   --ph-file-list-ul-li-min-height: unset;
+
+   --ph-file-list-ul-li-marker-content: 'test';
+   --ph-file-list-ul-li-marker-color: unset;
+   --ph-file-list-ul-li-marker-font-family: unset;
+   --ph-file-list-ul-li-marker-font-style: unset;
+   --ph-file-list-ul-li-marker-font-weight: unset;
+   --ph-file-list-ul-li-marker-font-variant: unset;
+   --ph-file-list-ul-li-marker-font-size: unset;
+   --ph-file-list-ul-li-marker-line-height: unset;
+
+   --ph-file-list-ul-li-span-before-position: unset;
+   --ph-file-list-ul-li-span-before-transform: unset;
+   --ph-file-list-ul-li-span-before-width: unset;
+   --ph-file-list-ul-li-span-before-height: unset;
+   --ph-file-list-ul-li-span-before-border-radius: unset;
+   --ph-file-list-ul-li-span-before-border: unset;
+   --ph-file-list-ul-li-span-before-background: unset;
+   --ph-file-list-ul-li-span-before-color: unset;
+   --ph-file-list-ul-li-span-before-display: unset;
+   --ph-file-list-ul-li-span-before-justify-content: unset;
+   --ph-file-list-ul-li-span-before-align-items: unset;
+   --ph-file-list-ul-li-span-before-top: unset;
+   --ph-file-list-ul-li-span-before-left: unset;
+   --ph-file-list-ul-li-span-before-right: unset;
+   --ph-file-list-ul-li-span-before-bottom: unset;
+   --ph-file-list-ul-li-span-before-font-family: unset;
+   --ph-file-list-ul-li-span-before-font-weight: unset;
+   --ph-file-list-ul-li-span-before-font-size: unset;
+   --ph-file-list-ul-li-span-before-content-file: unset;
+   --ph-file-list-ul-li-span-before-content-pdf: unset;
+   --ph-file-list-ul-li-span-before-content-archive: unset;
+   --ph-file-list-ul-li-span-before-transition: unset;
+
+   --ph-file-list-ul-li-span-after-position: unset;
+   --ph-file-list-ul-li-span-after-transform: unset;
+   --ph-file-list-ul-li-span-after-width: unset;
+   --ph-file-list-ul-li-span-after-height: unset;
+   --ph-file-list-ul-li-span-after-border-radius: unset;
+   --ph-file-list-ul-li-span-after-border: unset;
+   --ph-file-list-ul-li-span-after-background: unset;
+   --ph-file-list-ul-li-span-after-color: unset;
+   --ph-file-list-ul-li-span-after-display: unset;
+   --ph-file-list-ul-li-span-after-justify-content: unset;
+   --ph-file-list-ul-li-span-after-align-items: unset;
+   --ph-file-list-ul-li-span-after-top: unset;
+   --ph-file-list-ul-li-span-after-left: unset;
+   --ph-file-list-ul-li-span-after-right: unset;
+   --ph-file-list-ul-li-span-after-bottom: unset;
+   --ph-file-list-ul-li-span-after-font-family: unset;
+   --ph-file-list-ul-li-span-after-font-weight: unset;
+   --ph-file-list-ul-li-span-after-font-size: unset;
+   --ph-file-list-ul-li-span-after-content-file: unset;
+   --ph-file-list-ul-li-span-after-content-pdf: unset;
+   --ph-file-list-ul-li-span-after-content-archive: unset;
+   --ph-file-list-ul-li-span-after-transition: unset;
+   /* *************************************************************************************** */
 }
 
 
