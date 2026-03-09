@@ -45,7 +45,7 @@
    --hr-margin: var(--default-text-margin, 0);
    --hr-border-bottom: 1px solid black;
    
-   --p-margin: 2.25rem 0;
+   --p-margin: var(--default-text-margin, 0);
    --p-font-family: var(--font-family-2);
    --p-font-style: var(--font-style-2);
    --p-font-variant: normal;
@@ -485,6 +485,40 @@
    --form-button-active-box-shadow:  var(--form-button-hover-box-shadow);
    --form-button-active-transform: var(--form-button-hover-transform);   
    
+   /* *************************************************************************************** */
+   --ph-image-figcaption-margin: var(--default-text-margin, 0);
+   --ph-image-figcaption-padding: 0;
+   --ph-image-figcaption-font-family: var(--font-family-2);
+   --ph-image-figcaption-font-style: var(--font-style-2);
+   --ph-image-figcaption-font-variant: normal;
+   --ph-image-figcaption-font-weight: var(--font-weight-2);
+   --ph-image-figcaption-color: var(--color-3);
+   --ph-image-figcaption-font-size: 1.3125rem;
+   --ph-image-figcaption-line-height: 1.5;
+   --ph-image-figcaption-text-align: unset;
+
+   --ph-image-badge-position: unset;
+   --ph-image-badge-top: unset;
+   --ph-image-badge-left: unset;
+   --ph-image-badge-right: unset;
+   --ph-image-badge-bottom: unset;
+   --ph-image-badge-padding: unset;
+   --ph-image-badge-color: var(--color-2);
+   --ph-image-badge-background: unset;
+   --ph-image-badge-line-height: unset;
+   --ph-image-badge-transition: unset;
+   --ph-image-badge-font-size: unset;
+   --ph-image-badge-margin: unset;
+   --ph-image-badge-text-align: unset;
+   --ph-image-badge-font-family: unset;
+   --ph-image-badge-font-style: unset;
+   --ph-image-badge-font-weight: unset;
+   --ph-image-badge-font-variant: unset;
+   --ph-image-badge-letter-spacing: unset;
+   --ph-image-badge-text-transform: unset;
+   --ph-image-badge-transform: unset;
+   --ph-image-badge-transform-origin: unset;
+   --ph-image-badge-border-radius: unset;
    /* *************************************************************************************** */
 }
 
