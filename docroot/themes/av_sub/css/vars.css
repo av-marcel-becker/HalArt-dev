@@ -522,11 +522,11 @@
    /* *************************************************************************************** */
    --ph-file-list-ul-display: unset;
    --ph-file-list-ul-gap: unset;
-   --ph-file-list-ul-margin: unset;
+   --ph-file-list-ul-margin: var(--default-text-margin, 0);
    --ph-file-list-ul-padding: unset;
 
    --ph-file-list-ul-li-display: unset;
-   --ph-file-list-ul-li-margin: 0;
+   --ph-file-list-ul-li-margin: var(--default-item-margin);
    --ph-file-list-ul-li-margin-left: 2rem;
    --ph-file-list-ul-li-padding: unset;
    --ph-file-list-ul-li-padding-left: unset;
