@@ -526,8 +526,8 @@
    --ph-file-list-ul-padding: unset;
 
    --ph-file-list-ul-li-display: unset;
-   --ph-file-list-ul-li-margin: 0 0 0 2rem;
-   --ph-file-list-ul-li-margin-left: unset;
+   --ph-file-list-ul-li-margin: 0;
+   --ph-file-list-ul-li-margin-left: 2rem;
    --ph-file-list-ul-li-padding: unset;
    --ph-file-list-ul-li-padding-left: unset;
    --ph-file-list-ul-li-font-family: unset;
