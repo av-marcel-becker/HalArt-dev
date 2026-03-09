@@ -568,12 +568,12 @@
    --ph-file-list-ul-li-span-before-left: unset;
    --ph-file-list-ul-li-span-before-right: unset;
    --ph-file-list-ul-li-span-before-bottom: unset;
-   --ph-file-list-ul-li-span-before-font-family: unset;
-   --ph-file-list-ul-li-span-before-font-weight: unset;
+   --ph-file-list-ul-li-span-before-font-family: var(--font-family-fa);
+   --ph-file-list-ul-li-span-before-font-weight: var(--font-weight-fa-regular);
    --ph-file-list-ul-li-span-before-font-size: unset;
-   --ph-file-list-ul-li-span-before-content-file: unset;
-   --ph-file-list-ul-li-span-before-content-pdf: 'abc';
-   --ph-file-list-ul-li-span-before-content-archive: unset;
+   --ph-file-list-ul-li-span-before-content-file: '\f15b';
+   --ph-file-list-ul-li-span-before-content-pdf: '\f1c1';
+   --ph-file-list-ul-li-span-before-content-archive: '\e5ee';
    --ph-file-list-ul-li-span-before-transition: unset;
 
    --ph-file-list-ul-li-span-after-position: unset;
@@ -594,9 +594,9 @@
    --ph-file-list-ul-li-span-after-font-family: unset;
    --ph-file-list-ul-li-span-after-font-weight: unset;
    --ph-file-list-ul-li-span-after-font-size: unset;
-   --ph-file-list-ul-li-span-after-content-file: unset;
-   --ph-file-list-ul-li-span-after-content-pdf: unset;
-   --ph-file-list-ul-li-span-after-content-archive: unset;
+   --ph-file-list-ul-li-span-after-content-file: '';
+   --ph-file-list-ul-li-span-after-content-pdf: '';
+   --ph-file-list-ul-li-span-after-content-archive: '';
    --ph-file-list-ul-li-span-after-transition: unset;
    /* *************************************************************************************** */
 }
