@@ -553,7 +553,7 @@
    --ph-file-list-ul-li-marker-font-size: unset;
    --ph-file-list-ul-li-marker-line-height: unset;
 
-   --ph-file-list-ul-li-span-before-position: unset;
+   --ph-file-list-ul-li-span-before-position: absolute;
    --ph-file-list-ul-li-span-before-transform: unset;
    --ph-file-list-ul-li-span-before-width: unset;
    --ph-file-list-ul-li-span-before-height: unset;
