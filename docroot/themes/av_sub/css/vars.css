@@ -18,7 +18,7 @@
 
 
    /* Layout */
-   --layout-gap: var(--size-20);
+   --layout-gap: var(--size-40);
    --layout-content: 992px;
    --layout-outside: 1200px;
    --container-spacing: var(--size-80);
