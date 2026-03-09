@@ -544,7 +544,7 @@
    --ph-file-list-ul-li-transition: unset;
    --ph-file-list-ul-li-min-height: unset;
 
-   --ph-file-list-ul-li-marker-content: 'test';
+   --ph-file-list-ul-li-marker-content: unset;
    --ph-file-list-ul-li-marker-color: unset;
    --ph-file-list-ul-li-marker-font-family: unset;
    --ph-file-list-ul-li-marker-font-style: unset;
@@ -572,7 +572,7 @@
    --ph-file-list-ul-li-span-before-font-weight: unset;
    --ph-file-list-ul-li-span-before-font-size: unset;
    --ph-file-list-ul-li-span-before-content-file: unset;
-   --ph-file-list-ul-li-span-before-content-pdf: unset;
+   --ph-file-list-ul-li-span-before-content-pdf: 'abc';
    --ph-file-list-ul-li-span-before-content-archive: unset;
    --ph-file-list-ul-li-span-before-transition: unset;
 
