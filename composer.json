@@ -5,10 +5,10 @@
     "homepage": "https://www.av-studio.de",
     "require": {
         "composer/installers": "^2.0",
-        "drupal/core-composer-scaffold": "^11",
-        "drupal/core-project-message": "^11",
-        "drupal/core-recommended": "^11",
-        "drupal/core-vendor-hardening": "^11",
+        "drupal/core-composer-scaffold": "11.3.4",
+        "drupal/core-project-message": "11.3.4",
+        "drupal/core-recommended": "11.3.4",
+        "drupal/core-vendor-hardening": "11.3.4",
         "cweagans/composer-patches": "^1.6.5",
         
         "mcbesser/css-framework-3": "*",
