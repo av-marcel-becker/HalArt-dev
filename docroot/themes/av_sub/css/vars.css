@@ -225,7 +225,7 @@
    --ul-li-marker-line-height: 1.2;
 
    --ol-margin: var(--default-text-margin, 0);
-   --ol-padding: var(--default-text-margin, 0);
+   --ol-padding: 0;
    --ol-list-style: decimal;
    --ol-li-margin: var(--default-text-margin, 0);
    --ol-li-margin-left: var(--ol-li-font-size);
