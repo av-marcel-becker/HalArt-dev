@@ -51,7 +51,7 @@
    --p-font-variant: normal;
    --p-font-weight: var(--font-weight-2);
    --p-color: var(--color-3);
-   --p-font-size: 1.3125rem;
+   --p-font-size: var(--clamp-1400-size-21);
    --p-line-height: 1.5;
    --p-text-align: unset;
    --p-letter-spacing: normal;
@@ -486,14 +486,14 @@
    --form-button-active-transform: var(--form-button-hover-transform);   
    
    /* *************************************************************************************** */
-   --ph-image-figcaption-margin: var(--default-text-margin, 0);
+   --ph-image-figcaption-margin: var(--size-10) 0 0 0;
    --ph-image-figcaption-padding: 0;
    --ph-image-figcaption-font-family: var(--font-family-2);
    --ph-image-figcaption-font-style: var(--font-style-2);
    --ph-image-figcaption-font-variant: normal;
    --ph-image-figcaption-font-weight: var(--font-weight-2);
    --ph-image-figcaption-color: var(--color-3);
-   --ph-image-figcaption-font-size: 1.3125rem;
+   --ph-image-figcaption-font-size: var(--clamp-1400-size-21);
    --ph-image-figcaption-line-height: 1.5;
    --ph-image-figcaption-text-align: unset;
 
