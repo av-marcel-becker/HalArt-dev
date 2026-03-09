@@ -564,7 +564,7 @@
    --ph-file-list-ul-li-span-before-display: unset;
    --ph-file-list-ul-li-span-before-justify-content: unset;
    --ph-file-list-ul-li-span-before-align-items: unset;
-   --ph-file-list-ul-li-span-before-top: unset;
+   --ph-file-list-ul-li-span-before-top: 0.5rem;
    --ph-file-list-ul-li-span-before-left: -2rem;
    --ph-file-list-ul-li-span-before-right: unset;
    --ph-file-list-ul-li-span-before-bottom: unset;
