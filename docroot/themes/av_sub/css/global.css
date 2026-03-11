@@ -91,7 +91,7 @@ h6.cssf strong,
    --a-font-family: inherit;
    --a-font-style: inherit;
    --a-font-weight: inherit;
-   --a-font-size: inherit;
+   --a-font-size: var(--size-24);
    --a-line-height: inherit;
    --a-color: var(--color-2);
    --a-text-decoration: none;
