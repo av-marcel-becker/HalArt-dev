@@ -200,4 +200,27 @@ a.toggle-mobile-menu {
    --a-focus-border-bottom: var(--a-hover-border-bottom);
    --a-focus-text-transform: var(--a-hover-text-transform);
    --a-focus-transform: var(--a-hover-transform);
+   
+   --ul-margin: var(--default-text-margin, 0);
+   --ul-padding: 0;
+   --ul-li-margin: var(--default-item-margin, 0);
+   --ul-li-margin-left: var(--ul-li-font-size);
+   --ul-li-padding: 0;
+   --ul-li-padding-left: calc(var(--ul-li-font-size) / 2);
+   --ul-li-font-family: var(--font-family-1);
+   --ul-li-font-style: var(--font-style-1);
+   --ul-li-font-variant: normal;
+   --ul-li-font-weight: var(--font-weight-1);
+   --ul-li-color: var(--color-5);
+   --ul-li-font-size: var(--size-18);
+   --ul-li-line-height: 1.5;
+   --ul-li-letter-spacing: var(--p-letter-spacing);
+   --ul-li-marker-content: "\f061";
+   --ul-li-marker-color: var(--color-4);
+   --ul-li-marker-font-family: var(--font-family-fa);
+   --ul-li-marker-font-style: var(--font-style-fa);
+   --ul-li-marker-font-weight: var(--font-weight-fa-light);
+   --ul-li-marker-font-variant: var(--font-variant-fa);
+   --ul-li-marker-font-size: 1em;
+   --ul-li-marker-line-height: 1.2;
 }
