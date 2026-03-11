@@ -143,6 +143,14 @@ a.toggle-mobile-menu {
    color: var(--color-8);
 }
 .page-copyright {
+   
+   font-family: var(--font-family-1);
+   font-style: var(--font-style-1);
+   font-weight: var(--font-weight-1);
+   font-size: var(--size-18);
+   line-height: 1.5;
+   color: var(--color-5);
+   
    --a-display: inline;
    --a-width: unset;
    --a-height: unset;
