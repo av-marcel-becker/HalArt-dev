@@ -201,10 +201,10 @@ a.toggle-mobile-menu {
    --a-focus-text-transform: var(--a-hover-text-transform);
    --a-focus-transform: var(--a-hover-transform);
    
-   --ul-margin: var(--default-text-margin, 0);
+   --ul-margin: 0;
    --ul-padding: 0;
-   --ul-li-margin: var(--default-item-margin, 0);
-   --ul-li-margin-left: var(--ul-li-font-size);
+   --ul-li-margin: 0;
+   --ul-li-margin-left: 0;
    --ul-li-padding: 0;
    --ul-li-padding-left: calc(var(--ul-li-font-size) / 2);
    --ul-li-font-family: var(--font-family-1);
@@ -215,7 +215,7 @@ a.toggle-mobile-menu {
    --ul-li-font-size: var(--size-18);
    --ul-li-line-height: 1.5;
    --ul-li-letter-spacing: var(--p-letter-spacing);
-   --ul-li-marker-content: "\f061";
+   --ul-li-marker-content: "";
    --ul-li-marker-color: var(--color-4);
    --ul-li-marker-font-family: var(--font-family-fa);
    --ul-li-marker-font-style: var(--font-style-fa);
