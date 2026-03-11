@@ -142,3 +142,54 @@ a.toggle-mobile-menu {
 .mm-menu a.menu-first-close:visited {
    color: var(--color-8);
 }
+.page-copyright {
+   --a-display: inline;
+   --a-width: unset;
+   --a-height: unset;
+   --a-min-height: unset;
+   --a-justify-content: unset;
+   --a-align-items: unset;
+   --a-align-content: unset;
+   --a-font-family: var(--font-family-1);
+   --a-font-style: var(--font-style-1);
+   --a-font-weight: var(--font-weight-1);
+   --a-font-size: var(--size-18);
+   --a-line-height: 1.5;
+   --a-color: var(--color-5);
+   --a-text-decoration: none;
+   --a-background: none;
+   --a-border: none;
+   --a-border-radius: 0;
+   --a-border-bottom: none;
+   --a-text-underline-position: under;
+   --a-text-decoration-thickness: auto;
+   --a-padding: 0;
+   --a-margin: 0;
+   --a-transition: 0s ease;
+   --a-text-transform: none;
+   --a-transform: none;
+   --a-letter-spacing: normal;
+   --a-vertical-align: top;
+   
+   --a-hover-text-decoration: none;
+   --a-hover-text-underline-position: under;
+   --a-hover-text-decoration-thickness: auto;
+   --a-hover-color: var(--color-6);
+   --a-hover-background: none;
+   --a-hover-border: none;
+   --a-hover-border-radius: 0;
+   --a-hover-border-bottom: none;
+   --a-hover-text-transform: none;
+   --a-hover-transform: none;
+
+   --a-focus-text-decoration: var(--a-hover-text-decoration);
+   --a-focus-text-underline-position: var(--a-hover-text-underline-position);
+   --a-focus-text-decoration-thickness: var(--a-hover-text-decoration-thickness);
+   --a-focus-color: var(--a-hover-color);
+   --a-focus-background: var(--a-hover-background);
+   --a-focus-border: var(--a-hover-border);
+   --a-focus-border-radius: var(--a-hover-border-radius);
+   --a-focus-border-bottom: var(--a-hover-border-bottom);
+   --a-focus-text-transform: var(--a-hover-text-transform);
+   --a-focus-transform: var(--a-hover-transform);
+}
