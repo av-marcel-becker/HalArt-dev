@@ -102,7 +102,7 @@ h6.cssf strong,
    --a-text-underline-position: under;
    --a-text-decoration-thickness: auto;
    --a-padding: var(--size-10);
-   --a-margin: 0;
+   --a-margin: 0 0.5rem 0 0;
    --a-transition: 0s ease;
    --a-text-transform: none;
    --a-transform: none;
@@ -115,7 +115,7 @@ h6.cssf strong,
    --a-hover-color: var(--color-2);
    --a-hover-background: var(--color-6);
    --a-hover-border: none;
-   --a-hover-border-radius: 0;
+   --a-hover-border-radius: 100%;
    --a-hover-border-bottom: none;
    --a-hover-text-transform: none;
    --a-hover-transform: none;
