@@ -60,7 +60,7 @@
    --h1-font-style: normal;
    --h1-font-weight: 800;
    --h1-color: var(--color-4);
-   --h1-margin: var(--default-text-margin, 0);
+   --h1-margin: var(--size-40) var(--size-0);
    --h1-font-size: var(--clamp-1400-size-48);
    --h1-line-height: 1.2;
    --h1-letter-spacing: normal;
