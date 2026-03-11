@@ -149,7 +149,7 @@ a.toggle-mobile-menu {
    font-weight: var(--font-weight-1);
    font-size: var(--size-18);
    line-height: 1.5;
-   color: var(--color-5);
+   color: var(--color-6);
    
    --a-display: inline;
    --a-width: unset;
