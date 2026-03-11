@@ -365,7 +365,8 @@
                 "Fix: lib compatibility jQuery 4": "https://www.drupal.org/files/issues/2025-02-21/slick-f9a8733207-with-jsmin.patch"
             },
             "drupal/gin": {
-                "Fix: sidebar toggle": "https://www.drupal.org/files/issues/2026-02-10/3567613-restore-missing-sidebar-toggle.patch"
+                "Fix: sidebar toggle": "https://www.drupal.org/files/issues/2026-02-10/3567613-restore-missing-sidebar-toggle.patch",
+                "Fix: save button fix": "https://www.drupal.org/files/issues/2025-12-26/3517095-12.patch"
             }
         },
         "composer-exit-on-patch-failure": true,

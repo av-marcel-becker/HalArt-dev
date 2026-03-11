@@ -199,6 +199,7 @@ document.addEventListener("DOMContentLoaded", function()
       new_menu_items.push('<li class="mm-listitem append"><a href="/impressum">Impressum</a></li>');
       new_menu_items.push('<li class="mm-listitem append"><a href="/datenschutz" target="_blank"> Datenschutzerklärung</a></li>');
       new_menu_items.push('<li class="mm-listitem append"><a href="#cookie_einstellungen">Cookie-Einstellungen</a></li>');
+      new_menu_items.push('<li class="mm-listitem append"><a href="/barrierefreiheit">Barrierefreiheit</a></li>');
       
       
       var menuList = document.querySelector("#block-b-mobile-menu .mm-listview");
