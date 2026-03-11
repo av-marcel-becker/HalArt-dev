@@ -406,7 +406,7 @@
    --form-button-font-weight: var(--font-weight-bold, 700);
    --form-button-color: var(--color-2, #fff);
    --form-button-background: var(--color-9, #000);
-   --form-button-font-size: var(--size-16, 1rem);
+   --form-button-font-size: var(--size-21, 1rem);
    --form-button-line-height: var(--size-20, 1.25rem);
    --form-button-text-transform: uppercase;
    --form-button-text-align: center;
