@@ -230,7 +230,7 @@
          {% set inner_wrapper_class  = [ 
                         'inner-wrapper',
                         'cssf--position_relative--w100p--fw_nowrap',  
-                        'gbl cssf--grid-brick-layout cssf--ai_stretch',
+                        'gbl cssf--tpl-grid-brick-layout cssf--ai_stretch',
                         not orientation_horizontal_on?'cssf--gap_0'                   
                      ]
          %}
@@ -251,8 +251,8 @@
                      {% set image_wrapper_attributes = create_attribute() %}
                      {% set image_wrapper_class  = [ 
                                     'image-wrapper',
-                                    'cssf--o_0',
-                                    image_second_on?'cssf--mq768--o_1',
+                                    'cssf--order_0',
+                                    image_second_on?'cssf--mq768--order_1',
                                  ]
                      %}
                      {% if orientation_horizontal_on %}
@@ -426,9 +426,9 @@
                      {% set content_attributes = create_attribute() %}
                      {% set content_class  = [ 
                                     'content',
-                                    'cssf--position_relative--w100p--flex-layout--fd_column--fw_nowrap--o_1',
+                                    'cssf--position_relative--w100p--flex-layout--fd_column--fw_nowrap--order_1',
                                     fixed_on_bottom_on?'cssf--target-tag-div--target-pseudo-class-last-child--mt_auto',
-                                    image_second_on?'cssf--mq768--o_0',
+                                    image_second_on?'cssf--mq768--order_0',
                                  ]
                      %}
                      {% if orientation_horizontal_on %}
