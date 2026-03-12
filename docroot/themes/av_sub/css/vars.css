@@ -18,7 +18,7 @@
 
 
    /* Layout */
-   --layout-gap: var(--size-40);
+   --layout-gap: var(--size-20);
    --layout-content: 992px;
    --layout-outside: 1200px;
    --container-spacing: var(--size-80);
@@ -612,10 +612,11 @@
          --h1-font-size: var(--clamp-1400-size-56);
       }
    }
-@media (min-width: 768px)
-   {
-  
+@media (min-width: 768px) {   
+   :root {   
+      --layout-gap: var(--clamp-1200-size-40);
    }
+} 
 @media (min-width: 992px)
    {
 
