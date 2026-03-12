@@ -235,7 +235,7 @@
                      ]
          %}
    {% if link or fullsize_on %}
-      <a href="{{ link_url }}" title="{{ title ? (link_title ? title~' - '~link_title : title) : link_title }}"{{ link_attributes.addClass(['cssf--all_unset--h100p--cursor_pointer']) }}>
+      <a href="{{ link_url }}" title="{{ title ? (link_title ? title~' - '~link_title : title) : link_title }}"{{ link_attributes.addClass(['cssf--all_unset--h100p--cursor_pointer cssf--position_relative--w100p--fw_nowrap']) }}>
    
    {% endif %}
          <div{{ inner_wrapper_attributes.addClass(inner_wrapper_class) }}>
