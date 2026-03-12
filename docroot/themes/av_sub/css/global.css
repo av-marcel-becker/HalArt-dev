@@ -157,7 +157,10 @@ h6.cssf strong,
     margin-block: var(--size-40);
  }
  
- 
+/* fix */
+.p-remote-video iframe {
+   height: auto !important;
+}
  
  
  
