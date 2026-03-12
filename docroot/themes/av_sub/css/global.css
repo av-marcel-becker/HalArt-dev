@@ -140,3 +140,17 @@ h6.cssf strong,
 
 }
 
+
+
+.ph-image figcaption {
+   --p-margin: var(--default-text-margin, 0);
+   --p-font-family: var(--font-family-2);
+   --p-font-style: var(--font-style-2);
+   --p-font-variant: normal;
+   --p-font-weight: var(--font-weight-2);
+   --p-color: var(--color-3);
+   --p-font-size: var(--size-16);
+   --p-line-height: 1.7;
+   --p-text-align: unset;
+   --p-letter-spacing: normal;
+}
