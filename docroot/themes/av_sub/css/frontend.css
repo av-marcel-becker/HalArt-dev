@@ -224,3 +224,15 @@ a.toggle-mobile-menu {
    --ul-li-marker-font-size: 1em;
    --ul-li-marker-line-height: 1.2;
 }
+
+av-header {
+   display: flex;
+   justify-content: stretch;
+   align-content: center;
+   align-items: center;
+}
+av-header > div {
+   width: 100%;
+}
+
+
