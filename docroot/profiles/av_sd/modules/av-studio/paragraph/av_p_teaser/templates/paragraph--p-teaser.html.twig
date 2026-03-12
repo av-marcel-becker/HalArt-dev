@@ -230,20 +230,19 @@
          {% set inner_wrapper_class  = [ 
                         'inner-wrapper',
                         'cssf--position_relative--w100p--fw_nowrap',  
-                        orientation_horizontal_on?'gbl cssf--tpl-grid-brick-layout cssf--ai_stretch',
+                        'gbl cssf--tpl-grid-brick-layout cssf--ai_stretch',
                         not orientation_horizontal_on?'cssf--gap_0'                   
                      ]
          %}
-   {% if link or fullsize_on %}
-      <a href="{{ link_url }}" title="{{ title ? (link_title ? title~' - '~link_title : title) : link_title }}"{{ link_attributes.addClass(['cssf--all_unset--h100p--cursor_pointer cssf--position_relative--w100p--fw_nowrap']) }}>
-   
-   {% endif %}
          <div{{ inner_wrapper_attributes.addClass(inner_wrapper_class) }}>
             {% if ads_on %}
             
             {% else %}
                {#% if link and fullsize_on %#}
+               {% if link or fullsize_on %}
+                  <a href="{{ link_url }}" title="{{ title ? (link_title ? title~' - '~link_title : title) : link_title }}"{{ link_attributes.addClass(['cssf--all_unset--h100p--cursor_pointer']) }}>
                
+               {% endif %}
                   {% if label %}
                         <span class="label">{{ label }}</span>
                   {% endif %}
@@ -474,14 +473,14 @@
                            </div>
                         {% endif %}
                      </div>
-                  {% endif %}    
+                  {% endif %}
+               {#% if link and fullsize_on %#}
+               {% if link or fullsize_on %}
+                  </a>
+               {% endif %}      
             {% endif %}
 
          </div>
-   {#% if link and fullsize_on %#}
-   {% if link or fullsize_on %}
-      </a>
-   {% endif %}  
       </div>
       </div>
 
