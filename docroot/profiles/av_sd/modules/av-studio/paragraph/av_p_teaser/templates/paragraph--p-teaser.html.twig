@@ -230,7 +230,7 @@
          {% set inner_wrapper_class  = [ 
                         'inner-wrapper',
                         'cssf--position_relative--w100p--fw_nowrap',  
-                        'gbl cssf--tpl-grid-brick-layout cssf--ai_stretch',
+                        orientation_horizontal_on?'gbl cssf--tpl-grid-brick-layout cssf--ai_stretch',
                         not orientation_horizontal_on?'cssf--gap_0'                   
                      ]
          %}
