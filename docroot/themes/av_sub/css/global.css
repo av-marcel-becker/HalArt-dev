@@ -140,8 +140,6 @@ h6.cssf strong,
 
 }
 
-
-
 .ph-image figcaption {
    --p-margin: var(--default-text-margin, 0);
    --p-font-family: var(--font-family-2);
@@ -154,3 +152,12 @@ h6.cssf strong,
    --p-text-align: unset;
    --p-letter-spacing: normal;
 }
+
+.ph-splide-slider {
+    margin-block: var(--size-40);
+ }
+ 
+ 
+ 
+ 
+ 
