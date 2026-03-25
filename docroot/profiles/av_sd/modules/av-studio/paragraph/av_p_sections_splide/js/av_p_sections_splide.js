@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         var splide = new Splide(splideElement, {
             type: 'loop',
-            drag: 'free',
+            drag: true,
             snap: true,
             direction: 'ltr',
             paginationDirection: 'ltr',
