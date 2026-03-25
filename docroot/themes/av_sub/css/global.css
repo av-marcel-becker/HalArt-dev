@@ -162,5 +162,12 @@ h6.cssf strong,
    height: auto !important;
 }
  
- 
+.ph-teaser .inner-wrapper {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.ph-teaser .inner-wrapper .content {
+   height: 100%;
+}
  
