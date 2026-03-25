@@ -169,6 +169,7 @@ h6.cssf strong,
 }
 .ph-teaser .inner-wrapper .content {
    height: 100%;
+   display: flex;
 }
 .ph-teaser .inner-wrapper .content .text-link {
    margin-top: auto;
