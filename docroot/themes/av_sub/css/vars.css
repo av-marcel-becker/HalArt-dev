@@ -30,12 +30,12 @@
    --default-item-margin: var(--size-8) var(--size-0);
 
    --color-3: #000000; /* p */
-   --color-4: #2c4492; /* h1-6 */
-   --color-5: #2c4492; /* a */
-   --color-6: #c6341a; /* ah */
-   --color-7: #c6341a; /* cite */
-   --color-8: #c6341a; /* rot */
-   --color-9: #2c4492; /* blau */ 
+   --color-4: #b3d1ed; /* h1-6 */
+   --color-5: #b3d1ed; /* a */
+   --color-6: #f8395a; /* ah */
+   --color-7: #f8395a; /* cite */
+   --color-8: #f8395a; /* rot */ 
+   --color-9: #b3d1ed; /* blau */  
    --color-10: #d9dff3; /* hell-blau */ 
    --color-11: #dd9773; /* hell-rot */
    --color-12: #4e88b4; /* mittel-blau */
