@@ -235,4 +235,9 @@ av-header > div {
    width: 100%;
 }
 
+@media (max-width: 768px) {
+   .page-copyright {
+      text-align: center;
+   }
+}
 
